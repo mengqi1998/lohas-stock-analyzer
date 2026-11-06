@@ -91,5 +91,75 @@ def fetch_stock_price(stock_id):
     print(f"儲存位置：{output_file}")
 
 
+
+def fetch_stock_fundamental(stock_id):
+    """取得個股最新 PER、PBR 與殖利率，另存為前端可讀的 JSON。"""
+    params = {
+        "dataset": "TaiwanStockPER",
+        "data_id": stock_id,
+        "start_date": (END_DATE - timedelta(days=45)).isoformat(),
+        "end_date": END_DATE.isoformat(),
+    }
+
+    headers = {}
+    token = os.getenv("FINMIND_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    response = requests.get(API_URL, params=params, headers=headers, timeout=60)
+    try:
+        result = response.json()
+    except ValueError:
+        raise RuntimeError(
+            f"FinMind 基本面資料回傳非 JSON：HTTP {response.status_code}"
+        )
+
+    if response.status_code != 200 or result.get("status") != 200:
+        raise RuntimeError(
+            f"FinMind 基本面 API 錯誤：HTTP {response.status_code}；{result}"
+        )
+
+    records = result.get("data", [])
+    records.sort(key=lambda item: item.get("date", ""))
+
+    if records:
+        latest = records[-1]
+        fundamental = {
+            "date": latest.get("date"),
+            "PER": latest.get("PER"),
+            "PBR": latest.get("PBR"),
+            "dividend_yield": latest.get("dividend_yield"),
+        }
+        status = "success"
+        message = None
+    else:
+        fundamental = {
+            "date": None, "PER": None, "PBR": None, "dividend_yield": None
+        }
+        status = "no_data"
+        message = "FinMind 目前沒有回傳此標的的個股 PER/PBR 資料。"
+
+    output = {
+        "stock_id": stock_id,
+        "asset_type": "stock",
+        "source": "FinMind TaiwanStockPER",
+        "status": status,
+        "message": message,
+        "data": fundamental,
+    }
+
+    output_dir = Path("data/fundamentals")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_file = output_dir / f"{stock_id}.json"
+    output_file.write_text(
+        json.dumps(output, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+    print(f"基本面資料狀態：{status}")
+    print(f"基本面資料日期：{fundamental['date']}")
+    print(f"基本面儲存位置：{output_file}")
+
+
 if __name__ == "__main__":
     fetch_stock_price(STOCK_ID)
+    fetch_stock_fundamental(STOCK_ID)
