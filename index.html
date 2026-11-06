@@ -362,6 +362,52 @@ input, button { max-width:100%; }
   #summaryCard .summary-item { padding:8px 6px; }
   #summaryCard .value { font-size:15px; }
 }
+
+/* 左側可收合持有面板，右側保留分析內容供並排比對 */
+.result-layout {
+  display:grid;
+  grid-template-columns:minmax(260px, 310px) minmax(0, 1fr);
+  gap:16px;
+  align-items:start;
+}
+.holding-sidebar { min-width:0; position:sticky; top:12px; }
+.holding-drawer { margin:0 !important; padding:14px !important; }
+.holding-drawer > summary {
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  cursor:pointer; list-style:none; font-weight:700; font-size:16px;
+  color:#263445; min-width:0;
+}
+.holding-drawer > summary::-webkit-details-marker { display:none; }
+.holding-drawer > summary::before {
+  content:"＋"; flex:0 0 auto; color:#315b82; font-size:17px;
+}
+.holding-drawer[open] > summary::before { content:"－"; }
+.holding-drawer > summary > span:first-of-type { flex:1; }
+.drawer-hint { color:#8793a1; font-size:11px; font-weight:400; white-space:nowrap; }
+.holding-drawer-content { margin-top:14px; min-width:0; }
+.holding-drawer-content .holding-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.holding-drawer-content .holding-stat .value { font-size:18px; }
+.holding-drawer-content .holding-form { grid-template-columns:1fr; }
+.holding-drawer-content .holding-form button { width:100%; }
+.analysis-main {
+  min-width:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px; align-items:start;
+}
+.analysis-main > .card { min-width:0; margin:0; padding:18px; }
+.analysis-main > .card:nth-child(3) { grid-column:1 / -1; }
+@media(max-width:900px) {
+  .result-layout { grid-template-columns:1fr; }
+  .holding-sidebar { position:static; }
+  .holding-drawer-content .holding-form { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .analysis-main { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:600px) {
+  .analysis-main { grid-template-columns:1fr; }
+  .analysis-main > .card:nth-child(3) { grid-column:auto; }
+  .holding-drawer-content .holding-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .holding-drawer-content .holding-form { grid-template-columns:1fr; }
+}
+
 </style>
 
 </head>
@@ -431,10 +477,14 @@ input, button { max-width:100%; }
 </div>
 
 <section id="result" class="hidden">
-
-
-  <div class="card">
-    <h3>我的持有狀況 <span class="info-tip" tabindex="0" data-tip="記錄每次買進後，這裡會整理總股數、平均成本與目前帳面損益。紀錄只存在這台裝置的瀏覽器。">i</span></h3>
+  <div class="result-layout">
+    <aside class="holding-sidebar">
+  <details class="card holding-drawer">
+    <summary>
+      <span>我的持有狀況 <span class="info-tip" tabindex="0" data-tip="展開後可查看持有股數、平均成本、帳面損益與每筆買進紀錄。資料只存在這台裝置的瀏覽器。">i</span></span>
+      <span class="drawer-hint">點此展開／收合</span>
+    </summary>
+    <div class="holding-drawer-content">
     <p class="subtitle">可記錄同一檔股票的多次買進，系統會依買進股數計算平均成本。資料只保存在目前瀏覽器。</p>
     <div class="holding-grid">
       <div class="holding-stat"><div class="label">持有股數 <span class="info-tip" tabindex="0" data-tip="所有買進紀錄的股數加總。1 張等於 1,000 股。">i</span></div><div class="value" id="holdingShares">0 股</div></div>
@@ -456,8 +506,10 @@ input, button { max-width:100%; }
     <p class="chart-note">股數請直接填「股」：買進 1 張請填 1,000 股；零股直接填實際股數。損益暫不含手續費、交易稅及股利／配息。</p>
     <div class="table-wrap"><table><thead><tr><th>買進日期 <span class="info-tip" tabindex="0" data-tip="每一筆買進實際成交的日期。">i</span></th><th>買進價格 <span class="info-tip" tabindex="0" data-tip="每股成交價格。">i</span></th><th>股數 <span class="info-tip" tabindex="0" data-tip="這筆買進的實際股數。">i</span></th><th>投入金額 <span class="info-tip" tabindex="0" data-tip="這筆買進價格乘上股數，尚未計入交易成本。">i</span></th><th>操作</th></tr></thead><tbody id="holdingHistory"><tr><td colspan="5">尚未新增買進紀錄。</td></tr></tbody></table></div>
     <div id="holdingAssessment" class="position-note">新增買進紀錄後，這裡會顯示持有成本與五線譜位置。</div>
-  </div>
-
+    </div>
+  </details>
+    </aside>
+    <div class="analysis-main">
   <div class="card">
     <h3>公司狀況與價格位置 <span class="info-tip" tabindex="0" data-tip="個股看獲利、營收與財務狀況；ETF 看淨值、折溢價與配息。">i</span></h3>
     <p class="subtitle">個股看公司賺錢能力、營收和財務狀況；ETF 看淨值、折溢價和配息。沒有可靠資料時會直接標示暫無資料。</p>
@@ -563,7 +615,8 @@ input, button { max-width:100%; }
       </table>
     </div>
   </div>
-
+    </div>
+  </div>
 </section>
 
 <div class="disclaimer">
