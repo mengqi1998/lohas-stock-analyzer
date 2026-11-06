@@ -464,6 +464,91 @@ input, button { max-width:100%; }
 }
 </style>
 
+
+<style>
+/* 分析內容加寬：公司狀況、訊號與走勢圖使用完整可用寬度 */
+.container { max-width:1600px; width:100%; }
+#result {
+  display:block;
+  width:100%;
+  min-width:0;
+}
+.result-layout, .analysis-main {
+  display:block;
+  width:100%;
+  min-width:0;
+}
+.analysis-main > .card {
+  width:100%;
+  max-width:none;
+  margin:0 0 16px;
+}
+.analysis-main .fundamental-grid {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.analysis-main .line-list {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.analysis-main .chart-container {
+  width:100%;
+  height: min(58vw, 620px);
+  min-height:340px;
+}
+/* 持有狀況固定在畫面左上角，捲動時跟著視窗，不佔查詢列或分析卡片空間 */
+.holding-sidebar {
+  position:fixed !important;
+  top:14px !important;
+  left:14px !important;
+  z-index:1000 !important;
+  width:max-content;
+  max-width:calc(100vw - 28px);
+  margin:0 !important;
+}
+.holding-drawer {
+  width:max-content;
+  max-width:calc(100vw - 28px);
+  padding:7px 11px !important;
+  margin:0 !important;
+  border:1px solid #d6e0ea;
+  box-shadow:0 3px 14px rgba(25,40,60,.14);
+}
+.holding-drawer > summary {
+  min-height:28px;
+  font-size:13px;
+}
+.holding-drawer .drawer-hint { display:none; }
+.holding-drawer-content {
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  width:min(360px,calc(100vw - 28px));
+  max-height:min(76vh,680px);
+  overflow:auto;
+  background:#fff;
+  border:1px solid #d6e0ea;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(25,40,60,.2);
+}
+@media(max-width:900px) {
+  .analysis-main .fundamental-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .analysis-main .line-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .analysis-main .chart-container { height:420px; }
+}
+@media(max-width:600px) {
+  .container { width:100%; max-width:100%; }
+  .analysis-main > .card { padding:14px; }
+  .analysis-main .fundamental-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .analysis-main .line-list { grid-template-columns:1fr; }
+  .analysis-main .chart-container { height:340px; min-height:280px; }
+  .holding-sidebar { top:8px !important; left:8px !important; max-width:calc(100vw - 16px); }
+  .holding-drawer { max-width:calc(100vw - 16px); }
+  .holding-drawer-content { width:min(340px,calc(100vw - 16px)); max-height:68vh; padding:12px; }
+}
+@media(max-width:380px) {
+  .analysis-main .fundamental-grid { grid-template-columns:1fr; }
+}
+</style>
+
 </head>
 
 <body>
