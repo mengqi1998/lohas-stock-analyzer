@@ -241,8 +241,8 @@ th {
   width:min(260px, calc(100vw - 32px)); max-width:calc(100vw - 32px);
   max-height:calc(100vh - var(--tip-top, 80px) - 16px); overflow:auto;
 }
-#result > .card:first-child,#result > .card:nth-child(5) { grid-column:1 / -1; }
-#result > .card:first-child .summary { grid-template-columns:repeat(3,minmax(0,1fr)); }
+#result > .card:nth-child(4) { grid-column:1 / -1; }
+
 .guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
 .guide-item { padding:12px; border-radius:8px; background:#f7f9fc; }
 .guide-item strong { display:block; margin-bottom:5px; }
@@ -254,7 +254,7 @@ th {
 .line-name { display:flex; align-items:center; }
 @media(max-width:760px) {
   #result { grid-template-columns:1fr; }
-  #result > .card:first-child,#result > .card:nth-child(5) { grid-column:auto; }
+  #result > .card:nth-child(4) { grid-column:auto; }
   .guide-grid { grid-template-columns:1fr; }
 }
 </style>
@@ -337,6 +337,31 @@ input, button { max-width:100%; }
   .button-row button { width:100%; }
   .chart-container { height:280px; }
 }
+.top-panels {
+  display:grid;
+  grid-template-columns:minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap:16px;
+  align-items:stretch;
+  margin-bottom:16px;
+}
+.top-panels > .card { min-width:0; margin:0; padding:18px; }
+.top-panels h2,.top-panels h3 { margin-top:0; }
+#summaryCard .summary { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-top:10px; }
+#summaryCard .summary-item { padding:12px; min-width:0; }
+#summaryCard .value { font-size:clamp(16px,2vw,22px); overflow-wrap:anywhere; }
+@media(max-width:760px) {
+  .top-panels { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; }
+  .top-panels > .card { padding:12px; }
+  #summaryCard .summary { grid-template-columns:1fr; gap:6px; }
+  #summaryCard .summary-item { padding:8px 10px; }
+  #summaryCard .label { margin-bottom:3px; }
+}
+@media(max-width:420px) {
+  .top-panels { grid-template-columns:1fr; }
+  #summaryCard .summary { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  #summaryCard .summary-item { padding:8px 6px; }
+  #summaryCard .value { font-size:15px; }
+}
 </style>
 
 </head>
@@ -369,7 +394,8 @@ input, button { max-width:100%; }
   <p class="guide-foot">這些是提醒你進一步檢查的訊號，不是自動下單指令。買進前看公司與價格，賣出前看持有理由、部位及風險；不要只因為賺錢或虧錢就決定買賣。</p>
 </section>
 
-<section class="card">
+<div class="top-panels">
+  <section class="card">
   <h3>股票查詢</h3>
 
   <div class="search-row">
@@ -384,10 +410,7 @@ input, button { max-width:100%; }
 
   <div id="status" class="status">請輸入股票代號開始查詢。</div>
 </section>
-
-<section id="result" class="hidden">
-
-  <div class="card">
+  <div class="card hidden" id="summaryCard">
     <h2 id="stockTitle">股票分析</h2>
 
     <div class="summary">
@@ -405,6 +428,9 @@ input, button { max-width:100%; }
       </div>
     </div>
   </div>
+</div>
+
+<section id="result" class="hidden">
 
 
   <div class="card">
@@ -631,6 +657,7 @@ async function searchStock(forceRefresh = false) {
   const stockId = document.getElementById("stockId").value.trim();
   const status = document.getElementById("status");
   const result = document.getElementById("result");
+  const summaryCard = document.getElementById("summaryCard");
   const button = document.getElementById("searchBtn");
   const refreshButton = document.getElementById("refreshBtn");
 
@@ -638,6 +665,7 @@ async function searchStock(forceRefresh = false) {
     status.textContent = "請輸入正確的股票或 ETF 代號。";
     status.className = "status error";
     result.classList.add("hidden");
+    summaryCard.classList.add("hidden");
     return;
   }
 
@@ -647,6 +675,7 @@ async function searchStock(forceRefresh = false) {
   status.textContent = "正在讀取分析資料...";
   status.className = "status";
   result.classList.add("hidden");
+  summaryCard.classList.add("hidden");
 
   try {
 
@@ -697,6 +726,7 @@ async function searchStock(forceRefresh = false) {
 
     displayStock(data);
 
+    summaryCard.classList.remove("hidden");
     result.classList.remove("hidden");
 
     const latestDate = data.data[data.data.length - 1]?.date || "未知";
