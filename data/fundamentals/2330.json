@@ -1,7 +1,8 @@
 {
   "stock_id": "2330",
+  "stock_name": "台積電",
   "asset_type": "stock",
-  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockMonthRevenue",
+  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockBalanceSheet / TaiwanStockCashFlowsStatement / TaiwanStockMonthRevenue",
   "status": "success",
   "message": null,
   "data": {
@@ -11,9 +12,30 @@
     "dividend_yield": 0.98,
     "latest_quarter_EPS": 27.25,
     "EPS_date": "2026-06-30",
-    "TTM_EPS": 86.28,
+    "TTM_EPS": null,
+    "TTM_EPS_note": "未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "TTM_net_income": 2236752922000.0,
+    "TTM_net_income_date": "2026-06-30",
     "revenue": 511857399000,
     "revenue_date": "2026-10-01",
-    "revenue_yoy": 54.64861207105231
-  }
+    "revenue_yoy": 54.64861207105231,
+    "gross_margin": 67.72072338183784,
+    "operating_margin": 60.344345797252444,
+    "net_margin": 55.63538342161727,
+    "financial_statement_date": "2026-06-30",
+    "debt_ratio": null,
+    "current_ratio": 2.457635139531409,
+    "balance_sheet_date": "2026-06-30",
+    "operating_cash_flow": 1482341242000.0,
+    "cash_flow_date": "2026-06-30",
+    "latest_cash_distribution": null,
+    "cash_distribution_date": null,
+    "nav": null,
+    "premium_discount": null,
+    "nav_date": null
+  },
+  "notes": [
+    "各項財務指標採用最近可取得的已公告財報，並非即時資料。",
+    "TTM EPS 不直接加總各季 EPS；本網站改顯示近四季本期淨利合計。"
+  ]
 }

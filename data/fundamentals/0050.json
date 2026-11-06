@@ -1,0 +1,41 @@
+{
+  "stock_id": "0050",
+  "stock_name": "元大台灣50",
+  "asset_type": "etf",
+  "source": "FinMind TaiwanStockDividend",
+  "status": "success",
+  "message": null,
+  "data": {
+    "date": null,
+    "PER": null,
+    "PBR": null,
+    "dividend_yield": null,
+    "latest_quarter_EPS": null,
+    "EPS_date": null,
+    "TTM_EPS": null,
+    "TTM_EPS_note": "未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "TTM_net_income": null,
+    "TTM_net_income_date": null,
+    "revenue": null,
+    "revenue_date": null,
+    "revenue_yoy": null,
+    "gross_margin": null,
+    "operating_margin": null,
+    "net_margin": null,
+    "financial_statement_date": null,
+    "debt_ratio": null,
+    "current_ratio": null,
+    "balance_sheet_date": null,
+    "operating_cash_flow": null,
+    "cash_flow_date": null,
+    "latest_cash_distribution": 0.6,
+    "cash_distribution_date": "2026-07-27",
+    "nav": null,
+    "premium_discount": null,
+    "nav_date": null
+  },
+  "notes": [
+    "TTM EPS 未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "ETF 淨值與折溢價尚未自動串接；請以交易所或投信公告為準。"
+  ]
+}
