@@ -223,7 +223,12 @@ th {
 }
 .info-tip:hover::after,.info-tip:focus::after { display:block; }
 #result { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
-#result > .card { min-width:0; margin:0; }
+#result > .card { min-width:0; margin:0; padding:18px; }
+#result h3 { margin-top:0; }
+#result .fundamental-grid,.holding-grid { gap:9px; }
+#result .fundamental-item,#result .holding-stat { padding:12px; }
+#result .value { overflow-wrap:anywhere; }
+.info-tip::after { pointer-events:none; }
 #result > .card:first-child,#result > .card:nth-child(5) { grid-column:1 / -1; }
 #result > .card:first-child .summary { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
@@ -324,13 +329,13 @@ th {
     </div>
     <h4>新增一筆買進紀錄</h4>
     <div class="holding-form">
-      <div><label for="buyDate">買進日期</label><input id="buyDate" type="date"></div>
-      <div><label for="buyPrice">買進價格（元）</label><input id="buyPrice" type="number" min="0.01" step="0.01" placeholder="例如 980"></div>
-      <div><label for="buyShares">買進股數</label><input id="buyShares" type="number" min="1" step="1" placeholder="例如 100"></div>
+      <div><label for="buyDate">買進日期 <span class="info-tip" tabindex="0" data-tip="填寫實際買進股票的日期，方便回頭查詢每次買進紀錄。">i</span></label><input id="buyDate" type="date"></div>
+      <div><label for="buyPrice">買進價格（元） <span class="info-tip" tabindex="0" data-tip="填寫當次實際成交的每股價格，不是整張股票的總金額。">i</span></label><input id="buyPrice" type="number" min="0.01" step="0.01" placeholder="例如 980"></div>
+      <div><label for="buyShares">買進股數 <span class="info-tip" tabindex="0" data-tip="填寫實際股數；買進 1 張請填 1,000，買進零股則填實際股數。">i</span></label><input id="buyShares" type="number" min="1" step="1" placeholder="例如 100"></div>
       <button type="button" onclick="addHolding()">新增紀錄</button>
     </div>
     <p class="chart-note">股數請直接填「股」：買進 1 張請填 1,000 股；零股直接填實際股數。損益暫不含手續費、交易稅及股利／配息。</p>
-    <div class="table-wrap"><table><thead><tr><th>買進日期</th><th>買進價格</th><th>股數</th><th>投入金額</th><th>操作</th></tr></thead><tbody id="holdingHistory"><tr><td colspan="5">尚未新增買進紀錄。</td></tr></tbody></table></div>
+    <div class="table-wrap"><table><thead><tr><th>買進日期 <span class="info-tip" tabindex="0" data-tip="每一筆買進實際成交的日期。">i</span></th><th>買進價格 <span class="info-tip" tabindex="0" data-tip="每股成交價格。">i</span></th><th>股數 <span class="info-tip" tabindex="0" data-tip="這筆買進的實際股數。">i</span></th><th>投入金額 <span class="info-tip" tabindex="0" data-tip="這筆買進價格乘上股數，尚未計入交易成本。">i</span></th><th>操作</th></tr></thead><tbody id="holdingHistory"><tr><td colspan="5">尚未新增買進紀錄。</td></tr></tbody></table></div>
     <div id="holdingAssessment" class="position-note">新增買進紀錄後，這裡會顯示持有成本與五線譜位置。</div>
   </div>
 
@@ -1082,7 +1087,7 @@ async function loadFundamentals(stockId) {
     if (isETF) {
       document.getElementById("fundPER").textContent = "不適用";
       document.getElementById("fundPBR").textContent = "不適用";
-      document.getElementById("fundYield").previousElementSibling.textContent = "配息殖利率";
+      document.getElementById("fundYield").previousElementSibling.firstChild.nodeValue = "配息殖利率 ";
       document.getElementById("fundYield").textContent = "需搭配配息與市價計算";
       document.getElementById("fundETFNav").textContent = d.nav == null ? "尚未串接" : Number(d.nav).toFixed(4) + " 元";
       document.getElementById("fundETFPremium").textContent = d.premium_discount == null ? "尚未串接" : Number(d.premium_discount).toFixed(2) + "%";
@@ -1091,7 +1096,7 @@ async function loadFundamentals(stockId) {
     } else {
       document.getElementById("fundPER").textContent = d.PER == null ? "暫無資料" : Number(d.PER).toFixed(2) + " 倍";
       document.getElementById("fundPBR").textContent = d.PBR == null ? "暫無資料" : Number(d.PBR).toFixed(2) + " 倍";
-      document.getElementById("fundYield").previousElementSibling.textContent = "現金殖利率";
+      document.getElementById("fundYield").previousElementSibling.firstChild.nodeValue = "現金殖利率 ";
       document.getElementById("fundYield").textContent = d.dividend_yield == null ? "暫無資料" : Number(d.dividend_yield).toFixed(2) + "%";
       document.getElementById("fundEPS").textContent = d.latest_quarter_EPS == null ? "暫無資料" : Number(d.latest_quarter_EPS).toFixed(2) + " 元";
       document.getElementById("fundTTMNetIncome").textContent = d.TTM_net_income == null ? "暫無資料" : (Number(d.TTM_net_income) / 100000000).toFixed(2) + " 億元";
