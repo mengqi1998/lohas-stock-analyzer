@@ -27,6 +27,14 @@ def load_price_data(stock_id):
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["close"] = pd.to_numeric(df["close"], errors="coerce")
     df = df.dropna(subset=["date", "close"])
+
+    # 0050 于 2025-06-18 以 1 拆 4 恢復交易。
+    # FinMind TaiwanStockPrice 提供的是當時實際成交價，需將分割前價格
+    # 換算成分割後單位，否則 500 日趨勢會把分割誤認為暴跌。
+    if stock_id == "0050":
+        split_date = pd.Timestamp("2025-06-18")
+        before_split = df["date"] < split_date
+        df.loc[before_split, "close"] = df.loc[before_split, "close"] / 4.0
     df = df[df["close"] > 0]
     return (
         df.sort_values("date")
@@ -106,6 +114,7 @@ def main():
                 f"目前有 {len(df)} 筆原始資料，可計算 {len(results)} 天。"
             ),
             "calculation_method": "rolling_linear_regression",
+            "price_adjustment": "0050 split-adjusted (pre-2025-06-18 prices divided by 4); dividends not adjusted",
             "sigma": round(latest["sigma"], 4) if latest else None,
             "slope": round(latest["slope"], 8) if latest else None,
             "intercept": round(latest["intercept"], 8) if latest else None,
