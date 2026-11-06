@@ -1,80 +1,55 @@
-
 import json
 import os
+
 import numpy as np
 import pandas as pd
 
-STOCK_ID = "2330"
+STOCK_IDS = ["2330", "0050"]
 WINDOW = 500
 OUTPUT_DAYS = 500
 
-PRICE_FILE = f"data/prices/{STOCK_ID}.json"
-OUTPUT_FILE = f"data/five_lines/{STOCK_ID}.json"
 
+def load_price_data(stock_id):
+    price_file = f"data/prices/{stock_id}.json"
+    if not os.path.exists(price_file):
+        raise FileNotFoundError(f"找不到股價資料：{price_file}")
 
-def load_price_data():
-    if not os.path.exists(PRICE_FILE):
-        raise FileNotFoundError(f"找不到股價資料：{PRICE_FILE}")
-
-    with open(PRICE_FILE, "r", encoding="utf-8") as f:
+    with open(price_file, "r", encoding="utf-8") as f:
         raw = json.load(f)
 
-    # 支援 API 常見的 {"data": [...]} 格式
-    if isinstance(raw, dict):
-        records = raw.get("data", [])
-    elif isinstance(raw, list):
-        records = raw
-    else:
-        records = []
-
+    records = raw.get("data", []) if isinstance(raw, dict) else raw
     df = pd.DataFrame(records)
-
     if df.empty:
-        raise ValueError("股價資料是空的")
-
+        raise ValueError(f"{stock_id} 股價資料是空的")
     if "date" not in df.columns or "close" not in df.columns:
-        raise ValueError("股價資料缺少 date 或 close 欄位")
+        raise ValueError(f"{stock_id} 股價資料缺少 date 或 close 欄位")
 
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["close"] = pd.to_numeric(df["close"], errors="coerce")
-
     df = df.dropna(subset=["date", "close"])
     df = df[df["close"] > 0]
-
-    df = (
+    return (
         df.sort_values("date")
         .drop_duplicates(subset=["date"], keep="last")
         .reset_index(drop=True)
     )
 
-    return df
-
 
 def calculate_rolling_five_lines(df):
     results = []
-
-    # 每一天都只使用當天及之前的 500 個交易日
     for end_idx in range(WINDOW - 1, len(df)):
         start_idx = end_idx - WINDOW + 1
-
         window_df = df.iloc[start_idx:end_idx + 1]
-
         y = window_df["close"].to_numpy(dtype=float)
         x = np.arange(WINDOW, dtype=float)
 
-        # 線性迴歸：trend = slope * x + intercept
         slope, intercept = np.polyfit(x, y, 1)
-
         trend_values = slope * x + intercept
         residuals = y - trend_values
-
-        # 母體標準差
         sigma = float(np.std(residuals, ddof=0))
 
-        # 只取當日（迴歸區間最後一天）的趨勢線數值
         current_trend = float(slope * (WINDOW - 1) + intercept)
         current_close = float(df.loc[end_idx, "close"])
-
         results.append({
             "date": df.loc[end_idx, "date"].strftime("%Y-%m-%d"),
             "close": current_close,
@@ -88,80 +63,53 @@ def calculate_rolling_five_lines(df):
             "signal": "none",
             "slope": float(slope),
             "intercept": float(intercept),
+            "sigma": sigma,
         })
 
-    # 以相鄰兩個交易日各自的五線譜判斷穿越訊號
     for i in range(1, len(results)):
         previous = results[i - 1]
         current = results[i]
-
-        # 買進觀察：
-        # 前一日收盤低於前一日下下線，
-        # 當日收盤回到當日下下線之上或相等
         if (
             previous["close"] < previous["lower_2"]
             and current["close"] >= current["lower_2"]
         ):
             current["buy_signal"] = True
             current["signal"] = "buy"
-
-        # 賣出觀察：
-        # 前一日收盤高於前一日上上線，
-        # 當日收盤回到當日上上線之下或相等
         elif (
             previous["close"] > previous["upper_2"]
             and current["close"] <= current["upper_2"]
         ):
             current["sell_signal"] = True
             current["signal"] = "sell"
-
     return results
 
 
 def main():
-    df = load_price_data()
+    for stock_id in STOCK_IDS:
+        df = load_price_data(stock_id)
+        all_results = calculate_rolling_five_lines(df)
+        results = all_results[-OUTPUT_DAYS:]
+        output_file = f"data/five_lines/{stock_id}.json"
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
-    all_results = calculate_rolling_five_lines(df)
+        latest = results[-1] if results else None
+        status = "success" if len(results) == OUTPUT_DAYS else "insufficient_data"
 
-    # 只保留最近 500 個有效計算日
-    results = all_results[-OUTPUT_DAYS:]
-
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-
-    if len(results) < OUTPUT_DAYS:
         output = {
-            "stock_id": STOCK_ID,
+            "stock_id": stock_id,
             "window": WINDOW,
             "actual_days": len(results),
             "raw_days": len(df),
-            "status": "insufficient_data",
-            "message": (
-                f"需要至少 {WINDOW + OUTPUT_DAYS - 1} 個原始交易日，"
-                f"目前只有 {len(df)} 個原始交易日，"
-                f"可計算 {len(results)} 個有效日期。"
+            "status": status,
+            "message": None if status == "success" else (
+                f"需要至少 {WINDOW + OUTPUT_DAYS - 1} 個原始交易日；"
+                f"目前有 {len(df)} 筆原始資料，可計算 {len(results)} 天。"
             ),
-            "sigma": None,
-            "slope": round(latest["slope"], 8),
-            "intercept": round(latest["intercept"], 8),
-            "latest_signal": "none",
-            "data": [],
-        }
-    else:
-        latest = results[-1]
-
-        output = {
-            "stock_id": STOCK_ID,
-            "window": WINDOW,
-            "actual_days": len(results),
-            "raw_days": len(df),
-            "status": "success",
             "calculation_method": "rolling_linear_regression",
-            "sigma": round(
-                (latest["upper_1"] - latest["trend"]), 4
-            ),
-            "slope": None,
-            "intercept": None,
-            "latest_signal": latest["signal"],
+            "sigma": round(latest["sigma"], 4) if latest else None,
+            "slope": round(latest["slope"], 8) if latest else None,
+            "intercept": round(latest["intercept"], 8) if latest else None,
+            "latest_signal": latest["signal"] if latest else "none",
             "data": [
                 {
                     **row,
@@ -171,20 +119,25 @@ def main():
                     "lower_1": round(row["lower_1"], 4),
                     "upper_2": round(row["upper_2"], 4),
                     "lower_2": round(row["lower_2"], 4),
+                    "slope": round(row["slope"], 8),
+                    "intercept": round(row["intercept"], 8),
+                    "sigma": round(row["sigma"], 4),
                 }
                 for row in results
-            ],
+            ] if status == "success" else [],
         }
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"股票代號：{STOCK_ID}")
-    print(f"原始交易日數：{len(df)}")
-    print(f"有效計算日數：{len(results)}")
-    print(f"資料狀態：{output['status']}")
-    print(f"最新訊號：{output['latest_signal']}")
-    print(f"輸出位置：{OUTPUT_FILE}")
+        print(f"股票代號：{stock_id}")
+        print(f"原始交易日數：{len(df)}")
+        print(f"有效計算日數：{len(results)}")
+        print(f"資料狀態：{status}")
+        print(f"最新訊號：{output['latest_signal']}")
+        print(f"最新斜率：{output['slope']}")
+        print(f"最新截距：{output['intercept']}")
+        print(f"輸出位置：{output_file}")
 
 
 if __name__ == "__main__":
