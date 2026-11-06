@@ -306,23 +306,23 @@ th {
 
     <div class="line-list">
       <div class="line-item">
-        <span class="line-name">上上線（+2σ）</span>
+        <span class="line-name">明顯偏高線（+2σ）</span>
         <span class="line-value" id="upper2">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">上線（+1σ）</span>
+        <span class="line-name">偏高線（+1σ）</span>
         <span class="line-value" id="upper1">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">中線（趨勢線）</span>
+        <span class="line-name">長期趨勢線</span>
         <span class="line-value" id="trend">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">下線（-1σ）</span>
+        <span class="line-name">偏低線（-1σ）</span>
         <span class="line-value" id="lower1">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">下下線（-2σ）</span>
+        <span class="line-name">明顯偏低線（-2σ）</span>
         <span class="line-value" id="lower2">-</span>
       </div>
     </div>
@@ -722,15 +722,15 @@ function renderChart(rows) {
 
     makeDataset("收盤價", rows, "close", "#263f8c", 2.5),
 
-    makeDataset("上上線 +2σ", rows, "upper_2", "#c65d5d", 1.5, [6, 4]),
+    makeDataset("明顯偏高線 +2σ", rows, "upper_2", "#c65d5d", 1.5, [6, 4]),
 
-    makeDataset("上線 +1σ", rows, "upper_1", "#df9c54", 1.5, [4, 3]),
+    makeDataset("偏高線 +1σ", rows, "upper_1", "#df9c54", 1.5, [4, 3]),
 
-    makeDataset("中線", rows, "trend", "#319b83", 2),
+    makeDataset("長期趨勢線", rows, "trend", "#319b83", 2),
 
-    makeDataset("下線 -1σ", rows, "lower_1", "#df9c54", 1.5, [4, 3]),
+    makeDataset("偏低線 -1σ", rows, "lower_1", "#df9c54", 1.5, [4, 3]),
 
-    makeDataset("下下線 -2σ", rows, "lower_2", "#c65d5d", 1.5, [6, 4]),
+    makeDataset("明顯偏低線 -2σ", rows, "lower_2", "#c65d5d", 1.5, [6, 4]),
 
     // 買進訊號標記
     {
@@ -908,10 +908,13 @@ function renderHoldings(stockId, close, latest) {
         const td = document.createElement("td"); td.textContent = v; tr.appendChild(td);
       });
       const td = document.createElement("td");
+      const edit = document.createElement("button");
+      edit.className = "small-btn secondary-btn"; edit.textContent = "修改";
+      edit.onclick = () => editHolding(i);
       const del = document.createElement("button");
       del.className = "small-btn delete-btn"; del.textContent = "刪除";
-      del.onclick = () => { const next = getHoldings(stockId); next.splice(i,1); localStorage.setItem(holdingKey(stockId), JSON.stringify(next)); renderHoldings(stockId, currentHoldingClose, currentHoldingLatest); };
-      td.appendChild(del); tr.appendChild(td); tbody.appendChild(tr);
+      del.onclick = () => { if (!confirm("確定刪除這筆買進紀錄？")) return; const next = getHoldings(stockId); next.splice(i,1); localStorage.setItem(holdingKey(stockId), JSON.stringify(next)); renderHoldings(stockId, currentHoldingClose, currentHoldingLatest); };
+      td.append(edit, del); tr.appendChild(td); tbody.appendChild(tr);
     });
   }
 
@@ -934,6 +937,27 @@ function getPricePosition(row) {
   if (p > Number(row.lower_1)) return "長期趨勢線與偏低線之間";
   if (p > Number(row.lower_2)) return "偏低線與明顯偏低線之間";
   return "明顯偏低線以下";
+}
+
+function editHolding(index) {
+  const rows = getHoldings(currentHoldingStock);
+  const row = rows[index];
+  if (!row) return;
+  const date = prompt("買進日期（YYYY-MM-DD）", row.date);
+  if (date === null) return;
+  const priceText = prompt("買進價格（元）", row.price);
+  if (priceText === null) return;
+  const sharesText = prompt("買進股數", row.shares);
+  if (sharesText === null) return;
+  const price = Number(priceText), shares = Number(sharesText);
+  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(date) || !Number.isFinite(price) || price <= 0 || !Number.isInteger(shares) || shares <= 0) {
+    alert("資料格式不正確，請確認日期、價格及股數。");
+    return;
+  }
+  rows[index] = {date, price, shares};
+  rows.sort((a,b) => a.date.localeCompare(b.date));
+  localStorage.setItem(holdingKey(currentHoldingStock), JSON.stringify(rows));
+  renderHoldings(currentHoldingStock, currentHoldingClose, currentHoldingLatest);
 }
 
 function addHolding() {
