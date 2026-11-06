@@ -629,6 +629,82 @@ input, button { max-width:100%; }
 
 </style>
 
+
+<style>
+/* 莫蘭迪色系：用低彩度底色區分主要功能區塊 */
+:root {
+  --m-sage: #e8eee8;
+  --m-sage-border: #cbd8cc;
+  --m-blue: #e8edf2;
+  --m-blue-border: #cbd5df;
+  --m-lavender: #eeebf1;
+  --m-lavender-border: #d7d0df;
+  --m-sand: #f0ece5;
+  --m-sand-border: #ddd3c5;
+  --m-rose: #f1e9e8;
+  --m-rose-border: #dfcecc;
+  --m-tile: rgba(255,255,255,.62);
+}
+.guide-card {
+  background:var(--m-sand);
+  border:1px solid var(--m-sand-border);
+  box-shadow:0 2px 8px rgba(70,60,50,.035);
+}
+.guide-item { background:rgba(255,255,255,.55); }
+.top-panels > .card:first-child {
+  background:var(--m-blue);
+  border:1px solid var(--m-blue-border);
+  box-shadow:0 2px 8px rgba(55,70,85,.035);
+}
+#summaryCard {
+  background:var(--m-sage);
+  border:1px solid var(--m-sage-border);
+  box-shadow:0 2px 8px rgba(55,75,60,.035);
+}
+#summaryCard .summary-item { background:var(--m-tile); }
+.analysis-main > .card:nth-child(1) {
+  background:var(--m-sage);
+  border:1px solid var(--m-sage-border);
+  box-shadow:0 2px 9px rgba(55,75,60,.04);
+}
+.analysis-main > .card:nth-child(2) {
+  background:var(--m-rose);
+  border:1px solid var(--m-rose-border);
+  box-shadow:0 2px 9px rgba(80,55,55,.04);
+}
+.analysis-main > .card:nth-child(3) {
+  background:var(--m-lavender);
+  border:1px solid var(--m-lavender-border);
+  box-shadow:0 2px 9px rgba(65,55,80,.04);
+}
+.analysis-main .fundamental-item,
+.analysis-main .line-item,
+.analysis-main .signal-panel {
+  background:var(--m-tile);
+}
+.analysis-main .position-note {
+  background:rgba(255,255,255,.58);
+}
+.holding-drawer {
+  background:var(--m-sand);
+  border-color:var(--m-sand-border);
+}
+.holding-drawer-content {
+  background:#f8f5ef;
+  border-color:var(--m-sand-border);
+}
+.holding-drawer-content .holding-stat { background:rgba(255,255,255,.72); }
+.method-section {
+  padding:16px 18px;
+  border:1px solid #d9d5cf;
+  border-radius:12px;
+  background:#eeece7;
+}
+@media(max-width:600px) {
+  .method-section { padding:13px; }
+}
+</style>
+
 </head>
 
 <body>
