@@ -6,6 +6,7 @@
   "status": "success",
   "message": null,
   "calculation_method": "rolling_linear_regression",
+  "price_adjustment": "0050 split-adjusted (pre-2025-06-18 prices divided by 4); dividends not adjusted",
   "sigma": 195.3357,
   "slope": 3.64871491,
   "intercept": 657.05362874,
