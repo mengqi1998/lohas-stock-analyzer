@@ -288,7 +288,13 @@ th {
       <div class="fundamental-item"><div class="label">股價淨值比（股價相對帳面價值）</div><div class="value" id="fundPBR">讀取中</div></div>
       <div class="fundamental-item"><div class="label">現金殖利率</div><div class="value" id="fundYield">讀取中</div></div>
     </div>
-    <div id="fundamentalNote" class="chart-note">基本面資料由網站資料檔提供，會顯示資料日期。</div>
+    <div class="fundamental-grid" style="margin-top:12px">
+      <div class="fundamental-item"><div class="label">最近一季每股盈餘（EPS）</div><div class="value" id="fundEPS">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">近四季每股盈餘合計</div><div class="value" id="fundTTMEPS">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">最近一期月營收</div><div class="value" id="fundRevenue">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">月營收年增率</div><div class="value" id="fundRevenueYoY">暫無資料</div></div>
+    </div>
+    <div id="fundamentalNote" class="chart-note">資料會顯示來源與更新日期；缺少資料時會標示暫無資料。</div>
   </div>
 
   <div class="card">
@@ -988,11 +994,16 @@ async function loadFundamentals(stockId) {
     document.getElementById("fundPER").textContent = data.data.PER == null ? "暫無資料" : Number(data.data.PER).toFixed(2) + " 倍";
     document.getElementById("fundPBR").textContent = data.data.PBR == null ? "暫無資料" : Number(data.data.PBR).toFixed(2) + " 倍";
     document.getElementById("fundYield").textContent = data.data.dividend_yield == null ? "暫無資料" : Number(data.data.dividend_yield).toFixed(2) + "%";
-    document.getElementById("fundamentalNote").textContent = "資料日期：" + (data.data.date || "未提供") + "；來源：" + (data.source || "FinMind") + "。本益比是股價相對每股盈餘的倍數；股價淨值比是股價相對每股淨值的倍數。";
+    document.getElementById("fundEPS").textContent = data.data.latest_quarter_EPS == null ? "暫無資料" : Number(data.data.latest_quarter_EPS).toFixed(2) + " 元";
+    document.getElementById("fundTTMEPS").textContent = data.data.TTM_EPS == null ? "暫無資料" : Number(data.data.TTM_EPS).toFixed(2) + " 元";
+    document.getElementById("fundRevenue").textContent = data.data.revenue == null ? "暫無資料" : (Number(data.data.revenue) / 100000000).toFixed(2) + " 億元";
+    document.getElementById("fundRevenueYoY").textContent = data.data.revenue_yoy == null ? "暫無資料" : ((Number(data.data.revenue_yoy) >= 0 ? "+" : "") + Number(data.data.revenue_yoy).toFixed(2) + "%");
+    document.getElementById("fundamentalNote").textContent = "估值資料日期：" + (data.data.date || "未提供") + "；EPS 日期：" + (data.data.EPS_date || "未提供") + "；營收日期：" + (data.data.revenue_date || "未提供") + "。來源：" + (data.source || "FinMind") + "。本益比是股價相對每股盈餘的倍數；股價淨值比是股價相對每股淨值的倍數；營收年增率是與去年同月比較。";
   } catch (e) {
     document.getElementById("fundPER").textContent = "暫無資料";
     document.getElementById("fundPBR").textContent = "暫無資料";
     document.getElementById("fundYield").textContent = "暫無資料";
+    ["fundEPS","fundTTMEPS","fundRevenue","fundRevenueYoY"].forEach(id => document.getElementById(id).textContent = "暫無資料");
     document.getElementById("fundamentalNote").textContent = "目前尚未取得此標的的基本面資料；不會以估算值代替。";
   }
 }
