@@ -292,10 +292,9 @@ def fetch_stock_fundamental(stock_id, catalog):
         except Exception as exc:
             print(f"{stock_id} ETF 配息資料暫不可用：{exc}")
 
-    has_data = any(
+    has_data = asset_type == "etf" or any(
         value is not None
-        for key, value in output_data.items()
-        if key not in ("TTM_EPS_note",)
+        for value in output_data.values()
     )
     output = {
         "stock_id": stock_id,
