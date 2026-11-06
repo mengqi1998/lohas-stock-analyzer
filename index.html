@@ -1028,7 +1028,8 @@ async function loadFundamentals(stockId) {
     if (isETF) {
       document.getElementById("fundPER").textContent = "不適用";
       document.getElementById("fundPBR").textContent = "不適用";
-      document.getElementById("fundYield").textContent = "請看配息資料";
+      document.getElementById("fundYield").previousElementSibling.textContent = "配息殖利率";
+      document.getElementById("fundYield").textContent = "需搭配配息與市價計算";
       document.getElementById("fundETFNav").textContent = d.nav == null ? "尚未串接" : Number(d.nav).toFixed(4) + " 元";
       document.getElementById("fundETFPremium").textContent = d.premium_discount == null ? "尚未串接" : Number(d.premium_discount).toFixed(2) + "%";
       document.getElementById("fundETFDistribution").textContent =
@@ -1036,6 +1037,7 @@ async function loadFundamentals(stockId) {
     } else {
       document.getElementById("fundPER").textContent = d.PER == null ? "暫無資料" : Number(d.PER).toFixed(2) + " 倍";
       document.getElementById("fundPBR").textContent = d.PBR == null ? "暫無資料" : Number(d.PBR).toFixed(2) + " 倍";
+      document.getElementById("fundYield").previousElementSibling.textContent = "現金殖利率";
       document.getElementById("fundYield").textContent = d.dividend_yield == null ? "暫無資料" : Number(d.dividend_yield).toFixed(2) + "%";
       document.getElementById("fundEPS").textContent = d.latest_quarter_EPS == null ? "暫無資料" : Number(d.latest_quarter_EPS).toFixed(2) + " 元";
       document.getElementById("fundTTMNetIncome").textContent = d.TTM_net_income == null ? "暫無資料" : (Number(d.TTM_net_income) / 100000000).toFixed(2) + " 億元";
@@ -1426,7 +1428,27 @@ searchStock(false);
     </tbody>
   </table>
 
-  <h3>七、使用限制與注意事項</h3>
+  <h3>七、基本面與財務體質指標</h3>
+  <table>
+    <thead><tr><th>指標</th><th>白話說明</th><th>判讀提醒</th></tr></thead>
+    <tbody>
+      <tr><td>本益比</td><td>目前股價是每股盈餘的幾倍。</td><td>需與公司自身歷史、同產業比較，不能只看數字高低。</td></tr>
+      <tr><td>股價淨值比</td><td>目前股價相對每股帳面淨值的倍數。</td><td>產業資產結構不同，不宜跨產業直接比較。</td></tr>
+      <tr><td>毛利率</td><td>營收扣除直接成本後，還剩多少比例。</td><td>需觀察長期變化及產業特性。</td></tr>
+      <tr><td>營業利益率</td><td>扣除營業費用後，核心本業留下的比例。</td><td>可搭配營收一起觀察本業獲利是否改善。</td></tr>
+      <tr><td>稅後淨利率</td><td>每一元營收最後留下多少稅後淨利。</td><td>可能受業外損益及一次性項目影響。</td></tr>
+      <tr><td>負債比率</td><td>總負債占總資產的比例。</td><td>產業資本結構不同，不能用單一門檻判定好壞。</td></tr>
+      <tr><td>流動比率</td><td>流動資產相對流動負債的倍數。</td><td>僅作短期償債能力參考，仍需檢視資產品質。</td></tr>
+      <tr><td>營業活動現金流</td><td>公司本業營運實際帶來的現金流入或流出。</td><td>需看多期趨勢，不宜只用單季數字下結論。</td></tr>
+      <tr><td>近四季本期淨利合計</td><td>最近四個財報季度的稅後淨利金額加總。</td><td>這是金額，不是 EPS；本網站不直接相加各季 EPS，避免配股或分割造成股數基準不一致。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>八、ETF 專用觀察</h3>
+  <p>ETF 不套用個股本益比、股價淨值比或公司財報比率。應觀察每單位淨值（NAV）、市價相對淨值的折溢價、配息紀錄、投資標的與追蹤誤差。網站目前會顯示可取得的最近一次現金配息；NAV 與折溢價尚未自動串接，請以交易所或投信公告為準。</p>
+  <p>官方參考：<a href="https://www.twse.com.tw/zh/ETFortune/products" target="_blank" rel="noopener">證交所 ETF e 添富</a>、<a href="https://mops.twse.com.tw/mops/web/t78sb35" target="_blank" rel="noopener">公開資訊觀測站基金每日淨資產價值</a>。</p>
+
+  <h3>九、使用限制與注意事項</h3>
 
   <div class="notice">
     <p><strong>1. 訊號不等於買賣建議</strong></p>
