@@ -246,6 +246,82 @@ th {
   .guide-grid { grid-template-columns:1fr; }
 }
 </style>
+
+<style>
+/* 手機版防止卡片、文字與表單超出螢幕 */
+html, body { max-width:100%; overflow-x:hidden; }
+.container, #result, #result > .card, .card, .method-section,
+.summary-item, .holding-stat, .fundamental-item, .guide-item {
+  min-width:0;
+  max-width:100%;
+}
+#result > .card { overflow-wrap:anywhere; }
+#result .label, .fundamental-item .label, .line-name {
+  min-width:0;
+  max-width:100%;
+  flex-wrap:wrap;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+#result .value, .line-value, .signal-value, .status,
+.subtitle, .chart-note, .guide-foot, .guide-item p {
+  min-width:0;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+.table-wrap { width:100%; max-width:100%; min-width:0; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.table-wrap table { min-width:560px; }
+.search-row, .button-row, .holding-form { min-width:0; }
+.search-row > *, .button-row > *, .holding-form > * { min-width:0; }
+input, button { max-width:100%; }
+.chart-container { min-width:0; max-width:100%; }
+.method-section { overflow-wrap:anywhere; }
+.method-section table { min-width:560px; }
+
+@media (max-width:760px) {
+  body { padding:16px 10px; }
+  .container { width:100%; }
+  .card { padding:16px; }
+  #result { width:100%; grid-template-columns:minmax(0,1fr); }
+  #result > .card { width:100%; padding:14px; }
+  #result > .card:first-child .summary {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  #result > .card:first-child .summary-item { padding:12px; }
+  #result > .card:first-child .summary-item:last-child { grid-column:1 / -1; }
+  .summary-item .value, #result .value { font-size:clamp(16px, 5vw, 21px); }
+  .holding-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .fundamental-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .holding-form { grid-template-columns:minmax(0,1fr); }
+  .holding-form button { width:100%; }
+  .guide-grid { grid-template-columns:minmax(0,1fr); }
+  .search-row { flex-direction:column; }
+  .button-row { flex-direction:row; }
+  .button-row button { flex:1 1 0; width:auto; padding:11px 8px; }
+  .chart-container { height:320px; }
+  .method-section { width:100%; margin:22px 0; padding:14px; }
+  .info-tip::after {
+    width:min(250px, calc(100vw - 36px));
+    max-width:calc(100vw - 36px);
+  }
+}
+@media (max-width:420px) {
+  body { padding:12px 8px; }
+  .card { padding:13px; }
+  #result > .card { padding:12px; }
+  #result > .card:first-child .summary,
+  .holding-grid, .fundamental-grid { grid-template-columns:minmax(0,1fr); }
+  #result > .card:first-child .summary-item:last-child { grid-column:auto; }
+  h1 { font-size:25px; }
+  h2 { font-size:20px; }
+  h3 { font-size:17px; }
+  .button-row { flex-direction:column; }
+  .button-row button { width:100%; }
+  .chart-container { height:280px; }
+}
+</style>
+
 </head>
 
 <body>
