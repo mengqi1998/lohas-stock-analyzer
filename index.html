@@ -186,6 +186,26 @@ th {
   .chart-container { height: 350px; }
 }
 </style>
+<style>
+/* 持有分析與白話指標 */
+.holding-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0; }
+.holding-stat { background:#f7f9fc; border-radius:8px; padding:15px; }
+.holding-stat .value { font-size:21px; }
+.holding-form { display:grid; grid-template-columns:repeat(3,1fr) auto; gap:8px; align-items:end; margin:16px 0; }
+.holding-form label { display:block; color:#718096; font-size:13px; margin-bottom:6px; }
+.holding-form input { width:100%; }
+.holding-form button { white-space:nowrap; }
+.small-btn { padding:7px 10px; font-size:13px; margin-right:4px; }
+.delete-btn { background:#fbeaea; color:#a33; }
+.fundamental-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.fundamental-item { background:#f7f9fc; border-radius:8px; padding:15px; }
+.fundamental-item .label { margin-bottom:6px; }
+.position-note { padding:14px; background:#f7f9fc; border-radius:8px; line-height:1.7; margin-top:14px; }
+@media(max-width:650px) {
+ .holding-grid,.fundamental-grid { grid-template-columns:1fr; }
+ .holding-form { grid-template-columns:1fr; }
+}
+</style>
 </head>
 
 <body>
@@ -232,6 +252,43 @@ th {
         <div class="value" id="actualDays">-</div>
       </div>
     </div>
+  </div>
+
+
+  <div class="card">
+    <h3>我的持有狀況</h3>
+    <p class="subtitle">可記錄同一檔股票的多次買進，系統會依買進股數計算平均成本。資料只保存在目前瀏覽器。</p>
+    <div class="holding-grid">
+      <div class="holding-stat"><div class="label">總持有股數</div><div class="value" id="holdingShares">0 股</div></div>
+      <div class="holding-stat"><div class="label">平均買進成本</div><div class="value" id="holdingAverage">-</div></div>
+      <div class="holding-stat"><div class="label">目前未實現損益</div><div class="value" id="holdingProfit">-</div></div>
+    </div>
+    <div class="holding-grid">
+      <div class="holding-stat"><div class="label">累計投入金額</div><div class="value" id="holdingInvested">-</div></div>
+      <div class="holding-stat"><div class="label">目前報酬率</div><div class="value" id="holdingReturn">-</div></div>
+      <div class="holding-stat"><div class="label">計算使用的收盤價</div><div class="value" id="holdingPrice">-</div></div>
+    </div>
+    <h4>新增一筆買進紀錄</h4>
+    <div class="holding-form">
+      <div><label for="buyDate">買進日期</label><input id="buyDate" type="date"></div>
+      <div><label for="buyPrice">買進價格（元）</label><input id="buyPrice" type="number" min="0.01" step="0.01" placeholder="例如 980"></div>
+      <div><label for="buyShares">買進股數</label><input id="buyShares" type="number" min="1" step="1" placeholder="例如 100"></div>
+      <button type="button" onclick="addHolding()">新增紀錄</button>
+    </div>
+    <p class="chart-note">股數請直接填「股」：買進 1 張請填 1,000 股；零股直接填實際股數。損益暫不含手續費、交易稅及股利／配息。</p>
+    <div class="table-wrap"><table><thead><tr><th>買進日期</th><th>買進價格</th><th>股數</th><th>投入金額</th><th>操作</th></tr></thead><tbody id="holdingHistory"><tr><td colspan="5">尚未新增買進紀錄。</td></tr></tbody></table></div>
+    <div id="holdingAssessment" class="position-note">新增買進紀錄後，這裡會顯示持有成本與五線譜位置。</div>
+  </div>
+
+  <div class="card">
+    <h3>基本面與價格位置</h3>
+    <p class="subtitle">個股顯示本益比、股價淨值比及殖利率；ETF 會改顯示適用的 ETF 指標，沒有可靠資料時不會猜測數值。</p>
+    <div class="fundamental-grid">
+      <div class="fundamental-item"><div class="label">本益比</div><div class="value" id="fundPER">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">股價淨值比</div><div class="value" id="fundPBR">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">殖利率</div><div class="value" id="fundYield">讀取中</div></div>
+    </div>
+    <div id="fundamentalNote" class="chart-note">基本面資料由網站資料檔提供，會顯示資料日期。</div>
   </div>
 
   <div class="card">
@@ -523,7 +580,8 @@ function displayStock(data) {
     Number(latest.lower_2).toFixed(2);
 
   displayLatestSignal(latest);
-
+  renderHoldings(data.stock_id, latest.close, latest);
+  loadFundamentals(data.stock_id);
   displaySignalHistory(rows);
 
   renderChart(rows);
@@ -789,6 +847,130 @@ function renderChart(rows) {
 
   });
 
+}
+
+
+
+// =========================
+// 持有紀錄（只存在使用者瀏覽器）
+// =========================
+let currentHoldingStock = "";
+let currentHoldingClose = 0;
+let currentHoldingLatest = null;
+
+function holdingKey(stockId) { return "lohas_holdings_" + stockId; }
+
+function getHoldings(stockId) {
+  try {
+    const rows = JSON.parse(localStorage.getItem(holdingKey(stockId)) || "[]");
+    return Array.isArray(rows) ? rows : [];
+  } catch (e) { return []; }
+}
+
+function saveHoldings() {
+  if (!currentHoldingStock) return;
+  localStorage.setItem(holdingKey(currentHoldingStock), JSON.stringify(getHoldings(currentHoldingStock)));
+}
+
+function money(value) {
+  return Number(value).toLocaleString("zh-TW", {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+function renderHoldings(stockId, close, latest) {
+  currentHoldingStock = stockId;
+  currentHoldingClose = Number(close);
+  currentHoldingLatest = latest;
+  const rows = getHoldings(stockId);
+  const shares = rows.reduce((sum, r) => sum + Number(r.shares), 0);
+  const invested = rows.reduce((sum, r) => sum + Number(r.price) * Number(r.shares), 0);
+  const average = shares ? invested / shares : 0;
+  const marketValue = shares * currentHoldingClose;
+  const profit = marketValue - invested;
+  const rate = invested ? profit / invested * 100 : 0;
+
+  document.getElementById("holdingShares").textContent = shares.toLocaleString("zh-TW") + " 股";
+  document.getElementById("holdingAverage").textContent = shares ? money(average) : "-";
+  document.getElementById("holdingInvested").textContent = shares ? money(invested) : "-";
+  document.getElementById("holdingPrice").textContent = money(currentHoldingClose);
+  document.getElementById("holdingProfit").textContent = shares ? ((profit >= 0 ? "+" : "") + money(profit)) : "-";
+  document.getElementById("holdingReturn").textContent = shares ? ((rate >= 0 ? "+" : "") + rate.toFixed(2) + "%") : "-";
+  document.getElementById("holdingProfit").style.color = profit >= 0 ? "#21865b" : "#c34c4c";
+  document.getElementById("holdingReturn").style.color = rate >= 0 ? "#21865b" : "#c34c4c";
+
+  const tbody = document.getElementById("holdingHistory");
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="5">尚未新增買進紀錄。</td></tr>';
+  } else {
+    rows.forEach((r, i) => {
+      const tr = document.createElement("tr");
+      [r.date, money(r.price), Number(r.shares).toLocaleString("zh-TW"), money(r.price*r.shares)].forEach(v => {
+        const td = document.createElement("td"); td.textContent = v; tr.appendChild(td);
+      });
+      const td = document.createElement("td");
+      const del = document.createElement("button");
+      del.className = "small-btn delete-btn"; del.textContent = "刪除";
+      del.onclick = () => { const next = getHoldings(stockId); next.splice(i,1); localStorage.setItem(holdingKey(stockId), JSON.stringify(next)); renderHoldings(stockId, currentHoldingClose, currentHoldingLatest); };
+      td.appendChild(del); tr.appendChild(td); tbody.appendChild(tr);
+    });
+  }
+
+  const assessment = document.getElementById("holdingAssessment");
+  if (!shares) {
+    assessment.textContent = "尚未有持有紀錄。新增買進紀錄後，系統會計算平均成本、損益及目前股價所在區間。";
+  } else {
+    const pos = getPricePosition(latest);
+    const profitText = profit >= 0 ? "目前帳面獲利 " : "目前帳面虧損 ";
+    const sell = latest.signal === "sell" ? "今天出現五線譜的賣出觀察訊號，建議再檢視基本面與個人風險。" : "今天尚未出現五線譜的賣出觀察訊號。";
+    assessment.textContent = "目前股價位於「" + pos + "」；" + profitText + money(Math.abs(profit)) + "（" + rate.toFixed(2) + "%）。" + sell + " 這是觀察資訊，不代表應立即買進或賣出。";
+  }
+}
+
+function getPricePosition(row) {
+  const p = Number(row.close);
+  if (p > Number(row.upper_2)) return "明顯偏高線以上";
+  if (p > Number(row.upper_1)) return "明顯偏高線與偏高線之間";
+  if (p > Number(row.trend)) return "偏高線與長期趨勢線之間";
+  if (p > Number(row.lower_1)) return "長期趨勢線與偏低線之間";
+  if (p > Number(row.lower_2)) return "偏低線與明顯偏低線之間";
+  return "明顯偏低線以下";
+}
+
+function addHolding() {
+  const date = document.getElementById("buyDate").value;
+  const price = Number(document.getElementById("buyPrice").value);
+  const shares = Number(document.getElementById("buyShares").value);
+  if (!date || !Number.isFinite(price) || price <= 0 || !Number.isInteger(shares) || shares <= 0) {
+    alert("請填寫有效的買進日期、價格及正整數股數。");
+    return;
+  }
+  const rows = getHoldings(currentHoldingStock);
+  rows.push({date, price, shares});
+  rows.sort((a,b) => a.date.localeCompare(b.date));
+  localStorage.setItem(holdingKey(currentHoldingStock), JSON.stringify(rows));
+  document.getElementById("buyPrice").value = "";
+  document.getElementById("buyShares").value = "";
+  renderHoldings(currentHoldingStock, currentHoldingClose, currentHoldingLatest);
+}
+
+async function loadFundamentals(stockId) {
+  const ids = ["fundPER","fundPBR","fundYield"];
+  ids.forEach(id => document.getElementById(id).textContent = "讀取中");
+  try {
+    const response = await fetch("data/fundamentals/" + encodeURIComponent(stockId) + ".json?t=" + Date.now());
+    if (!response.ok) throw new Error("目前沒有基本面資料檔");
+    const data = await response.json();
+    if (data.status !== "success" || !data.data) throw new Error(data.message || "基本面資料不足");
+    document.getElementById("fundPER").textContent = data.data.PER == null ? "暫無資料" : Number(data.data.PER).toFixed(2) + " 倍";
+    document.getElementById("fundPBR").textContent = data.data.PBR == null ? "暫無資料" : Number(data.data.PBR).toFixed(2) + " 倍";
+    document.getElementById("fundYield").textContent = data.data.dividend_yield == null ? "暫無資料" : Number(data.data.dividend_yield).toFixed(2) + "%";
+    document.getElementById("fundamentalNote").textContent = "資料日期：" + (data.data.date || "未提供") + "；來源：" + (data.source || "FinMind") + "。本益比是股價相對每股盈餘的倍數；股價淨值比是股價相對每股淨值的倍數。";
+  } catch (e) {
+    document.getElementById("fundPER").textContent = "暫無資料";
+    document.getElementById("fundPBR").textContent = "暫無資料";
+    document.getElementById("fundYield").textContent = "暫無資料";
+    document.getElementById("fundamentalNote").textContent = "目前尚未取得此標的的基本面資料；不會以估算值代替。";
+  }
 }
 
 
