@@ -6,6 +6,7 @@
   "sigma": 195.3357,
   "slope": 3.648715,
   "intercept": 657.0536,
+  "latest_signal": "none",
   "data": [
     {
       "date": "2024-10-15",
@@ -14,7 +15,10 @@
       "upper_1": 852.39,
       "lower_1": 461.72,
       "upper_2": 1047.72,
-      "lower_2": 266.38
+      "lower_2": 266.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-16",
@@ -23,7 +27,10 @@
       "upper_1": 856.04,
       "lower_1": 465.37,
       "upper_2": 1051.37,
-      "lower_2": 270.03
+      "lower_2": 270.03,
+      "buy_signal": false,
+      "sell_signal": true,
+      "signal": "sell"
     },
     {
       "date": "2024-10-17",
@@ -32,7 +39,10 @@
       "upper_1": 859.69,
       "lower_1": 469.02,
       "upper_2": 1055.02,
-      "lower_2": 273.68
+      "lower_2": 273.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-18",
@@ -41,7 +51,10 @@
       "upper_1": 863.34,
       "lower_1": 472.66,
       "upper_2": 1058.67,
-      "lower_2": 277.33
+      "lower_2": 277.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-21",
@@ -50,7 +63,10 @@
       "upper_1": 866.98,
       "lower_1": 476.31,
       "upper_2": 1062.32,
-      "lower_2": 280.98
+      "lower_2": 280.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-22",
@@ -59,7 +75,10 @@
       "upper_1": 870.63,
       "lower_1": 479.96,
       "upper_2": 1065.97,
-      "lower_2": 284.63
+      "lower_2": 284.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-23",
@@ -68,7 +87,10 @@
       "upper_1": 874.28,
       "lower_1": 483.61,
       "upper_2": 1069.62,
-      "lower_2": 288.27
+      "lower_2": 288.27,
+      "buy_signal": false,
+      "sell_signal": true,
+      "signal": "sell"
     },
     {
       "date": "2024-10-24",
@@ -77,7 +99,10 @@
       "upper_1": 877.93,
       "lower_1": 487.26,
       "upper_2": 1073.27,
-      "lower_2": 291.92
+      "lower_2": 291.92,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-25",
@@ -86,7 +111,10 @@
       "upper_1": 881.58,
       "lower_1": 490.91,
       "upper_2": 1076.91,
-      "lower_2": 295.57
+      "lower_2": 295.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-28",
@@ -95,7 +123,10 @@
       "upper_1": 885.23,
       "lower_1": 494.56,
       "upper_2": 1080.56,
-      "lower_2": 299.22
+      "lower_2": 299.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-29",
@@ -104,7 +135,10 @@
       "upper_1": 888.88,
       "lower_1": 498.21,
       "upper_2": 1084.21,
-      "lower_2": 302.87
+      "lower_2": 302.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-10-30",
@@ -113,7 +147,10 @@
       "upper_1": 892.53,
       "lower_1": 501.85,
       "upper_2": 1087.86,
-      "lower_2": 306.52
+      "lower_2": 306.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-01",
@@ -122,7 +159,10 @@
       "upper_1": 896.17,
       "lower_1": 505.5,
       "upper_2": 1091.51,
-      "lower_2": 310.17
+      "lower_2": 310.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-04",
@@ -131,7 +171,10 @@
       "upper_1": 899.82,
       "lower_1": 509.15,
       "upper_2": 1095.16,
-      "lower_2": 313.82
+      "lower_2": 313.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-05",
@@ -140,7 +183,10 @@
       "upper_1": 903.47,
       "lower_1": 512.8,
       "upper_2": 1098.81,
-      "lower_2": 317.46
+      "lower_2": 317.46,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-06",
@@ -149,7 +195,10 @@
       "upper_1": 907.12,
       "lower_1": 516.45,
       "upper_2": 1102.46,
-      "lower_2": 321.11
+      "lower_2": 321.11,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-07",
@@ -158,7 +207,10 @@
       "upper_1": 910.77,
       "lower_1": 520.1,
       "upper_2": 1106.1,
-      "lower_2": 324.76
+      "lower_2": 324.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-08",
@@ -167,7 +219,10 @@
       "upper_1": 914.42,
       "lower_1": 523.75,
       "upper_2": 1109.75,
-      "lower_2": 328.41
+      "lower_2": 328.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-11",
@@ -176,7 +231,10 @@
       "upper_1": 918.07,
       "lower_1": 527.39,
       "upper_2": 1113.4,
-      "lower_2": 332.06
+      "lower_2": 332.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-12",
@@ -185,7 +243,10 @@
       "upper_1": 921.71,
       "lower_1": 531.04,
       "upper_2": 1117.05,
-      "lower_2": 335.71
+      "lower_2": 335.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-13",
@@ -194,7 +255,10 @@
       "upper_1": 925.36,
       "lower_1": 534.69,
       "upper_2": 1120.7,
-      "lower_2": 339.36
+      "lower_2": 339.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-14",
@@ -203,7 +267,10 @@
       "upper_1": 929.01,
       "lower_1": 538.34,
       "upper_2": 1124.35,
-      "lower_2": 343.01
+      "lower_2": 343.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-15",
@@ -212,7 +279,10 @@
       "upper_1": 932.66,
       "lower_1": 541.99,
       "upper_2": 1128.0,
-      "lower_2": 346.65
+      "lower_2": 346.65,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-18",
@@ -221,7 +291,10 @@
       "upper_1": 936.31,
       "lower_1": 545.64,
       "upper_2": 1131.65,
-      "lower_2": 350.3
+      "lower_2": 350.3,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-19",
@@ -230,7 +303,10 @@
       "upper_1": 939.96,
       "lower_1": 549.29,
       "upper_2": 1135.29,
-      "lower_2": 353.95
+      "lower_2": 353.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-20",
@@ -239,7 +315,10 @@
       "upper_1": 943.61,
       "lower_1": 552.94,
       "upper_2": 1138.94,
-      "lower_2": 357.6
+      "lower_2": 357.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-21",
@@ -248,7 +327,10 @@
       "upper_1": 947.26,
       "lower_1": 556.58,
       "upper_2": 1142.59,
-      "lower_2": 361.25
+      "lower_2": 361.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-22",
@@ -257,7 +339,10 @@
       "upper_1": 950.9,
       "lower_1": 560.23,
       "upper_2": 1146.24,
-      "lower_2": 364.9
+      "lower_2": 364.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-25",
@@ -266,7 +351,10 @@
       "upper_1": 954.55,
       "lower_1": 563.88,
       "upper_2": 1149.89,
-      "lower_2": 368.55
+      "lower_2": 368.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-26",
@@ -275,7 +363,10 @@
       "upper_1": 958.2,
       "lower_1": 567.53,
       "upper_2": 1153.54,
-      "lower_2": 372.19
+      "lower_2": 372.19,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-27",
@@ -284,7 +375,10 @@
       "upper_1": 961.85,
       "lower_1": 571.18,
       "upper_2": 1157.19,
-      "lower_2": 375.84
+      "lower_2": 375.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-28",
@@ -293,7 +387,10 @@
       "upper_1": 965.5,
       "lower_1": 574.83,
       "upper_2": 1160.84,
-      "lower_2": 379.49
+      "lower_2": 379.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-11-29",
@@ -302,7 +399,10 @@
       "upper_1": 969.15,
       "lower_1": 578.48,
       "upper_2": 1164.48,
-      "lower_2": 383.14
+      "lower_2": 383.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-02",
@@ -311,7 +411,10 @@
       "upper_1": 972.8,
       "lower_1": 582.13,
       "upper_2": 1168.13,
-      "lower_2": 386.79
+      "lower_2": 386.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-03",
@@ -320,7 +423,10 @@
       "upper_1": 976.45,
       "lower_1": 585.77,
       "upper_2": 1171.78,
-      "lower_2": 390.44
+      "lower_2": 390.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-04",
@@ -329,7 +435,10 @@
       "upper_1": 980.09,
       "lower_1": 589.42,
       "upper_2": 1175.43,
-      "lower_2": 394.09
+      "lower_2": 394.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-05",
@@ -338,7 +447,10 @@
       "upper_1": 983.74,
       "lower_1": 593.07,
       "upper_2": 1179.08,
-      "lower_2": 397.74
+      "lower_2": 397.74,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-06",
@@ -347,7 +459,10 @@
       "upper_1": 987.39,
       "lower_1": 596.72,
       "upper_2": 1182.73,
-      "lower_2": 401.38
+      "lower_2": 401.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-09",
@@ -356,7 +471,10 @@
       "upper_1": 991.04,
       "lower_1": 600.37,
       "upper_2": 1186.38,
-      "lower_2": 405.03
+      "lower_2": 405.03,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-10",
@@ -365,7 +483,10 @@
       "upper_1": 994.69,
       "lower_1": 604.02,
       "upper_2": 1190.02,
-      "lower_2": 408.68
+      "lower_2": 408.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-11",
@@ -374,7 +495,10 @@
       "upper_1": 998.34,
       "lower_1": 607.67,
       "upper_2": 1193.67,
-      "lower_2": 412.33
+      "lower_2": 412.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-12",
@@ -383,7 +507,10 @@
       "upper_1": 1001.99,
       "lower_1": 611.32,
       "upper_2": 1197.32,
-      "lower_2": 415.98
+      "lower_2": 415.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-13",
@@ -392,7 +519,10 @@
       "upper_1": 1005.64,
       "lower_1": 614.96,
       "upper_2": 1200.97,
-      "lower_2": 419.63
+      "lower_2": 419.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-16",
@@ -401,7 +531,10 @@
       "upper_1": 1009.28,
       "lower_1": 618.61,
       "upper_2": 1204.62,
-      "lower_2": 423.28
+      "lower_2": 423.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-17",
@@ -410,7 +543,10 @@
       "upper_1": 1012.93,
       "lower_1": 622.26,
       "upper_2": 1208.27,
-      "lower_2": 426.93
+      "lower_2": 426.93,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-18",
@@ -419,7 +555,10 @@
       "upper_1": 1016.58,
       "lower_1": 625.91,
       "upper_2": 1211.92,
-      "lower_2": 430.57
+      "lower_2": 430.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-19",
@@ -428,7 +567,10 @@
       "upper_1": 1020.23,
       "lower_1": 629.56,
       "upper_2": 1215.57,
-      "lower_2": 434.22
+      "lower_2": 434.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-20",
@@ -437,7 +579,10 @@
       "upper_1": 1023.88,
       "lower_1": 633.21,
       "upper_2": 1219.21,
-      "lower_2": 437.87
+      "lower_2": 437.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-23",
@@ -446,7 +591,10 @@
       "upper_1": 1027.53,
       "lower_1": 636.86,
       "upper_2": 1222.86,
-      "lower_2": 441.52
+      "lower_2": 441.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-24",
@@ -455,7 +603,10 @@
       "upper_1": 1031.18,
       "lower_1": 640.5,
       "upper_2": 1226.51,
-      "lower_2": 445.17
+      "lower_2": 445.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-25",
@@ -464,7 +615,10 @@
       "upper_1": 1034.83,
       "lower_1": 644.15,
       "upper_2": 1230.16,
-      "lower_2": 448.82
+      "lower_2": 448.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-26",
@@ -473,7 +627,10 @@
       "upper_1": 1038.47,
       "lower_1": 647.8,
       "upper_2": 1233.81,
-      "lower_2": 452.47
+      "lower_2": 452.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-27",
@@ -482,7 +639,10 @@
       "upper_1": 1042.12,
       "lower_1": 651.45,
       "upper_2": 1237.46,
-      "lower_2": 456.12
+      "lower_2": 456.12,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-30",
@@ -491,7 +651,10 @@
       "upper_1": 1045.77,
       "lower_1": 655.1,
       "upper_2": 1241.11,
-      "lower_2": 459.76
+      "lower_2": 459.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2024-12-31",
@@ -500,7 +663,10 @@
       "upper_1": 1049.42,
       "lower_1": 658.75,
       "upper_2": 1244.76,
-      "lower_2": 463.41
+      "lower_2": 463.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-02",
@@ -509,7 +675,10 @@
       "upper_1": 1053.07,
       "lower_1": 662.4,
       "upper_2": 1248.4,
-      "lower_2": 467.06
+      "lower_2": 467.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-03",
@@ -518,7 +687,10 @@
       "upper_1": 1056.72,
       "lower_1": 666.05,
       "upper_2": 1252.05,
-      "lower_2": 470.71
+      "lower_2": 470.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-06",
@@ -527,7 +699,10 @@
       "upper_1": 1060.37,
       "lower_1": 669.69,
       "upper_2": 1255.7,
-      "lower_2": 474.36
+      "lower_2": 474.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-07",
@@ -536,7 +711,10 @@
       "upper_1": 1064.01,
       "lower_1": 673.34,
       "upper_2": 1259.35,
-      "lower_2": 478.01
+      "lower_2": 478.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-08",
@@ -545,7 +723,10 @@
       "upper_1": 1067.66,
       "lower_1": 676.99,
       "upper_2": 1263.0,
-      "lower_2": 481.66
+      "lower_2": 481.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-09",
@@ -554,7 +735,10 @@
       "upper_1": 1071.31,
       "lower_1": 680.64,
       "upper_2": 1266.65,
-      "lower_2": 485.31
+      "lower_2": 485.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-10",
@@ -563,7 +747,10 @@
       "upper_1": 1074.96,
       "lower_1": 684.29,
       "upper_2": 1270.3,
-      "lower_2": 488.95
+      "lower_2": 488.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-13",
@@ -572,7 +759,10 @@
       "upper_1": 1078.61,
       "lower_1": 687.94,
       "upper_2": 1273.95,
-      "lower_2": 492.6
+      "lower_2": 492.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-14",
@@ -581,7 +771,10 @@
       "upper_1": 1082.26,
       "lower_1": 691.59,
       "upper_2": 1277.59,
-      "lower_2": 496.25
+      "lower_2": 496.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-15",
@@ -590,7 +783,10 @@
       "upper_1": 1085.91,
       "lower_1": 695.24,
       "upper_2": 1281.24,
-      "lower_2": 499.9
+      "lower_2": 499.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-16",
@@ -599,7 +795,10 @@
       "upper_1": 1089.56,
       "lower_1": 698.88,
       "upper_2": 1284.89,
-      "lower_2": 503.55
+      "lower_2": 503.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-17",
@@ -608,7 +807,10 @@
       "upper_1": 1093.2,
       "lower_1": 702.53,
       "upper_2": 1288.54,
-      "lower_2": 507.2
+      "lower_2": 507.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-20",
@@ -617,7 +819,10 @@
       "upper_1": 1096.85,
       "lower_1": 706.18,
       "upper_2": 1292.19,
-      "lower_2": 510.85
+      "lower_2": 510.85,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-21",
@@ -626,7 +831,10 @@
       "upper_1": 1100.5,
       "lower_1": 709.83,
       "upper_2": 1295.84,
-      "lower_2": 514.49
+      "lower_2": 514.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-01-22",
@@ -635,7 +843,10 @@
       "upper_1": 1104.15,
       "lower_1": 713.48,
       "upper_2": 1299.49,
-      "lower_2": 518.14
+      "lower_2": 518.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-03",
@@ -644,7 +855,10 @@
       "upper_1": 1107.8,
       "lower_1": 717.13,
       "upper_2": 1303.14,
-      "lower_2": 521.79
+      "lower_2": 521.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-04",
@@ -653,7 +867,10 @@
       "upper_1": 1111.45,
       "lower_1": 720.78,
       "upper_2": 1306.78,
-      "lower_2": 525.44
+      "lower_2": 525.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-05",
@@ -662,7 +879,10 @@
       "upper_1": 1115.1,
       "lower_1": 724.43,
       "upper_2": 1310.43,
-      "lower_2": 529.09
+      "lower_2": 529.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-06",
@@ -671,7 +891,10 @@
       "upper_1": 1118.75,
       "lower_1": 728.07,
       "upper_2": 1314.08,
-      "lower_2": 532.74
+      "lower_2": 532.74,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-07",
@@ -680,7 +903,10 @@
       "upper_1": 1122.39,
       "lower_1": 731.72,
       "upper_2": 1317.73,
-      "lower_2": 536.39
+      "lower_2": 536.39,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-10",
@@ -689,7 +915,10 @@
       "upper_1": 1126.04,
       "lower_1": 735.37,
       "upper_2": 1321.38,
-      "lower_2": 540.04
+      "lower_2": 540.04,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-11",
@@ -698,7 +927,10 @@
       "upper_1": 1129.69,
       "lower_1": 739.02,
       "upper_2": 1325.03,
-      "lower_2": 543.68
+      "lower_2": 543.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-12",
@@ -707,7 +939,10 @@
       "upper_1": 1133.34,
       "lower_1": 742.67,
       "upper_2": 1328.68,
-      "lower_2": 547.33
+      "lower_2": 547.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-13",
@@ -716,7 +951,10 @@
       "upper_1": 1136.99,
       "lower_1": 746.32,
       "upper_2": 1332.32,
-      "lower_2": 550.98
+      "lower_2": 550.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-14",
@@ -725,7 +963,10 @@
       "upper_1": 1140.64,
       "lower_1": 749.97,
       "upper_2": 1335.97,
-      "lower_2": 554.63
+      "lower_2": 554.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-17",
@@ -734,7 +975,10 @@
       "upper_1": 1144.29,
       "lower_1": 753.62,
       "upper_2": 1339.62,
-      "lower_2": 558.28
+      "lower_2": 558.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-18",
@@ -743,7 +987,10 @@
       "upper_1": 1147.94,
       "lower_1": 757.26,
       "upper_2": 1343.27,
-      "lower_2": 561.93
+      "lower_2": 561.93,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-19",
@@ -752,7 +999,10 @@
       "upper_1": 1151.58,
       "lower_1": 760.91,
       "upper_2": 1346.92,
-      "lower_2": 565.58
+      "lower_2": 565.58,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-20",
@@ -761,7 +1011,10 @@
       "upper_1": 1155.23,
       "lower_1": 764.56,
       "upper_2": 1350.57,
-      "lower_2": 569.23
+      "lower_2": 569.23,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-21",
@@ -770,7 +1023,10 @@
       "upper_1": 1158.88,
       "lower_1": 768.21,
       "upper_2": 1354.22,
-      "lower_2": 572.87
+      "lower_2": 572.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-24",
@@ -779,7 +1035,10 @@
       "upper_1": 1162.53,
       "lower_1": 771.86,
       "upper_2": 1357.87,
-      "lower_2": 576.52
+      "lower_2": 576.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-25",
@@ -788,7 +1047,10 @@
       "upper_1": 1166.18,
       "lower_1": 775.51,
       "upper_2": 1361.51,
-      "lower_2": 580.17
+      "lower_2": 580.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-26",
@@ -797,7 +1059,10 @@
       "upper_1": 1169.83,
       "lower_1": 779.16,
       "upper_2": 1365.16,
-      "lower_2": 583.82
+      "lower_2": 583.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-02-27",
@@ -806,7 +1071,10 @@
       "upper_1": 1173.48,
       "lower_1": 782.8,
       "upper_2": 1368.81,
-      "lower_2": 587.47
+      "lower_2": 587.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-03",
@@ -815,7 +1083,10 @@
       "upper_1": 1177.12,
       "lower_1": 786.45,
       "upper_2": 1372.46,
-      "lower_2": 591.12
+      "lower_2": 591.12,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-04",
@@ -824,7 +1095,10 @@
       "upper_1": 1180.77,
       "lower_1": 790.1,
       "upper_2": 1376.11,
-      "lower_2": 594.77
+      "lower_2": 594.77,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-05",
@@ -833,7 +1107,10 @@
       "upper_1": 1184.42,
       "lower_1": 793.75,
       "upper_2": 1379.76,
-      "lower_2": 598.42
+      "lower_2": 598.42,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-06",
@@ -842,7 +1119,10 @@
       "upper_1": 1188.07,
       "lower_1": 797.4,
       "upper_2": 1383.41,
-      "lower_2": 602.06
+      "lower_2": 602.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-07",
@@ -851,7 +1131,10 @@
       "upper_1": 1191.72,
       "lower_1": 801.05,
       "upper_2": 1387.06,
-      "lower_2": 605.71
+      "lower_2": 605.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-10",
@@ -860,7 +1143,10 @@
       "upper_1": 1195.37,
       "lower_1": 804.7,
       "upper_2": 1390.7,
-      "lower_2": 609.36
+      "lower_2": 609.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-11",
@@ -869,7 +1155,10 @@
       "upper_1": 1199.02,
       "lower_1": 808.35,
       "upper_2": 1394.35,
-      "lower_2": 613.01
+      "lower_2": 613.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-12",
@@ -878,7 +1167,10 @@
       "upper_1": 1202.67,
       "lower_1": 811.99,
       "upper_2": 1398.0,
-      "lower_2": 616.66
+      "lower_2": 616.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-13",
@@ -887,7 +1179,10 @@
       "upper_1": 1206.31,
       "lower_1": 815.64,
       "upper_2": 1401.65,
-      "lower_2": 620.31
+      "lower_2": 620.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-14",
@@ -896,7 +1191,10 @@
       "upper_1": 1209.96,
       "lower_1": 819.29,
       "upper_2": 1405.3,
-      "lower_2": 623.96
+      "lower_2": 623.96,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-17",
@@ -905,7 +1203,10 @@
       "upper_1": 1213.61,
       "lower_1": 822.94,
       "upper_2": 1408.95,
-      "lower_2": 627.61
+      "lower_2": 627.61,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-18",
@@ -914,7 +1215,10 @@
       "upper_1": 1217.26,
       "lower_1": 826.59,
       "upper_2": 1412.6,
-      "lower_2": 631.25
+      "lower_2": 631.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-19",
@@ -923,7 +1227,10 @@
       "upper_1": 1220.91,
       "lower_1": 830.24,
       "upper_2": 1416.25,
-      "lower_2": 634.9
+      "lower_2": 634.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-20",
@@ -932,7 +1239,10 @@
       "upper_1": 1224.56,
       "lower_1": 833.89,
       "upper_2": 1419.89,
-      "lower_2": 638.55
+      "lower_2": 638.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-21",
@@ -941,7 +1251,10 @@
       "upper_1": 1228.21,
       "lower_1": 837.54,
       "upper_2": 1423.54,
-      "lower_2": 642.2
+      "lower_2": 642.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-24",
@@ -950,7 +1263,10 @@
       "upper_1": 1231.86,
       "lower_1": 841.18,
       "upper_2": 1427.19,
-      "lower_2": 645.85
+      "lower_2": 645.85,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-25",
@@ -959,7 +1275,10 @@
       "upper_1": 1235.5,
       "lower_1": 844.83,
       "upper_2": 1430.84,
-      "lower_2": 649.5
+      "lower_2": 649.5,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-26",
@@ -968,7 +1287,10 @@
       "upper_1": 1239.15,
       "lower_1": 848.48,
       "upper_2": 1434.49,
-      "lower_2": 653.15
+      "lower_2": 653.15,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-27",
@@ -977,7 +1299,10 @@
       "upper_1": 1242.8,
       "lower_1": 852.13,
       "upper_2": 1438.14,
-      "lower_2": 656.79
+      "lower_2": 656.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-28",
@@ -986,7 +1311,10 @@
       "upper_1": 1246.45,
       "lower_1": 855.78,
       "upper_2": 1441.79,
-      "lower_2": 660.44
+      "lower_2": 660.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-03-31",
@@ -995,7 +1323,10 @@
       "upper_1": 1250.1,
       "lower_1": 859.43,
       "upper_2": 1445.43,
-      "lower_2": 664.09
+      "lower_2": 664.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-01",
@@ -1004,7 +1335,10 @@
       "upper_1": 1253.75,
       "lower_1": 863.08,
       "upper_2": 1449.08,
-      "lower_2": 667.74
+      "lower_2": 667.74,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-02",
@@ -1013,7 +1347,10 @@
       "upper_1": 1257.4,
       "lower_1": 866.73,
       "upper_2": 1452.73,
-      "lower_2": 671.39
+      "lower_2": 671.39,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-07",
@@ -1022,7 +1359,10 @@
       "upper_1": 1261.05,
       "lower_1": 870.37,
       "upper_2": 1456.38,
-      "lower_2": 675.04
+      "lower_2": 675.04,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-08",
@@ -1031,7 +1371,10 @@
       "upper_1": 1264.69,
       "lower_1": 874.02,
       "upper_2": 1460.03,
-      "lower_2": 678.69
+      "lower_2": 678.69,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-09",
@@ -1040,7 +1383,10 @@
       "upper_1": 1268.34,
       "lower_1": 877.67,
       "upper_2": 1463.68,
-      "lower_2": 682.34
+      "lower_2": 682.34,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-10",
@@ -1049,7 +1395,10 @@
       "upper_1": 1271.99,
       "lower_1": 881.32,
       "upper_2": 1467.33,
-      "lower_2": 685.98
+      "lower_2": 685.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-11",
@@ -1058,7 +1407,10 @@
       "upper_1": 1275.64,
       "lower_1": 884.97,
       "upper_2": 1470.98,
-      "lower_2": 689.63
+      "lower_2": 689.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-14",
@@ -1067,7 +1419,10 @@
       "upper_1": 1279.29,
       "lower_1": 888.62,
       "upper_2": 1474.62,
-      "lower_2": 693.28
+      "lower_2": 693.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-15",
@@ -1076,7 +1431,10 @@
       "upper_1": 1282.94,
       "lower_1": 892.27,
       "upper_2": 1478.27,
-      "lower_2": 696.93
+      "lower_2": 696.93,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-16",
@@ -1085,7 +1443,10 @@
       "upper_1": 1286.59,
       "lower_1": 895.92,
       "upper_2": 1481.92,
-      "lower_2": 700.58
+      "lower_2": 700.58,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-17",
@@ -1094,7 +1455,10 @@
       "upper_1": 1290.24,
       "lower_1": 899.56,
       "upper_2": 1485.57,
-      "lower_2": 704.23
+      "lower_2": 704.23,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-18",
@@ -1103,7 +1467,10 @@
       "upper_1": 1293.88,
       "lower_1": 903.21,
       "upper_2": 1489.22,
-      "lower_2": 707.88
+      "lower_2": 707.88,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-21",
@@ -1112,7 +1479,10 @@
       "upper_1": 1297.53,
       "lower_1": 906.86,
       "upper_2": 1492.87,
-      "lower_2": 711.53
+      "lower_2": 711.53,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-22",
@@ -1121,7 +1491,10 @@
       "upper_1": 1301.18,
       "lower_1": 910.51,
       "upper_2": 1496.52,
-      "lower_2": 715.17
+      "lower_2": 715.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-23",
@@ -1130,7 +1503,10 @@
       "upper_1": 1304.83,
       "lower_1": 914.16,
       "upper_2": 1500.17,
-      "lower_2": 718.82
+      "lower_2": 718.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-24",
@@ -1139,7 +1515,10 @@
       "upper_1": 1308.48,
       "lower_1": 917.81,
       "upper_2": 1503.81,
-      "lower_2": 722.47
+      "lower_2": 722.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-25",
@@ -1148,7 +1527,10 @@
       "upper_1": 1312.13,
       "lower_1": 921.46,
       "upper_2": 1507.46,
-      "lower_2": 726.12
+      "lower_2": 726.12,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-28",
@@ -1157,7 +1539,10 @@
       "upper_1": 1315.78,
       "lower_1": 925.1,
       "upper_2": 1511.11,
-      "lower_2": 729.77
+      "lower_2": 729.77,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-29",
@@ -1166,7 +1551,10 @@
       "upper_1": 1319.42,
       "lower_1": 928.75,
       "upper_2": 1514.76,
-      "lower_2": 733.42
+      "lower_2": 733.42,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-04-30",
@@ -1175,7 +1563,10 @@
       "upper_1": 1323.07,
       "lower_1": 932.4,
       "upper_2": 1518.41,
-      "lower_2": 737.07
+      "lower_2": 737.07,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-02",
@@ -1184,7 +1575,10 @@
       "upper_1": 1326.72,
       "lower_1": 936.05,
       "upper_2": 1522.06,
-      "lower_2": 740.72
+      "lower_2": 740.72,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-05",
@@ -1193,7 +1587,10 @@
       "upper_1": 1330.37,
       "lower_1": 939.7,
       "upper_2": 1525.71,
-      "lower_2": 744.36
+      "lower_2": 744.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-06",
@@ -1202,7 +1599,10 @@
       "upper_1": 1334.02,
       "lower_1": 943.35,
       "upper_2": 1529.36,
-      "lower_2": 748.01
+      "lower_2": 748.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-07",
@@ -1211,7 +1611,10 @@
       "upper_1": 1337.67,
       "lower_1": 947.0,
       "upper_2": 1533.0,
-      "lower_2": 751.66
+      "lower_2": 751.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-08",
@@ -1220,7 +1623,10 @@
       "upper_1": 1341.32,
       "lower_1": 950.65,
       "upper_2": 1536.65,
-      "lower_2": 755.31
+      "lower_2": 755.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-09",
@@ -1229,7 +1635,10 @@
       "upper_1": 1344.97,
       "lower_1": 954.29,
       "upper_2": 1540.3,
-      "lower_2": 758.96
+      "lower_2": 758.96,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-12",
@@ -1238,7 +1647,10 @@
       "upper_1": 1348.61,
       "lower_1": 957.94,
       "upper_2": 1543.95,
-      "lower_2": 762.61
+      "lower_2": 762.61,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-13",
@@ -1247,7 +1659,10 @@
       "upper_1": 1352.26,
       "lower_1": 961.59,
       "upper_2": 1547.6,
-      "lower_2": 766.26
+      "lower_2": 766.26,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-14",
@@ -1256,7 +1671,10 @@
       "upper_1": 1355.91,
       "lower_1": 965.24,
       "upper_2": 1551.25,
-      "lower_2": 769.9
+      "lower_2": 769.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-15",
@@ -1265,7 +1683,10 @@
       "upper_1": 1359.56,
       "lower_1": 968.89,
       "upper_2": 1554.9,
-      "lower_2": 773.55
+      "lower_2": 773.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-16",
@@ -1274,7 +1695,10 @@
       "upper_1": 1363.21,
       "lower_1": 972.54,
       "upper_2": 1558.55,
-      "lower_2": 777.2
+      "lower_2": 777.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-19",
@@ -1283,7 +1707,10 @@
       "upper_1": 1366.86,
       "lower_1": 976.19,
       "upper_2": 1562.19,
-      "lower_2": 780.85
+      "lower_2": 780.85,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-20",
@@ -1292,7 +1719,10 @@
       "upper_1": 1370.51,
       "lower_1": 979.84,
       "upper_2": 1565.84,
-      "lower_2": 784.5
+      "lower_2": 784.5,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-21",
@@ -1301,7 +1731,10 @@
       "upper_1": 1374.16,
       "lower_1": 983.48,
       "upper_2": 1569.49,
-      "lower_2": 788.15
+      "lower_2": 788.15,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-22",
@@ -1310,7 +1743,10 @@
       "upper_1": 1377.8,
       "lower_1": 987.13,
       "upper_2": 1573.14,
-      "lower_2": 791.8
+      "lower_2": 791.8,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-23",
@@ -1319,7 +1755,10 @@
       "upper_1": 1381.45,
       "lower_1": 990.78,
       "upper_2": 1576.79,
-      "lower_2": 795.45
+      "lower_2": 795.45,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-26",
@@ -1328,7 +1767,10 @@
       "upper_1": 1385.1,
       "lower_1": 994.43,
       "upper_2": 1580.44,
-      "lower_2": 799.09
+      "lower_2": 799.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-27",
@@ -1337,7 +1779,10 @@
       "upper_1": 1388.75,
       "lower_1": 998.08,
       "upper_2": 1584.09,
-      "lower_2": 802.74
+      "lower_2": 802.74,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-28",
@@ -1346,7 +1791,10 @@
       "upper_1": 1392.4,
       "lower_1": 1001.73,
       "upper_2": 1587.73,
-      "lower_2": 806.39
+      "lower_2": 806.39,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-05-29",
@@ -1355,7 +1803,10 @@
       "upper_1": 1396.05,
       "lower_1": 1005.38,
       "upper_2": 1591.38,
-      "lower_2": 810.04
+      "lower_2": 810.04,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-02",
@@ -1364,7 +1815,10 @@
       "upper_1": 1399.7,
       "lower_1": 1009.03,
       "upper_2": 1595.03,
-      "lower_2": 813.69
+      "lower_2": 813.69,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-03",
@@ -1373,7 +1827,10 @@
       "upper_1": 1403.35,
       "lower_1": 1012.67,
       "upper_2": 1598.68,
-      "lower_2": 817.34
+      "lower_2": 817.34,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-04",
@@ -1382,7 +1839,10 @@
       "upper_1": 1406.99,
       "lower_1": 1016.32,
       "upper_2": 1602.33,
-      "lower_2": 820.99
+      "lower_2": 820.99,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-05",
@@ -1391,7 +1851,10 @@
       "upper_1": 1410.64,
       "lower_1": 1019.97,
       "upper_2": 1605.98,
-      "lower_2": 824.64
+      "lower_2": 824.64,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-06",
@@ -1400,7 +1863,10 @@
       "upper_1": 1414.29,
       "lower_1": 1023.62,
       "upper_2": 1609.63,
-      "lower_2": 828.28
+      "lower_2": 828.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-09",
@@ -1409,7 +1875,10 @@
       "upper_1": 1417.94,
       "lower_1": 1027.27,
       "upper_2": 1613.28,
-      "lower_2": 831.93
+      "lower_2": 831.93,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-10",
@@ -1418,7 +1887,10 @@
       "upper_1": 1421.59,
       "lower_1": 1030.92,
       "upper_2": 1616.92,
-      "lower_2": 835.58
+      "lower_2": 835.58,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-11",
@@ -1427,7 +1899,10 @@
       "upper_1": 1425.24,
       "lower_1": 1034.57,
       "upper_2": 1620.57,
-      "lower_2": 839.23
+      "lower_2": 839.23,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-12",
@@ -1436,7 +1911,10 @@
       "upper_1": 1428.89,
       "lower_1": 1038.21,
       "upper_2": 1624.22,
-      "lower_2": 842.88
+      "lower_2": 842.88,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-13",
@@ -1445,7 +1923,10 @@
       "upper_1": 1432.53,
       "lower_1": 1041.86,
       "upper_2": 1627.87,
-      "lower_2": 846.53
+      "lower_2": 846.53,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-16",
@@ -1454,7 +1935,10 @@
       "upper_1": 1436.18,
       "lower_1": 1045.51,
       "upper_2": 1631.52,
-      "lower_2": 850.18
+      "lower_2": 850.18,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-17",
@@ -1463,7 +1947,10 @@
       "upper_1": 1439.83,
       "lower_1": 1049.16,
       "upper_2": 1635.17,
-      "lower_2": 853.83
+      "lower_2": 853.83,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-18",
@@ -1472,7 +1959,10 @@
       "upper_1": 1443.48,
       "lower_1": 1052.81,
       "upper_2": 1638.82,
-      "lower_2": 857.47
+      "lower_2": 857.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-19",
@@ -1481,7 +1971,10 @@
       "upper_1": 1447.13,
       "lower_1": 1056.46,
       "upper_2": 1642.47,
-      "lower_2": 861.12
+      "lower_2": 861.12,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-20",
@@ -1490,7 +1983,10 @@
       "upper_1": 1450.78,
       "lower_1": 1060.11,
       "upper_2": 1646.11,
-      "lower_2": 864.77
+      "lower_2": 864.77,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-23",
@@ -1499,7 +1995,10 @@
       "upper_1": 1454.43,
       "lower_1": 1063.76,
       "upper_2": 1649.76,
-      "lower_2": 868.42
+      "lower_2": 868.42,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-24",
@@ -1508,7 +2007,10 @@
       "upper_1": 1458.08,
       "lower_1": 1067.4,
       "upper_2": 1653.41,
-      "lower_2": 872.07
+      "lower_2": 872.07,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-25",
@@ -1517,7 +2019,10 @@
       "upper_1": 1461.72,
       "lower_1": 1071.05,
       "upper_2": 1657.06,
-      "lower_2": 875.72
+      "lower_2": 875.72,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-26",
@@ -1526,7 +2031,10 @@
       "upper_1": 1465.37,
       "lower_1": 1074.7,
       "upper_2": 1660.71,
-      "lower_2": 879.37
+      "lower_2": 879.37,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-27",
@@ -1535,7 +2043,10 @@
       "upper_1": 1469.02,
       "lower_1": 1078.35,
       "upper_2": 1664.36,
-      "lower_2": 883.02
+      "lower_2": 883.02,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-06-30",
@@ -1544,7 +2055,10 @@
       "upper_1": 1472.67,
       "lower_1": 1082.0,
       "upper_2": 1668.01,
-      "lower_2": 886.66
+      "lower_2": 886.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-01",
@@ -1553,7 +2067,10 @@
       "upper_1": 1476.32,
       "lower_1": 1085.65,
       "upper_2": 1671.66,
-      "lower_2": 890.31
+      "lower_2": 890.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-02",
@@ -1562,7 +2079,10 @@
       "upper_1": 1479.97,
       "lower_1": 1089.3,
       "upper_2": 1675.3,
-      "lower_2": 893.96
+      "lower_2": 893.96,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-03",
@@ -1571,7 +2091,10 @@
       "upper_1": 1483.62,
       "lower_1": 1092.95,
       "upper_2": 1678.95,
-      "lower_2": 897.61
+      "lower_2": 897.61,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-04",
@@ -1580,7 +2103,10 @@
       "upper_1": 1487.27,
       "lower_1": 1096.59,
       "upper_2": 1682.6,
-      "lower_2": 901.26
+      "lower_2": 901.26,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-07",
@@ -1589,7 +2115,10 @@
       "upper_1": 1490.91,
       "lower_1": 1100.24,
       "upper_2": 1686.25,
-      "lower_2": 904.91
+      "lower_2": 904.91,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-08",
@@ -1598,7 +2127,10 @@
       "upper_1": 1494.56,
       "lower_1": 1103.89,
       "upper_2": 1689.9,
-      "lower_2": 908.56
+      "lower_2": 908.56,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-09",
@@ -1607,7 +2139,10 @@
       "upper_1": 1498.21,
       "lower_1": 1107.54,
       "upper_2": 1693.55,
-      "lower_2": 912.2
+      "lower_2": 912.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-10",
@@ -1616,7 +2151,10 @@
       "upper_1": 1501.86,
       "lower_1": 1111.19,
       "upper_2": 1697.2,
-      "lower_2": 915.85
+      "lower_2": 915.85,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-11",
@@ -1625,7 +2163,10 @@
       "upper_1": 1505.51,
       "lower_1": 1114.84,
       "upper_2": 1700.84,
-      "lower_2": 919.5
+      "lower_2": 919.5,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-14",
@@ -1634,7 +2175,10 @@
       "upper_1": 1509.16,
       "lower_1": 1118.49,
       "upper_2": 1704.49,
-      "lower_2": 923.15
+      "lower_2": 923.15,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-15",
@@ -1643,7 +2187,10 @@
       "upper_1": 1512.81,
       "lower_1": 1122.14,
       "upper_2": 1708.14,
-      "lower_2": 926.8
+      "lower_2": 926.8,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-16",
@@ -1652,7 +2199,10 @@
       "upper_1": 1516.46,
       "lower_1": 1125.78,
       "upper_2": 1711.79,
-      "lower_2": 930.45
+      "lower_2": 930.45,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-17",
@@ -1661,7 +2211,10 @@
       "upper_1": 1520.1,
       "lower_1": 1129.43,
       "upper_2": 1715.44,
-      "lower_2": 934.1
+      "lower_2": 934.1,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-18",
@@ -1670,7 +2223,10 @@
       "upper_1": 1523.75,
       "lower_1": 1133.08,
       "upper_2": 1719.09,
-      "lower_2": 937.75
+      "lower_2": 937.75,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-21",
@@ -1679,7 +2235,10 @@
       "upper_1": 1527.4,
       "lower_1": 1136.73,
       "upper_2": 1722.74,
-      "lower_2": 941.39
+      "lower_2": 941.39,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-22",
@@ -1688,7 +2247,10 @@
       "upper_1": 1531.05,
       "lower_1": 1140.38,
       "upper_2": 1726.39,
-      "lower_2": 945.04
+      "lower_2": 945.04,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-23",
@@ -1697,7 +2259,10 @@
       "upper_1": 1534.7,
       "lower_1": 1144.03,
       "upper_2": 1730.03,
-      "lower_2": 948.69
+      "lower_2": 948.69,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-24",
@@ -1706,7 +2271,10 @@
       "upper_1": 1538.35,
       "lower_1": 1147.68,
       "upper_2": 1733.68,
-      "lower_2": 952.34
+      "lower_2": 952.34,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-25",
@@ -1715,7 +2283,10 @@
       "upper_1": 1542.0,
       "lower_1": 1151.33,
       "upper_2": 1737.33,
-      "lower_2": 955.99
+      "lower_2": 955.99,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-28",
@@ -1724,7 +2295,10 @@
       "upper_1": 1545.65,
       "lower_1": 1154.97,
       "upper_2": 1740.98,
-      "lower_2": 959.64
+      "lower_2": 959.64,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-29",
@@ -1733,7 +2307,10 @@
       "upper_1": 1549.29,
       "lower_1": 1158.62,
       "upper_2": 1744.63,
-      "lower_2": 963.29
+      "lower_2": 963.29,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-30",
@@ -1742,7 +2319,10 @@
       "upper_1": 1552.94,
       "lower_1": 1162.27,
       "upper_2": 1748.28,
-      "lower_2": 966.94
+      "lower_2": 966.94,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-07-31",
@@ -1751,7 +2331,10 @@
       "upper_1": 1556.59,
       "lower_1": 1165.92,
       "upper_2": 1751.93,
-      "lower_2": 970.58
+      "lower_2": 970.58,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-01",
@@ -1760,7 +2343,10 @@
       "upper_1": 1560.24,
       "lower_1": 1169.57,
       "upper_2": 1755.58,
-      "lower_2": 974.23
+      "lower_2": 974.23,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-04",
@@ -1769,7 +2355,10 @@
       "upper_1": 1563.89,
       "lower_1": 1173.22,
       "upper_2": 1759.22,
-      "lower_2": 977.88
+      "lower_2": 977.88,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-05",
@@ -1778,7 +2367,10 @@
       "upper_1": 1567.54,
       "lower_1": 1176.87,
       "upper_2": 1762.87,
-      "lower_2": 981.53
+      "lower_2": 981.53,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-06",
@@ -1787,7 +2379,10 @@
       "upper_1": 1571.19,
       "lower_1": 1180.51,
       "upper_2": 1766.52,
-      "lower_2": 985.18
+      "lower_2": 985.18,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-07",
@@ -1796,7 +2391,10 @@
       "upper_1": 1574.83,
       "lower_1": 1184.16,
       "upper_2": 1770.17,
-      "lower_2": 988.83
+      "lower_2": 988.83,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-08",
@@ -1805,7 +2403,10 @@
       "upper_1": 1578.48,
       "lower_1": 1187.81,
       "upper_2": 1773.82,
-      "lower_2": 992.48
+      "lower_2": 992.48,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-11",
@@ -1814,7 +2415,10 @@
       "upper_1": 1582.13,
       "lower_1": 1191.46,
       "upper_2": 1777.47,
-      "lower_2": 996.13
+      "lower_2": 996.13,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-12",
@@ -1823,7 +2427,10 @@
       "upper_1": 1585.78,
       "lower_1": 1195.11,
       "upper_2": 1781.12,
-      "lower_2": 999.77
+      "lower_2": 999.77,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-13",
@@ -1832,7 +2439,10 @@
       "upper_1": 1589.43,
       "lower_1": 1198.76,
       "upper_2": 1784.77,
-      "lower_2": 1003.42
+      "lower_2": 1003.42,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-14",
@@ -1841,7 +2451,10 @@
       "upper_1": 1593.08,
       "lower_1": 1202.41,
       "upper_2": 1788.41,
-      "lower_2": 1007.07
+      "lower_2": 1007.07,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-15",
@@ -1850,7 +2463,10 @@
       "upper_1": 1596.73,
       "lower_1": 1206.06,
       "upper_2": 1792.06,
-      "lower_2": 1010.72
+      "lower_2": 1010.72,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-18",
@@ -1859,7 +2475,10 @@
       "upper_1": 1600.38,
       "lower_1": 1209.7,
       "upper_2": 1795.71,
-      "lower_2": 1014.37
+      "lower_2": 1014.37,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-19",
@@ -1868,7 +2487,10 @@
       "upper_1": 1604.02,
       "lower_1": 1213.35,
       "upper_2": 1799.36,
-      "lower_2": 1018.02
+      "lower_2": 1018.02,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-20",
@@ -1877,7 +2499,10 @@
       "upper_1": 1607.67,
       "lower_1": 1217.0,
       "upper_2": 1803.01,
-      "lower_2": 1021.67
+      "lower_2": 1021.67,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-21",
@@ -1886,7 +2511,10 @@
       "upper_1": 1611.32,
       "lower_1": 1220.65,
       "upper_2": 1806.66,
-      "lower_2": 1025.31
+      "lower_2": 1025.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-22",
@@ -1895,7 +2523,10 @@
       "upper_1": 1614.97,
       "lower_1": 1224.3,
       "upper_2": 1810.31,
-      "lower_2": 1028.96
+      "lower_2": 1028.96,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-25",
@@ -1904,7 +2535,10 @@
       "upper_1": 1618.62,
       "lower_1": 1227.95,
       "upper_2": 1813.96,
-      "lower_2": 1032.61
+      "lower_2": 1032.61,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-26",
@@ -1913,7 +2547,10 @@
       "upper_1": 1622.27,
       "lower_1": 1231.6,
       "upper_2": 1817.6,
-      "lower_2": 1036.26
+      "lower_2": 1036.26,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-27",
@@ -1922,7 +2559,10 @@
       "upper_1": 1625.92,
       "lower_1": 1235.25,
       "upper_2": 1821.25,
-      "lower_2": 1039.91
+      "lower_2": 1039.91,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-28",
@@ -1931,7 +2571,10 @@
       "upper_1": 1629.57,
       "lower_1": 1238.89,
       "upper_2": 1824.9,
-      "lower_2": 1043.56
+      "lower_2": 1043.56,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-08-29",
@@ -1940,7 +2583,10 @@
       "upper_1": 1633.21,
       "lower_1": 1242.54,
       "upper_2": 1828.55,
-      "lower_2": 1047.21
+      "lower_2": 1047.21,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-01",
@@ -1949,7 +2595,10 @@
       "upper_1": 1636.86,
       "lower_1": 1246.19,
       "upper_2": 1832.2,
-      "lower_2": 1050.86
+      "lower_2": 1050.86,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-02",
@@ -1958,7 +2607,10 @@
       "upper_1": 1640.51,
       "lower_1": 1249.84,
       "upper_2": 1835.85,
-      "lower_2": 1054.5
+      "lower_2": 1054.5,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-03",
@@ -1967,7 +2619,10 @@
       "upper_1": 1644.16,
       "lower_1": 1253.49,
       "upper_2": 1839.5,
-      "lower_2": 1058.15
+      "lower_2": 1058.15,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-04",
@@ -1976,7 +2631,10 @@
       "upper_1": 1647.81,
       "lower_1": 1257.14,
       "upper_2": 1843.14,
-      "lower_2": 1061.8
+      "lower_2": 1061.8,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-05",
@@ -1985,7 +2643,10 @@
       "upper_1": 1651.46,
       "lower_1": 1260.79,
       "upper_2": 1846.79,
-      "lower_2": 1065.45
+      "lower_2": 1065.45,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-08",
@@ -1994,7 +2655,10 @@
       "upper_1": 1655.11,
       "lower_1": 1264.44,
       "upper_2": 1850.44,
-      "lower_2": 1069.1
+      "lower_2": 1069.1,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-09",
@@ -2003,7 +2667,10 @@
       "upper_1": 1658.76,
       "lower_1": 1268.08,
       "upper_2": 1854.09,
-      "lower_2": 1072.75
+      "lower_2": 1072.75,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-10",
@@ -2012,7 +2679,10 @@
       "upper_1": 1662.4,
       "lower_1": 1271.73,
       "upper_2": 1857.74,
-      "lower_2": 1076.4
+      "lower_2": 1076.4,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-11",
@@ -2021,7 +2691,10 @@
       "upper_1": 1666.05,
       "lower_1": 1275.38,
       "upper_2": 1861.39,
-      "lower_2": 1080.05
+      "lower_2": 1080.05,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-12",
@@ -2030,7 +2703,10 @@
       "upper_1": 1669.7,
       "lower_1": 1279.03,
       "upper_2": 1865.04,
-      "lower_2": 1083.69
+      "lower_2": 1083.69,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-15",
@@ -2039,7 +2715,10 @@
       "upper_1": 1673.35,
       "lower_1": 1282.68,
       "upper_2": 1868.69,
-      "lower_2": 1087.34
+      "lower_2": 1087.34,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-16",
@@ -2048,7 +2727,10 @@
       "upper_1": 1677.0,
       "lower_1": 1286.33,
       "upper_2": 1872.33,
-      "lower_2": 1090.99
+      "lower_2": 1090.99,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-17",
@@ -2057,7 +2739,10 @@
       "upper_1": 1680.65,
       "lower_1": 1289.98,
       "upper_2": 1875.98,
-      "lower_2": 1094.64
+      "lower_2": 1094.64,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-18",
@@ -2066,7 +2751,10 @@
       "upper_1": 1684.3,
       "lower_1": 1293.62,
       "upper_2": 1879.63,
-      "lower_2": 1098.29
+      "lower_2": 1098.29,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-19",
@@ -2075,7 +2763,10 @@
       "upper_1": 1687.95,
       "lower_1": 1297.27,
       "upper_2": 1883.28,
-      "lower_2": 1101.94
+      "lower_2": 1101.94,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-22",
@@ -2084,7 +2775,10 @@
       "upper_1": 1691.59,
       "lower_1": 1300.92,
       "upper_2": 1886.93,
-      "lower_2": 1105.59
+      "lower_2": 1105.59,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-23",
@@ -2093,7 +2787,10 @@
       "upper_1": 1695.24,
       "lower_1": 1304.57,
       "upper_2": 1890.58,
-      "lower_2": 1109.24
+      "lower_2": 1109.24,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-24",
@@ -2102,7 +2799,10 @@
       "upper_1": 1698.89,
       "lower_1": 1308.22,
       "upper_2": 1894.23,
-      "lower_2": 1112.88
+      "lower_2": 1112.88,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-25",
@@ -2111,7 +2811,10 @@
       "upper_1": 1702.54,
       "lower_1": 1311.87,
       "upper_2": 1897.88,
-      "lower_2": 1116.53
+      "lower_2": 1116.53,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-26",
@@ -2120,7 +2823,10 @@
       "upper_1": 1706.19,
       "lower_1": 1315.52,
       "upper_2": 1901.52,
-      "lower_2": 1120.18
+      "lower_2": 1120.18,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-09-30",
@@ -2129,7 +2835,10 @@
       "upper_1": 1709.84,
       "lower_1": 1319.17,
       "upper_2": 1905.17,
-      "lower_2": 1123.83
+      "lower_2": 1123.83,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-01",
@@ -2138,7 +2847,10 @@
       "upper_1": 1713.49,
       "lower_1": 1322.81,
       "upper_2": 1908.82,
-      "lower_2": 1127.48
+      "lower_2": 1127.48,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-02",
@@ -2147,7 +2859,10 @@
       "upper_1": 1717.13,
       "lower_1": 1326.46,
       "upper_2": 1912.47,
-      "lower_2": 1131.13
+      "lower_2": 1131.13,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-03",
@@ -2156,7 +2871,10 @@
       "upper_1": 1720.78,
       "lower_1": 1330.11,
       "upper_2": 1916.12,
-      "lower_2": 1134.78
+      "lower_2": 1134.78,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-07",
@@ -2165,7 +2883,10 @@
       "upper_1": 1724.43,
       "lower_1": 1333.76,
       "upper_2": 1919.77,
-      "lower_2": 1138.43
+      "lower_2": 1138.43,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-08",
@@ -2174,7 +2895,10 @@
       "upper_1": 1728.08,
       "lower_1": 1337.41,
       "upper_2": 1923.42,
-      "lower_2": 1142.07
+      "lower_2": 1142.07,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-09",
@@ -2183,7 +2907,10 @@
       "upper_1": 1731.73,
       "lower_1": 1341.06,
       "upper_2": 1927.07,
-      "lower_2": 1145.72
+      "lower_2": 1145.72,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-13",
@@ -2192,7 +2919,10 @@
       "upper_1": 1735.38,
       "lower_1": 1344.71,
       "upper_2": 1930.71,
-      "lower_2": 1149.37
+      "lower_2": 1149.37,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-14",
@@ -2201,7 +2931,10 @@
       "upper_1": 1739.03,
       "lower_1": 1348.36,
       "upper_2": 1934.36,
-      "lower_2": 1153.02
+      "lower_2": 1153.02,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-15",
@@ -2210,7 +2943,10 @@
       "upper_1": 1742.68,
       "lower_1": 1352.0,
       "upper_2": 1938.01,
-      "lower_2": 1156.67
+      "lower_2": 1156.67,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-16",
@@ -2219,7 +2955,10 @@
       "upper_1": 1746.32,
       "lower_1": 1355.65,
       "upper_2": 1941.66,
-      "lower_2": 1160.32
+      "lower_2": 1160.32,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-17",
@@ -2228,7 +2967,10 @@
       "upper_1": 1749.97,
       "lower_1": 1359.3,
       "upper_2": 1945.31,
-      "lower_2": 1163.97
+      "lower_2": 1163.97,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-20",
@@ -2237,7 +2979,10 @@
       "upper_1": 1753.62,
       "lower_1": 1362.95,
       "upper_2": 1948.96,
-      "lower_2": 1167.61
+      "lower_2": 1167.61,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-21",
@@ -2246,7 +2991,10 @@
       "upper_1": 1757.27,
       "lower_1": 1366.6,
       "upper_2": 1952.61,
-      "lower_2": 1171.26
+      "lower_2": 1171.26,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-22",
@@ -2255,7 +3003,10 @@
       "upper_1": 1760.92,
       "lower_1": 1370.25,
       "upper_2": 1956.26,
-      "lower_2": 1174.91
+      "lower_2": 1174.91,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-23",
@@ -2264,7 +3015,10 @@
       "upper_1": 1764.57,
       "lower_1": 1373.9,
       "upper_2": 1959.9,
-      "lower_2": 1178.56
+      "lower_2": 1178.56,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-27",
@@ -2273,7 +3027,10 @@
       "upper_1": 1768.22,
       "lower_1": 1377.55,
       "upper_2": 1963.55,
-      "lower_2": 1182.21
+      "lower_2": 1182.21,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-28",
@@ -2282,7 +3039,10 @@
       "upper_1": 1771.87,
       "lower_1": 1381.19,
       "upper_2": 1967.2,
-      "lower_2": 1185.86
+      "lower_2": 1185.86,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-29",
@@ -2291,7 +3051,10 @@
       "upper_1": 1775.51,
       "lower_1": 1384.84,
       "upper_2": 1970.85,
-      "lower_2": 1189.51
+      "lower_2": 1189.51,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-30",
@@ -2300,7 +3063,10 @@
       "upper_1": 1779.16,
       "lower_1": 1388.49,
       "upper_2": 1974.5,
-      "lower_2": 1193.16
+      "lower_2": 1193.16,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-10-31",
@@ -2309,7 +3075,10 @@
       "upper_1": 1782.81,
       "lower_1": 1392.14,
       "upper_2": 1978.15,
-      "lower_2": 1196.8
+      "lower_2": 1196.8,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-03",
@@ -2318,7 +3087,10 @@
       "upper_1": 1786.46,
       "lower_1": 1395.79,
       "upper_2": 1981.8,
-      "lower_2": 1200.45
+      "lower_2": 1200.45,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-04",
@@ -2327,7 +3099,10 @@
       "upper_1": 1790.11,
       "lower_1": 1399.44,
       "upper_2": 1985.44,
-      "lower_2": 1204.1
+      "lower_2": 1204.1,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-05",
@@ -2336,7 +3111,10 @@
       "upper_1": 1793.76,
       "lower_1": 1403.09,
       "upper_2": 1989.09,
-      "lower_2": 1207.75
+      "lower_2": 1207.75,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-06",
@@ -2345,7 +3123,10 @@
       "upper_1": 1797.41,
       "lower_1": 1406.74,
       "upper_2": 1992.74,
-      "lower_2": 1211.4
+      "lower_2": 1211.4,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-07",
@@ -2354,7 +3135,10 @@
       "upper_1": 1801.06,
       "lower_1": 1410.38,
       "upper_2": 1996.39,
-      "lower_2": 1215.05
+      "lower_2": 1215.05,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-10",
@@ -2363,7 +3147,10 @@
       "upper_1": 1804.7,
       "lower_1": 1414.03,
       "upper_2": 2000.04,
-      "lower_2": 1218.7
+      "lower_2": 1218.7,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-11",
@@ -2372,7 +3159,10 @@
       "upper_1": 1808.35,
       "lower_1": 1417.68,
       "upper_2": 2003.69,
-      "lower_2": 1222.35
+      "lower_2": 1222.35,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-12",
@@ -2381,7 +3171,10 @@
       "upper_1": 1812.0,
       "lower_1": 1421.33,
       "upper_2": 2007.34,
-      "lower_2": 1225.99
+      "lower_2": 1225.99,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-13",
@@ -2390,7 +3183,10 @@
       "upper_1": 1815.65,
       "lower_1": 1424.98,
       "upper_2": 2010.99,
-      "lower_2": 1229.64
+      "lower_2": 1229.64,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-14",
@@ -2399,7 +3195,10 @@
       "upper_1": 1819.3,
       "lower_1": 1428.63,
       "upper_2": 2014.63,
-      "lower_2": 1233.29
+      "lower_2": 1233.29,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-17",
@@ -2408,7 +3207,10 @@
       "upper_1": 1822.95,
       "lower_1": 1432.28,
       "upper_2": 2018.28,
-      "lower_2": 1236.94
+      "lower_2": 1236.94,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-18",
@@ -2417,7 +3219,10 @@
       "upper_1": 1826.6,
       "lower_1": 1435.92,
       "upper_2": 2021.93,
-      "lower_2": 1240.59
+      "lower_2": 1240.59,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-19",
@@ -2426,7 +3231,10 @@
       "upper_1": 1830.24,
       "lower_1": 1439.57,
       "upper_2": 2025.58,
-      "lower_2": 1244.24
+      "lower_2": 1244.24,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-20",
@@ -2435,7 +3243,10 @@
       "upper_1": 1833.89,
       "lower_1": 1443.22,
       "upper_2": 2029.23,
-      "lower_2": 1247.89
+      "lower_2": 1247.89,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-21",
@@ -2444,7 +3255,10 @@
       "upper_1": 1837.54,
       "lower_1": 1446.87,
       "upper_2": 2032.88,
-      "lower_2": 1251.54
+      "lower_2": 1251.54,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-24",
@@ -2453,7 +3267,10 @@
       "upper_1": 1841.19,
       "lower_1": 1450.52,
       "upper_2": 2036.53,
-      "lower_2": 1255.18
+      "lower_2": 1255.18,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-25",
@@ -2462,7 +3279,10 @@
       "upper_1": 1844.84,
       "lower_1": 1454.17,
       "upper_2": 2040.18,
-      "lower_2": 1258.83
+      "lower_2": 1258.83,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-26",
@@ -2471,7 +3291,10 @@
       "upper_1": 1848.49,
       "lower_1": 1457.82,
       "upper_2": 2043.82,
-      "lower_2": 1262.48
+      "lower_2": 1262.48,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-27",
@@ -2480,7 +3303,10 @@
       "upper_1": 1852.14,
       "lower_1": 1461.47,
       "upper_2": 2047.47,
-      "lower_2": 1266.13
+      "lower_2": 1266.13,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-11-28",
@@ -2489,7 +3315,10 @@
       "upper_1": 1855.79,
       "lower_1": 1465.11,
       "upper_2": 2051.12,
-      "lower_2": 1269.78
+      "lower_2": 1269.78,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-01",
@@ -2498,7 +3327,10 @@
       "upper_1": 1859.43,
       "lower_1": 1468.76,
       "upper_2": 2054.77,
-      "lower_2": 1273.43
+      "lower_2": 1273.43,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-02",
@@ -2507,7 +3339,10 @@
       "upper_1": 1863.08,
       "lower_1": 1472.41,
       "upper_2": 2058.42,
-      "lower_2": 1277.08
+      "lower_2": 1277.08,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-03",
@@ -2516,7 +3351,10 @@
       "upper_1": 1866.73,
       "lower_1": 1476.06,
       "upper_2": 2062.07,
-      "lower_2": 1280.73
+      "lower_2": 1280.73,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-04",
@@ -2525,7 +3363,10 @@
       "upper_1": 1870.38,
       "lower_1": 1479.71,
       "upper_2": 2065.72,
-      "lower_2": 1284.37
+      "lower_2": 1284.37,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-05",
@@ -2534,7 +3375,10 @@
       "upper_1": 1874.03,
       "lower_1": 1483.36,
       "upper_2": 2069.37,
-      "lower_2": 1288.02
+      "lower_2": 1288.02,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-08",
@@ -2543,7 +3387,10 @@
       "upper_1": 1877.68,
       "lower_1": 1487.01,
       "upper_2": 2073.01,
-      "lower_2": 1291.67
+      "lower_2": 1291.67,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-09",
@@ -2552,7 +3399,10 @@
       "upper_1": 1881.33,
       "lower_1": 1490.66,
       "upper_2": 2076.66,
-      "lower_2": 1295.32
+      "lower_2": 1295.32,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-10",
@@ -2561,7 +3411,10 @@
       "upper_1": 1884.98,
       "lower_1": 1494.3,
       "upper_2": 2080.31,
-      "lower_2": 1298.97
+      "lower_2": 1298.97,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-11",
@@ -2570,7 +3423,10 @@
       "upper_1": 1888.62,
       "lower_1": 1497.95,
       "upper_2": 2083.96,
-      "lower_2": 1302.62
+      "lower_2": 1302.62,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-12",
@@ -2579,7 +3435,10 @@
       "upper_1": 1892.27,
       "lower_1": 1501.6,
       "upper_2": 2087.61,
-      "lower_2": 1306.27
+      "lower_2": 1306.27,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-15",
@@ -2588,7 +3447,10 @@
       "upper_1": 1895.92,
       "lower_1": 1505.25,
       "upper_2": 2091.26,
-      "lower_2": 1309.91
+      "lower_2": 1309.91,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-16",
@@ -2597,7 +3459,10 @@
       "upper_1": 1899.57,
       "lower_1": 1508.9,
       "upper_2": 2094.91,
-      "lower_2": 1313.56
+      "lower_2": 1313.56,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-17",
@@ -2606,7 +3471,10 @@
       "upper_1": 1903.22,
       "lower_1": 1512.55,
       "upper_2": 2098.55,
-      "lower_2": 1317.21
+      "lower_2": 1317.21,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-18",
@@ -2615,7 +3483,10 @@
       "upper_1": 1906.87,
       "lower_1": 1516.2,
       "upper_2": 2102.2,
-      "lower_2": 1320.86
+      "lower_2": 1320.86,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-19",
@@ -2624,7 +3495,10 @@
       "upper_1": 1910.52,
       "lower_1": 1519.85,
       "upper_2": 2105.85,
-      "lower_2": 1324.51
+      "lower_2": 1324.51,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-22",
@@ -2633,7 +3507,10 @@
       "upper_1": 1914.17,
       "lower_1": 1523.49,
       "upper_2": 2109.5,
-      "lower_2": 1328.16
+      "lower_2": 1328.16,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-23",
@@ -2642,7 +3519,10 @@
       "upper_1": 1917.81,
       "lower_1": 1527.14,
       "upper_2": 2113.15,
-      "lower_2": 1331.81
+      "lower_2": 1331.81,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-24",
@@ -2651,7 +3531,10 @@
       "upper_1": 1921.46,
       "lower_1": 1530.79,
       "upper_2": 2116.8,
-      "lower_2": 1335.46
+      "lower_2": 1335.46,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-26",
@@ -2660,7 +3543,10 @@
       "upper_1": 1925.11,
       "lower_1": 1534.44,
       "upper_2": 2120.45,
-      "lower_2": 1339.1
+      "lower_2": 1339.1,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-29",
@@ -2669,7 +3555,10 @@
       "upper_1": 1928.76,
       "lower_1": 1538.09,
       "upper_2": 2124.1,
-      "lower_2": 1342.75
+      "lower_2": 1342.75,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-30",
@@ -2678,7 +3567,10 @@
       "upper_1": 1932.41,
       "lower_1": 1541.74,
       "upper_2": 2127.74,
-      "lower_2": 1346.4
+      "lower_2": 1346.4,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2025-12-31",
@@ -2687,7 +3579,10 @@
       "upper_1": 1936.06,
       "lower_1": 1545.39,
       "upper_2": 2131.39,
-      "lower_2": 1350.05
+      "lower_2": 1350.05,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-02",
@@ -2696,7 +3591,10 @@
       "upper_1": 1939.71,
       "lower_1": 1549.03,
       "upper_2": 2135.04,
-      "lower_2": 1353.7
+      "lower_2": 1353.7,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-05",
@@ -2705,7 +3603,10 @@
       "upper_1": 1943.36,
       "lower_1": 1552.68,
       "upper_2": 2138.69,
-      "lower_2": 1357.35
+      "lower_2": 1357.35,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-06",
@@ -2714,7 +3615,10 @@
       "upper_1": 1947.0,
       "lower_1": 1556.33,
       "upper_2": 2142.34,
-      "lower_2": 1361.0
+      "lower_2": 1361.0,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-07",
@@ -2723,7 +3627,10 @@
       "upper_1": 1950.65,
       "lower_1": 1559.98,
       "upper_2": 2145.99,
-      "lower_2": 1364.65
+      "lower_2": 1364.65,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-08",
@@ -2732,7 +3639,10 @@
       "upper_1": 1954.3,
       "lower_1": 1563.63,
       "upper_2": 2149.64,
-      "lower_2": 1368.29
+      "lower_2": 1368.29,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-09",
@@ -2741,7 +3651,10 @@
       "upper_1": 1957.95,
       "lower_1": 1567.28,
       "upper_2": 2153.29,
-      "lower_2": 1371.94
+      "lower_2": 1371.94,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-12",
@@ -2750,7 +3663,10 @@
       "upper_1": 1961.6,
       "lower_1": 1570.93,
       "upper_2": 2156.93,
-      "lower_2": 1375.59
+      "lower_2": 1375.59,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-13",
@@ -2759,7 +3675,10 @@
       "upper_1": 1965.25,
       "lower_1": 1574.58,
       "upper_2": 2160.58,
-      "lower_2": 1379.24
+      "lower_2": 1379.24,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-14",
@@ -2768,7 +3687,10 @@
       "upper_1": 1968.9,
       "lower_1": 1578.22,
       "upper_2": 2164.23,
-      "lower_2": 1382.89
+      "lower_2": 1382.89,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-15",
@@ -2777,7 +3699,10 @@
       "upper_1": 1972.54,
       "lower_1": 1581.87,
       "upper_2": 2167.88,
-      "lower_2": 1386.54
+      "lower_2": 1386.54,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-16",
@@ -2786,7 +3711,10 @@
       "upper_1": 1976.19,
       "lower_1": 1585.52,
       "upper_2": 2171.53,
-      "lower_2": 1390.19
+      "lower_2": 1390.19,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-19",
@@ -2795,7 +3723,10 @@
       "upper_1": 1979.84,
       "lower_1": 1589.17,
       "upper_2": 2175.18,
-      "lower_2": 1393.84
+      "lower_2": 1393.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-20",
@@ -2804,7 +3735,10 @@
       "upper_1": 1983.49,
       "lower_1": 1592.82,
       "upper_2": 2178.83,
-      "lower_2": 1397.48
+      "lower_2": 1397.48,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-21",
@@ -2813,7 +3747,10 @@
       "upper_1": 1987.14,
       "lower_1": 1596.47,
       "upper_2": 2182.48,
-      "lower_2": 1401.13
+      "lower_2": 1401.13,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-22",
@@ -2822,7 +3759,10 @@
       "upper_1": 1990.79,
       "lower_1": 1600.12,
       "upper_2": 2186.12,
-      "lower_2": 1404.78
+      "lower_2": 1404.78,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-23",
@@ -2831,7 +3771,10 @@
       "upper_1": 1994.44,
       "lower_1": 1603.77,
       "upper_2": 2189.77,
-      "lower_2": 1408.43
+      "lower_2": 1408.43,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-26",
@@ -2840,7 +3783,10 @@
       "upper_1": 1998.09,
       "lower_1": 1607.41,
       "upper_2": 2193.42,
-      "lower_2": 1412.08
+      "lower_2": 1412.08,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-27",
@@ -2849,7 +3795,10 @@
       "upper_1": 2001.73,
       "lower_1": 1611.06,
       "upper_2": 2197.07,
-      "lower_2": 1415.73
+      "lower_2": 1415.73,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-28",
@@ -2858,7 +3807,10 @@
       "upper_1": 2005.38,
       "lower_1": 1614.71,
       "upper_2": 2200.72,
-      "lower_2": 1419.38
+      "lower_2": 1419.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-29",
@@ -2867,7 +3819,10 @@
       "upper_1": 2009.03,
       "lower_1": 1618.36,
       "upper_2": 2204.37,
-      "lower_2": 1423.02
+      "lower_2": 1423.02,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-01-30",
@@ -2876,7 +3831,10 @@
       "upper_1": 2012.68,
       "lower_1": 1622.01,
       "upper_2": 2208.02,
-      "lower_2": 1426.67
+      "lower_2": 1426.67,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-02",
@@ -2885,7 +3843,10 @@
       "upper_1": 2016.33,
       "lower_1": 1625.66,
       "upper_2": 2211.67,
-      "lower_2": 1430.32
+      "lower_2": 1430.32,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-03",
@@ -2894,7 +3855,10 @@
       "upper_1": 2019.98,
       "lower_1": 1629.31,
       "upper_2": 2215.31,
-      "lower_2": 1433.97
+      "lower_2": 1433.97,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-04",
@@ -2903,7 +3867,10 @@
       "upper_1": 2023.63,
       "lower_1": 1632.96,
       "upper_2": 2218.96,
-      "lower_2": 1437.62
+      "lower_2": 1437.62,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-05",
@@ -2912,7 +3879,10 @@
       "upper_1": 2027.28,
       "lower_1": 1636.6,
       "upper_2": 2222.61,
-      "lower_2": 1441.27
+      "lower_2": 1441.27,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-06",
@@ -2921,7 +3891,10 @@
       "upper_1": 2030.92,
       "lower_1": 1640.25,
       "upper_2": 2226.26,
-      "lower_2": 1444.92
+      "lower_2": 1444.92,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-09",
@@ -2930,7 +3903,10 @@
       "upper_1": 2034.57,
       "lower_1": 1643.9,
       "upper_2": 2229.91,
-      "lower_2": 1448.57
+      "lower_2": 1448.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-10",
@@ -2939,7 +3915,10 @@
       "upper_1": 2038.22,
       "lower_1": 1647.55,
       "upper_2": 2233.56,
-      "lower_2": 1452.21
+      "lower_2": 1452.21,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-11",
@@ -2948,7 +3927,10 @@
       "upper_1": 2041.87,
       "lower_1": 1651.2,
       "upper_2": 2237.21,
-      "lower_2": 1455.86
+      "lower_2": 1455.86,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-23",
@@ -2957,7 +3939,10 @@
       "upper_1": 2045.52,
       "lower_1": 1654.85,
       "upper_2": 2240.85,
-      "lower_2": 1459.51
+      "lower_2": 1459.51,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-24",
@@ -2966,7 +3951,10 @@
       "upper_1": 2049.17,
       "lower_1": 1658.5,
       "upper_2": 2244.5,
-      "lower_2": 1463.16
+      "lower_2": 1463.16,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-25",
@@ -2975,7 +3963,10 @@
       "upper_1": 2052.82,
       "lower_1": 1662.15,
       "upper_2": 2248.15,
-      "lower_2": 1466.81
+      "lower_2": 1466.81,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-02-26",
@@ -2984,7 +3975,10 @@
       "upper_1": 2056.47,
       "lower_1": 1665.79,
       "upper_2": 2251.8,
-      "lower_2": 1470.46
+      "lower_2": 1470.46,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-02",
@@ -2993,7 +3987,10 @@
       "upper_1": 2060.11,
       "lower_1": 1669.44,
       "upper_2": 2255.45,
-      "lower_2": 1474.11
+      "lower_2": 1474.11,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-03",
@@ -3002,7 +3999,10 @@
       "upper_1": 2063.76,
       "lower_1": 1673.09,
       "upper_2": 2259.1,
-      "lower_2": 1477.76
+      "lower_2": 1477.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-04",
@@ -3011,7 +4011,10 @@
       "upper_1": 2067.41,
       "lower_1": 1676.74,
       "upper_2": 2262.75,
-      "lower_2": 1481.4
+      "lower_2": 1481.4,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-05",
@@ -3020,7 +4023,10 @@
       "upper_1": 2071.06,
       "lower_1": 1680.39,
       "upper_2": 2266.4,
-      "lower_2": 1485.05
+      "lower_2": 1485.05,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-06",
@@ -3029,7 +4035,10 @@
       "upper_1": 2074.71,
       "lower_1": 1684.04,
       "upper_2": 2270.04,
-      "lower_2": 1488.7
+      "lower_2": 1488.7,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-09",
@@ -3038,7 +4047,10 @@
       "upper_1": 2078.36,
       "lower_1": 1687.69,
       "upper_2": 2273.69,
-      "lower_2": 1492.35
+      "lower_2": 1492.35,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-10",
@@ -3047,7 +4059,10 @@
       "upper_1": 2082.01,
       "lower_1": 1691.33,
       "upper_2": 2277.34,
-      "lower_2": 1496.0
+      "lower_2": 1496.0,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-11",
@@ -3056,7 +4071,10 @@
       "upper_1": 2085.65,
       "lower_1": 1694.98,
       "upper_2": 2280.99,
-      "lower_2": 1499.65
+      "lower_2": 1499.65,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-12",
@@ -3065,7 +4083,10 @@
       "upper_1": 2089.3,
       "lower_1": 1698.63,
       "upper_2": 2284.64,
-      "lower_2": 1503.3
+      "lower_2": 1503.3,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-13",
@@ -3074,7 +4095,10 @@
       "upper_1": 2092.95,
       "lower_1": 1702.28,
       "upper_2": 2288.29,
-      "lower_2": 1506.95
+      "lower_2": 1506.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-16",
@@ -3083,7 +4107,10 @@
       "upper_1": 2096.6,
       "lower_1": 1705.93,
       "upper_2": 2291.94,
-      "lower_2": 1510.59
+      "lower_2": 1510.59,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-17",
@@ -3092,7 +4119,10 @@
       "upper_1": 2100.25,
       "lower_1": 1709.58,
       "upper_2": 2295.59,
-      "lower_2": 1514.24
+      "lower_2": 1514.24,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-18",
@@ -3101,7 +4131,10 @@
       "upper_1": 2103.9,
       "lower_1": 1713.23,
       "upper_2": 2299.23,
-      "lower_2": 1517.89
+      "lower_2": 1517.89,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-19",
@@ -3110,7 +4143,10 @@
       "upper_1": 2107.55,
       "lower_1": 1716.88,
       "upper_2": 2302.88,
-      "lower_2": 1521.54
+      "lower_2": 1521.54,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-20",
@@ -3119,7 +4155,10 @@
       "upper_1": 2111.2,
       "lower_1": 1720.52,
       "upper_2": 2306.53,
-      "lower_2": 1525.19
+      "lower_2": 1525.19,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-23",
@@ -3128,7 +4167,10 @@
       "upper_1": 2114.84,
       "lower_1": 1724.17,
       "upper_2": 2310.18,
-      "lower_2": 1528.84
+      "lower_2": 1528.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-24",
@@ -3137,7 +4179,10 @@
       "upper_1": 2118.49,
       "lower_1": 1727.82,
       "upper_2": 2313.83,
-      "lower_2": 1532.49
+      "lower_2": 1532.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-25",
@@ -3146,7 +4191,10 @@
       "upper_1": 2122.14,
       "lower_1": 1731.47,
       "upper_2": 2317.48,
-      "lower_2": 1536.14
+      "lower_2": 1536.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-26",
@@ -3155,7 +4203,10 @@
       "upper_1": 2125.79,
       "lower_1": 1735.12,
       "upper_2": 2321.13,
-      "lower_2": 1539.78
+      "lower_2": 1539.78,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-27",
@@ -3164,7 +4215,10 @@
       "upper_1": 2129.44,
       "lower_1": 1738.77,
       "upper_2": 2324.78,
-      "lower_2": 1543.43
+      "lower_2": 1543.43,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-30",
@@ -3173,7 +4227,10 @@
       "upper_1": 2133.09,
       "lower_1": 1742.42,
       "upper_2": 2328.42,
-      "lower_2": 1547.08
+      "lower_2": 1547.08,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-03-31",
@@ -3182,7 +4239,10 @@
       "upper_1": 2136.74,
       "lower_1": 1746.07,
       "upper_2": 2332.07,
-      "lower_2": 1550.73
+      "lower_2": 1550.73,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-01",
@@ -3191,7 +4251,10 @@
       "upper_1": 2140.39,
       "lower_1": 1749.71,
       "upper_2": 2335.72,
-      "lower_2": 1554.38
+      "lower_2": 1554.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-02",
@@ -3200,7 +4263,10 @@
       "upper_1": 2144.03,
       "lower_1": 1753.36,
       "upper_2": 2339.37,
-      "lower_2": 1558.03
+      "lower_2": 1558.03,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-07",
@@ -3209,7 +4275,10 @@
       "upper_1": 2147.68,
       "lower_1": 1757.01,
       "upper_2": 2343.02,
-      "lower_2": 1561.68
+      "lower_2": 1561.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-08",
@@ -3218,7 +4287,10 @@
       "upper_1": 2151.33,
       "lower_1": 1760.66,
       "upper_2": 2346.67,
-      "lower_2": 1565.32
+      "lower_2": 1565.32,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-09",
@@ -3227,7 +4299,10 @@
       "upper_1": 2154.98,
       "lower_1": 1764.31,
       "upper_2": 2350.32,
-      "lower_2": 1568.97
+      "lower_2": 1568.97,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-10",
@@ -3236,7 +4311,10 @@
       "upper_1": 2158.63,
       "lower_1": 1767.96,
       "upper_2": 2353.96,
-      "lower_2": 1572.62
+      "lower_2": 1572.62,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-13",
@@ -3245,7 +4323,10 @@
       "upper_1": 2162.28,
       "lower_1": 1771.61,
       "upper_2": 2357.61,
-      "lower_2": 1576.27
+      "lower_2": 1576.27,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-14",
@@ -3254,7 +4335,10 @@
       "upper_1": 2165.93,
       "lower_1": 1775.26,
       "upper_2": 2361.26,
-      "lower_2": 1579.92
+      "lower_2": 1579.92,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-15",
@@ -3263,7 +4347,10 @@
       "upper_1": 2169.58,
       "lower_1": 1778.9,
       "upper_2": 2364.91,
-      "lower_2": 1583.57
+      "lower_2": 1583.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-16",
@@ -3272,7 +4359,10 @@
       "upper_1": 2173.22,
       "lower_1": 1782.55,
       "upper_2": 2368.56,
-      "lower_2": 1587.22
+      "lower_2": 1587.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-17",
@@ -3281,7 +4371,10 @@
       "upper_1": 2176.87,
       "lower_1": 1786.2,
       "upper_2": 2372.21,
-      "lower_2": 1590.87
+      "lower_2": 1590.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-20",
@@ -3290,7 +4383,10 @@
       "upper_1": 2180.52,
       "lower_1": 1789.85,
       "upper_2": 2375.86,
-      "lower_2": 1594.51
+      "lower_2": 1594.51,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-21",
@@ -3299,7 +4395,10 @@
       "upper_1": 2184.17,
       "lower_1": 1793.5,
       "upper_2": 2379.51,
-      "lower_2": 1598.16
+      "lower_2": 1598.16,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-22",
@@ -3308,7 +4407,10 @@
       "upper_1": 2187.82,
       "lower_1": 1797.15,
       "upper_2": 2383.15,
-      "lower_2": 1601.81
+      "lower_2": 1601.81,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-23",
@@ -3317,7 +4419,10 @@
       "upper_1": 2191.47,
       "lower_1": 1800.8,
       "upper_2": 2386.8,
-      "lower_2": 1605.46
+      "lower_2": 1605.46,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-24",
@@ -3326,7 +4431,10 @@
       "upper_1": 2195.12,
       "lower_1": 1804.45,
       "upper_2": 2390.45,
-      "lower_2": 1609.11
+      "lower_2": 1609.11,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-27",
@@ -3335,7 +4443,10 @@
       "upper_1": 2198.77,
       "lower_1": 1808.09,
       "upper_2": 2394.1,
-      "lower_2": 1612.76
+      "lower_2": 1612.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-28",
@@ -3344,7 +4455,10 @@
       "upper_1": 2202.41,
       "lower_1": 1811.74,
       "upper_2": 2397.75,
-      "lower_2": 1616.41
+      "lower_2": 1616.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-29",
@@ -3353,7 +4467,10 @@
       "upper_1": 2206.06,
       "lower_1": 1815.39,
       "upper_2": 2401.4,
-      "lower_2": 1620.06
+      "lower_2": 1620.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-04-30",
@@ -3362,7 +4479,10 @@
       "upper_1": 2209.71,
       "lower_1": 1819.04,
       "upper_2": 2405.05,
-      "lower_2": 1623.7
+      "lower_2": 1623.7,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-04",
@@ -3371,7 +4491,10 @@
       "upper_1": 2213.36,
       "lower_1": 1822.69,
       "upper_2": 2408.7,
-      "lower_2": 1627.35
+      "lower_2": 1627.35,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-05",
@@ -3380,7 +4503,10 @@
       "upper_1": 2217.01,
       "lower_1": 1826.34,
       "upper_2": 2412.34,
-      "lower_2": 1631.0
+      "lower_2": 1631.0,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-06",
@@ -3389,7 +4515,10 @@
       "upper_1": 2220.66,
       "lower_1": 1829.99,
       "upper_2": 2415.99,
-      "lower_2": 1634.65
+      "lower_2": 1634.65,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-07",
@@ -3398,7 +4527,10 @@
       "upper_1": 2224.31,
       "lower_1": 1833.63,
       "upper_2": 2419.64,
-      "lower_2": 1638.3
+      "lower_2": 1638.3,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-08",
@@ -3407,7 +4539,10 @@
       "upper_1": 2227.95,
       "lower_1": 1837.28,
       "upper_2": 2423.29,
-      "lower_2": 1641.95
+      "lower_2": 1641.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-11",
@@ -3416,7 +4551,10 @@
       "upper_1": 2231.6,
       "lower_1": 1840.93,
       "upper_2": 2426.94,
-      "lower_2": 1645.6
+      "lower_2": 1645.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-12",
@@ -3425,7 +4563,10 @@
       "upper_1": 2235.25,
       "lower_1": 1844.58,
       "upper_2": 2430.59,
-      "lower_2": 1649.25
+      "lower_2": 1649.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-13",
@@ -3434,7 +4575,10 @@
       "upper_1": 2238.9,
       "lower_1": 1848.23,
       "upper_2": 2434.24,
-      "lower_2": 1652.89
+      "lower_2": 1652.89,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-14",
@@ -3443,7 +4587,10 @@
       "upper_1": 2242.55,
       "lower_1": 1851.88,
       "upper_2": 2437.89,
-      "lower_2": 1656.54
+      "lower_2": 1656.54,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-15",
@@ -3452,7 +4599,10 @@
       "upper_1": 2246.2,
       "lower_1": 1855.53,
       "upper_2": 2441.53,
-      "lower_2": 1660.19
+      "lower_2": 1660.19,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-18",
@@ -3461,7 +4611,10 @@
       "upper_1": 2249.85,
       "lower_1": 1859.18,
       "upper_2": 2445.18,
-      "lower_2": 1663.84
+      "lower_2": 1663.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-19",
@@ -3470,7 +4623,10 @@
       "upper_1": 2253.5,
       "lower_1": 1862.82,
       "upper_2": 2448.83,
-      "lower_2": 1667.49
+      "lower_2": 1667.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-20",
@@ -3479,7 +4635,10 @@
       "upper_1": 2257.14,
       "lower_1": 1866.47,
       "upper_2": 2452.48,
-      "lower_2": 1671.14
+      "lower_2": 1671.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-21",
@@ -3488,7 +4647,10 @@
       "upper_1": 2260.79,
       "lower_1": 1870.12,
       "upper_2": 2456.13,
-      "lower_2": 1674.79
+      "lower_2": 1674.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-22",
@@ -3497,7 +4659,10 @@
       "upper_1": 2264.44,
       "lower_1": 1873.77,
       "upper_2": 2459.78,
-      "lower_2": 1678.43
+      "lower_2": 1678.43,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-25",
@@ -3506,7 +4671,10 @@
       "upper_1": 2268.09,
       "lower_1": 1877.42,
       "upper_2": 2463.43,
-      "lower_2": 1682.08
+      "lower_2": 1682.08,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-26",
@@ -3515,7 +4683,10 @@
       "upper_1": 2271.74,
       "lower_1": 1881.07,
       "upper_2": 2467.08,
-      "lower_2": 1685.73
+      "lower_2": 1685.73,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-27",
@@ -3524,7 +4695,10 @@
       "upper_1": 2275.39,
       "lower_1": 1884.72,
       "upper_2": 2470.72,
-      "lower_2": 1689.38
+      "lower_2": 1689.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-28",
@@ -3533,7 +4707,10 @@
       "upper_1": 2279.04,
       "lower_1": 1888.37,
       "upper_2": 2474.37,
-      "lower_2": 1693.03
+      "lower_2": 1693.03,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-05-29",
@@ -3542,7 +4719,10 @@
       "upper_1": 2282.69,
       "lower_1": 1892.01,
       "upper_2": 2478.02,
-      "lower_2": 1696.68
+      "lower_2": 1696.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-01",
@@ -3551,7 +4731,10 @@
       "upper_1": 2286.33,
       "lower_1": 1895.66,
       "upper_2": 2481.67,
-      "lower_2": 1700.33
+      "lower_2": 1700.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-02",
@@ -3560,7 +4743,10 @@
       "upper_1": 2289.98,
       "lower_1": 1899.31,
       "upper_2": 2485.32,
-      "lower_2": 1703.98
+      "lower_2": 1703.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-03",
@@ -3569,7 +4755,10 @@
       "upper_1": 2293.63,
       "lower_1": 1902.96,
       "upper_2": 2488.97,
-      "lower_2": 1707.62
+      "lower_2": 1707.62,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-04",
@@ -3578,7 +4767,10 @@
       "upper_1": 2297.28,
       "lower_1": 1906.61,
       "upper_2": 2492.62,
-      "lower_2": 1711.27
+      "lower_2": 1711.27,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-05",
@@ -3587,7 +4779,10 @@
       "upper_1": 2300.93,
       "lower_1": 1910.26,
       "upper_2": 2496.26,
-      "lower_2": 1714.92
+      "lower_2": 1714.92,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-08",
@@ -3596,7 +4791,10 @@
       "upper_1": 2304.58,
       "lower_1": 1913.91,
       "upper_2": 2499.91,
-      "lower_2": 1718.57
+      "lower_2": 1718.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-09",
@@ -3605,7 +4803,10 @@
       "upper_1": 2308.23,
       "lower_1": 1917.56,
       "upper_2": 2503.56,
-      "lower_2": 1722.22
+      "lower_2": 1722.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-10",
@@ -3614,7 +4815,10 @@
       "upper_1": 2311.88,
       "lower_1": 1921.2,
       "upper_2": 2507.21,
-      "lower_2": 1725.87
+      "lower_2": 1725.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-11",
@@ -3623,7 +4827,10 @@
       "upper_1": 2315.52,
       "lower_1": 1924.85,
       "upper_2": 2510.86,
-      "lower_2": 1729.52
+      "lower_2": 1729.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-12",
@@ -3632,7 +4839,10 @@
       "upper_1": 2319.17,
       "lower_1": 1928.5,
       "upper_2": 2514.51,
-      "lower_2": 1733.17
+      "lower_2": 1733.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-15",
@@ -3641,7 +4851,10 @@
       "upper_1": 2322.82,
       "lower_1": 1932.15,
       "upper_2": 2518.16,
-      "lower_2": 1736.81
+      "lower_2": 1736.81,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-16",
@@ -3650,7 +4863,10 @@
       "upper_1": 2326.47,
       "lower_1": 1935.8,
       "upper_2": 2521.81,
-      "lower_2": 1740.46
+      "lower_2": 1740.46,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-17",
@@ -3659,7 +4875,10 @@
       "upper_1": 2330.12,
       "lower_1": 1939.45,
       "upper_2": 2525.45,
-      "lower_2": 1744.11
+      "lower_2": 1744.11,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-18",
@@ -3668,7 +4887,10 @@
       "upper_1": 2333.77,
       "lower_1": 1943.1,
       "upper_2": 2529.1,
-      "lower_2": 1747.76
+      "lower_2": 1747.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-22",
@@ -3677,7 +4899,10 @@
       "upper_1": 2337.42,
       "lower_1": 1946.74,
       "upper_2": 2532.75,
-      "lower_2": 1751.41
+      "lower_2": 1751.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-23",
@@ -3686,7 +4911,10 @@
       "upper_1": 2341.06,
       "lower_1": 1950.39,
       "upper_2": 2536.4,
-      "lower_2": 1755.06
+      "lower_2": 1755.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-24",
@@ -3695,7 +4923,10 @@
       "upper_1": 2344.71,
       "lower_1": 1954.04,
       "upper_2": 2540.05,
-      "lower_2": 1758.71
+      "lower_2": 1758.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-25",
@@ -3704,7 +4935,10 @@
       "upper_1": 2348.36,
       "lower_1": 1957.69,
       "upper_2": 2543.7,
-      "lower_2": 1762.36
+      "lower_2": 1762.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-26",
@@ -3713,7 +4947,10 @@
       "upper_1": 2352.01,
       "lower_1": 1961.34,
       "upper_2": 2547.35,
-      "lower_2": 1766.0
+      "lower_2": 1766.0,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-29",
@@ -3722,7 +4959,10 @@
       "upper_1": 2355.66,
       "lower_1": 1964.99,
       "upper_2": 2551.0,
-      "lower_2": 1769.65
+      "lower_2": 1769.65,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-06-30",
@@ -3731,7 +4971,10 @@
       "upper_1": 2359.31,
       "lower_1": 1968.64,
       "upper_2": 2554.64,
-      "lower_2": 1773.3
+      "lower_2": 1773.3,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-01",
@@ -3740,7 +4983,10 @@
       "upper_1": 2362.96,
       "lower_1": 1972.29,
       "upper_2": 2558.29,
-      "lower_2": 1776.95
+      "lower_2": 1776.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-02",
@@ -3749,7 +4995,10 @@
       "upper_1": 2366.61,
       "lower_1": 1975.93,
       "upper_2": 2561.94,
-      "lower_2": 1780.6
+      "lower_2": 1780.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-03",
@@ -3758,7 +5007,10 @@
       "upper_1": 2370.25,
       "lower_1": 1979.58,
       "upper_2": 2565.59,
-      "lower_2": 1784.25
+      "lower_2": 1784.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-06",
@@ -3767,7 +5019,10 @@
       "upper_1": 2373.9,
       "lower_1": 1983.23,
       "upper_2": 2569.24,
-      "lower_2": 1787.9
+      "lower_2": 1787.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-07",
@@ -3776,7 +5031,10 @@
       "upper_1": 2377.55,
       "lower_1": 1986.88,
       "upper_2": 2572.89,
-      "lower_2": 1791.55
+      "lower_2": 1791.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-08",
@@ -3785,7 +5043,10 @@
       "upper_1": 2381.2,
       "lower_1": 1990.53,
       "upper_2": 2576.54,
-      "lower_2": 1795.19
+      "lower_2": 1795.19,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-09",
@@ -3794,7 +5055,10 @@
       "upper_1": 2384.85,
       "lower_1": 1994.18,
       "upper_2": 2580.19,
-      "lower_2": 1798.84
+      "lower_2": 1798.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-13",
@@ -3803,7 +5067,10 @@
       "upper_1": 2388.5,
       "lower_1": 1997.83,
       "upper_2": 2583.83,
-      "lower_2": 1802.49
+      "lower_2": 1802.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-14",
@@ -3812,7 +5079,10 @@
       "upper_1": 2392.15,
       "lower_1": 2001.48,
       "upper_2": 2587.48,
-      "lower_2": 1806.14
+      "lower_2": 1806.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-15",
@@ -3821,7 +5091,10 @@
       "upper_1": 2395.8,
       "lower_1": 2005.12,
       "upper_2": 2591.13,
-      "lower_2": 1809.79
+      "lower_2": 1809.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-16",
@@ -3830,7 +5103,10 @@
       "upper_1": 2399.44,
       "lower_1": 2008.77,
       "upper_2": 2594.78,
-      "lower_2": 1813.44
+      "lower_2": 1813.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-17",
@@ -3839,7 +5115,10 @@
       "upper_1": 2403.09,
       "lower_1": 2012.42,
       "upper_2": 2598.43,
-      "lower_2": 1817.09
+      "lower_2": 1817.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-20",
@@ -3848,7 +5127,10 @@
       "upper_1": 2406.74,
       "lower_1": 2016.07,
       "upper_2": 2602.08,
-      "lower_2": 1820.73
+      "lower_2": 1820.73,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-21",
@@ -3857,7 +5139,10 @@
       "upper_1": 2410.39,
       "lower_1": 2019.72,
       "upper_2": 2605.73,
-      "lower_2": 1824.38
+      "lower_2": 1824.38,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-22",
@@ -3866,7 +5151,10 @@
       "upper_1": 2414.04,
       "lower_1": 2023.37,
       "upper_2": 2609.37,
-      "lower_2": 1828.03
+      "lower_2": 1828.03,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-23",
@@ -3875,7 +5163,10 @@
       "upper_1": 2417.69,
       "lower_1": 2027.02,
       "upper_2": 2613.02,
-      "lower_2": 1831.68
+      "lower_2": 1831.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-24",
@@ -3884,7 +5175,10 @@
       "upper_1": 2421.34,
       "lower_1": 2030.67,
       "upper_2": 2616.67,
-      "lower_2": 1835.33
+      "lower_2": 1835.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-27",
@@ -3893,7 +5187,10 @@
       "upper_1": 2424.99,
       "lower_1": 2034.31,
       "upper_2": 2620.32,
-      "lower_2": 1838.98
+      "lower_2": 1838.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-28",
@@ -3902,7 +5199,10 @@
       "upper_1": 2428.63,
       "lower_1": 2037.96,
       "upper_2": 2623.97,
-      "lower_2": 1842.63
+      "lower_2": 1842.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-29",
@@ -3911,7 +5211,10 @@
       "upper_1": 2432.28,
       "lower_1": 2041.61,
       "upper_2": 2627.62,
-      "lower_2": 1846.28
+      "lower_2": 1846.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-30",
@@ -3920,7 +5223,10 @@
       "upper_1": 2435.93,
       "lower_1": 2045.26,
       "upper_2": 2631.27,
-      "lower_2": 1849.92
+      "lower_2": 1849.92,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-07-31",
@@ -3929,7 +5235,10 @@
       "upper_1": 2439.58,
       "lower_1": 2048.91,
       "upper_2": 2634.92,
-      "lower_2": 1853.57
+      "lower_2": 1853.57,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-03",
@@ -3938,7 +5247,10 @@
       "upper_1": 2443.23,
       "lower_1": 2052.56,
       "upper_2": 2638.56,
-      "lower_2": 1857.22
+      "lower_2": 1857.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-04",
@@ -3947,7 +5259,10 @@
       "upper_1": 2446.88,
       "lower_1": 2056.21,
       "upper_2": 2642.21,
-      "lower_2": 1860.87
+      "lower_2": 1860.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-05",
@@ -3956,7 +5271,10 @@
       "upper_1": 2450.53,
       "lower_1": 2059.86,
       "upper_2": 2645.86,
-      "lower_2": 1864.52
+      "lower_2": 1864.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-06",
@@ -3965,7 +5283,10 @@
       "upper_1": 2454.18,
       "lower_1": 2063.5,
       "upper_2": 2649.51,
-      "lower_2": 1868.17
+      "lower_2": 1868.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-07",
@@ -3974,7 +5295,10 @@
       "upper_1": 2457.82,
       "lower_1": 2067.15,
       "upper_2": 2653.16,
-      "lower_2": 1871.82
+      "lower_2": 1871.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-10",
@@ -3983,7 +5307,10 @@
       "upper_1": 2461.47,
       "lower_1": 2070.8,
       "upper_2": 2656.81,
-      "lower_2": 1875.47
+      "lower_2": 1875.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-11",
@@ -3992,7 +5319,10 @@
       "upper_1": 2465.12,
       "lower_1": 2074.45,
       "upper_2": 2660.46,
-      "lower_2": 1879.11
+      "lower_2": 1879.11,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-12",
@@ -4001,7 +5331,10 @@
       "upper_1": 2468.77,
       "lower_1": 2078.1,
       "upper_2": 2664.11,
-      "lower_2": 1882.76
+      "lower_2": 1882.76,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-13",
@@ -4010,7 +5343,10 @@
       "upper_1": 2472.42,
       "lower_1": 2081.75,
       "upper_2": 2667.75,
-      "lower_2": 1886.41
+      "lower_2": 1886.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-14",
@@ -4019,7 +5355,10 @@
       "upper_1": 2476.07,
       "lower_1": 2085.4,
       "upper_2": 2671.4,
-      "lower_2": 1890.06
+      "lower_2": 1890.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-17",
@@ -4028,7 +5367,10 @@
       "upper_1": 2479.72,
       "lower_1": 2089.04,
       "upper_2": 2675.05,
-      "lower_2": 1893.71
+      "lower_2": 1893.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-18",
@@ -4037,7 +5379,10 @@
       "upper_1": 2483.36,
       "lower_1": 2092.69,
       "upper_2": 2678.7,
-      "lower_2": 1897.36
+      "lower_2": 1897.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-19",
@@ -4046,7 +5391,10 @@
       "upper_1": 2487.01,
       "lower_1": 2096.34,
       "upper_2": 2682.35,
-      "lower_2": 1901.01
+      "lower_2": 1901.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-20",
@@ -4055,7 +5403,10 @@
       "upper_1": 2490.66,
       "lower_1": 2099.99,
       "upper_2": 2686.0,
-      "lower_2": 1904.66
+      "lower_2": 1904.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-21",
@@ -4064,7 +5415,10 @@
       "upper_1": 2494.31,
       "lower_1": 2103.64,
       "upper_2": 2689.65,
-      "lower_2": 1908.3
+      "lower_2": 1908.3,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-24",
@@ -4073,7 +5427,10 @@
       "upper_1": 2497.96,
       "lower_1": 2107.29,
       "upper_2": 2693.3,
-      "lower_2": 1911.95
+      "lower_2": 1911.95,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-25",
@@ -4082,7 +5439,10 @@
       "upper_1": 2501.61,
       "lower_1": 2110.94,
       "upper_2": 2696.94,
-      "lower_2": 1915.6
+      "lower_2": 1915.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-26",
@@ -4091,7 +5451,10 @@
       "upper_1": 2505.26,
       "lower_1": 2114.59,
       "upper_2": 2700.59,
-      "lower_2": 1919.25
+      "lower_2": 1919.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-27",
@@ -4100,7 +5463,10 @@
       "upper_1": 2508.91,
       "lower_1": 2118.23,
       "upper_2": 2704.24,
-      "lower_2": 1922.9
+      "lower_2": 1922.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-28",
@@ -4109,7 +5475,10 @@
       "upper_1": 2512.55,
       "lower_1": 2121.88,
       "upper_2": 2707.89,
-      "lower_2": 1926.55
+      "lower_2": 1926.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-08-31",
@@ -4118,7 +5487,10 @@
       "upper_1": 2516.2,
       "lower_1": 2125.53,
       "upper_2": 2711.54,
-      "lower_2": 1930.2
+      "lower_2": 1930.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-01",
@@ -4127,7 +5499,10 @@
       "upper_1": 2519.85,
       "lower_1": 2129.18,
       "upper_2": 2715.19,
-      "lower_2": 1933.84
+      "lower_2": 1933.84,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-02",
@@ -4136,7 +5511,10 @@
       "upper_1": 2523.5,
       "lower_1": 2132.83,
       "upper_2": 2718.84,
-      "lower_2": 1937.49
+      "lower_2": 1937.49,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-03",
@@ -4145,7 +5523,10 @@
       "upper_1": 2527.15,
       "lower_1": 2136.48,
       "upper_2": 2722.49,
-      "lower_2": 1941.14
+      "lower_2": 1941.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-04",
@@ -4154,7 +5535,10 @@
       "upper_1": 2530.8,
       "lower_1": 2140.13,
       "upper_2": 2726.13,
-      "lower_2": 1944.79
+      "lower_2": 1944.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-07",
@@ -4163,7 +5547,10 @@
       "upper_1": 2534.45,
       "lower_1": 2143.78,
       "upper_2": 2729.78,
-      "lower_2": 1948.44
+      "lower_2": 1948.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-08",
@@ -4172,7 +5559,10 @@
       "upper_1": 2538.1,
       "lower_1": 2147.42,
       "upper_2": 2733.43,
-      "lower_2": 1952.09
+      "lower_2": 1952.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-09",
@@ -4181,7 +5571,10 @@
       "upper_1": 2541.74,
       "lower_1": 2151.07,
       "upper_2": 2737.08,
-      "lower_2": 1955.74
+      "lower_2": 1955.74,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-10",
@@ -4190,7 +5583,10 @@
       "upper_1": 2545.39,
       "lower_1": 2154.72,
       "upper_2": 2740.73,
-      "lower_2": 1959.39
+      "lower_2": 1959.39,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-11",
@@ -4199,7 +5595,10 @@
       "upper_1": 2549.04,
       "lower_1": 2158.37,
       "upper_2": 2744.38,
-      "lower_2": 1963.03
+      "lower_2": 1963.03,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-14",
@@ -4208,7 +5607,10 @@
       "upper_1": 2552.69,
       "lower_1": 2162.02,
       "upper_2": 2748.03,
-      "lower_2": 1966.68
+      "lower_2": 1966.68,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-15",
@@ -4217,7 +5619,10 @@
       "upper_1": 2556.34,
       "lower_1": 2165.67,
       "upper_2": 2751.67,
-      "lower_2": 1970.33
+      "lower_2": 1970.33,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-16",
@@ -4226,7 +5631,10 @@
       "upper_1": 2559.99,
       "lower_1": 2169.32,
       "upper_2": 2755.32,
-      "lower_2": 1973.98
+      "lower_2": 1973.98,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-17",
@@ -4235,7 +5643,10 @@
       "upper_1": 2563.64,
       "lower_1": 2172.97,
       "upper_2": 2758.97,
-      "lower_2": 1977.63
+      "lower_2": 1977.63,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-18",
@@ -4244,7 +5655,10 @@
       "upper_1": 2567.29,
       "lower_1": 2176.61,
       "upper_2": 2762.62,
-      "lower_2": 1981.28
+      "lower_2": 1981.28,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-21",
@@ -4253,7 +5667,10 @@
       "upper_1": 2570.93,
       "lower_1": 2180.26,
       "upper_2": 2766.27,
-      "lower_2": 1984.93
+      "lower_2": 1984.93,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-22",
@@ -4262,7 +5679,10 @@
       "upper_1": 2574.58,
       "lower_1": 2183.91,
       "upper_2": 2769.92,
-      "lower_2": 1988.58
+      "lower_2": 1988.58,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-23",
@@ -4271,7 +5691,10 @@
       "upper_1": 2578.23,
       "lower_1": 2187.56,
       "upper_2": 2773.57,
-      "lower_2": 1992.22
+      "lower_2": 1992.22,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-24",
@@ -4280,7 +5703,10 @@
       "upper_1": 2581.88,
       "lower_1": 2191.21,
       "upper_2": 2777.22,
-      "lower_2": 1995.87
+      "lower_2": 1995.87,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-29",
@@ -4289,7 +5715,10 @@
       "upper_1": 2585.53,
       "lower_1": 2194.86,
       "upper_2": 2780.86,
-      "lower_2": 1999.52
+      "lower_2": 1999.52,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-09-30",
@@ -4298,7 +5727,10 @@
       "upper_1": 2589.18,
       "lower_1": 2198.51,
       "upper_2": 2784.51,
-      "lower_2": 2003.17
+      "lower_2": 2003.17,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-01",
@@ -4307,7 +5739,10 @@
       "upper_1": 2592.83,
       "lower_1": 2202.15,
       "upper_2": 2788.16,
-      "lower_2": 2006.82
+      "lower_2": 2006.82,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-02",
@@ -4316,7 +5751,10 @@
       "upper_1": 2596.48,
       "lower_1": 2205.8,
       "upper_2": 2791.81,
-      "lower_2": 2010.47
+      "lower_2": 2010.47,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-05",
@@ -4325,7 +5763,10 @@
       "upper_1": 2600.12,
       "lower_1": 2209.45,
       "upper_2": 2795.46,
-      "lower_2": 2014.12
+      "lower_2": 2014.12,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-06",
@@ -4334,7 +5775,10 @@
       "upper_1": 2603.77,
       "lower_1": 2213.1,
       "upper_2": 2799.11,
-      "lower_2": 2017.77
+      "lower_2": 2017.77,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-07",
@@ -4343,7 +5787,10 @@
       "upper_1": 2607.42,
       "lower_1": 2216.75,
       "upper_2": 2802.76,
-      "lower_2": 2021.41
+      "lower_2": 2021.41,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-08",
@@ -4352,7 +5799,10 @@
       "upper_1": 2611.07,
       "lower_1": 2220.4,
       "upper_2": 2806.41,
-      "lower_2": 2025.06
+      "lower_2": 2025.06,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-12",
@@ -4361,7 +5811,10 @@
       "upper_1": 2614.72,
       "lower_1": 2224.05,
       "upper_2": 2810.05,
-      "lower_2": 2028.71
+      "lower_2": 2028.71,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-13",
@@ -4370,7 +5823,10 @@
       "upper_1": 2618.37,
       "lower_1": 2227.7,
       "upper_2": 2813.7,
-      "lower_2": 2032.36
+      "lower_2": 2032.36,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-14",
@@ -4379,7 +5835,10 @@
       "upper_1": 2622.02,
       "lower_1": 2231.34,
       "upper_2": 2817.35,
-      "lower_2": 2036.01
+      "lower_2": 2036.01,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-15",
@@ -4388,7 +5847,10 @@
       "upper_1": 2625.66,
       "lower_1": 2234.99,
       "upper_2": 2821.0,
-      "lower_2": 2039.66
+      "lower_2": 2039.66,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-16",
@@ -4397,7 +5859,10 @@
       "upper_1": 2629.31,
       "lower_1": 2238.64,
       "upper_2": 2824.65,
-      "lower_2": 2043.31
+      "lower_2": 2043.31,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-19",
@@ -4406,7 +5871,10 @@
       "upper_1": 2632.96,
       "lower_1": 2242.29,
       "upper_2": 2828.3,
-      "lower_2": 2046.96
+      "lower_2": 2046.96,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-20",
@@ -4415,7 +5883,10 @@
       "upper_1": 2636.61,
       "lower_1": 2245.94,
       "upper_2": 2831.95,
-      "lower_2": 2050.6
+      "lower_2": 2050.6,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-21",
@@ -4424,7 +5895,10 @@
       "upper_1": 2640.26,
       "lower_1": 2249.59,
       "upper_2": 2835.6,
-      "lower_2": 2054.25
+      "lower_2": 2054.25,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-22",
@@ -4433,7 +5907,10 @@
       "upper_1": 2643.91,
       "lower_1": 2253.24,
       "upper_2": 2839.24,
-      "lower_2": 2057.9
+      "lower_2": 2057.9,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-27",
@@ -4442,7 +5919,10 @@
       "upper_1": 2647.56,
       "lower_1": 2256.89,
       "upper_2": 2842.89,
-      "lower_2": 2061.55
+      "lower_2": 2061.55,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-28",
@@ -4451,7 +5931,10 @@
       "upper_1": 2651.21,
       "lower_1": 2260.53,
       "upper_2": 2846.54,
-      "lower_2": 2065.2
+      "lower_2": 2065.2,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-29",
@@ -4460,7 +5943,10 @@
       "upper_1": 2654.85,
       "lower_1": 2264.18,
       "upper_2": 2850.19,
-      "lower_2": 2068.85
+      "lower_2": 2068.85,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-10-30",
@@ -4469,7 +5955,10 @@
       "upper_1": 2658.5,
       "lower_1": 2267.83,
       "upper_2": 2853.84,
-      "lower_2": 2072.5
+      "lower_2": 2072.5,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-11-02",
@@ -4478,7 +5967,10 @@
       "upper_1": 2662.15,
       "lower_1": 2271.48,
       "upper_2": 2857.49,
-      "lower_2": 2076.14
+      "lower_2": 2076.14,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-11-03",
@@ -4487,7 +5979,10 @@
       "upper_1": 2665.8,
       "lower_1": 2275.13,
       "upper_2": 2861.14,
-      "lower_2": 2079.79
+      "lower_2": 2079.79,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-11-04",
@@ -4496,7 +5991,10 @@
       "upper_1": 2669.45,
       "lower_1": 2278.78,
       "upper_2": 2864.79,
-      "lower_2": 2083.44
+      "lower_2": 2083.44,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     },
     {
       "date": "2026-11-05",
@@ -4505,7 +6003,10 @@
       "upper_1": 2673.1,
       "lower_1": 2282.43,
       "upper_2": 2868.43,
-      "lower_2": 2087.09
+      "lower_2": 2087.09,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none"
     }
   ]
 }
