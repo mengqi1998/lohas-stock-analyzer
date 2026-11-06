@@ -86,6 +86,8 @@ def calculate_rolling_five_lines(df):
             "buy_signal": False,
             "sell_signal": False,
             "signal": "none",
+            "slope": float(slope),
+            "intercept": float(intercept),
         })
 
     # 以相鄰兩個交易日各自的五線譜判斷穿越訊號
@@ -131,6 +133,7 @@ def main():
             "stock_id": STOCK_ID,
             "window": WINDOW,
             "actual_days": len(results),
+            "raw_days": len(df),
             "status": "insufficient_data",
             "message": (
                 f"需要至少 {WINDOW + OUTPUT_DAYS - 1} 個原始交易日，"
@@ -138,8 +141,8 @@ def main():
                 f"可計算 {len(results)} 個有效日期。"
             ),
             "sigma": None,
-            "slope": None,
-            "intercept": None,
+            "slope": round(latest["slope"], 8),
+            "intercept": round(latest["intercept"], 8),
             "latest_signal": "none",
             "data": [],
         }
