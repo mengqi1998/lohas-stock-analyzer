@@ -205,6 +205,41 @@ th {
  .holding-grid,.fundamental-grid { grid-template-columns:1fr; }
  .holding-form { grid-template-columns:1fr; }
 }
+ 
+/* 白話資訊提示與精簡版面 */
+.info-tip {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:16px; height:16px; margin-left:5px; border-radius:50%;
+  background:#e8edf3; color:#315b82; font-size:11px; font-weight:700;
+  cursor:help; position:relative; vertical-align:middle;
+}
+.info-tip::after {
+  content:attr(data-tip); display:none; position:absolute; z-index:50;
+  left:50%; top:calc(100% + 8px); transform:translateX(-50%);
+  width:min(260px,75vw); padding:10px 12px; border-radius:8px;
+  background:#263445; color:#fff; font-size:12px; line-height:1.6;
+  font-weight:400; white-space:normal; text-align:left;
+  box-shadow:0 4px 14px rgba(0,0,0,.18);
+}
+.info-tip:hover::after,.info-tip:focus::after { display:block; }
+#result { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
+#result > .card { min-width:0; margin:0; }
+#result > .card:first-child,#result > .card:nth-child(5) { grid-column:1 / -1; }
+#result > .card:first-child .summary { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.guide-item { padding:12px; border-radius:8px; background:#f7f9fc; }
+.guide-item strong { display:block; margin-bottom:5px; }
+.guide-buy strong { color:#21865b; }
+.guide-sell strong { color:#c34c4c; }
+.guide-item p,.guide-foot { margin:0; font-size:13px; line-height:1.65; }
+.guide-foot { margin-top:10px; color:#718096; }
+.fundamental-item .label { display:flex; align-items:center; }
+.line-name { display:flex; align-items:center; }
+@media(max-width:760px) {
+  #result { grid-template-columns:1fr; }
+  #result > .card:first-child,#result > .card:nth-child(5) { grid-column:auto; }
+  .guide-grid { grid-template-columns:1fr; }
+}
 </style>
 </head>
 
@@ -214,8 +249,27 @@ th {
 
 <header>
   <h1>樂活五線譜</h1>
-  <div class="subtitle">台灣股票與 ETF 趨勢分析</div>
+  <div class="subtitle">用白話看懂股價位置、公司體質與自己的持有狀況</div>
 </header>
+
+<section class="card guide-card">
+  <h3>先看這裡：怎麼判斷買進與賣出？</h3>
+  <div class="guide-grid">
+    <div class="guide-item guide-buy">
+      <strong>買進觀察</strong>
+      <p>股價先跌到明顯偏低的位置，之後又回到偏低範圍內。代表低檔出現回升跡象，可以進一步檢查公司狀況與自己的資金安排。</p>
+    </div>
+    <div class="guide-item guide-sell">
+      <strong>賣出觀察</strong>
+      <p>股價先漲到明顯偏高的位置，之後又回到偏高範圍內。代表高檔出現回落跡象，可以重新檢查持有理由與風險。</p>
+    </div>
+    <div class="guide-item guide-neutral">
+      <strong>沒有出現訊號</strong>
+      <p>不代表不能買或一定要繼續持有，只表示目前沒有符合這套五線譜的買賣觀察條件。</p>
+    </div>
+  </div>
+  <p class="guide-foot">這些是提醒你進一步檢查的訊號，不是自動下單指令。買進前看公司與價格，賣出前看持有理由、部位及風險；不要只因為賺錢或虧錢就決定買賣。</p>
+</section>
 
 <section class="card">
   <h3>股票查詢</h3>
@@ -240,15 +294,15 @@ th {
 
     <div class="summary">
       <div class="summary-item">
-        <div class="label">最新資料日期</div>
+        <div class="label">資料日期 <span class="info-tip" tabindex="0" data-tip="這是目前網站資料最後更新到的交易日，不一定是今天。">i</span></div>
         <div class="value" id="latestDate">-</div>
       </div>
       <div class="summary-item">
-        <div class="label">最新收盤價</div>
+        <div class="label">最新收盤價 <span class="info-tip" tabindex="0" data-tip="股票最近一個交易日正式收盤的價格。">i</span></div>
         <div class="value" id="latestClose">-</div>
       </div>
       <div class="summary-item">
-        <div class="label">分析交易日數</div>
+        <div class="label">分析天數 <span class="info-tip" tabindex="0" data-tip="目前圖表與五線譜使用的有效交易日數。">i</span></div>
         <div class="value" id="actualDays">-</div>
       </div>
     </div>
@@ -256,17 +310,17 @@ th {
 
 
   <div class="card">
-    <h3>我的持有狀況</h3>
+    <h3>我的持有狀況 <span class="info-tip" tabindex="0" data-tip="記錄每次買進後，這裡會整理總股數、平均成本與目前帳面損益。紀錄只存在這台裝置的瀏覽器。">i</span></h3>
     <p class="subtitle">可記錄同一檔股票的多次買進，系統會依買進股數計算平均成本。資料只保存在目前瀏覽器。</p>
     <div class="holding-grid">
-      <div class="holding-stat"><div class="label">總持有股數</div><div class="value" id="holdingShares">0 股</div></div>
-      <div class="holding-stat"><div class="label">平均買進成本</div><div class="value" id="holdingAverage">-</div></div>
-      <div class="holding-stat"><div class="label">目前未實現損益</div><div class="value" id="holdingProfit">-</div></div>
+      <div class="holding-stat"><div class="label">持有股數 <span class="info-tip" tabindex="0" data-tip="所有買進紀錄的股數加總。1 張等於 1,000 股。">i</span></div><div class="value" id="holdingShares">0 股</div></div>
+      <div class="holding-stat"><div class="label">平均成本 <span class="info-tip" tabindex="0" data-tip="把每次買進金額合併後，平均每股花了多少錢；目前不含手續費與交易稅。">i</span></div><div class="value" id="holdingAverage">-</div></div>
+      <div class="holding-stat"><div class="label">目前帳面損益 <span class="info-tip" tabindex="0" data-tip="以最新收盤價估算，尚未賣出前的帳面賺賠，不代表實際已拿到的金額。">i</span></div><div class="value" id="holdingProfit">-</div></div>
     </div>
     <div class="holding-grid">
-      <div class="holding-stat"><div class="label">累計投入金額</div><div class="value" id="holdingInvested">-</div></div>
-      <div class="holding-stat"><div class="label">目前報酬率</div><div class="value" id="holdingReturn">-</div></div>
-      <div class="holding-stat"><div class="label">計算使用的收盤價</div><div class="value" id="holdingPrice">-</div></div>
+      <div class="holding-stat"><div class="label">總投入金額 <span class="info-tip" tabindex="0" data-tip="所有買進紀錄的買進金額加總，未扣除交易成本。">i</span></div><div class="value" id="holdingInvested">-</div></div>
+      <div class="holding-stat"><div class="label">目前報酬率 <span class="info-tip" tabindex="0" data-tip="目前帳面賺賠相對於投入金額的比例，未計入交易成本與配息。">i</span></div><div class="value" id="holdingReturn">-</div></div>
+      <div class="holding-stat"><div class="label">目前參考股價 <span class="info-tip" tabindex="0" data-tip="用來估算目前帳面損益的最近收盤價。">i</span></div><div class="value" id="holdingPrice">-</div></div>
     </div>
     <h4>新增一筆買進紀錄</h4>
     <div class="holding-form">
@@ -281,35 +335,35 @@ th {
   </div>
 
   <div class="card">
-    <h3>基本面與價格位置</h3>
+    <h3>公司狀況與價格位置 <span class="info-tip" tabindex="0" data-tip="個股看獲利、營收與財務狀況；ETF 看淨值、折溢價與配息。">i</span></h3>
     <p class="subtitle">個股顯示本益比、股價淨值比及殖利率；ETF 會改顯示適用的 ETF 指標，沒有可靠資料時不會猜測數值。</p>
     <div class="fundamental-grid">
-      <div class="fundamental-item"><div class="label">本益比（股價相對獲利）</div><div class="value" id="fundPER">讀取中</div></div>
-      <div class="fundamental-item"><div class="label">股價淨值比（股價相對帳面價值）</div><div class="value" id="fundPBR">讀取中</div></div>
-      <div class="fundamental-item"><div class="label">現金殖利率</div><div class="value" id="fundYield">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">本益比 <span class="info-tip" tabindex="0" data-tip="代表目前股價相對公司每股獲利的高低。要和公司過去及同產業比較，不能單看高低。">i</span></div><div class="value" id="fundPER">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">股價淨值比 <span class="info-tip" tabindex="0" data-tip="代表市場給公司的價格，相對於帳上淨資產的高低。不同產業不宜直接比較。">i</span></div><div class="value" id="fundPBR">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">現金殖利率 <span class="info-tip" tabindex="0" data-tip="用目前股價對照公司現金股利的比例；過去配息不保證未來一定相同。">i</span></div><div class="value" id="fundYield">讀取中</div></div>
     </div>
     <div class="fundamental-grid" style="margin-top:12px">
-      <div class="fundamental-item"><div class="label">最近一季每股盈餘（EPS）</div><div class="value" id="fundEPS">暫無資料</div></div>
-      <div class="fundamental-item"><div class="label">近四季本期淨利合計</div><div class="value" id="fundTTMNetIncome">暫無資料</div></div>
-      <div class="fundamental-item"><div class="label">最近一期月營收</div><div class="value" id="fundRevenue">暫無資料</div></div>
-      <div class="fundamental-item"><div class="label">月營收年增率</div><div class="value" id="fundRevenueYoY">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">最近一季每股賺多少 <span class="info-tip" tabindex="0" data-tip="公司最近一季平均每一股賺了多少錢；需搭配前幾季一起看。">i</span></div><div class="value" id="fundEPS">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">近四季賺多少 <span class="info-tip" tabindex="0" data-tip="最近四季公司稅後淨利的金額合計，反映整體獲利規模，不是每股盈餘。">i</span></div><div class="value" id="fundTTMNetIncome">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">最近一個月營收 <span class="info-tip" tabindex="0" data-tip="公司最近公布的一個月營業收入，還不是扣除成本後的獲利。">i</span></div><div class="value" id="fundRevenue">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">營收比去年同期 <span class="info-tip" tabindex="0" data-tip="比較今年同一月份和去年同一月份的營收，正數代表增加，負數代表減少。">i</span></div><div class="value" id="fundRevenueYoY">暫無資料</div></div>
     </div>
     <h4 id="stockHealthTitle">公司財務體質</h4>
     <div id="stockFundamentals">
       <div class="fundamental-grid">
-        <div class="fundamental-item"><div class="label">毛利率</div><div class="value" id="fundGrossMargin">暫無資料</div></div>
-        <div class="fundamental-item"><div class="label">營業利益率</div><div class="value" id="fundOperatingMargin">暫無資料</div></div>
-        <div class="fundamental-item"><div class="label">稅後淨利率</div><div class="value" id="fundNetMargin">暫無資料</div></div>
-        <div class="fundamental-item"><div class="label">負債比率</div><div class="value" id="fundDebtRatio">暫無資料</div></div>
-        <div class="fundamental-item"><div class="label">流動比率</div><div class="value" id="fundCurrentRatio">暫無資料</div></div>
-        <div class="fundamental-item"><div class="label">營業活動現金流</div><div class="value" id="fundOperatingCashFlow">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">賣產品留下多少 <span class="info-tip" tabindex="0" data-tip="扣掉產品或服務直接成本後，營收還剩下多少比例。">i</span></div><div class="value" id="fundGrossMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">本業賺錢能力 <span class="info-tip" tabindex="0" data-tip="扣掉日常營運費用後，本業收入還能留下多少比例。">i</span></div><div class="value" id="fundOperatingMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">最後真正留下多少 <span class="info-tip" tabindex="0" data-tip="扣除成本、費用、利息與稅後，營收最後留下多少比例。">i</span></div><div class="value" id="fundNetMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">公司有多少資產來自負債 <span class="info-tip" tabindex="0" data-tip="公司總資產中，有多少比例是透過負債取得；需和產業特性一起看。">i</span></div><div class="value" id="fundDebtRatio">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">短期還款能力 <span class="info-tip" tabindex="0" data-tip="比較一年內可變現的資產和一年內要償還的負債，作為短期付款能力參考。">i</span></div><div class="value" id="fundCurrentRatio">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">本業帶進多少現金 <span class="info-tip" tabindex="0" data-tip="公司日常營運實際收到與付出的現金差額；長期為正通常較安心，但仍要看產業與趨勢。">i</span></div><div class="value" id="fundOperatingCashFlow">暫無資料</div></div>
       </div>
     </div>
     <div id="etfFundamentals" class="hidden">
       <div class="fundamental-grid">
-        <div class="fundamental-item"><div class="label">每單位淨值（NAV）</div><div class="value" id="fundETFNav">尚未串接</div></div>
-        <div class="fundamental-item"><div class="label">折價／溢價</div><div class="value" id="fundETFPremium">尚未串接</div></div>
-        <div class="fundamental-item"><div class="label">最近一次每單位現金配息</div><div class="value" id="fundETFDistribution">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">ETF 每單位真正價值 <span class="info-tip" tabindex="0" data-tip="ETF 持有資產扣除負債後，平均分到每一單位的價值。">i</span></div><div class="value" id="fundETFNav">尚未串接</div></div>
+        <div class="fundamental-item"><div class="label">市價比淨值高或低 <span class="info-tip" tabindex="0" data-tip="市價高於淨值叫溢價，低於淨值叫折價；幅度太大時要留意買進價格。">i</span></div><div class="value" id="fundETFPremium">尚未串接</div></div>
+        <div class="fundamental-item"><div class="label">最近一次每單位配息 <span class="info-tip" tabindex="0" data-tip="ETF 最近一次公告每單位配發的現金，不代表未來每次都會配相同金額。">i</span></div><div class="value" id="fundETFDistribution">暫無資料</div></div>
       </div>
       <p class="chart-note">ETF 不適用個股本益比、股價淨值比及公司財報比率。淨值與折溢價尚未自動串接，請以下方交易所公告為準。<a href="https://www.twse.com.tw/zh/ETFortune/products" target="_blank" rel="noopener">證交所 ETF e 添富（上市 ETF）</a>｜<a href="https://mops.twse.com.tw/mops/web/t78sb35" target="_blank" rel="noopener">公開資訊觀測站：基金每日淨資產價值</a></p>
     </div>
@@ -317,45 +371,45 @@ th {
   </div>
 
   <div class="card">
-    <h3>最新訊號</h3>
+    <h3>最新訊號 <span class="info-tip" tabindex="0" data-tip="買進或賣出觀察訊號，是股價穿出極端區域後又回到區間內的提醒，不是立即下單建議。">i</span></h3>
 
     <div class="signal-panel">
-      <div class="signal-title">目前最新交易日訊號</div>
+      <div class="signal-title">目前最新交易日訊號 <span class="info-tip" tabindex="0" data-tip="只依最近一個交易日的收盤價判斷。">i</span></div>
       <div id="latestSignal" class="signal-value signal-none">
         目前無訊號
       </div>
       <div id="signalDate" class="status"></div>
     </div>
 
-    <h3>樂活五線譜數值</h3>
+    <h3>五線譜目前位置 <span class="info-tip" tabindex="0" data-tip="五條線用來比較目前股價相對於這檔標的過去走勢的位置；不是保證會反彈或下跌的價格。">i</span></h3>
 
     <div class="line-list">
       <div class="line-item">
-        <span class="line-name">明顯偏高線（+2σ）</span>
+        <span class="line-name">明顯偏高 <span class="info-tip" tabindex="0" data-tip="股價過去走勢中相對少見的高檔區域，單獨到這裡不代表一定要賣。">i</span></span>
         <span class="line-value" id="upper2">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">偏高線（+1σ）</span>
+        <span class="line-name">偏高 <span class="info-tip" tabindex="0" data-tip="目前股價高於長期趨勢較多，適合留意是否過熱。">i</span></span>
         <span class="line-value" id="upper1">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">長期趨勢線</span>
+        <span class="line-name">長期趨勢 <span class="info-tip" tabindex="0" data-tip="依最近一段時間的股價走勢整理出的中間參考位置，不是未來目標價。">i</span></span>
         <span class="line-value" id="trend">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">偏低線（-1σ）</span>
+        <span class="line-name">偏低 <span class="info-tip" tabindex="0" data-tip="目前股價低於長期趨勢較多，可以進一步研究，但不代表一定便宜。">i</span></span>
         <span class="line-value" id="lower1">-</span>
       </div>
       <div class="line-item">
-        <span class="line-name">明顯偏低線（-2σ）</span>
+        <span class="line-name">明顯偏低 <span class="info-tip" tabindex="0" data-tip="股價相對過去走勢處於較少見的低檔區域，仍需確認公司是否有基本面風險。">i</span></span>
         <span class="line-value" id="lower2">-</span>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <h3>歷史股價與五線譜</h3>
-    <div id="chartPeriod" class="subtitle">最近 500 個交易日</div>
+    <h3>股價走勢圖 <span class="info-tip" tabindex="0" data-tip="用來觀察收盤價和五條參考線過去如何變化。圖上的買賣標記只是歷史觀察訊號。">i</span></h3>
+    <div id="chartPeriod" class="subtitle">最近約 500 個交易日</div>
 
     <div class="chart-container">
       <canvas id="fiveLineChart"></canvas>
@@ -369,7 +423,7 @@ th {
   </div>
 
   <div class="card">
-    <h3>歷史訊號紀錄</h3>
+    <h3>過去出現過的訊號 <span class="info-tip" tabindex="0" data-tip="列出過去符合買進或賣出觀察條件的日期，不代表當時訊號之後一定獲利。">i</span></h3>
 
     <div class="table-wrap">
       <table>
@@ -1245,231 +1299,18 @@ searchStock(false);
 
 <section class="method-section">
   <details>
-  <summary>📘 認識五線譜：查看計算方式、專業名詞與使用限制</summary>
-  <h2>樂活五線譜｜計算方式與欄位說明</h2>
-
-  <p>
-    本網站以歷史收盤價建立統計趨勢通道，透過線性迴歸與標準差，
-    觀察股價相對於自身歷史趨勢的位置。
-    所有訊號均以每日收盤價判斷。
-  </p>
-
-  <h3>一、五線譜計算方式</h3>
-
-  <p>
-    採用 <strong>Rolling Regression（滾動線性迴歸）</strong>。
-    每個交易日使用當天及之前最近 500 個交易日的收盤價，
-    獨立計算該日的趨勢線與標準差。
-  </p>
-
-  <div class="formula">
-    趨勢線：y = a × x + b
-    <br>
-    殘差：e = 實際收盤價 - 趨勢線預測值
-    <br>
-    標準差：σ = √(Σ(e - 平均殘差)² / 500)
-  </div>
-
-  <p>
-    其中 x 為迴歸區間內的交易日序號（0 至 499），
-    y 為該交易日收盤價；a 為迴歸斜率，b 為截距。
-    標準差採用母體標準差（ddof = 0）。
-  </p>
-
-  <h3>二、五條線的定義</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>線別</th>
-        <th>計算方式</th>
-        <th>意義</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>明顯偏高線</td>
-        <td>趨勢線 + 2σ</td>
-        <td>高於趨勢線兩個標準差的位置</td>
-      </tr>
-      <tr>
-        <td>偏高線</td>
-        <td>趨勢線 + 1σ</td>
-        <td>高於趨勢線一個標準差的位置</td>
-      </tr>
-      <tr>
-        <td>長期趨勢線</td>
-        <td>線性迴歸趨勢線</td>
-        <td>歷史收盤價的統計趨勢</td>
-      </tr>
-      <tr>
-        <td>偏低線</td>
-        <td>趨勢線 - 1σ</td>
-        <td>低於趨勢線一個標準差的位置</td>
-      </tr>
-      <tr>
-        <td>明顯偏低線</td>
-        <td>趨勢線 - 2σ</td>
-        <td>低於趨勢線兩個標準差的位置</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h3>三、買進與賣出觀察訊號</h3>
-
-  <details open>
-    <summary>🟢 買進觀察訊號（buy）</summary>
-    <p>同時符合以下兩個條件：</p>
-    <ol>
-      <li>前一交易日收盤價低於前一交易日的明顯偏低線。</li>
-      <li>當日收盤價回到當日明顯偏低線之上或相等。</li>
-    </ol>
-    <div class="formula">
-      前日收盤價 &lt; 前日明顯偏低線
-      <br>
-      當日收盤價 ≥ 當日明顯偏低線
-    </div>
-    <p>代表股價由明顯偏低線外側重新回到明顯偏低線範圍內。</p>
-  </details>
-
-  <details>
-    <summary>🔴 賣出觀察訊號（sell）</summary>
-    <p>同時符合以下兩個條件：</p>
-    <ol>
-      <li>前一交易日收盤價高於前一交易日的明顯偏高線。</li>
-      <li>當日收盤價回到當日明顯偏高線之下或相等。</li>
-    </ol>
-    <div class="formula">
-      前日收盤價 &gt; 前日明顯偏高線
-      <br>
-      當日收盤價 ≤ 當日明顯偏高線
-    </div>
-    <p>代表股價由明顯偏高線外側重新回到明顯偏高線範圍內。</p>
-  </details>
-
-  <h3>四、資料欄位說明</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>欄位名稱</th>
-        <th>內容</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><code>date</code></td><td>交易日期。</td></tr>
-      <tr><td><code>close</code></td><td>當日收盤價。</td></tr>
-      <tr><td><code>trend</code></td><td>當日滾動迴歸趨勢線數值。</td></tr>
-      <tr><td><code>upper_1</code></td><td>當日趨勢線 + 1σ。</td></tr>
-      <tr><td><code>lower_1</code></td><td>當日趨勢線 - 1σ。</td></tr>
-      <tr><td><code>upper_2</code></td><td>當日趨勢線 + 2σ。</td></tr>
-      <tr><td><code>lower_2</code></td><td>當日趨勢線 - 2σ。</td></tr>
-      <tr><td><code>buy_signal</code></td><td>是否出現買進觀察訊號，true / false。</td></tr>
-      <tr><td><code>sell_signal</code></td><td>是否出現賣出觀察訊號，true / false。</td></tr>
-      <tr><td><code>signal</code></td><td>訊號類型：buy、sell 或 none。</td></tr>
-    </tbody>
-  </table>
-
-  <h3>五、JSON 整體資料欄位</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>欄位名稱</th>
-        <th>內容</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><code>stock_id</code></td><td>股票或 ETF 代號。</td></tr>
-      <tr><td><code>window</code></td><td>每次迴歸使用的交易日數，目前為 500。</td></tr>
-      <tr><td><code>actual_days</code></td><td>實際輸出的有效計算日數。</td></tr>
-      <tr><td><code>raw_days</code></td><td>原始股價資料的交易日數。</td></tr>
-      <tr><td><code>status</code></td><td>資料狀態：success 或 insufficient_data。</td></tr>
-      <tr><td><code>calculation_method</code></td><td>計算方法，目前為 rolling_linear_regression。</td></tr>
-      <tr><td><code>sigma</code></td><td>最新一期的標準差。</td></tr>
-      <tr><td><code>slope</code></td><td>最新一期 500 日迴歸斜率。</td></tr>
-      <tr><td><code>intercept</code></td><td>最新一期 500 日迴歸截距。</td></tr>
-      <tr><td><code>latest_signal</code></td><td>最新交易日的訊號類型。</td></tr>
-      <tr><td><code>data</code></td><td>每日收盤價、五線數值與訊號紀錄。</td></tr>
-    </tbody>
-  </table>
-
-  <h3>六、個股與 ETF 基本面指標</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>指標</th>
-        <th>個股</th>
-        <th>ETF</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>PER（本益比）</td>
-        <td>適用</td>
-        <td>不適用</td>
-      </tr>
-      <tr>
-        <td>PBR（股價淨值比）</td>
-        <td>適用</td>
-        <td>不直接套用</td>
-      </tr>
-      <tr>
-        <td>殖利率</td>
-        <td>現金股利殖利率</td>
-        <td>配息殖利率</td>
-      </tr>
-      <tr>
-        <td>折溢價</td>
-        <td>不適用</td>
-        <td>適用</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h3>七、基本面與財務體質指標</h3>
-  <table>
-    <thead><tr><th>指標</th><th>白話說明</th><th>判讀提醒</th></tr></thead>
-    <tbody>
-      <tr><td>本益比</td><td>目前股價是每股盈餘的幾倍。</td><td>需與公司自身歷史、同產業比較，不能只看數字高低。</td></tr>
-      <tr><td>股價淨值比</td><td>目前股價相對每股帳面淨值的倍數。</td><td>產業資產結構不同，不宜跨產業直接比較。</td></tr>
-      <tr><td>毛利率</td><td>營收扣除直接成本後，還剩多少比例。</td><td>需觀察長期變化及產業特性。</td></tr>
-      <tr><td>營業利益率</td><td>扣除營業費用後，核心本業留下的比例。</td><td>可搭配營收一起觀察本業獲利是否改善。</td></tr>
-      <tr><td>稅後淨利率</td><td>每一元營收最後留下多少稅後淨利。</td><td>可能受業外損益及一次性項目影響。</td></tr>
-      <tr><td>負債比率</td><td>總負債占總資產的比例。</td><td>產業資本結構不同，不能用單一門檻判定好壞。</td></tr>
-      <tr><td>流動比率</td><td>流動資產相對流動負債的倍數。</td><td>僅作短期償債能力參考，仍需檢視資產品質。</td></tr>
-      <tr><td>營業活動現金流</td><td>公司本業營運實際帶來的現金流入或流出。</td><td>需看多期趨勢，不宜只用單季數字下結論。</td></tr>
-      <tr><td>近四季本期淨利合計</td><td>最近四個財報季度的稅後淨利金額加總。</td><td>這是金額，不是 EPS；本網站不直接相加各季 EPS，避免配股或分割造成股數基準不一致。</td></tr>
-    </tbody>
-  </table>
-
-  <h3>八、ETF 專用觀察</h3>
-  <p>ETF 不套用個股本益比、股價淨值比或公司財報比率。應觀察每單位淨值（NAV）、市價相對淨值的折溢價、配息紀錄、投資標的與追蹤誤差。網站目前會顯示可取得的最近一次現金配息；NAV 與折溢價尚未自動串接，請以交易所或投信公告為準。</p>
-  <p>官方參考：<a href="https://www.twse.com.tw/zh/ETFortune/products" target="_blank" rel="noopener">證交所 ETF e 添富</a>、<a href="https://mops.twse.com.tw/mops/web/t78sb35" target="_blank" rel="noopener">公開資訊觀測站基金每日淨資產價值</a>。</p>
-
-  <h3>九、使用限制與注意事項</h3>
-
-  <div class="notice">
-    <p><strong>1. 訊號不等於買賣建議</strong></p>
-    <p>五線譜是統計觀察工具，訊號不保證獲利，也不代表股價必然反轉。</p>
-
-    <p><strong>2. 股價資料可能尚未還原權息</strong></p>
-    <p>若使用未還原股價，除權息、減資、股票分割等事件可能影響長期趨勢與標準差。</p>
-
-    <p><strong>3. 標準差不代表固定報酬機率</strong></p>
-    <p>股價分布未必符合常態分布，因此 ±1σ、±2σ 是統計距離，不代表固定的漲跌機率。</p>
-
-    <p><strong>4. 資料更新時間</strong></p>
-    <p>網站使用 GitHub Actions 定期更新資料；瀏覽器同日快取可能顯示先前下載的版本，可使用強制更新取得網站最新資料。</p>
-
-    <p><strong>5. 歷史訊號的解讀</strong></p>
-    <p>每個交易日只使用當天及之前的資料計算五線，避免使用未來股價。不過這仍是統計訊號，實際交易還需考慮交易成本、滑價及其他風險。</p>
-  </div>
-
-  <p style="margin-top:20px;color:#64748b;font-size:12px;">
-    樂活五線譜｜資料分析僅供研究與投資觀察參考。
-  </p>
+    <summary>更多說明：資料從哪裡來？這些提醒怎麼看？</summary>
+    <h3>五線譜在看什麼？</h3>
+    <p>網站會參考這檔股票或 ETF 最近約 500 個交易日的走勢，整理出一條長期趨勢，以及高於或低於趨勢的參考區域。每個交易日都只使用當天以前已經發生的價格。</p>
+    <h3>買進觀察代表什麼？</h3>
+    <p>股價先跌到明顯偏低區域，後來又回到該區域內，代表低檔出現回升跡象。這只是提醒你進一步研究，不代表股價一定會上漲。</p>
+    <h3>賣出觀察代表什麼？</h3>
+    <p>股價先漲到明顯偏高區域，後來又回到該區域內，代表高檔出現回落跡象。這只是提醒你重新檢查持有理由，不代表一定要賣出。</p>
+    <h3>個股和 ETF 看哪些資料？</h3>
+    <p>個股主要看公司賺錢能力、營收、負債與現金流；ETF 主要看每單位淨值、市價和淨值的差距、配息，以及持有的投資標的。</p>
+    <h3>資料與使用提醒</h3>
+    <p>資料來源以畫面標示為準。股價目前使用一般收盤價，尚未完整還原除權息、減資或分割；不同指標的資料日期也可能不同。資料不足時會顯示「暫無資料」，不會自行補猜。</p>
+    <p>任何指標都不能單獨決定買賣。請同時考慮公司狀況、價格、資金需求、投資期限與自己能承受的風險。</p>
   </details>
 </section>
 
