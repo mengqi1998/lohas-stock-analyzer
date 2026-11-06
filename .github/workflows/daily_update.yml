@@ -3,8 +3,8 @@ name: Daily Stock Data Update
 
 on:
   schedule:
-    # 每天台灣時間早上 08:00（週一至週五）
-    - cron: "0 0 * * 1-5"
+    # 台灣時間週一至週五 18:30，避開開盤前只能取得前一交易日資料的情況
+    - cron: "30 10 * * 1-5"
 
   workflow_dispatch:
 
