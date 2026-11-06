@@ -34,14 +34,28 @@ def fetch_stock_price(stock_id):
         headers=headers,
         timeout=60
     )
-    response.raise_for_status()
-
-    result = response.json()
-
+    
+    # 先取得 API 回應內容，再判斷是否成功
+    try:
+        result = response.json()
+    except ValueError:
+        raise RuntimeError(
+            f"FinMind 回傳非 JSON 格式：HTTP {response.status_code}\n"
+            f"{response.text[:1000]}"
+        )
+    
+    if response.status_code != 200:
+        raise RuntimeError(
+            f"FinMind HTTP 錯誤：{response.status_code}\n"
+            f"API 回應：{result}"
+        )
+    
     if result.get("status") != 200:
         raise RuntimeError(
-            f"FinMind API 錯誤：{result.get('msg')}"
+            f"FinMind API 錯誤：{result.get('msg')}\n"
+            f"完整回應：{result}"
         )
+
 
     records = result.get("data", [])
 
