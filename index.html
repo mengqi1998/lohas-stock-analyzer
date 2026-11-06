@@ -549,6 +549,85 @@ input, button { max-width:100%; }
 }
 </style>
 
+/* 持有狀況改放右上角，並改用簡潔的文字按鈕與箭頭 */
+.holding-sidebar {
+  left:auto !important;
+  right:14px !important;
+}
+.holding-drawer {
+  border:1px solid #d9e2ec;
+  border-radius:999px;
+  padding:5px 9px 5px 14px !important;
+  background:rgba(255,255,255,.97);
+  box-shadow:0 3px 12px rgba(35,55,75,.12);
+  transition:box-shadow .18s ease, border-color .18s ease;
+}
+.holding-drawer[open] {
+  border-color:#9fb4c9;
+  border-radius:14px;
+  box-shadow:0 5px 18px rgba(35,55,75,.16);
+}
+.holding-drawer > summary {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:30px;
+  list-style:none;
+  color:#29445e;
+  font-size:13px;
+  font-weight:650;
+  letter-spacing:.2px;
+  cursor:pointer;
+  user-select:none;
+}
+.holding-drawer > summary::-webkit-details-marker { display:none; }
+.holding-drawer > summary::before { content:none !important; display:none !important; }
+.holding-drawer > summary > span:first-of-type {
+  flex:0 1 auto;
+  min-width:0;
+}
+.holding-drawer > summary .info-tip {
+  width:15px;
+  height:15px;
+  margin-left:3px;
+  font-size:10px;
+}
+.holding-drawer > summary::after {
+  content:"";
+  width:8px;
+  height:8px;
+  flex:0 0 8px;
+  margin:0 2px 4px 1px;
+  border-right:2px solid #71869a;
+  border-bottom:2px solid #71869a;
+  transform:rotate(45deg);
+  transition:transform .18s ease, margin .18s ease;
+}
+.holding-drawer[open] > summary::after {
+  transform:rotate(225deg);
+  margin-bottom:-4px;
+}
+.holding-drawer .drawer-hint { display:none !important; }
+.holding-drawer-content {
+  left:auto;
+  right:0;
+  top:calc(100% + 9px);
+  border-color:#d9e2ec;
+}
+@media(max-width:600px) {
+  .holding-sidebar {
+    right:8px !important;
+    left:auto !important;
+  }
+  .holding-drawer { padding:5px 8px 5px 12px !important; }
+  .holding-drawer-content {
+    right:0;
+    left:auto;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
