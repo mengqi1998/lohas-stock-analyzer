@@ -1,238 +1,186 @@
 
 import json
-from pathlib import Path
-
+import os
 import numpy as np
 import pandas as pd
 
-
-# =========================
-# 基本設定
-# =========================
-
 STOCK_ID = "2330"
 WINDOW = 500
+OUTPUT_DAYS = 500
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-INPUT_FILE = BASE_DIR / "data" / "prices" / f"{STOCK_ID}.json"
-OUTPUT_DIR = BASE_DIR / "data" / "five_lines"
-OUTPUT_FILE = OUTPUT_DIR / f"{STOCK_ID}.json"
+PRICE_FILE = f"data/prices/{STOCK_ID}.json"
+OUTPUT_FILE = f"data/five_lines/{STOCK_ID}.json"
 
 
-def main():
+def load_price_data():
+    if not os.path.exists(PRICE_FILE):
+        raise FileNotFoundError(f"找不到股價資料：{PRICE_FILE}")
 
-    # =========================
-    # 讀取資料
-    # =========================
+    with open(PRICE_FILE, "r", encoding="utf-8") as f:
+        raw = json.load(f)
 
-    if not INPUT_FILE.exists():
-        raise FileNotFoundError(f"找不到股價資料：{INPUT_FILE}")
-
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        raw_data = json.load(f)
-
-    records = raw_data.get("data", []) if isinstance(raw_data, dict) else raw_data
-
-    if not records:
-        raise ValueError("股價資料為空，無法計算")
+    # 支援 API 常見的 {"data": [...]} 格式
+    if isinstance(raw, dict):
+        records = raw.get("data", [])
+    elif isinstance(raw, list):
+        records = raw
+    else:
+        records = []
 
     df = pd.DataFrame(records)
 
-    required_columns = {"date", "close"}
+    if df.empty:
+        raise ValueError("股價資料是空的")
 
-    if not required_columns.issubset(df.columns):
-        raise ValueError(
-            f"缺少必要欄位：{required_columns - set(df.columns)}"
-        )
+    if "date" not in df.columns or "close" not in df.columns:
+        raise ValueError("股價資料缺少 date 或 close 欄位")
 
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["close"] = pd.to_numeric(df["close"], errors="coerce")
 
+    df = df.dropna(subset=["date", "close"])
+    df = df[df["close"] > 0]
+
     df = (
-        df.dropna(subset=["date", "close"])
-        .sort_values("date")
+        df.sort_values("date")
         .drop_duplicates(subset=["date"], keep="last")
-        .tail(WINDOW)
         .reset_index(drop=True)
     )
 
-    actual_days = len(df)
+    return df
 
-    # =========================
-    # 資料不足處理
-    # =========================
 
-    if actual_days < WINDOW:
+def calculate_rolling_five_lines(df):
+    results = []
 
-        result = {
-            "stock_id": STOCK_ID,
-            "window": WINDOW,
-            "actual_days": actual_days,
-            "status": "insufficient_data",
-            "message": (
-                f"資料不足，需要 {WINDOW} 個交易日，"
-                f"目前只有 {actual_days} 個交易日。"
-            ),
-            "data": []
-        }
+    # 每一天都只使用當天及之前的 500 個交易日
+    for end_idx in range(WINDOW - 1, len(df)):
+        start_idx = end_idx - WINDOW + 1
 
-    else:
+        window_df = df.iloc[start_idx:end_idx + 1]
 
-        # =========================
-        # 線性迴歸與五線譜
-        # =========================
+        y = window_df["close"].to_numpy(dtype=float)
+        x = np.arange(WINDOW, dtype=float)
 
-        x = np.arange(actual_days)
-
-        y = df["close"].to_numpy(dtype=float)
-
+        # 線性迴歸：trend = slope * x + intercept
         slope, intercept = np.polyfit(x, y, 1)
 
-        trend = slope * x + intercept
+        trend_values = slope * x + intercept
+        residuals = y - trend_values
 
-        residuals = y - trend
-
+        # 母體標準差
         sigma = float(np.std(residuals, ddof=0))
 
-        df["trend"] = trend
-        df["upper_1"] = trend + sigma
-        df["lower_1"] = trend - sigma
-        df["upper_2"] = trend + 2 * sigma
-        df["lower_2"] = trend - 2 * sigma
+        # 只取當日（迴歸區間最後一天）的趨勢線數值
+        current_trend = float(slope * (WINDOW - 1) + intercept)
+        current_close = float(df.loc[end_idx, "close"])
 
-        # =========================
-        # 買進 / 賣出觀察訊號
-        # =========================
+        results.append({
+            "date": df.loc[end_idx, "date"].strftime("%Y-%m-%d"),
+            "close": current_close,
+            "trend": current_trend,
+            "upper_1": current_trend + sigma,
+            "lower_1": current_trend - sigma,
+            "upper_2": current_trend + 2 * sigma,
+            "lower_2": current_trend - 2 * sigma,
+            "buy_signal": False,
+            "sell_signal": False,
+            "signal": "none",
+        })
 
-        df["buy_signal"] = False
-        df["sell_signal"] = False
-        df["signal"] = "none"
+    # 以相鄰兩個交易日各自的五線譜判斷穿越訊號
+    for i in range(1, len(results)):
+        previous = results[i - 1]
+        current = results[i]
 
-        for i in range(1, actual_days):
+        # 買進觀察：
+        # 前一日收盤低於前一日下下線，
+        # 當日收盤回到當日下下線之上或相等
+        if (
+            previous["close"] < previous["lower_2"]
+            and current["close"] >= current["lower_2"]
+        ):
+            current["buy_signal"] = True
+            current["signal"] = "buy"
 
-            previous_close = df.loc[i - 1, "close"]
-            current_close = df.loc[i, "close"]
+        # 賣出觀察：
+        # 前一日收盤高於前一日上上線，
+        # 當日收盤回到當日上上線之下或相等
+        elif (
+            previous["close"] > previous["upper_2"]
+            and current["close"] <= current["upper_2"]
+        ):
+            current["sell_signal"] = True
+            current["signal"] = "sell"
 
-            previous_lower = df.loc[i - 1, "lower_2"]
-            current_lower = df.loc[i, "lower_2"]
+    return results
 
-            previous_upper = df.loc[i - 1, "upper_2"]
-            current_upper = df.loc[i, "upper_2"]
 
-            # 買進觀察：
-            # 前一天收盤價在下下線以下
-            # 今天收盤價重新回到下下線之上
+def main():
+    df = load_price_data()
 
-            if (
-                previous_close < previous_lower
-                and current_close >= current_lower
-            ):
+    all_results = calculate_rolling_five_lines(df)
 
-                df.loc[i, "buy_signal"] = True
-                df.loc[i, "signal"] = "buy"
+    # 只保留最近 500 個有效計算日
+    results = all_results[-OUTPUT_DAYS:]
 
-            # 賣出觀察：
-            # 前一天收盤價在上上線以上
-            # 今天收盤價重新回到上上線之下
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
-            elif (
-                previous_close > previous_upper
-                and current_close <= current_upper
-            ):
-
-                df.loc[i, "sell_signal"] = True
-                df.loc[i, "signal"] = "sell"
-
-        # =========================
-        # 整理輸出資料
-        # =========================
-
-        output_data = []
-
-        for _, row in df.iterrows():
-
-            output_data.append({
-
-                "date": row["date"].strftime("%Y-%m-%d"),
-
-                "close": round(float(row["close"]), 2),
-
-                "trend": round(float(row["trend"]), 2),
-
-                "upper_1": round(float(row["upper_1"]), 2),
-
-                "lower_1": round(float(row["lower_1"]), 2),
-
-                "upper_2": round(float(row["upper_2"]), 2),
-
-                "lower_2": round(float(row["lower_2"]), 2),
-
-                "buy_signal": bool(row["buy_signal"]),
-
-                "sell_signal": bool(row["sell_signal"]),
-
-                "signal": row["signal"]
-
-            })
-
-        result = {
-
+    if len(results) < OUTPUT_DAYS:
+        output = {
             "stock_id": STOCK_ID,
-
             "window": WINDOW,
+            "actual_days": len(results),
+            "status": "insufficient_data",
+            "message": (
+                f"需要至少 {WINDOW + OUTPUT_DAYS - 1} 個原始交易日，"
+                f"目前只有 {len(df)} 個原始交易日，"
+                f"可計算 {len(results)} 個有效日期。"
+            ),
+            "sigma": None,
+            "slope": None,
+            "intercept": None,
+            "latest_signal": "none",
+            "data": [],
+        }
+    else:
+        latest = results[-1]
 
-            "actual_days": actual_days,
-
+        output = {
+            "stock_id": STOCK_ID,
+            "window": WINDOW,
+            "actual_days": len(results),
+            "raw_days": len(df),
             "status": "success",
-
-            "sigma": round(sigma, 4),
-
-            "slope": round(float(slope), 6),
-
-            "intercept": round(float(intercept), 4),
-
-            "latest_signal": output_data[-1]["signal"],
-
-            "data": output_data
-
+            "calculation_method": "rolling_linear_regression",
+            "sigma": round(
+                (latest["upper_1"] - latest["trend"]), 4
+            ),
+            "slope": None,
+            "intercept": None,
+            "latest_signal": latest["signal"],
+            "data": [
+                {
+                    **row,
+                    "close": round(row["close"], 4),
+                    "trend": round(row["trend"], 4),
+                    "upper_1": round(row["upper_1"], 4),
+                    "lower_1": round(row["lower_1"], 4),
+                    "upper_2": round(row["upper_2"], 4),
+                    "lower_2": round(row["lower_2"], 4),
+                }
+                for row in results
+            ],
         }
 
-    # =========================
-    # 儲存 JSON
-    # =========================
-
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
-        json.dump(
-            result,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    print("五線譜計算完成")
     print(f"股票代號：{STOCK_ID}")
-    print(f"資料筆數：{actual_days}")
-    print(f"狀態：{result['status']}")
-
-    if result["status"] == "success":
-
-        print(f"最新訊號：{result['latest_signal']}")
-
-        buy_count = sum(
-            item["buy_signal"] for item in result["data"]
-        )
-
-        sell_count = sum(
-            item["sell_signal"] for item in result["data"]
-        )
-
-        print(f"買進觀察訊號數量：{buy_count}")
-        print(f"賣出觀察訊號數量：{sell_count}")
-
+    print(f"原始交易日數：{len(df)}")
+    print(f"有效計算日數：{len(results)}")
+    print(f"資料狀態：{output['status']}")
+    print(f"最新訊號：{output['latest_signal']}")
     print(f"輸出位置：{OUTPUT_FILE}")
 
 
