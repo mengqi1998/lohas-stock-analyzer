@@ -290,9 +290,28 @@ th {
     </div>
     <div class="fundamental-grid" style="margin-top:12px">
       <div class="fundamental-item"><div class="label">最近一季每股盈餘（EPS）</div><div class="value" id="fundEPS">暫無資料</div></div>
-      <div class="fundamental-item"><div class="label">近四季每股盈餘合計</div><div class="value" id="fundTTMEPS">暫無資料</div></div>
+      <div class="fundamental-item"><div class="label">近四季本期淨利合計</div><div class="value" id="fundTTMNetIncome">暫無資料</div></div>
       <div class="fundamental-item"><div class="label">最近一期月營收</div><div class="value" id="fundRevenue">暫無資料</div></div>
       <div class="fundamental-item"><div class="label">月營收年增率</div><div class="value" id="fundRevenueYoY">暫無資料</div></div>
+    </div>
+    <h4 id="stockHealthTitle">公司財務體質</h4>
+    <div id="stockFundamentals">
+      <div class="fundamental-grid">
+        <div class="fundamental-item"><div class="label">毛利率</div><div class="value" id="fundGrossMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">營業利益率</div><div class="value" id="fundOperatingMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">稅後淨利率</div><div class="value" id="fundNetMargin">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">負債比率</div><div class="value" id="fundDebtRatio">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">流動比率</div><div class="value" id="fundCurrentRatio">暫無資料</div></div>
+        <div class="fundamental-item"><div class="label">營業活動現金流</div><div class="value" id="fundOperatingCashFlow">暫無資料</div></div>
+      </div>
+    </div>
+    <div id="etfFundamentals" class="hidden">
+      <div class="fundamental-grid">
+        <div class="fundamental-item"><div class="label">每單位淨值（NAV）</div><div class="value" id="fundETFNav">尚未串接</div></div>
+        <div class="fundamental-item"><div class="label">折價／溢價</div><div class="value" id="fundETFPremium">尚未串接</div></div>
+        <div class="fundamental-item"><div class="label">最近一次每單位現金配息</div><div class="value" id="fundETFDistribution">暫無資料</div></div>
+      </div>
+      <p class="chart-note">ETF 不適用個股本益比、股價淨值比及公司財報比率。淨值與折溢價尚未自動串接，請以下方交易所公告為準。<a href="https://www.twse.com.tw/zh/ETFortune/products" target="_blank" rel="noopener">證交所 ETF e 添富（上市 ETF）</a>｜<a href="https://mops.twse.com.tw/mops/web/t78sb35" target="_blank" rel="noopener">公開資訊觀測站：基金每日淨資產價值</a></p>
     </div>
     <div id="fundamentalNote" class="chart-note">資料會顯示來源與更新日期；缺少資料時會標示暫無資料。</div>
   </div>
@@ -863,6 +882,8 @@ function renderChart(rows) {
 let currentHoldingStock = "";
 let currentHoldingClose = 0;
 let currentHoldingLatest = null;
+let currentFundamentalData = null;
+let currentAssetType = "stock";
 
 function holdingKey(stockId) { return "lohas_holdings_" + stockId; }
 
@@ -924,15 +945,7 @@ function renderHoldings(stockId, close, latest) {
     });
   }
 
-  const assessment = document.getElementById("holdingAssessment");
-  if (!shares) {
-    assessment.textContent = "尚未有持有紀錄。新增買進紀錄後，系統會計算平均成本、損益及目前股價所在區間。";
-  } else {
-    const pos = getPricePosition(latest);
-    const profitText = profit >= 0 ? "目前帳面獲利 " : "目前帳面虧損 ";
-    const sell = latest.signal === "sell" ? "今天出現五線譜的賣出觀察訊號，建議再檢視基本面與個人風險。" : "今天尚未出現五線譜的賣出觀察訊號。";
-    assessment.textContent = "目前股價位於「" + pos + "」；" + profitText + money(Math.abs(profit)) + "（" + rate.toFixed(2) + "%）。" + sell + " 這是觀察資訊，不代表應立即買進或賣出。";
-  }
+  updateHoldingAssessment();
 }
 
 function getPricePosition(row) {
@@ -984,28 +997,133 @@ function addHolding() {
 }
 
 async function loadFundamentals(stockId) {
-  const ids = ["fundPER","fundPBR","fundYield"];
-  ids.forEach(id => document.getElementById(id).textContent = "讀取中");
+  const ids = [
+    "fundPER","fundPBR","fundYield","fundEPS","fundTTMNetIncome",
+    "fundRevenue","fundRevenueYoY","fundGrossMargin","fundOperatingMargin",
+    "fundNetMargin","fundDebtRatio","fundCurrentRatio","fundOperatingCashFlow",
+    "fundETFNav","fundETFPremium","fundETFDistribution"
+  ];
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = "讀取中";
+  });
+
   try {
     const response = await fetch("data/fundamentals/" + encodeURIComponent(stockId) + ".json?t=" + Date.now());
     if (!response.ok) throw new Error("目前沒有基本面資料檔");
-    const data = await response.json();
-    if (data.status !== "success" || !data.data) throw new Error(data.message || "基本面資料不足");
-    document.getElementById("fundPER").textContent = data.data.PER == null ? "暫無資料" : Number(data.data.PER).toFixed(2) + " 倍";
-    document.getElementById("fundPBR").textContent = data.data.PBR == null ? "暫無資料" : Number(data.data.PBR).toFixed(2) + " 倍";
-    document.getElementById("fundYield").textContent = data.data.dividend_yield == null ? "暫無資料" : Number(data.data.dividend_yield).toFixed(2) + "%";
-    document.getElementById("fundEPS").textContent = data.data.latest_quarter_EPS == null ? "暫無資料" : Number(data.data.latest_quarter_EPS).toFixed(2) + " 元";
-    document.getElementById("fundTTMEPS").textContent = data.data.TTM_EPS == null ? "暫無資料" : Number(data.data.TTM_EPS).toFixed(2) + " 元";
-    document.getElementById("fundRevenue").textContent = data.data.revenue == null ? "暫無資料" : (Number(data.data.revenue) / 100000000).toFixed(2) + " 億元";
-    document.getElementById("fundRevenueYoY").textContent = data.data.revenue_yoy == null ? "暫無資料" : ((Number(data.data.revenue_yoy) >= 0 ? "+" : "") + Number(data.data.revenue_yoy).toFixed(2) + "%");
-    document.getElementById("fundamentalNote").textContent = "估值資料日期：" + (data.data.date || "未提供") + "；EPS 日期：" + (data.data.EPS_date || "未提供") + "；營收日期：" + (data.data.revenue_date || "未提供") + "。來源：" + (data.source || "FinMind") + "。本益比是股價相對每股盈餘的倍數；股價淨值比是股價相對每股淨值的倍數；營收年增率是與去年同月比較。";
+    const result = await response.json();
+    if (result.status !== "success" || !result.data) throw new Error(result.message || "基本面資料不足");
+
+    const d = result.data;
+    currentFundamentalData = d;
+    currentAssetType = result.asset_type || "stock";
+    const isETF = currentAssetType === "etf";
+
+    document.getElementById("stockTitle").textContent =
+      (result.stock_name || stockId) + (isETF ? " ETF 分析" : " 股票分析");
+    document.getElementById("stockFundamentals").classList.toggle("hidden", isETF);
+    document.getElementById("etfFundamentals").classList.toggle("hidden", !isETF);
+    document.getElementById("stockHealthTitle").classList.toggle("hidden", isETF);
+
+    if (isETF) {
+      document.getElementById("fundPER").textContent = "不適用";
+      document.getElementById("fundPBR").textContent = "不適用";
+      document.getElementById("fundYield").textContent = "請看配息資料";
+      document.getElementById("fundETFNav").textContent = d.nav == null ? "尚未串接" : Number(d.nav).toFixed(4) + " 元";
+      document.getElementById("fundETFPremium").textContent = d.premium_discount == null ? "尚未串接" : Number(d.premium_discount).toFixed(2) + "%";
+      document.getElementById("fundETFDistribution").textContent =
+        d.latest_cash_distribution == null ? "暫無資料" : Number(d.latest_cash_distribution).toFixed(4) + " 元";
+    } else {
+      document.getElementById("fundPER").textContent = d.PER == null ? "暫無資料" : Number(d.PER).toFixed(2) + " 倍";
+      document.getElementById("fundPBR").textContent = d.PBR == null ? "暫無資料" : Number(d.PBR).toFixed(2) + " 倍";
+      document.getElementById("fundYield").textContent = d.dividend_yield == null ? "暫無資料" : Number(d.dividend_yield).toFixed(2) + "%";
+      document.getElementById("fundEPS").textContent = d.latest_quarter_EPS == null ? "暫無資料" : Number(d.latest_quarter_EPS).toFixed(2) + " 元";
+      document.getElementById("fundTTMNetIncome").textContent = d.TTM_net_income == null ? "暫無資料" : (Number(d.TTM_net_income) / 100000000).toFixed(2) + " 億元";
+      document.getElementById("fundRevenue").textContent = d.revenue == null ? "暫無資料" : (Number(d.revenue) / 100000000).toFixed(2) + " 億元";
+      document.getElementById("fundRevenueYoY").textContent = d.revenue_yoy == null ? "暫無資料" : ((Number(d.revenue_yoy) >= 0 ? "+" : "") + Number(d.revenue_yoy).toFixed(2) + "%");
+      [
+        ["fundGrossMargin","gross_margin"],
+        ["fundOperatingMargin","operating_margin"],
+        ["fundNetMargin","net_margin"],
+        ["fundDebtRatio","debt_ratio"]
+      ].forEach(([id,key]) => {
+        document.getElementById(id).textContent = d[key] == null ? "暫無資料" : Number(d[key]).toFixed(2) + "%";
+      });
+      document.getElementById("fundCurrentRatio").textContent = d.current_ratio == null ? "暫無資料" : Number(d.current_ratio).toFixed(2) + " 倍";
+      document.getElementById("fundOperatingCashFlow").textContent =
+        d.operating_cash_flow == null ? "暫無資料" : (Number(d.operating_cash_flow) / 100000000).toFixed(2) + " 億元";
+    }
+
+    const dates = [
+      d.date && "估值 " + d.date,
+      d.financial_statement_date && "損益表 " + d.financial_statement_date,
+      d.balance_sheet_date && "資產負債表 " + d.balance_sheet_date,
+      d.cash_flow_date && "現金流量表 " + d.cash_flow_date,
+      d.revenue_date && "營收 " + d.revenue_date,
+      d.cash_distribution_date && "配息 " + d.cash_distribution_date
+    ].filter(Boolean).join("；");
+
+    document.getElementById("fundamentalNote").textContent =
+      (dates ? "資料日期：" + dates + "。 " : "") +
+      "來源：" + (result.source || "FinMind") + "。 " +
+      (isETF
+        ? "ETF 應以淨值、折溢價、配息及投資標的風險為主要觀察項目。"
+        : "毛利率、營業利益率及淨利率反映獲利能力；負債比率與流動比率反映財務結構及短期償債能力。近四季淨利是金額合計，不等於近四季 EPS。");
+    updateHoldingAssessment();
   } catch (e) {
-    document.getElementById("fundPER").textContent = "暫無資料";
-    document.getElementById("fundPBR").textContent = "暫無資料";
-    document.getElementById("fundYield").textContent = "暫無資料";
-    ["fundEPS","fundTTMEPS","fundRevenue","fundRevenueYoY"].forEach(id => document.getElementById(id).textContent = "暫無資料");
-    document.getElementById("fundamentalNote").textContent = "目前尚未取得此標的的基本面資料；不會以估算值代替。";
+    currentFundamentalData = null;
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = "暫無資料";
+    });
+    document.getElementById("fundamentalNote").textContent =
+      "目前尚未取得此標的的基本面資料；不會以估算值代替。";
+    updateHoldingAssessment();
   }
+}
+
+function updateHoldingAssessment() {
+  const assessment = document.getElementById("holdingAssessment");
+  if (!assessment || !currentHoldingLatest) return;
+
+  const rows = getHoldings(currentHoldingStock);
+  const shares = rows.reduce((sum, r) => sum + Number(r.shares), 0);
+  const invested = rows.reduce((sum, r) => sum + Number(r.price) * Number(r.shares), 0);
+  const profit = shares * currentHoldingClose - invested;
+  const rate = invested ? profit / invested * 100 : 0;
+  const notes = [];
+
+  if (shares > 0) {
+    notes.push((profit >= 0 ? "目前帳面獲利 " : "目前帳面虧損 ") +
+      money(Math.abs(profit)) + "（" + rate.toFixed(2) + "%）");
+  } else {
+    notes.push("尚未建立持有成本紀錄");
+  }
+  notes.push("目前股價位於「" + getPricePosition(currentHoldingLatest) + "」");
+
+  if (currentHoldingLatest.signal === "sell") {
+    notes.push("已出現五線譜賣出觀察訊號，可進一步檢視持有理由、部位大小及風險承受度");
+  } else if (Number(currentHoldingLatest.close) > Number(currentHoldingLatest.upper_1)) {
+    notes.push("股價高於偏高線，但尚未出現五線譜賣出觀察訊號");
+  } else {
+    notes.push("目前尚未出現五線譜賣出觀察訊號");
+  }
+
+  const d = currentFundamentalData;
+  if (d && currentAssetType === "stock") {
+    const warnings = [];
+    if (d.latest_quarter_EPS != null && Number(d.latest_quarter_EPS) < 0) warnings.push("最近一季 EPS 為負");
+    if (d.revenue_yoy != null && Number(d.revenue_yoy) < 0) warnings.push("月營收年增率為負");
+    if (d.operating_cash_flow != null && Number(d.operating_cash_flow) < 0) warnings.push("最近一期營業現金流為負");
+    if (d.net_margin != null && Number(d.net_margin) < 0) warnings.push("最近一季淨利率為負");
+    if (warnings.length) notes.push("基本面提醒：" + warnings.join("、"));
+    else notes.push("已取得部分財務體質指標，仍需搭配歷史趨勢及產業特性判讀");
+  } else if (currentAssetType === "etf") {
+    notes.push("ETF 請另外確認最新淨值、折溢價、配息及成分／投資標的風險");
+  }
+
+  assessment.textContent = notes.join("。") +
+    "。以上是風險檢視提示，不是自動賣出指令，也不構成投資建議。";
 }
 
 
