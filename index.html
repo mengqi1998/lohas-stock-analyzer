@@ -811,5 +811,308 @@ searchStock(false);
 
 </script>
 
+
+<style>
+  .method-section {
+    max-width: 1100px;
+    margin: 40px auto 24px;
+    padding: 24px;
+    color: #263445;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    line-height: 1.8;
+  }
+
+  .method-section h2 {
+    margin: 0 0 18px;
+    font-size: 22px;
+  }
+
+  .method-section h3 {
+    margin: 24px 0 10px;
+    font-size: 17px;
+  }
+
+  .method-section p {
+    margin: 8px 0;
+  }
+
+  .method-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+
+  .method-section th,
+  .method-section td {
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .method-section th {
+    background: #f1f5f9;
+  }
+
+  .method-section code {
+    background: #f1f5f9;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  .method-section .formula {
+    padding: 14px;
+    margin: 12px 0;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+  }
+
+  .method-section details {
+    border-top: 1px solid #e2e8f0;
+    padding: 12px 0;
+  }
+
+  .method-section summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .method-section .notice {
+    padding: 12px 14px;
+    background: #fff7ed;
+    border-left: 4px solid #f59e0b;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 650px) {
+    .method-section {
+      padding: 16px;
+      margin: 24px 10px;
+    }
+
+    .method-section table {
+      font-size: 12px;
+    }
+
+    .method-section th,
+    .method-section td {
+      padding: 7px;
+    }
+  }
+</style>
+
+<section class="method-section">
+  <h2>📘 樂活五線譜｜計算方式與欄位說明</h2>
+
+  <p>
+    本網站以歷史收盤價建立統計趨勢通道，透過線性迴歸與標準差，
+    觀察股價相對於自身歷史趨勢的位置。
+    所有訊號均以每日收盤價判斷。
+  </p>
+
+  <h3>一、五線譜計算方式</h3>
+
+  <p>
+    採用 <strong>Rolling Regression（滾動線性迴歸）</strong>。
+    每個交易日使用當天及之前最近 500 個交易日的收盤價，
+    獨立計算該日的趨勢線與標準差。
+  </p>
+
+  <div class="formula">
+    趨勢線：y = a × x + b
+    <br>
+    殘差：e = 實際收盤價 - 趨勢線預測值
+    <br>
+    標準差：σ = √(Σ(e - 平均殘差)² / 500)
+  </div>
+
+  <p>
+    其中 x 為迴歸區間內的交易日序號（0 至 499），
+    y 為該交易日收盤價；a 為迴歸斜率，b 為截距。
+    標準差採用母體標準差（ddof = 0）。
+  </p>
+
+  <h3>二、五條線的定義</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>線別</th>
+        <th>計算方式</th>
+        <th>意義</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>上上線</td>
+        <td>趨勢線 + 2σ</td>
+        <td>高於趨勢線兩個標準差的位置</td>
+      </tr>
+      <tr>
+        <td>上線</td>
+        <td>趨勢線 + 1σ</td>
+        <td>高於趨勢線一個標準差的位置</td>
+      </tr>
+      <tr>
+        <td>中線</td>
+        <td>線性迴歸趨勢線</td>
+        <td>歷史收盤價的統計趨勢</td>
+      </tr>
+      <tr>
+        <td>下線</td>
+        <td>趨勢線 - 1σ</td>
+        <td>低於趨勢線一個標準差的位置</td>
+      </tr>
+      <tr>
+        <td>下下線</td>
+        <td>趨勢線 - 2σ</td>
+        <td>低於趨勢線兩個標準差的位置</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>三、買進與賣出觀察訊號</h3>
+
+  <details open>
+    <summary>🟢 買進觀察訊號（buy）</summary>
+    <p>同時符合以下兩個條件：</p>
+    <ol>
+      <li>前一交易日收盤價低於前一交易日的下下線。</li>
+      <li>當日收盤價回到當日下下線之上或相等。</li>
+    </ol>
+    <div class="formula">
+      前日收盤價 &lt; 前日下下線
+      <br>
+      當日收盤價 ≥ 當日下下線
+    </div>
+    <p>代表股價由下下線外側重新回到下下線範圍內。</p>
+  </details>
+
+  <details>
+    <summary>🔴 賣出觀察訊號（sell）</summary>
+    <p>同時符合以下兩個條件：</p>
+    <ol>
+      <li>前一交易日收盤價高於前一交易日的上上線。</li>
+      <li>當日收盤價回到當日上上線之下或相等。</li>
+    </ol>
+    <div class="formula">
+      前日收盤價 &gt; 前日上上線
+      <br>
+      當日收盤價 ≤ 當日上上線
+    </div>
+    <p>代表股價由上上線外側重新回到上上線範圍內。</p>
+  </details>
+
+  <h3>四、資料欄位說明</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>欄位名稱</th>
+        <th>內容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>date</code></td><td>交易日期。</td></tr>
+      <tr><td><code>close</code></td><td>當日收盤價。</td></tr>
+      <tr><td><code>trend</code></td><td>當日滾動迴歸趨勢線數值。</td></tr>
+      <tr><td><code>upper_1</code></td><td>當日趨勢線 + 1σ。</td></tr>
+      <tr><td><code>lower_1</code></td><td>當日趨勢線 - 1σ。</td></tr>
+      <tr><td><code>upper_2</code></td><td>當日趨勢線 + 2σ。</td></tr>
+      <tr><td><code>lower_2</code></td><td>當日趨勢線 - 2σ。</td></tr>
+      <tr><td><code>buy_signal</code></td><td>是否出現買進觀察訊號，true / false。</td></tr>
+      <tr><td><code>sell_signal</code></td><td>是否出現賣出觀察訊號，true / false。</td></tr>
+      <tr><td><code>signal</code></td><td>訊號類型：buy、sell 或 none。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>五、JSON 整體資料欄位</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>欄位名稱</th>
+        <th>內容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>stock_id</code></td><td>股票或 ETF 代號。</td></tr>
+      <tr><td><code>window</code></td><td>每次迴歸使用的交易日數，目前為 500。</td></tr>
+      <tr><td><code>actual_days</code></td><td>實際輸出的有效計算日數。</td></tr>
+      <tr><td><code>raw_days</code></td><td>原始股價資料的交易日數。</td></tr>
+      <tr><td><code>status</code></td><td>資料狀態：success 或 insufficient_data。</td></tr>
+      <tr><td><code>calculation_method</code></td><td>計算方法，目前為 rolling_linear_regression。</td></tr>
+      <tr><td><code>sigma</code></td><td>最新一期的標準差。</td></tr>
+      <tr><td><code>slope</code></td><td>最新一期 500 日迴歸斜率。</td></tr>
+      <tr><td><code>intercept</code></td><td>最新一期 500 日迴歸截距。</td></tr>
+      <tr><td><code>latest_signal</code></td><td>最新交易日的訊號類型。</td></tr>
+      <tr><td><code>data</code></td><td>每日收盤價、五線數值與訊號紀錄。</td></tr>
+    </tbody>
+  </table>
+
+  <h3>六、個股與 ETF 基本面指標</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>指標</th>
+        <th>個股</th>
+        <th>ETF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PER（本益比）</td>
+        <td>適用</td>
+        <td>不適用</td>
+      </tr>
+      <tr>
+        <td>PBR（股價淨值比）</td>
+        <td>適用</td>
+        <td>不直接套用</td>
+      </tr>
+      <tr>
+        <td>殖利率</td>
+        <td>現金股利殖利率</td>
+        <td>配息殖利率</td>
+      </tr>
+      <tr>
+        <td>折溢價</td>
+        <td>不適用</td>
+        <td>適用</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>七、使用限制與注意事項</h3>
+
+  <div class="notice">
+    <p><strong>1. 訊號不等於買賣建議</strong></p>
+    <p>五線譜是統計觀察工具，訊號不保證獲利，也不代表股價必然反轉。</p>
+
+    <p><strong>2. 股價資料可能尚未還原權息</strong></p>
+    <p>若使用未還原股價，除權息、減資、股票分割等事件可能影響長期趨勢與標準差。</p>
+
+    <p><strong>3. 標準差不代表固定報酬機率</strong></p>
+    <p>股價分布未必符合常態分布，因此 ±1σ、±2σ 是統計距離，不代表固定的漲跌機率。</p>
+
+    <p><strong>4. 資料更新時間</strong></p>
+    <p>網站使用 GitHub Actions 定期更新資料；瀏覽器同日快取可能顯示先前下載的版本，可使用強制更新取得網站最新資料。</p>
+
+    <p><strong>5. 歷史訊號的解讀</strong></p>
+    <p>每個交易日只使用當天及之前的資料計算五線，避免使用未來股價。不過這仍是統計訊號，實際交易還需考慮交易成本、滑價及其他風險。</p>
+  </div>
+
+  <p style="margin-top:20px;color:#64748b;font-size:12px;">
+    樂活五線譜｜資料分析僅供研究與投資觀察參考。
+  </p>
+</section>
+
+  
 </body>
 </html>
