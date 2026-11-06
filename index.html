@@ -1372,12 +1372,14 @@ searchStock(false);
 <style>
   .method-section {
     max-width: 1100px;
-    margin: 40px auto 24px;
-    padding: 24px;
+    margin: 24px 0;
+    padding: 0;
     color: #263445;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: left;
     line-height: 1.8;
   }
 
@@ -1437,6 +1439,9 @@ searchStock(false);
   .method-section summary {
     cursor: pointer;
     font-weight: 600;
+    text-align: left;
+    background: transparent;
+    padding: 4px 0;
   }
 
   .method-section .notice {
@@ -1448,8 +1453,8 @@ searchStock(false);
 
   @media (max-width: 650px) {
     .method-section {
-      padding: 16px;
-      margin: 24px 10px;
+      padding: 0;
+      margin: 24px 0;
     }
 
     .method-section table {
