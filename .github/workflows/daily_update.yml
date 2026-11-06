@@ -8,6 +8,16 @@ on:
 
   workflow_dispatch:
 
+  # 程式碼更新時自動驗證並重建資料；資料檔提交不會再次觸發，避免無限循環
+  push:
+    branches:
+      - main
+    paths:
+      - "python/**"
+      - "index.html"
+      - "requirements.txt"
+      - ".github/workflows/daily_update.yml"
+
 permissions:
   contents: write
 
