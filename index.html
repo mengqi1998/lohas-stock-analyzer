@@ -284,9 +284,9 @@ th {
     <h3>基本面與價格位置</h3>
     <p class="subtitle">個股顯示本益比、股價淨值比及殖利率；ETF 會改顯示適用的 ETF 指標，沒有可靠資料時不會猜測數值。</p>
     <div class="fundamental-grid">
-      <div class="fundamental-item"><div class="label">本益比</div><div class="value" id="fundPER">讀取中</div></div>
-      <div class="fundamental-item"><div class="label">股價淨值比</div><div class="value" id="fundPBR">讀取中</div></div>
-      <div class="fundamental-item"><div class="label">殖利率</div><div class="value" id="fundYield">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">本益比（股價相對獲利）</div><div class="value" id="fundPER">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">股價淨值比（股價相對帳面價值）</div><div class="value" id="fundPBR">讀取中</div></div>
+      <div class="fundamental-item"><div class="label">現金殖利率</div><div class="value" id="fundYield">讀取中</div></div>
     </div>
     <div id="fundamentalNote" class="chart-note">基本面資料由網站資料檔提供，會顯示資料日期。</div>
   </div>
@@ -1113,7 +1113,9 @@ searchStock(false);
 </style>
 
 <section class="method-section">
-  <h2>📘 樂活五線譜｜計算方式與欄位說明</h2>
+  <details>
+  <summary>📘 認識五線譜：查看計算方式、專業名詞與使用限制</summary>
+  <h2>樂活五線譜｜計算方式與欄位說明</h2>
 
   <p>
     本網站以歷史收盤價建立統計趨勢通道，透過線性迴歸與標準差，
@@ -1317,6 +1319,7 @@ searchStock(false);
   <p style="margin-top:20px;color:#64748b;font-size:12px;">
     樂活五線譜｜資料分析僅供研究與投資觀察參考。
   </p>
+  </details>
 </section>
 
   
