@@ -1,199 +1,281 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>樂活五線譜｜股票分析工具</title>
+  <title>樂活五線譜｜股票分析站</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Microsoft JhengHei", sans-serif;
+      padding: 30px 16px;
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
       background: #f5f7fa;
-      color: #263238;
+      color: #263445;
     }
 
-    header {
-      background: #173f35;
-      color: white;
-      padding: 24px 6%;
+    .container {
+      max-width: 900px;
+      margin: auto;
     }
 
-    header h1 {
-      margin: 0 0 8px;
-      font-size: 26px;
+    h1 { margin-bottom: 8px; }
+
+    .subtitle {
+      color: #718096;
+      margin-bottom: 28px;
     }
 
-    header p {
-      margin: 0;
-      color: #d5e5dc;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 32px auto;
-      padding: 0 20px;
-    }
-
-    .search-area {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .search-area input {
-      flex: 1;
-      min-width: 0;
-      padding: 13px 15px;
-      border: 1px solid #d5dce2;
-      border-radius: 8px;
-      font-size: 15px;
-    }
-
-    .search-area button {
-      padding: 0 22px;
-      border: 0;
-      border-radius: 8px;
-      background: #26745b;
-      color: white;
-      font-size: 15px;
-      cursor: pointer;
-    }
-
-    .panel {
+    .search-box, .result-card {
       background: white;
-      border: 1px solid #e4e9ed;
       border-radius: 12px;
       padding: 22px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(30, 50, 40, 0.04);
+      box-shadow: 0 2px 10px rgba(0,0,0,.04);
     }
 
-    .panel h2 {
-      margin: 0 0 16px;
-      font-size: 18px;
+    .search-row {
+      display: flex;
+      gap: 10px;
     }
 
-    .empty {
-      padding: 30px 15px;
-      text-align: center;
-      color: #84919a;
-      background: #f8fafb;
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid #d8dee8;
       border-radius: 8px;
-      line-height: 1.8;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .feature {
-      padding: 18px;
-      background: #f8faf9;
-      border-radius: 9px;
-    }
-
-    .feature h3 {
-      margin: 0 0 8px;
-      color: #26745b;
       font-size: 16px;
     }
 
-    .feature p {
-      margin: 0;
-      color: #68777e;
-      font-size: 14px;
-      line-height: 1.7;
+    button {
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #315b82;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
     }
+
+    button:disabled { opacity: .6; cursor: wait; }
 
     .status {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      background: #fff3d9;
-      color: #91651a;
-      font-size: 12px;
+      color: #718096;
+      margin-top: 12px;
+      font-size: 14px;
     }
 
-    footer {
-      padding: 25px;
-      text-align: center;
-      color: #89949a;
-      font-size: 12px;
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
     }
 
-    @media (max-width: 650px) {
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
+    .summary-item, .line-item {
+      background: #f7f9fc;
+      border-radius: 8px;
+      padding: 16px;
+    }
 
-      .search-area {
-        flex-direction: column;
-      }
+    .label {
+      color: #718096;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
 
-      .search-area button {
-        padding: 13px;
-      }
+    .value {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .line-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .line-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .line-name { color: #718096; }
+    .line-value { font-weight: bold; font-size: 18px; }
+
+    .error { color: #c0392b; }
+    .hidden { display: none; }
+
+    .disclaimer {
+      color: #8793a1;
+      font-size: 12px;
+      line-height: 1.7;
+      margin-top: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .summary { grid-template-columns: 1fr; }
+      .line-list { grid-template-columns: 1fr; }
+      .search-row { flex-direction: column; }
+      button { width: 100%; }
     }
   </style>
 </head>
+
 <body>
+<div class="container">
 
-  <header>
-    <h1>樂活五線譜</h1>
-    <p>用趨勢與價格通道，觀察股票與 ETF 的市場位置</p>
-  </header>
+  <h1>樂活五線譜</h1>
+  <div class="subtitle">台灣股票與 ETF 趨勢分析</div>
 
-  <main>
-    <section class="search-area">
-      <input type="text" placeholder="輸入台股代號或名稱，例如：2330、0050">
-      <button type="button">查詢</button>
-    </section>
+  <div class="search-box">
+    <h3>股票查詢</h3>
+    <div class="search-row">
+      <input id="stockId" type="text" value="2330"
+             placeholder="請輸入股票代號，例如 2330">
+      <button id="searchBtn" onclick="searchStock()">查詢</button>
+    </div>
+    <div id="status" class="status">請輸入股票代號開始查詢。</div>
+  </div>
 
-    <section class="panel">
-      <h2>我的常用清單</h2>
-      <div class="empty">
-        尚未加入追蹤標的<br>
-        查詢股票後，可以將常用標的加入清單
+  <div id="result" class="result-card hidden">
+    <h2 id="stockTitle">股票分析</h2>
+
+    <div class="summary">
+      <div class="summary-item">
+        <div class="label">最新資料日期</div>
+        <div class="value" id="latestDate">-</div>
       </div>
-    </section>
-
-    <section class="panel">
-      <h2>樂活五線譜</h2>
-      <div class="empty">
-        <span class="status">資料功能建置中</span>
-        <p>將顯示最近 500 個交易日的股價趨勢線與 ±1σ、±2σ 通道</p>
+      <div class="summary-item">
+        <div class="label">最新收盤價</div>
+        <div class="value" id="latestClose">-</div>
       </div>
-    </section>
-
-    <section class="panel">
-      <h2>基本面 GPS</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>PER 本益比</h3>
-          <p>觀察股價相對於獲利的評價。</p>
-        </div>
-        <div class="feature">
-          <h3>PBR 股價淨值比</h3>
-          <p>觀察股價相對於每股淨值的水準。</p>
-        </div>
-        <div class="feature">
-          <h3>殖利率</h3>
-          <p>輔助評估股票的現金股利報酬。</p>
-        </div>
+      <div class="summary-item">
+        <div class="label">分析交易日數</div>
+        <div class="value" id="actualDays">-</div>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    樂活五線譜｜台灣上市、上櫃股票與 ETF 分析工具
-  </footer>
+    <h3>樂活五線譜</h3>
+    <div class="line-list">
+      <div class="line-item">
+        <span class="line-name">上上線（+2σ）</span>
+        <span class="line-value" id="upper2">-</span>
+      </div>
+      <div class="line-item">
+        <span class="line-name">上線（+1σ）</span>
+        <span class="line-value" id="upper1">-</span>
+      </div>
+      <div class="line-item">
+        <span class="line-name">中線（趨勢線）</span>
+        <span class="line-value" id="trend">-</span>
+      </div>
+      <div class="line-item">
+        <span class="line-name">下線（-1σ）</span>
+        <span class="line-value" id="lower1">-</span>
+      </div>
+      <div class="line-item">
+        <span class="line-name">下下線（-2σ）</span>
+        <span class="line-value" id="lower2">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    資料來源：FinMind。五線譜為統計分析工具，僅供研究參考，
+    不代表未來股價走勢，也不構成投資建議。
+    目前測試版本使用一般收盤價，尚未完成除權息還原。
+  </div>
+
+</div>
+
+<script>
+async function searchStock() {
+  const stockId = document.getElementById("stockId").value.trim();
+  const status = document.getElementById("status");
+  const result = document.getElementById("result");
+  const button = document.getElementById("searchBtn");
+
+  if (!/^[0-9A-Za-z]{4,6}$/.test(stockId)) {
+    status.textContent = "請輸入正確的股票或 ETF 代號。";
+    status.className = "status error";
+    result.classList.add("hidden");
+    return;
+  }
+
+  button.disabled = true;
+  status.textContent = "正在讀取分析資料...";
+  status.className = "status";
+  result.classList.add("hidden");
+
+  try {
+    const response = await fetch(
+      `data/five_lines/${encodeURIComponent(stockId)}.json?t=${Date.now()}`
+    );
+
+    if (!response.ok) {
+      throw new Error("找不到此標的的分析資料，請確認代號或等待資料更新。");
+    }
+
+    const data = await response.json();
+
+    if (data.status !== "success") {
+      throw new Error(data.message || "目前資料不足，無法計算五線譜。");
+    }
+
+    if (!data.data || data.data.length === 0) {
+      throw new Error("分析資料內容為空。");
+    }
+
+    const latest = data.data[data.data.length - 1];
+
+    document.getElementById("stockTitle").textContent =
+      `${data.stock_id} 股票分析`;
+
+    document.getElementById("latestDate").textContent = latest.date;
+    document.getElementById("latestClose").textContent =
+      Number(latest.close).toFixed(2);
+
+    document.getElementById("actualDays").textContent =
+      `${data.actual_days} 日`;
+
+    document.getElementById("upper2").textContent =
+      Number(latest.upper_2).toFixed(2);
+
+    document.getElementById("upper1").textContent =
+      Number(latest.upper_1).toFixed(2);
+
+    document.getElementById("trend").textContent =
+      Number(latest.trend).toFixed(2);
+
+    document.getElementById("lower1").textContent =
+      Number(latest.lower_1).toFixed(2);
+
+    document.getElementById("lower2").textContent =
+      Number(latest.lower_2).toFixed(2);
+
+    result.classList.remove("hidden");
+    status.textContent = "查詢成功！";
+    status.className = "status";
+
+  } catch (error) {
+    status.textContent = error.message;
+    status.className = "status error";
+  } finally {
+    button.disabled = false;
+  }
+}
+
+document.getElementById("stockId").addEventListener("keydown", event => {
+  if (event.key === "Enter") searchStock();
+});
+</script>
 
 </body>
 </html>
