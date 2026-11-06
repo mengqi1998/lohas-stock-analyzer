@@ -827,7 +827,6 @@ function displayStock(data) {
   displayLatestSignal(latest);
   renderHoldings(data.stock_id, latest.close, latest);
   loadFundamentals(data.stock_id);
-  displaySignalHistory(rows);
 
   renderChart(rows);
 
@@ -867,63 +866,6 @@ function displayLatestSignal(latest) {
 
   dateElement.textContent =
     `最新資料日期：${latest.date}`;
-
-}
-
-
-// =========================
-// 歷史訊號紀錄
-// =========================
-
-function displaySignalHistory(rows) {
-
-  const tbody = document.getElementById("signalHistory");
-
-  tbody.innerHTML = "";
-
-  const signals = rows
-    .filter(item =>
-      item.signal === "buy" || item.signal === "sell"
-    )
-    .reverse()
-    .slice(0, 10);
-
-  if (signals.length === 0) {
-
-    tbody.innerHTML = `
-      <tr>
-        <td colspan="3">目前沒有歷史訊號。</td>
-      </tr>
-    `;
-
-    return;
-
-  }
-
-  signals.forEach(item => {
-
-    const tr = document.createElement("tr");
-
-    const dateCell = document.createElement("td");
-    dateCell.textContent = item.date;
-
-    const signalCell = document.createElement("td");
-
-    if (item.signal === "buy") {
-      signalCell.textContent = "買進觀察";
-      signalCell.className = "buy-text";
-    } else {
-      signalCell.textContent = "賣出觀察";
-      signalCell.className = "sell-text";
-    }
-
-    const priceCell = document.createElement("td");
-    priceCell.textContent = Number(item.close).toFixed(2);
-
-    tr.append(dateCell, signalCell, priceCell);
-    tbody.appendChild(tr);
-
-  });
 
 }
 
