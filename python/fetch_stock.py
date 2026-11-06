@@ -17,7 +17,7 @@ API_URL = "https://api.finmindtrade.com/api/v4/data"
 
 def fetch_stock_price(stock_id):
     params = {
-        "dataset": "TaiwanStockPriceAdj",
+        "dataset": "TaiwanStockPrice",
         "data_id": stock_id,
         "start_date": START_DATE.isoformat(),
         "end_date": END_DATE.isoformat(),
@@ -67,7 +67,7 @@ def fetch_stock_price(stock_id):
 
     output = {
         "stock_id": stock_id,
-        "dataset": "TaiwanStockPriceAdj",
+        "dataset": "TaiwanStockPrice",
         "start_date": START_DATE.isoformat(),
         "end_date": END_DATE.isoformat(),
         "latest_date": records[-1]["date"],
