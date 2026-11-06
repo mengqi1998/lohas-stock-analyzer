@@ -9,9 +9,9 @@ import requests
 # 第一階段先測試台積電
 STOCK_ID = "2330"
 
-# 往前抓約兩年的資料，足以涵蓋 500 個交易日
+# 往前抓約五年的資料，確保有足夠交易日進行滾動迴歸
 END_DATE = date.today()
-START_DATE = END_DATE - timedelta(days=800)
+START_DATE = END_DATE - timedelta(days=1800)
 
 API_URL = "https://api.finmindtrade.com/api/v4/data"
 
