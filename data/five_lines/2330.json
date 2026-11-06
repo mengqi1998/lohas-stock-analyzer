@@ -20,7 +20,9 @@
       "lower_2": 777.6453,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1408904755619014,
+      "intercept": 356.28882634730536
     },
     {
       "date": "2024-10-16",
@@ -32,7 +34,9 @@
       "lower_2": 780.2321,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.146614042456169,
+      "intercept": 355.99779640718543
     },
     {
       "date": "2024-10-17",
@@ -44,7 +48,9 @@
       "lower_2": 782.7452,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1519112476449895,
+      "intercept": 355.8041437125748
     },
     {
       "date": "2024-10-18",
@@ -56,7 +62,9 @@
       "lower_2": 785.2501,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1581956007824026,
+      "intercept": 355.4771976047902
     },
     {
       "date": "2024-10-21",
@@ -68,7 +76,9 @@
       "lower_2": 787.6733,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1641919287677138,
+      "intercept": 355.24111377245515
     },
     {
       "date": "2024-10-22",
@@ -80,7 +90,9 @@
       "lower_2": 790.0233,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.1696838467353865,
+      "intercept": 355.1278802395209
     },
     {
       "date": "2024-10-23",
@@ -92,7 +104,9 @@
       "lower_2": 792.3738,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1747922191688758,
+      "intercept": 355.07734131736515
     },
     {
       "date": "2024-10-24",
@@ -104,7 +118,9 @@
       "lower_2": 794.638,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1796013584054326,
+      "intercept": 355.1214610778444
     },
     {
       "date": "2024-10-25",
@@ -116,7 +132,9 @@
       "lower_2": 796.8859,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.184398401593606,
+      "intercept": 355.18459880239504
     },
     {
       "date": "2024-10-28",
@@ -128,7 +146,9 @@
       "lower_2": 798.9983,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1884630578522304,
+      "intercept": 355.4264670658682
     },
     {
       "date": "2024-10-29",
@@ -140,7 +160,9 @@
       "lower_2": 801.0404,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1921076644306572,
+      "intercept": 355.76313772455075
     },
     {
       "date": "2024-10-30",
@@ -152,7 +174,9 @@
       "lower_2": 803.1327,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.1957415189660752,
+      "intercept": 356.05849101796406
     },
     {
       "date": "2024-11-01",
@@ -164,7 +188,9 @@
       "lower_2": 805.3317,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.199582686330744,
+      "intercept": 356.2601197604791
     },
     {
       "date": "2024-11-04",
@@ -176,7 +202,9 @@
       "lower_2": 807.6366,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2038717434869732,
+      "intercept": 356.3679999999999
     },
     {
       "date": "2024-11-05",
@@ -188,7 +216,9 @@
       "lower_2": 809.8565,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2080311521246077,
+      "intercept": 356.5542275449103
     },
     {
       "date": "2024-11-06",
@@ -200,7 +230,9 @@
       "lower_2": 811.8305,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2114935739742956,
+      "intercept": 357.0073532934132
     },
     {
       "date": "2024-11-07",
@@ -212,7 +244,9 @@
       "lower_2": 813.7877,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2149163476653897,
+      "intercept": 357.4883712574849
     },
     {
       "date": "2024-11-08",
@@ -224,7 +258,9 @@
       "lower_2": 815.7755,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2188137232548917,
+      "intercept": 357.9059760479042
     },
     {
       "date": "2024-11-11",
@@ -236,7 +272,9 @@
       "lower_2": 817.8639,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.222933435733742,
+      "intercept": 358.22410778443106
     },
     {
       "date": "2024-11-12",
@@ -248,7 +286,9 @@
       "lower_2": 819.7535,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2257894951579797,
+      "intercept": 358.8175209580838
     },
     {
       "date": "2024-11-13",
@@ -260,7 +300,9 @@
       "lower_2": 821.6341,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.228464065856262,
+      "intercept": 359.40621556886214
     },
     {
       "date": "2024-11-14",
@@ -272,7 +314,9 @@
       "lower_2": 823.4326,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2308017952071801,
+      "intercept": 360.10195209580826
     },
     {
       "date": "2024-11-15",
@@ -284,7 +328,9 @@
       "lower_2": 825.2323,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2331262285049134,
+      "intercept": 360.79700598802384
     },
     {
       "date": "2024-11-18",
@@ -296,7 +342,9 @@
       "lower_2": 826.9229,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.234957555830222,
+      "intercept": 361.6110898203592
     },
     {
       "date": "2024-11-19",
@@ -308,7 +356,9 @@
       "lower_2": 828.6652,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.237027036108144,
+      "intercept": 362.40075449101784
     },
     {
       "date": "2024-11-20",
@@ -320,7 +370,9 @@
       "lower_2": 830.2393,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2382897771591077,
+      "intercept": 363.39370059880235
     },
     {
       "date": "2024-11-21",
@@ -332,7 +384,9 @@
       "lower_2": 831.7315,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2392506930027714,
+      "intercept": 364.42195209580836
     },
     {
       "date": "2024-11-22",
@@ -344,7 +398,9 @@
       "lower_2": 833.4313,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2410977643910575,
+      "intercept": 365.270107784431
     },
     {
       "date": "2024-11-25",
@@ -356,7 +412,9 @@
       "lower_2": 835.036,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2424981939927757,
+      "intercept": 366.2217005988024
     },
     {
       "date": "2024-11-26",
@@ -368,7 +426,9 @@
       "lower_2": 836.5551,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2436096384385529,
+      "intercept": 367.1843952095806
     },
     {
       "date": "2024-11-27",
@@ -380,7 +440,9 @@
       "lower_2": 837.9965,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.244458113832454,
+      "intercept": 368.1897005988024
     },
     {
       "date": "2024-11-28",
@@ -392,7 +454,9 @@
       "lower_2": 839.4781,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2454521018084064,
+      "intercept": 369.1617005988023
     },
     {
       "date": "2024-11-29",
@@ -404,7 +468,9 @@
       "lower_2": 840.8212,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2459074316297258,
+      "intercept": 370.2720958083832
     },
     {
       "date": "2024-12-02",
@@ -416,7 +482,9 @@
       "lower_2": 842.4052,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2471900447601778,
+      "intercept": 371.2580838323352
     },
     {
       "date": "2024-12-03",
@@ -428,7 +496,9 @@
       "lower_2": 844.1218,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2490813963255853,
+      "intercept": 372.11619161676623
     },
     {
       "date": "2024-12-04",
@@ -440,7 +510,9 @@
       "lower_2": 845.942,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2514846219384863,
+      "intercept": 372.85858682634733
     },
     {
       "date": "2024-12-05",
@@ -452,7 +524,9 @@
       "lower_2": 847.8791,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2543760575042298,
+      "intercept": 373.4531736526943
     },
     {
       "date": "2024-12-06",
@@ -464,7 +538,9 @@
       "lower_2": 849.7058,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.256736346945387,
+      "intercept": 374.1792814371256
     },
     {
       "date": "2024-12-09",
@@ -476,7 +552,9 @@
       "lower_2": 851.7939,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.260090672362689,
+      "intercept": 374.6093772455088
     },
     {
       "date": "2024-12-10",
@@ -488,7 +566,9 @@
       "lower_2": 853.8542,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2632288289153148,
+      "intercept": 375.06640718562875
     },
     {
       "date": "2024-12-11",
@@ -500,7 +580,9 @@
       "lower_2": 856.0984,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2666701066804256,
+      "intercept": 375.33780838323344
     },
     {
       "date": "2024-12-12",
@@ -512,7 +594,9 @@
       "lower_2": 858.4857,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.270584762339048,
+      "intercept": 375.507101796407
     },
     {
       "date": "2024-12-13",
@@ -524,7 +608,9 @@
       "lower_2": 860.8709,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2745160740642947,
+      "intercept": 375.6862395209582
     },
     {
       "date": "2024-12-16",
@@ -536,7 +622,9 @@
       "lower_2": 863.3619,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2789188436753736,
+      "intercept": 375.7837485029939
     },
     {
       "date": "2024-12-17",
@@ -548,7 +636,9 @@
       "lower_2": 865.7517,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.282904443617774,
+      "intercept": 375.9753413173651
     },
     {
       "date": "2024-12-18",
@@ -560,7 +650,9 @@
       "lower_2": 868.2698,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2872890691562764,
+      "intercept": 376.0693772455088
     },
     {
       "date": "2024-12-19",
@@ -572,7 +664,9 @@
       "lower_2": 870.7175,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2912814371257475,
+      "intercept": 376.22928143712556
     },
     {
       "date": "2024-12-20",
@@ -584,7 +678,9 @@
       "lower_2": 872.9748,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2944761859047418,
+      "intercept": 376.51019161676646
     },
     {
       "date": "2024-12-23",
@@ -596,7 +692,9 @@
       "lower_2": 875.5198,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2987451309805231,
+      "intercept": 376.6090898203592
     },
     {
       "date": "2024-12-24",
@@ -608,7 +706,9 @@
       "lower_2": 877.8805,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3025373621494476,
+      "intercept": 376.8619281437125
     },
     {
       "date": "2024-12-25",
@@ -620,7 +720,9 @@
       "lower_2": 880.3209,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3065481141924555,
+      "intercept": 377.05724550898185
     },
     {
       "date": "2024-12-26",
@@ -632,7 +734,9 @@
       "lower_2": 882.783,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3105736022944083,
+      "intercept": 377.24288622754483
     },
     {
       "date": "2024-12-27",
@@ -644,7 +748,9 @@
       "lower_2": 885.3499,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3148661394645573,
+      "intercept": 377.35489820359265
     },
     {
       "date": "2024-12-30",
@@ -656,7 +762,9 @@
       "lower_2": 887.8466,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3189576038304145,
+      "intercept": 377.5290778443112
     },
     {
       "date": "2024-12-31",
@@ -668,7 +776,9 @@
       "lower_2": 890.2159,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3225482581930321,
+      "intercept": 377.8052095808381
     },
     {
       "date": "2025-01-02",
@@ -680,7 +790,9 @@
       "lower_2": 892.403,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3255786063144237,
+      "intercept": 378.223137724551
     },
     {
       "date": "2025-01-03",
@@ -692,7 +804,9 @@
       "lower_2": 894.613,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3287199788799142,
+      "intercept": 378.6393652694609
     },
     {
       "date": "2025-01-06",
@@ -704,7 +818,9 @@
       "lower_2": 897.0238,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3329171876687493,
+      "intercept": 378.89916167664666
     },
     {
       "date": "2025-01-07",
@@ -716,7 +832,9 @@
       "lower_2": 899.5395,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3374119016476056,
+      "intercept": 379.0747305389221
     },
     {
       "date": "2025-01-08",
@@ -728,7 +846,9 @@
       "lower_2": 901.8824,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3410892443569769,
+      "intercept": 379.4172335329339
     },
     {
       "date": "2025-01-09",
@@ -740,7 +860,9 @@
       "lower_2": 904.1573,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.344502178008711,
+      "intercept": 379.82270658682626
     },
     {
       "date": "2025-01-10",
@@ -752,7 +874,9 @@
       "lower_2": 906.5047,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.348071208284832,
+      "intercept": 380.1712335329343
     },
     {
       "date": "2025-01-13",
@@ -764,7 +888,9 @@
       "lower_2": 908.6862,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3509819639278549,
+      "intercept": 380.6339999999999
     },
     {
       "date": "2025-01-14",
@@ -776,7 +902,9 @@
       "lower_2": 910.8639,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3539664718658868,
+      "intercept": 381.1273652694611
     },
     {
       "date": "2025-01-15",
@@ -788,7 +916,9 @@
       "lower_2": 912.8147,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.356184536738146,
+      "intercept": 381.77095808383234
     },
     {
       "date": "2025-01-16",
@@ -800,7 +930,9 @@
       "lower_2": 914.9378,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3590867963471842,
+      "intercept": 382.3418443113771
     },
     {
       "date": "2025-01-17",
@@ -812,7 +944,9 @@
       "lower_2": 917.1387,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3623222492889968,
+      "intercept": 382.8565988023951
     },
     {
       "date": "2025-01-20",
@@ -824,7 +958,9 @@
       "lower_2": 919.4047,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.365710678842715,
+      "intercept": 383.31518562874226
     },
     {
       "date": "2025-01-21",
@@ -836,7 +972,9 @@
       "lower_2": 921.5507,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3687238908955621,
+      "intercept": 383.89338922155696
     },
     {
       "date": "2025-01-22",
@@ -848,7 +986,9 @@
       "lower_2": 923.7679,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.372068616274464,
+      "intercept": 384.4158802395209
     },
     {
       "date": "2025-02-03",
@@ -860,7 +1000,9 @@
       "lower_2": 925.573,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3738033432133718,
+      "intercept": 385.2090658682634
     },
     {
       "date": "2025-02-04",
@@ -872,7 +1014,9 @@
       "lower_2": 927.4988,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3759337357349415,
+      "intercept": 385.9655329341317
     },
     {
       "date": "2025-02-05",
@@ -884,7 +1028,9 @@
       "lower_2": 929.4677,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3782413449653788,
+      "intercept": 386.7177844311377
     },
     {
       "date": "2025-02-06",
@@ -896,7 +1042,9 @@
       "lower_2": 931.4701,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3806650906603617,
+      "intercept": 387.44605988023926
     },
     {
       "date": "2025-02-07",
@@ -908,7 +1056,9 @@
       "lower_2": 933.5488,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3833725894903577,
+      "intercept": 388.11453892215536
     },
     {
       "date": "2025-02-10",
@@ -920,7 +1070,9 @@
       "lower_2": 935.4666,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3854523658094617,
+      "intercept": 388.9066347305389
     },
     {
       "date": "2025-02-11",
@@ -932,7 +1084,9 @@
       "lower_2": 937.47,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3878054072216277,
+      "intercept": 389.62255089820343
     },
     {
       "date": "2025-02-12",
@@ -944,7 +1098,9 @@
       "lower_2": 939.3898,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3898563834255329,
+      "intercept": 390.39383233532925
     },
     {
       "date": "2025-02-13",
@@ -956,7 +1112,9 @@
       "lower_2": 941.4081,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3921473365893464,
+      "intercept": 391.04023952095775
     },
     {
       "date": "2025-02-14",
@@ -968,7 +1126,9 @@
       "lower_2": 943.1951,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.393781503126011,
+      "intercept": 391.78051497005987
     },
     {
       "date": "2025-02-17",
@@ -980,7 +1140,9 @@
       "lower_2": 945.1708,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3959232956931817,
+      "intercept": 392.4471377245509
     },
     {
       "date": "2025-02-18",
@@ -992,7 +1154,9 @@
       "lower_2": 947.2653,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3984148176592694,
+      "intercept": 393.05250299401195
     },
     {
       "date": "2025-02-19",
@@ -1004,7 +1168,9 @@
       "lower_2": 949.3948,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.400932571730286,
+      "intercept": 393.60432335329324
     },
     {
       "date": "2025-02-20",
@@ -1016,7 +1182,9 @@
       "lower_2": 951.4729,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.403274405097619,
+      "intercept": 394.1700359281436
     },
     {
       "date": "2025-02-21",
@@ -1028,7 +1196,9 @@
       "lower_2": 953.6395,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4058722234888932,
+      "intercept": 394.70588023952087
     },
     {
       "date": "2025-02-24",
@@ -1040,7 +1210,9 @@
       "lower_2": 956.0661,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4088960915843656,
+      "intercept": 395.0154251497005
     },
     {
       "date": "2025-02-25",
@@ -1052,7 +1224,9 @@
       "lower_2": 958.0302,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4108848355393417,
+      "intercept": 395.585233532934
     },
     {
       "date": "2025-02-26",
@@ -1064,7 +1238,9 @@
       "lower_2": 960.1184,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.413134556538225,
+      "intercept": 396.0839281437124
     },
     {
       "date": "2025-02-27",
@@ -1076,7 +1252,9 @@
       "lower_2": 962.0877,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4150948363793445,
+      "intercept": 396.59483832335326
     },
     {
       "date": "2025-03-03",
@@ -1088,7 +1266,9 @@
       "lower_2": 963.8175,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.416576170304679,
+      "intercept": 397.18124550898204
     },
     {
       "date": "2025-03-04",
@@ -1100,7 +1280,9 @@
       "lower_2": 965.0675,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4171478045912178,
+      "intercept": 397.98662275449095
     },
     {
       "date": "2025-03-05",
@@ -1112,7 +1294,9 @@
       "lower_2": 966.5296,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.418080832323329,
+      "intercept": 398.7478323353293
     },
     {
       "date": "2025-03-06",
@@ -1124,7 +1308,9 @@
       "lower_2": 967.9653,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4190156840627353,
+      "intercept": 399.44458682634735
     },
     {
       "date": "2025-03-07",
@@ -1136,7 +1322,9 @@
       "lower_2": 969.3778,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.419905895623582,
+      "intercept": 400.1524790419161
     },
     {
       "date": "2025-03-10",
@@ -1148,7 +1336,9 @@
       "lower_2": 970.7287,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4207040428161704,
+      "intercept": 400.85934131736514
     },
     {
       "date": "2025-03-11",
@@ -1160,7 +1350,9 @@
       "lower_2": 971.5956,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4207158028632103,
+      "intercept": 401.7164071856287
     },
     {
       "date": "2025-03-12",
@@ -1172,7 +1364,9 @@
       "lower_2": 972.7518,
       "buy_signal": true,
       "sell_signal": false,
-      "signal": "buy"
+      "signal": "buy",
+      "slope": 1.4211896607586414,
+      "intercept": 402.48417964071854
     },
     {
       "date": "2025-03-13",
@@ -1184,7 +1378,9 @@
       "lower_2": 973.2872,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.42058913035652,
+      "intercept": 403.514011976048
     },
     {
       "date": "2025-03-14",
@@ -1196,7 +1392,9 @@
       "lower_2": 973.7323,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4198747914991643,
+      "intercept": 404.55423952095805
     },
     {
       "date": "2025-03-17",
@@ -1208,7 +1406,9 @@
       "lower_2": 974.2278,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4191420685682727,
+      "intercept": 405.6410538922156
     },
     {
       "date": "2025-03-18",
@@ -1220,7 +1420,9 @@
       "lower_2": 974.7056,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.418365857463429,
+      "intercept": 406.74271856287396
     },
     {
       "date": "2025-03-19",
@@ -1232,7 +1434,9 @@
       "lower_2": 974.8316,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4170669242676954,
+      "intercept": 407.93880239520956
     },
     {
       "date": "2025-03-20",
@@ -1244,7 +1448,9 @@
       "lower_2": 975.3865,
       "buy_signal": true,
       "sell_signal": false,
-      "signal": "buy"
+      "signal": "buy",
+      "slope": 1.4163001212004842,
+      "intercept": 409.0861197604788
     },
     {
       "date": "2025-03-21",
@@ -1256,7 +1462,9 @@
       "lower_2": 975.8213,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4154405817623257,
+      "intercept": 410.2085748502994
     },
     {
       "date": "2025-03-24",
@@ -1268,7 +1476,9 @@
       "lower_2": 976.1635,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.414369121476485,
+      "intercept": 411.39790419161653
     },
     {
       "date": "2025-03-25",
@@ -1280,7 +1490,9 @@
       "lower_2": 976.876,
       "buy_signal": true,
       "sell_signal": false,
-      "signal": "buy"
+      "signal": "buy",
+      "slope": 1.413949071796286,
+      "intercept": 412.4387065868264
     },
     {
       "date": "2025-03-26",
@@ -1292,7 +1504,9 @@
       "lower_2": 977.379,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4131724286897138,
+      "intercept": 413.55447904191595
     },
     {
       "date": "2025-03-27",
@@ -1304,7 +1518,9 @@
       "lower_2": 977.467,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4117524390097553,
+      "intercept": 414.7927664670658
     },
     {
       "date": "2025-03-28",
@@ -1316,7 +1532,9 @@
       "lower_2": 977.4796,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4102665450661784,
+      "intercept": 416.025497005988
     },
     {
       "date": "2025-03-31",
@@ -1328,7 +1546,9 @@
       "lower_2": 976.7222,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4078054312217239,
+      "intercept": 417.41154491017966
     },
     {
       "date": "2025-04-01",
@@ -1340,7 +1560,9 @@
       "lower_2": 976.558,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4060494881979513,
+      "intercept": 418.69565269461077
     },
     {
       "date": "2025-04-02",
@@ -1352,7 +1574,9 @@
       "lower_2": 976.3486,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4042290809163231,
+      "intercept": 419.9898443113771
     },
     {
       "date": "2025-04-07",
@@ -1364,7 +1588,9 @@
       "lower_2": 974.1207,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3999004236016934,
+      "intercept": 421.73984431137717
     },
     {
       "date": "2025-04-08",
@@ -1376,7 +1602,9 @@
       "lower_2": 971.1792,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3948452833811325,
+      "intercept": 423.6011017964072
     },
     {
       "date": "2025-04-09",
@@ -1388,7 +1616,9 @@
       "lower_2": 967.4442,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3888745394981565,
+      "intercept": 425.6408023952097
     },
     {
       "date": "2025-04-10",
@@ -1400,7 +1630,9 @@
       "lower_2": 965.5875,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3847697070788276,
+      "intercept": 427.36895808383207
     },
     {
       "date": "2025-04-11",
@@ -1412,7 +1644,9 @@
       "lower_2": 964.2195,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.381109548438193,
+      "intercept": 429.05016766467037
     },
     {
       "date": "2025-04-14",
@@ -1424,7 +1658,9 @@
       "lower_2": 962.4648,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3771503006012016,
+      "intercept": 430.7319999999998
     },
     {
       "date": "2025-04-15",
@@ -1436,7 +1672,9 @@
       "lower_2": 960.9087,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.373300877203508,
+      "intercept": 432.4224311377245
     },
     {
       "date": "2025-04-16",
@@ -1448,7 +1686,9 @@
       "lower_2": 958.9365,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3690097080388317,
+      "intercept": 434.1690778443111
     },
     {
       "date": "2025-04-17",
@@ -1460,7 +1700,9 @@
       "lower_2": 956.936,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.364879243516973,
+      "intercept": 435.8276287425146
     },
     {
       "date": "2025-04-18",
@@ -1472,7 +1714,9 @@
       "lower_2": 955.0495,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3609107316429256,
+      "intercept": 437.4417724550897
     },
     {
       "date": "2025-04-21",
@@ -1484,7 +1728,9 @@
       "lower_2": 952.8545,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3565770343081371,
+      "intercept": 439.1150299401195
     },
     {
       "date": "2025-04-22",
@@ -1496,7 +1742,9 @@
       "lower_2": 950.1811,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.351567446269784,
+      "intercept": 440.9349221556884
     },
     {
       "date": "2025-04-23",
@@ -1508,7 +1756,9 @@
       "lower_2": 948.6714,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.347751479005915,
+      "intercept": 442.58300598802396
     },
     {
       "date": "2025-04-24",
@@ -1520,7 +1770,9 @@
       "lower_2": 947.0219,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3438067752271,
+      "intercept": 444.2352095808381
     },
     {
       "date": "2025-04-25",
@@ -1532,7 +1784,9 @@
       "lower_2": 945.8754,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3405250981003918,
+      "intercept": 445.759988023952
     },
     {
       "date": "2025-04-28",
@@ -1544,7 +1798,9 @@
       "lower_2": 944.8711,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3373770055080205,
+      "intercept": 447.27343712574844
     },
     {
       "date": "2025-04-29",
@@ -1556,7 +1812,9 @@
       "lower_2": 943.9243,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.334241584966339,
+      "intercept": 448.79972455089825
     },
     {
       "date": "2025-04-30",
@@ -1568,7 +1826,9 @@
       "lower_2": 943.0824,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.331238212952851,
+      "intercept": 450.30306586826333
     },
     {
       "date": "2025-05-02",
@@ -1580,7 +1840,9 @@
       "lower_2": 942.9119,
       "buy_signal": true,
       "sell_signal": false,
-      "signal": "buy"
+      "signal": "buy",
+      "slope": 1.329156540626162,
+      "intercept": 451.6644431137722
     },
     {
       "date": "2025-05-05",
@@ -1592,7 +1854,9 @@
       "lower_2": 942.4971,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3266267865071453,
+      "intercept": 453.1236167664669
     },
     {
       "date": "2025-05-06",
@@ -1604,7 +1868,9 @@
       "lower_2": 941.7412,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.323529958119831,
+      "intercept": 454.6962754491017
     },
     {
       "date": "2025-05-07",
@@ -1616,7 +1882,9 @@
       "lower_2": 941.0408,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.32034586538346,
+      "intercept": 456.3267065868263
     },
     {
       "date": "2025-05-08",
@@ -1628,7 +1896,9 @@
       "lower_2": 940.2009,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3170264121056476,
+      "intercept": 457.9589101796405
     },
     {
       "date": "2025-05-09",
@@ -1640,7 +1910,9 @@
       "lower_2": 939.8819,
       "buy_signal": true,
       "sell_signal": false,
-      "signal": "buy"
+      "signal": "buy",
+      "slope": 1.3145070740282956,
+      "intercept": 459.4454850299399
     },
     {
       "date": "2025-05-12",
@@ -1652,7 +1924,9 @@
       "lower_2": 939.6382,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3120179280717108,
+      "intercept": 460.9505269461077
     },
     {
       "date": "2025-05-13",
@@ -1664,7 +1938,9 @@
       "lower_2": 939.5271,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3096535346141378,
+      "intercept": 462.4584431137723
     },
     {
       "date": "2025-05-14",
@@ -1676,7 +1952,9 @@
       "lower_2": 939.8383,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3080357841431356,
+      "intercept": 463.8340718562876
     },
     {
       "date": "2025-05-15",
@@ -1688,7 +1966,9 @@
       "lower_2": 940.0391,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3061795687182747,
+      "intercept": 465.2611976047901
     },
     {
       "date": "2025-05-16",
@@ -1700,7 +1980,9 @@
       "lower_2": 940.2666,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3043006492025957,
+      "intercept": 466.7119880239521
     },
     {
       "date": "2025-05-19",
@@ -1712,7 +1994,9 @@
       "lower_2": 940.2352,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.301822831291324,
+      "intercept": 468.3022035928143
     },
     {
       "date": "2025-05-20",
@@ -1724,7 +2008,9 @@
       "lower_2": 940.0703,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.298998331993327,
+      "intercept": 469.9799161676644
     },
     {
       "date": "2025-05-21",
@@ -1736,7 +2022,9 @@
       "lower_2": 940.0695,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2964626498505984,
+      "intercept": 471.60556886227505
     },
     {
       "date": "2025-05-22",
@@ -1748,7 +2036,9 @@
       "lower_2": 939.9863,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2938920955683813,
+      "intercept": 473.20692215568835
     },
     {
       "date": "2025-05-23",
@@ -1760,7 +2050,9 @@
       "lower_2": 939.9113,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2912993171972678,
+      "intercept": 474.81982035928144
     },
     {
       "date": "2025-05-26",
@@ -1772,7 +2064,9 @@
       "lower_2": 939.6831,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.288348313393253,
+      "intercept": 476.51609580838317
     },
     {
       "date": "2025-05-27",
@@ -1784,7 +2078,9 @@
       "lower_2": 939.291,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.285135852543409,
+      "intercept": 478.25160479041887
     },
     {
       "date": "2025-05-28",
@@ -1796,7 +2092,9 @@
       "lower_2": 938.926,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2819745598982395,
+      "intercept": 479.97434730538885
     },
     {
       "date": "2025-05-29",
@@ -1808,7 +2106,9 @@
       "lower_2": 938.5687,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2788646274585094,
+      "intercept": 481.6762754491016
     },
     {
       "date": "2025-06-02",
@@ -1820,7 +2120,9 @@
       "lower_2": 937.911,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2753515414061642,
+      "intercept": 483.4247904191615
     },
     {
       "date": "2025-06-03",
@@ -1832,7 +2134,9 @@
       "lower_2": 937.2704,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.271724070896282,
+      "intercept": 485.22384431137726
     },
     {
       "date": "2025-06-04",
@@ -1844,7 +2148,9 @@
       "lower_2": 937.1824,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2689155796623182,
+      "intercept": 486.90656287425134
     },
     {
       "date": "2025-06-05",
@@ -1856,7 +2162,9 @@
       "lower_2": 937.1755,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.266179424717698,
+      "intercept": 488.593233532934
     },
     {
       "date": "2025-06-06",
@@ -1868,7 +2176,9 @@
       "lower_2": 937.1126,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2633111972447877,
+      "intercept": 490.3078562874252
     },
     {
       "date": "2025-06-09",
@@ -1880,7 +2190,9 @@
       "lower_2": 937.2107,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2608629954519812,
+      "intercept": 491.9186826347305
     },
     {
       "date": "2025-06-10",
@@ -1892,7 +2204,9 @@
       "lower_2": 937.8496,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2596615506462006,
+      "intercept": 493.2704431137724
     },
     {
       "date": "2025-06-11",
@@ -1904,7 +2218,9 @@
       "lower_2": 938.7491,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2591531806127219,
+      "intercept": 494.46728143712573
     },
     {
       "date": "2025-06-12",
@@ -1916,7 +2232,9 @@
       "lower_2": 939.4236,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2581625046500173,
+      "intercept": 495.74045508982044
     },
     {
       "date": "2025-06-13",
@@ -1928,7 +2246,9 @@
       "lower_2": 939.8995,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.256739250957003,
+      "intercept": 497.09355688622736
     },
     {
       "date": "2025-06-16",
@@ -1940,7 +2260,9 @@
       "lower_2": 940.2925,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2551242844971369,
+      "intercept": 498.4864910179638
     },
     {
       "date": "2025-06-17",
@@ -1952,7 +2274,9 @@
       "lower_2": 940.881,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.253820599282396,
+      "intercept": 499.8517604790416
     },
     {
       "date": "2025-06-18",
@@ -1964,7 +2288,9 @@
       "lower_2": 941.6645,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2531393805575213,
+      "intercept": 501.0457245508981
     },
     {
       "date": "2025-06-19",
@@ -1976,7 +2302,9 @@
       "lower_2": 942.3455,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2524830739322945,
+      "intercept": 502.1474730538922
     },
     {
       "date": "2025-06-20",
@@ -1988,7 +2316,9 @@
       "lower_2": 943.2542,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2523088812355243,
+      "intercept": 503.1649341317363
     },
     {
       "date": "2025-06-23",
@@ -2000,7 +2330,9 @@
       "lower_2": 943.7143,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2512015168060662,
+      "intercept": 504.3492215568861
     },
     {
       "date": "2025-06-24",
@@ -2012,7 +2344,9 @@
       "lower_2": 944.4673,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2505767463069848,
+      "intercept": 505.4891017964072
     },
     {
       "date": "2025-06-25",
@@ -2024,7 +2358,9 @@
       "lower_2": 945.3807,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2502154488617951,
+      "intercept": 506.6172455089819
     },
     {
       "date": "2025-06-26",
@@ -2036,7 +2372,9 @@
       "lower_2": 946.3973,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2501886167544658,
+      "intercept": 507.6499401197602
     },
     {
       "date": "2025-06-27",
@@ -2048,7 +2386,9 @@
       "lower_2": 947.4049,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2500639602558397,
+      "intercept": 508.73104191616767
     },
     {
       "date": "2025-06-30",
@@ -2060,7 +2400,9 @@
       "lower_2": 948.2117,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2495301021204075,
+      "intercept": 509.8642395209579
     },
     {
       "date": "2025-07-01",
@@ -2072,7 +2414,9 @@
       "lower_2": 949.3182,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.249739430957723,
+      "intercept": 510.8460119760477
     },
     {
       "date": "2025-07-02",
@@ -2084,7 +2428,9 @@
       "lower_2": 950.351,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.249682694730778,
+      "intercept": 511.9121676646705
     },
     {
       "date": "2025-07-03",
@@ -2096,7 +2442,9 @@
       "lower_2": 951.4543,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2498395113580438,
+      "intercept": 512.9230419161677
     },
     {
       "date": "2025-07-04",
@@ -2108,7 +2456,9 @@
       "lower_2": 952.5478,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2500426001704001,
+      "intercept": 513.8943712574846
     },
     {
       "date": "2025-07-07",
@@ -2120,7 +2470,9 @@
       "lower_2": 953.7054,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2505337861351433,
+      "intercept": 514.7458203592813
     },
     {
       "date": "2025-07-08",
@@ -2132,7 +2484,9 @@
       "lower_2": 954.8237,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2509060756243016,
+      "intercept": 515.6329341317365
     },
     {
       "date": "2025-07-09",
@@ -2144,7 +2498,9 @@
       "lower_2": 956.0358,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2514948939795754,
+      "intercept": 516.4840239520955
     },
     {
       "date": "2025-07-10",
@@ -2156,7 +2512,9 @@
       "lower_2": 957.3164,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2522272329089303,
+      "intercept": 517.3233053892213
     },
     {
       "date": "2025-07-11",
@@ -2168,7 +2526,9 @@
       "lower_2": 958.5379,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.252766227064908,
+      "intercept": 518.2228263473049
     },
     {
       "date": "2025-07-14",
@@ -2180,7 +2540,9 @@
       "lower_2": 959.6923,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.253135828543312,
+      "intercept": 519.1546107784432
     },
     {
       "date": "2025-07-15",
@@ -2192,7 +2554,9 @@
       "lower_2": 960.9636,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2537674630698517,
+      "intercept": 520.0550179640716
     },
     {
       "date": "2025-07-16",
@@ -2204,7 +2568,9 @@
       "lower_2": 962.3552,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2546590186360733,
+      "intercept": 520.9445748502993
     },
     {
       "date": "2025-07-17",
@@ -2216,7 +2582,9 @@
       "lower_2": 963.7179,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2554491017964058,
+      "intercept": 521.8634491017963
     },
     {
       "date": "2025-07-18",
@@ -2228,7 +2596,9 @@
       "lower_2": 965.2839,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2568325153300606,
+      "intercept": 522.6802874251493
     },
     {
       "date": "2025-07-21",
@@ -2240,7 +2610,9 @@
       "lower_2": 966.7886,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2580163440653753,
+      "intercept": 523.5389221556886
     },
     {
       "date": "2025-07-22",
@@ -2252,7 +2624,9 @@
       "lower_2": 968.1256,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2587378829515303,
+      "intercept": 524.4668982035925
     },
     {
       "date": "2025-07-23",
@@ -2264,7 +2638,9 @@
       "lower_2": 969.5952,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.259837663350652,
+      "intercept": 525.3245029940119
     },
     {
       "date": "2025-07-24",
@@ -2276,7 +2652,9 @@
       "lower_2": 971.0876,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.261027396109583,
+      "intercept": 526.1476646706585
     },
     {
       "date": "2025-07-25",
@@ -2288,7 +2666,9 @@
       "lower_2": 972.5442,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.262091224364896,
+      "intercept": 527.0082395209581
     },
     {
       "date": "2025-07-28",
@@ -2300,7 +2680,9 @@
       "lower_2": 973.882,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2626921867687464,
+      "intercept": 528.0182994011973
     },
     {
       "date": "2025-07-29",
@@ -2312,7 +2694,9 @@
       "lower_2": 975.1153,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2629979479917908,
+      "intercept": 529.0820119760475
     },
     {
       "date": "2025-07-30",
@@ -2324,7 +2708,9 @@
       "lower_2": 976.505,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2637280309121222,
+      "intercept": 530.0798562874253
     },
     {
       "date": "2025-07-31",
@@ -2336,7 +2722,9 @@
       "lower_2": 977.989,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.264809811239244,
+      "intercept": 530.9759520958083
     },
     {
       "date": "2025-08-01",
@@ -2348,7 +2736,9 @@
       "lower_2": 979.2919,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2653806295225163,
+      "intercept": 531.9575329341319
     },
     {
       "date": "2025-08-04",
@@ -2360,7 +2750,9 @@
       "lower_2": 980.5754,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2659460717842852,
+      "intercept": 532.9164550898204
     },
     {
       "date": "2025-08-05",
@@ -2372,7 +2764,9 @@
       "lower_2": 982.0152,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2669622838491346,
+      "intercept": 533.7809101796406
     },
     {
       "date": "2025-08-06",
@@ -2384,7 +2778,9 @@
       "lower_2": 983.2068,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2673260293041162,
+      "intercept": 534.7581556886227
     },
     {
       "date": "2025-08-07",
@@ -2396,7 +2792,9 @@
       "lower_2": 984.7955,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2687153948615784,
+      "intercept": 535.6095089820359
     },
     {
       "date": "2025-08-08",
@@ -2408,7 +2806,9 @@
       "lower_2": 986.3306,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2699274957099813,
+      "intercept": 536.4950898203592
     },
     {
       "date": "2025-08-11",
@@ -2420,7 +2820,9 @@
       "lower_2": 987.8768,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2711542366169453,
+      "intercept": 537.3910179640718
     },
     {
       "date": "2025-08-12",
@@ -2432,7 +2834,9 @@
       "lower_2": 989.3046,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2718663674654682,
+      "intercept": 538.4533413173651
     },
     {
       "date": "2025-08-13",
@@ -2444,7 +2848,9 @@
       "lower_2": 990.8533,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.272949923799694,
+      "intercept": 539.466994011976
     },
     {
       "date": "2025-08-14",
@@ -2456,7 +2862,9 @@
       "lower_2": 992.256,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2736375745502984,
+      "intercept": 540.5074251497003
     },
     {
       "date": "2025-08-15",
@@ -2468,7 +2876,9 @@
       "lower_2": 993.667,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2743146652586603,
+      "intercept": 541.5664910179638
     },
     {
       "date": "2025-08-18",
@@ -2480,7 +2890,9 @@
       "lower_2": 995.0777,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2750049560198236,
+      "intercept": 542.6162634730537
     },
     {
       "date": "2025-08-19",
@@ -2492,7 +2904,9 @@
       "lower_2": 996.5018,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.275708254833019,
+      "intercept": 543.6767904191616
     },
     {
       "date": "2025-08-20",
@@ -2504,7 +2918,9 @@
       "lower_2": 997.4547,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2751065244260975,
+      "intercept": 544.9669221556883
     },
     {
       "date": "2025-08-21",
@@ -2516,7 +2932,9 @@
       "lower_2": 998.5462,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2748574514298048,
+      "intercept": 546.1950658682632
     },
     {
       "date": "2025-08-22",
@@ -2528,7 +2946,9 @@
       "lower_2": 999.4461,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2740488401953596,
+      "intercept": 547.5448143712574
     },
     {
       "date": "2025-08-25",
@@ -2540,7 +2960,9 @@
       "lower_2": 1000.6261,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2738551114204444,
+      "intercept": 548.8251497005988
     },
     {
       "date": "2025-08-26",
@@ -2552,7 +2974,9 @@
       "lower_2": 1001.8502,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.273818199272796,
+      "intercept": 550.068359281437
     },
     {
       "date": "2025-08-27",
@@ -2564,7 +2988,9 @@
       "lower_2": 1003.1558,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.27393704774819,
+      "intercept": 551.3147065868263
     },
     {
       "date": "2025-08-28",
@@ -2576,7 +3002,9 @@
       "lower_2": 1004.1977,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2733241812967249,
+      "intercept": 552.6796167664669
     },
     {
       "date": "2025-08-29",
@@ -2588,7 +3016,9 @@
       "lower_2": 1005.2118,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2725809943239759,
+      "intercept": 554.0830419161675
     },
     {
       "date": "2025-09-01",
@@ -2600,7 +3030,9 @@
       "lower_2": 1006.2373,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2717788631154514,
+      "intercept": 555.5211736526945
     },
     {
       "date": "2025-09-02",
@@ -2612,7 +3044,9 @@
       "lower_2": 1007.1838,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2706773067092256,
+      "intercept": 557.0340119760477
     },
     {
       "date": "2025-09-03",
@@ -2624,7 +3058,9 @@
       "lower_2": 1008.1186,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2695403741614966,
+      "intercept": 558.5536766467062
     },
     {
       "date": "2025-09-04",
@@ -2636,7 +3072,9 @@
       "lower_2": 1009.0383,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2683441133764515,
+      "intercept": 560.0881437125748
     },
     {
       "date": "2025-09-05",
@@ -2648,7 +3086,9 @@
       "lower_2": 1010.1299,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.267615662462649,
+      "intercept": 561.5418922155687
     },
     {
       "date": "2025-09-08",
@@ -2660,7 +3100,9 @@
       "lower_2": 1011.191,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2667059148236577,
+      "intercept": 563.0508742514971
     },
     {
       "date": "2025-09-09",
@@ -2672,7 +3114,9 @@
       "lower_2": 1012.3968,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.266165576662305,
+      "intercept": 564.5116886227545
     },
     {
       "date": "2025-09-10",
@@ -2684,7 +3128,9 @@
       "lower_2": 1013.7833,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2662565850263399,
+      "intercept": 565.8569820359279
     },
     {
       "date": "2025-09-11",
@@ -2696,7 +3142,9 @@
       "lower_2": 1015.2891,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2669057396229588,
+      "intercept": 567.0710179640714
     },
     {
       "date": "2025-09-12",
@@ -2708,7 +3156,9 @@
       "lower_2": 1016.9419,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2682564650258588,
+      "intercept": 568.1260119760478
     },
     {
       "date": "2025-09-15",
@@ -2720,7 +3170,9 @@
       "lower_2": 1018.4929,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.268987747950991,
+      "intercept": 569.3615568862273
     },
     {
       "date": "2025-09-16",
@@ -2732,7 +3184,9 @@
       "lower_2": 1020.1717,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2703219132876529,
+      "intercept": 570.4906826347304
     },
     {
       "date": "2025-09-17",
@@ -2744,7 +3198,9 @@
       "lower_2": 1021.7729,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2712987651950598,
+      "intercept": 571.6729580838322
     },
     {
       "date": "2025-09-18",
@@ -2756,7 +3212,9 @@
       "lower_2": 1023.473,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2727583550334194,
+      "intercept": 572.7687904191615
     },
     {
       "date": "2025-09-19",
@@ -2768,7 +3226,9 @@
       "lower_2": 1025.0412,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.273524534098135,
+      "intercept": 574.009628742515
     },
     {
       "date": "2025-09-22",
@@ -2780,7 +3240,9 @@
       "lower_2": 1026.7443,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2749164916659659,
+      "intercept": 575.156335329341
     },
     {
       "date": "2025-09-23",
@@ -2792,7 +3254,9 @@
       "lower_2": 1028.6209,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2775310141240552,
+      "intercept": 576.0700119760478
     },
     {
       "date": "2025-09-24",
@@ -2804,7 +3268,9 @@
       "lower_2": 1030.4767,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2799501278005097,
+      "intercept": 577.0424431137723
     },
     {
       "date": "2025-09-25",
@@ -2816,7 +3282,9 @@
       "lower_2": 1032.2583,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2817664550658197,
+      "intercept": 578.1292694610775
     },
     {
       "date": "2025-09-26",
@@ -2828,7 +3296,9 @@
       "lower_2": 1033.9291,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.28283743534974,
+      "intercept": 579.3780598802396
     },
     {
       "date": "2025-09-30",
@@ -2840,7 +3310,9 @@
       "lower_2": 1035.6053,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2838832635330535,
+      "intercept": 580.6491257485027
     },
     {
       "date": "2025-10-01",
@@ -2852,7 +3324,9 @@
       "lower_2": 1037.3459,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2852624530498113,
+      "intercept": 581.8830179640717
     },
     {
       "date": "2025-10-02",
@@ -2864,7 +3338,9 @@
       "lower_2": 1039.2095,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2877163668654654,
+      "intercept": 582.912766467066
     },
     {
       "date": "2025-10-03",
@@ -2876,7 +3352,9 @@
       "lower_2": 1041.1097,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2908576434305734,
+      "intercept": 583.8470179640716
     },
     {
       "date": "2025-10-07",
@@ -2888,7 +3366,9 @@
       "lower_2": 1043.0329,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.2949712118848458,
+      "intercept": 584.5906826347307
     },
     {
       "date": "2025-10-08",
@@ -2900,7 +3380,9 @@
       "lower_2": 1044.989,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.2987131628526505,
+      "intercept": 585.3710658682634
     },
     {
       "date": "2025-10-09",
@@ -2912,7 +3394,9 @@
       "lower_2": 1046.9005,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3025387781551108,
+      "intercept": 586.2165748502995
     },
     {
       "date": "2025-10-13",
@@ -2924,7 +3408,9 @@
       "lower_2": 1048.8145,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.3056310945243776,
+      "intercept": 587.1990419161675
     },
     {
       "date": "2025-10-14",
@@ -2936,7 +3422,9 @@
       "lower_2": 1050.7291,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3088065952263799,
+      "intercept": 588.186754491018
     },
     {
       "date": "2025-10-15",
@@ -2948,7 +3436,9 @@
       "lower_2": 1052.6163,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3126623546494174,
+      "intercept": 589.1007425149699
     },
     {
       "date": "2025-10-16",
@@ -2960,7 +3450,9 @@
       "lower_2": 1054.4774,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3167868671474683,
+      "intercept": 589.9976766467064
     },
     {
       "date": "2025-10-17",
@@ -2972,7 +3464,9 @@
       "lower_2": 1056.3925,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3200527522110068,
+      "intercept": 591.0328383233534
     },
     {
       "date": "2025-10-20",
@@ -2984,7 +3478,9 @@
       "lower_2": 1058.2827,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.323804111216443,
+      "intercept": 592.018874251497
     },
     {
       "date": "2025-10-21",
@@ -2996,7 +3492,9 @@
       "lower_2": 1060.1873,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3275353581414322,
+      "intercept": 593.0039281437122
     },
     {
       "date": "2025-10-22",
@@ -3008,7 +3506,9 @@
       "lower_2": 1062.1167,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.33071964287857,
+      "intercept": 594.0834491017964
     },
     {
       "date": "2025-10-23",
@@ -3020,7 +3520,9 @@
       "lower_2": 1064.0638,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.3338149352597386,
+      "intercept": 595.1451736526947
     },
     {
       "date": "2025-10-27",
@@ -3032,7 +3534,9 @@
       "lower_2": 1066.0022,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3374445657782623,
+      "intercept": 596.1415808383231
     },
     {
       "date": "2025-10-28",
@@ -3044,7 +3548,9 @@
       "lower_2": 1067.9413,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3406467065868255,
+      "intercept": 597.2526467065867
     },
     {
       "date": "2025-10-29",
@@ -3056,7 +3562,9 @@
       "lower_2": 1069.8681,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3446681146724577,
+      "intercept": 598.2033053892213
     },
     {
       "date": "2025-10-30",
@@ -3068,7 +3576,9 @@
       "lower_2": 1071.8124,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3486919227676903,
+      "intercept": 599.1453652694611
     },
     {
       "date": "2025-10-31",
@@ -3080,7 +3590,9 @@
       "lower_2": 1073.7924,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3527911391645557,
+      "intercept": 600.0346107784429
     },
     {
       "date": "2025-11-03",
@@ -3092,7 +3604,9 @@
       "lower_2": 1075.7834,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3571823887295544,
+      "intercept": 600.8589940119756
     },
     {
       "date": "2025-11-04",
@@ -3104,7 +3618,9 @@
       "lower_2": 1077.7965,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3614338617354451,
+      "intercept": 601.702251497006
     },
     {
       "date": "2025-11-05",
@@ -3116,7 +3632,9 @@
       "lower_2": 1079.7949,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.3643237132948518,
+      "intercept": 602.811233532934
     },
     {
       "date": "2025-11-06",
@@ -3128,7 +3646,9 @@
       "lower_2": 1081.8093,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3673897735590936,
+      "intercept": 603.8742514970058
     },
     {
       "date": "2025-11-07",
@@ -3140,7 +3660,9 @@
       "lower_2": 1083.7987,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3699837999351985,
+      "intercept": 605.0670419161675
     },
     {
       "date": "2025-11-10",
@@ -3152,7 +3674,9 @@
       "lower_2": 1085.8129,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.372993075972303,
+      "intercept": 606.1742275449097
     },
     {
       "date": "2025-11-11",
@@ -3164,7 +3688,9 @@
       "lower_2": 1087.8349,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.375914127656511,
+      "intercept": 607.2634251497004
     },
     {
       "date": "2025-11-12",
@@ -3176,7 +3702,9 @@
       "lower_2": 1089.8464,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3786988587954347,
+      "intercept": 608.4306347305387
     },
     {
       "date": "2025-11-13",
@@ -3188,7 +3716,9 @@
       "lower_2": 1091.8356,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.381034932139727,
+      "intercept": 609.6797844311376
     },
     {
       "date": "2025-11-14",
@@ -3200,7 +3730,9 @@
       "lower_2": 1093.7491,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3825645062580239,
+      "intercept": 611.0701556886227
     },
     {
       "date": "2025-11-17",
@@ -3212,7 +3744,9 @@
       "lower_2": 1095.6826,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3840556802227186,
+      "intercept": 612.5261077844311
     },
     {
       "date": "2025-11-18",
@@ -3224,7 +3758,9 @@
       "lower_2": 1097.4785,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.384549122196488,
+      "intercept": 614.1469940119757
     },
     {
       "date": "2025-11-19",
@@ -3236,7 +3772,9 @@
       "lower_2": 1099.2209,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3846952827811299,
+      "intercept": 615.8365269461076
     },
     {
       "date": "2025-11-20",
@@ -3248,7 +3786,9 @@
       "lower_2": 1101.1619,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3861235764943034,
+      "intercept": 617.3321676646708
     },
     {
       "date": "2025-11-21",
@@ -3260,7 +3800,9 @@
       "lower_2": 1102.8333,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3857622790491155,
+      "intercept": 619.1363113772453
     },
     {
       "date": "2025-11-24",
@@ -3272,7 +3814,9 @@
       "lower_2": 1104.4574,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3855361021444075,
+      "intercept": 620.84874251497
     },
     {
       "date": "2025-11-25",
@@ -3284,7 +3828,9 @@
       "lower_2": 1106.2669,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3862366169464673,
+      "intercept": 622.4059640718561
     },
     {
       "date": "2025-11-26",
@@ -3296,7 +3842,9 @@
       "lower_2": 1108.161,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3874768459073832,
+      "intercept": 623.8765269461077
     },
     {
       "date": "2025-11-27",
@@ -3308,7 +3856,9 @@
       "lower_2": 1110.0372,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.388632114528458,
+      "intercept": 625.3482874251494
     },
     {
       "date": "2025-11-28",
@@ -3320,7 +3870,9 @@
       "lower_2": 1111.9242,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3898467113868442,
+      "intercept": 626.8132455089818
     },
     {
       "date": "2025-12-01",
@@ -3332,7 +3884,9 @@
       "lower_2": 1113.6839,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3902819291277153,
+      "intercept": 628.4106586826347
     },
     {
       "date": "2025-12-02",
@@ -3344,7 +3898,9 @@
       "lower_2": 1115.5193,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3911143004571997,
+      "intercept": 629.9489820359281
     },
     {
       "date": "2025-12-03",
@@ -3356,7 +3912,9 @@
       "lower_2": 1117.439,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3926785787143137,
+      "intercept": 631.3166946107784
     },
     {
       "date": "2025-12-04",
@@ -3368,7 +3926,9 @@
       "lower_2": 1119.3356,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.39406276025104,
+      "intercept": 632.717341317365
     },
     {
       "date": "2025-12-05",
@@ -3380,7 +3940,9 @@
       "lower_2": 1121.2904,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.3959388477553902,
+      "intercept": 634.0072574850299
     },
     {
       "date": "2025-12-08",
@@ -3392,7 +3954,9 @@
       "lower_2": 1123.328,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.398616970467881,
+      "intercept": 635.1630658682634
     },
     {
       "date": "2025-12-09",
@@ -3404,7 +3968,9 @@
       "lower_2": 1125.3236,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4007761151044593,
+      "intercept": 636.4243592814369
     },
     {
       "date": "2025-12-10",
@@ -3416,7 +3982,9 @@
       "lower_2": 1127.3607,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.403375517502069,
+      "intercept": 637.6318083832334
     },
     {
       "date": "2025-12-11",
@@ -3428,7 +3996,9 @@
       "lower_2": 1129.3262,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4052398929595706,
+      "intercept": 638.9366467065867
     },
     {
       "date": "2025-12-12",
@@ -3440,7 +4010,9 @@
       "lower_2": 1131.2994,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4070664442657752,
+      "intercept": 640.2869221556884
     },
     {
       "date": "2025-12-15",
@@ -3452,7 +4024,9 @@
       "lower_2": 1133.1655,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4081117924471693,
+      "intercept": 641.770107784431
     },
     {
       "date": "2025-12-16",
@@ -3464,7 +4038,9 @@
       "lower_2": 1134.9526,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4086420025680089,
+      "intercept": 643.3578203592816
     },
     {
       "date": "2025-12-17",
@@ -3476,7 +4052,9 @@
       "lower_2": 1136.6965,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4088015552062205,
+      "intercept": 645.0420119760473
     },
     {
       "date": "2025-12-18",
@@ -3488,7 +4066,9 @@
       "lower_2": 1138.4386,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4090466921867675,
+      "intercept": 646.6908502994012
     },
     {
       "date": "2025-12-19",
@@ -3500,7 +4080,9 @@
       "lower_2": 1140.1687,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4091857007428015,
+      "intercept": 648.3681676646704
     },
     {
       "date": "2025-12-22",
@@ -3512,7 +4094,9 @@
       "lower_2": 1142.0464,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4101530006120016,
+      "intercept": 649.902826347305
     },
     {
       "date": "2025-12-23",
@@ -3524,7 +4108,9 @@
       "lower_2": 1144.0024,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4116819507278016,
+      "intercept": 651.3433532934132
     },
     {
       "date": "2025-12-24",
@@ -3536,7 +4122,9 @@
       "lower_2": 1145.9605,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4131229644918561,
+      "intercept": 652.8258203592814
     },
     {
       "date": "2025-12-26",
@@ -3548,7 +4136,9 @@
       "lower_2": 1147.9478,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4147386509546034,
+      "intercept": 654.3027065868259
     },
     {
       "date": "2025-12-29",
@@ -3560,7 +4150,9 @@
       "lower_2": 1149.9715,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4167431389725549,
+      "intercept": 655.7225868263472
     },
     {
       "date": "2025-12-30",
@@ -3572,7 +4164,9 @@
       "lower_2": 1151.9702,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4183197532790124,
+      "intercept": 657.2372215568862
     },
     {
       "date": "2025-12-31",
@@ -3584,7 +4178,9 @@
       "lower_2": 1154.0182,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4206195384781537,
+      "intercept": 658.6234251497001
     },
     {
       "date": "2026-01-02",
@@ -3596,7 +4192,9 @@
       "lower_2": 1156.0897,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4237597590390347,
+      "intercept": 659.8619401197604
     },
     {
       "date": "2026-01-05",
@@ -3608,7 +4206,9 @@
       "lower_2": 1158.0451,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4289350437401738,
+      "intercept": 660.754706586826
     },
     {
       "date": "2026-01-06",
@@ -3620,7 +4220,9 @@
       "lower_2": 1159.9042,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4348197712790847,
+      "intercept": 661.5424670658682
     },
     {
       "date": "2026-01-07",
@@ -3632,7 +4234,9 @@
       "lower_2": 1161.9028,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.439997887991551,
+      "intercept": 662.4365269461075
     },
     {
       "date": "2026-01-08",
@@ -3644,7 +4248,9 @@
       "lower_2": 1163.9007,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.445382741530964,
+      "intercept": 663.293005988024
     },
     {
       "date": "2026-01-09",
@@ -3656,7 +4262,9 @@
       "lower_2": 1165.9367,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4505422341689342,
+      "intercept": 664.1957125748503
     },
     {
       "date": "2026-01-12",
@@ -3668,7 +4276,9 @@
       "lower_2": 1167.9691,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4558361273445102,
+      "intercept": 665.0848862275444
     },
     {
       "date": "2026-01-13",
@@ -3680,7 +4290,9 @@
       "lower_2": 1169.9678,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4615029820119276,
+      "intercept": 665.921005988024
     },
     {
       "date": "2026-01-14",
@@ -3692,7 +4304,9 @@
       "lower_2": 1171.9864,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4668694514778036,
+      "intercept": 666.8480718562877
     },
     {
       "date": "2026-01-15",
@@ -3704,7 +4318,9 @@
       "lower_2": 1174.0848,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4717683510734028,
+      "intercept": 667.8417964071854
     },
     {
       "date": "2026-01-16",
@@ -3716,7 +4332,9 @@
       "lower_2": 1176.0612,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4777344389377545,
+      "intercept": 668.6712574850299
     },
     {
       "date": "2026-01-19",
@@ -3728,7 +4346,9 @@
       "lower_2": 1178.0009,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.484188544754178,
+      "intercept": 669.4089580838322
     },
     {
       "date": "2026-01-20",
@@ -3740,7 +4360,9 @@
       "lower_2": 1179.9252,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.491033516134063,
+      "intercept": 670.067137724551
     },
     {
       "date": "2026-01-21",
@@ -3752,7 +4374,9 @@
       "lower_2": 1182.0169,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.4969506438025746,
+      "intercept": 670.8848143712571
     },
     {
       "date": "2026-01-22",
@@ -3764,7 +4388,9 @@
       "lower_2": 1184.0743,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5032367009468033,
+      "intercept": 671.6504431137721
     },
     {
       "date": "2026-01-23",
@@ -3776,7 +4402,9 @@
       "lower_2": 1186.1303,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5096502466009858,
+      "intercept": 672.4042634730537
     },
     {
       "date": "2026-01-26",
@@ -3788,7 +4416,9 @@
       "lower_2": 1188.2487,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5152307969231873,
+      "intercept": 673.3659161676642
     },
     {
       "date": "2026-01-27",
@@ -3800,7 +4430,9 @@
       "lower_2": 1190.3189,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5213452533810128,
+      "intercept": 674.2403592814371
     },
     {
       "date": "2026-01-28",
@@ -3812,7 +4444,9 @@
       "lower_2": 1192.2635,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5282064008256016,
+      "intercept": 675.0165029940118
     },
     {
       "date": "2026-01-29",
@@ -3824,7 +4458,9 @@
       "lower_2": 1194.3198,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.534757179028715,
+      "intercept": 675.8260838323353
     },
     {
       "date": "2026-01-30",
@@ -3836,7 +4472,9 @@
       "lower_2": 1196.5086,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5405442261769027,
+      "intercept": 676.7602155688619
     },
     {
       "date": "2026-02-02",
@@ -3848,7 +4486,9 @@
       "lower_2": 1198.7428,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.545929511718047,
+      "intercept": 677.7785868263471
     },
     {
       "date": "2026-02-03",
@@ -3860,7 +4500,9 @@
       "lower_2": 1200.9127,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5520878403513605,
+      "intercept": 678.6700838323354
     },
     {
       "date": "2026-02-04",
@@ -3872,7 +4514,9 @@
       "lower_2": 1203.1486,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5577222468889866,
+      "intercept": 679.6662994011973
     },
     {
       "date": "2026-02-05",
@@ -3884,7 +4528,9 @@
       "lower_2": 1205.4469,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5628104112416428,
+      "intercept": 680.7548023952094
     },
     {
       "date": "2026-02-06",
@@ -3896,7 +4542,9 @@
       "lower_2": 1207.731,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5680003840015344,
+      "intercept": 681.8599041916167
     },
     {
       "date": "2026-02-09",
@@ -3908,7 +4556,9 @@
       "lower_2": 1209.9563,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5739375277501075,
+      "intercept": 682.8465868263477
     },
     {
       "date": "2026-02-10",
@@ -3920,7 +4570,9 @@
       "lower_2": 1211.9847,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5814814299257185,
+      "intercept": 683.5483832335328
     },
     {
       "date": "2026-02-11",
@@ -3932,7 +4584,9 @@
       "lower_2": 1213.9593,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.590653450613802,
+      "intercept": 683.8379640718559
     },
     {
       "date": "2026-02-23",
@@ -3944,7 +4598,9 @@
       "lower_2": 1216.0704,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.5993424453697804,
+      "intercept": 684.2180598802394
     },
     {
       "date": "2026-02-24",
@@ -3956,7 +4612,9 @@
       "lower_2": 1217.8982,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6095141180564703,
+      "intercept": 684.3542275449101
     },
     {
       "date": "2026-02-25",
@@ -3968,7 +4626,9 @@
       "lower_2": 1219.4776,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6207309949239779,
+      "intercept": 684.3316167664669
     },
     {
       "date": "2026-02-26",
@@ -3980,7 +4640,9 @@
       "lower_2": 1221.3366,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6316963027852105,
+      "intercept": 684.3017724550895
     },
     {
       "date": "2026-03-02",
@@ -3992,7 +4654,9 @@
       "lower_2": 1223.4063,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6421007764031035,
+      "intercept": 684.367856287425
     },
     {
       "date": "2026-03-03",
@@ -4004,7 +4668,9 @@
       "lower_2": 1225.7466,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6515155820623268,
+      "intercept": 684.5928622754491
     },
     {
       "date": "2026-03-04",
@@ -4016,7 +4682,9 @@
       "lower_2": 1228.322,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6589858999435991,
+      "intercept": 685.1750179640715
     },
     {
       "date": "2026-03-05",
@@ -4028,7 +4696,9 @@
       "lower_2": 1230.8071,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.666840459361836,
+      "intercept": 685.7593053892214
     },
     {
       "date": "2026-03-06",
@@ -4040,7 +4710,9 @@
       "lower_2": 1233.348,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6743333853335396,
+      "intercept": 686.4138203592814
     },
     {
       "date": "2026-03-09",
@@ -4052,7 +4724,9 @@
       "lower_2": 1236.0104,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.6799573278293096,
+      "intercept": 687.3606467065867
     },
     {
       "date": "2026-03-10",
@@ -4064,7 +4738,9 @@
       "lower_2": 1238.6979,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6866910827643293,
+      "intercept": 688.0885748502996
     },
     {
       "date": "2026-03-11",
@@ -4076,7 +4752,9 @@
       "lower_2": 1241.4135,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.6966913947655777,
+      "intercept": 688.079497005988
     },
     {
       "date": "2026-03-12",
@@ -4088,7 +4766,9 @@
       "lower_2": 1244.2311,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7049183396733572,
+      "intercept": 688.4308742514968
     },
     {
       "date": "2026-03-13",
@@ -4100,7 +4780,9 @@
       "lower_2": 1247.0707,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.712430609722438,
+      "intercept": 688.9305628742513
     },
     {
       "date": "2026-03-16",
@@ -4112,7 +4794,9 @@
       "lower_2": 1249.9656,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.7195663182652714,
+      "intercept": 689.466203592814
     },
     {
       "date": "2026-03-17",
@@ -4124,7 +4808,9 @@
       "lower_2": 1252.8415,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7270453721814873,
+      "intercept": 689.9781796407183
     },
     {
       "date": "2026-03-18",
@@ -4136,7 +4822,9 @@
       "lower_2": 1255.7447,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.735513134052534,
+      "intercept": 690.2914730538922
     },
     {
       "date": "2026-03-19",
@@ -4148,7 +4836,9 @@
       "lower_2": 1258.7133,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 1.7426673226692893,
+      "intercept": 690.812502994012
     },
     {
       "date": "2026-03-20",
@@ -4160,7 +4850,9 @@
       "lower_2": 1261.6881,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7494953499813983,
+      "intercept": 691.3929101796406
     },
     {
       "date": "2026-03-23",
@@ -4172,7 +4864,9 @@
       "lower_2": 1264.6313,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.755495181980728,
+      "intercept": 692.119952095808
     },
     {
       "date": "2026-03-24",
@@ -4184,7 +4878,9 @@
       "lower_2": 1267.5405,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7611958767835048,
+      "intercept": 692.9376287425149
     },
     {
       "date": "2026-03-25",
@@ -4196,7 +4892,9 @@
       "lower_2": 1270.4916,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7676033264133033,
+      "intercept": 693.6509700598801
     },
     {
       "date": "2026-03-26",
@@ -4208,7 +4906,9 @@
       "lower_2": 1273.5976,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.77464577058308,
+      "intercept": 694.1238802395208
     },
     {
       "date": "2026-03-27",
@@ -4220,7 +4920,9 @@
       "lower_2": 1276.6994,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7812223728894905,
+      "intercept": 694.6630179640716
     },
     {
       "date": "2026-03-30",
@@ -4232,7 +4934,9 @@
       "lower_2": 1279.7272,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7868564914259657,
+      "intercept": 695.3473053892211
     },
     {
       "date": "2026-03-31",
@@ -4244,7 +4948,9 @@
       "lower_2": 1282.8159,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.7925124500497995,
+      "intercept": 695.9361437125748
     },
     {
       "date": "2026-04-01",
@@ -4256,7 +4962,9 @@
       "lower_2": 1286.2709,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.800925011700046,
+      "intercept": 695.9792095808383
     },
     {
       "date": "2026-04-02",
@@ -4268,7 +4976,9 @@
       "lower_2": 1289.5345,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8077240468961857,
+      "intercept": 696.3708502994007
     },
     {
       "date": "2026-04-07",
@@ -4280,7 +4990,9 @@
       "lower_2": 1292.9156,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8157166548666177,
+      "intercept": 696.5566946107783
     },
     {
       "date": "2026-04-08",
@@ -4292,7 +5004,9 @@
       "lower_2": 1296.3819,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.825976743906974,
+      "intercept": 696.3388023952095
     },
     {
       "date": "2026-04-09",
@@ -4304,7 +5018,9 @@
       "lower_2": 1299.8976,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8363644174576679,
+      "intercept": 696.0890778443118
     },
     {
       "date": "2026-04-10",
@@ -4316,7 +5032,9 @@
       "lower_2": 1303.1986,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8469720278881097,
+      "intercept": 695.9364790419162
     },
     {
       "date": "2026-04-13",
@@ -4328,7 +5046,9 @@
       "lower_2": 1306.6066,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8574849339397335,
+      "intercept": 695.765508982036
     },
     {
       "date": "2026-04-14",
@@ -4340,7 +5060,9 @@
       "lower_2": 1309.9028,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8693889335557343,
+      "intercept": 695.381461077844
     },
     {
       "date": "2026-04-15",
@@ -4352,7 +5074,9 @@
       "lower_2": 1313.1497,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.881671414685657,
+      "intercept": 694.9609820359282
     },
     {
       "date": "2026-04-16",
@@ -4364,7 +5088,9 @@
       "lower_2": 1316.5867,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.8945719942879757,
+      "intercept": 694.3442874251493
     },
     {
       "date": "2026-04-17",
@@ -4376,7 +5102,9 @@
       "lower_2": 1320.2001,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9060543602174407,
+      "intercept": 693.969437125748
     },
     {
       "date": "2026-04-20",
@@ -4388,7 +5116,9 @@
       "lower_2": 1323.8193,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9171772047088178,
+      "intercept": 693.6842874251496
     },
     {
       "date": "2026-04-21",
@@ -4400,7 +5130,9 @@
       "lower_2": 1327.4446,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9288274273097075,
+      "intercept": 693.3135568862273
     },
     {
       "date": "2026-04-22",
@@ -4412,7 +5144,9 @@
       "lower_2": 1331.0835,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9402837771351071,
+      "intercept": 692.9971976047901
     },
     {
       "date": "2026-04-23",
@@ -4424,7 +5158,9 @@
       "lower_2": 1334.6436,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.952096192384768,
+      "intercept": 692.6719999999997
     },
     {
       "date": "2026-04-24",
@@ -4436,7 +5172,9 @@
       "lower_2": 1337.9833,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9665382021528077,
+      "intercept": 691.8807185628741
     },
     {
       "date": "2026-04-27",
@@ -4448,7 +5186,9 @@
       "lower_2": 1340.9502,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.982544970179879,
+      "intercept": 690.8770299401195
     },
     {
       "date": "2026-04-28",
@@ -4460,7 +5200,9 @@
       "lower_2": 1344.3946,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 1.9976915747662973,
+      "intercept": 689.9479520958081
     },
     {
       "date": "2026-04-29",
@@ -4472,7 +5214,9 @@
       "lower_2": 1347.9843,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.011622574490296,
+      "intercept": 689.2721676646705
     },
     {
       "date": "2026-04-30",
@@ -4484,7 +5228,9 @@
       "lower_2": 1351.7673,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.0244134736538935,
+      "intercept": 688.7848383233531
     },
     {
       "date": "2026-05-04",
@@ -4496,7 +5242,9 @@
       "lower_2": 1355.3471,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.04129360517442,
+      "intercept": 687.4852455089818
     },
     {
       "date": "2026-05-05",
@@ -4508,7 +5256,9 @@
       "lower_2": 1359.1056,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.0573389653558607,
+      "intercept": 686.3519281437125
     },
     {
       "date": "2026-05-06",
@@ -4520,7 +5270,9 @@
       "lower_2": 1362.9778,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.073366805467221,
+      "intercept": 685.212982035928
     },
     {
       "date": "2026-05-07",
@@ -4532,7 +5284,9 @@
       "lower_2": 1366.6516,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.0906463945855767,
+      "intercept": 683.8857245508979
     },
     {
       "date": "2026-05-08",
@@ -4544,7 +5298,9 @@
       "lower_2": 1370.4295,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.1070151320605257,
+      "intercept": 682.7697245508984
     },
     {
       "date": "2026-05-11",
@@ -4556,7 +5312,9 @@
       "lower_2": 1374.3584,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.121491173964694,
+      "intercept": 682.0519520958082
     },
     {
       "date": "2026-05-12",
@@ -4568,7 +5326,9 @@
       "lower_2": 1378.3899,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.1366921147684583,
+      "intercept": 681.161317365269
     },
     {
       "date": "2026-05-13",
@@ -4580,7 +5340,9 @@
       "lower_2": 1382.5665,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.1509154356617404,
+      "intercept": 680.4445988023949
     },
     {
       "date": "2026-05-14",
@@ -4592,7 +5354,9 @@
       "lower_2": 1386.3366,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.164901827607309,
+      "intercept": 679.9949940119759
     },
     {
       "date": "2026-05-15",
@@ -4604,7 +5368,9 @@
       "lower_2": 1390.1313,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.1784301537206137,
+      "intercept": 679.6656766467066
     },
     {
       "date": "2026-05-18",
@@ -4616,7 +5382,9 @@
       "lower_2": 1394.0948,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.1915020460081833,
+      "intercept": 679.3762395209579
     },
     {
       "date": "2026-05-19",
@@ -4628,7 +5396,9 @@
       "lower_2": 1398.3164,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2042903531614115,
+      "intercept": 679.0295568862273
     },
     {
       "date": "2026-05-20",
@@ -4640,7 +5410,9 @@
       "lower_2": 1402.476,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2160542882171512,
+      "intercept": 678.9324550898205
     },
     {
       "date": "2026-05-21",
@@ -4652,7 +5424,9 @@
       "lower_2": 1406.7212,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.229144612578448,
+      "intercept": 678.5624191616764
     },
     {
       "date": "2026-05-22",
@@ -4664,7 +5438,9 @@
       "lower_2": 1411.0489,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2430073560294224,
+      "intercept": 678.0236646706586
     },
     {
       "date": "2026-05-25",
@@ -4676,7 +5452,9 @@
       "lower_2": 1415.2781,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2579270637082547,
+      "intercept": 677.3411976047901
     },
     {
       "date": "2026-05-26",
@@ -4688,7 +5466,9 @@
       "lower_2": 1419.5207,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2713099012396034,
+      "intercept": 676.9981796407185
     },
     {
       "date": "2026-05-27",
@@ -4700,7 +5480,9 @@
       "lower_2": 1423.8002,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2854598778395103,
+      "intercept": 676.5077604790417
     },
     {
       "date": "2026-05-28",
@@ -4712,7 +5494,9 @@
       "lower_2": 1428.1669,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.2994884619538465,
+      "intercept": 676.0256287425146
     },
     {
       "date": "2026-05-29",
@@ -4724,7 +5508,9 @@
       "lower_2": 1432.5428,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3151459805839214,
+      "intercept": 675.2290778443113
     },
     {
       "date": "2026-06-01",
@@ -4736,7 +5522,9 @@
       "lower_2": 1436.9873,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3307023148092583,
+      "intercept": 674.4537724550897
     },
     {
       "date": "2026-06-02",
@@ -4748,7 +5536,9 @@
       "lower_2": 1441.3847,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3465640742562965,
+      "intercept": 673.6642634730534
     },
     {
       "date": "2026-06-03",
@@ -4760,7 +5550,9 @@
       "lower_2": 1445.7494,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3634959019836077,
+      "intercept": 672.6857724550895
     },
     {
       "date": "2026-06-04",
@@ -4772,7 +5564,9 @@
       "lower_2": 1450.4072,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3797226548906196,
+      "intercept": 671.76919760479
     },
     {
       "date": "2026-06-05",
@@ -4784,7 +5578,9 @@
       "lower_2": 1455.1992,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.3954643178572694,
+      "intercept": 670.9216526946105
     },
     {
       "date": "2026-06-08",
@@ -4796,7 +5592,9 @@
       "lower_2": 1460.1981,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.409718166872666,
+      "intercept": 670.2773173652693
     },
     {
       "date": "2026-06-09",
@@ -4808,7 +5606,9 @@
       "lower_2": 1465.2351,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.424119856479423,
+      "intercept": 669.6120958083834
     },
     {
       "date": "2026-06-10",
@@ -4820,7 +5620,9 @@
       "lower_2": 1470.2352,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 2.43703910815643,
+      "intercept": 669.2287425149703
     },
     {
       "date": "2026-06-11",
@@ -4832,7 +5634,9 @@
       "lower_2": 1475.2429,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.4497022788091134,
+      "intercept": 668.8992814371256
     },
     {
       "date": "2026-06-12",
@@ -4844,7 +5648,9 @@
       "lower_2": 1480.3433,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.4638110232440913,
+      "intercept": 668.3171497005987
     },
     {
       "date": "2026-06-15",
@@ -4856,7 +5662,9 @@
       "lower_2": 1485.6146,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.4798887355549413,
+      "intercept": 667.3277604790418
     },
     {
       "date": "2026-06-16",
@@ -4868,7 +5676,9 @@
       "lower_2": 1490.9837,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.496684722738889,
+      "intercept": 666.1871616766468
     },
     {
       "date": "2026-06-17",
@@ -4880,7 +5690,9 @@
       "lower_2": 1496.3469,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.5127826431305715,
+      "intercept": 665.2067305389216
     },
     {
       "date": "2026-06-18",
@@ -4892,7 +5704,9 @@
       "lower_2": 1501.739,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.5293817335269315,
+      "intercept": 664.14725748503
     },
     {
       "date": "2026-06-22",
@@ -4904,7 +5718,9 @@
       "lower_2": 1506.9513,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.548131904527615,
+      "intercept": 662.7590898203591
     },
     {
       "date": "2026-06-23",
@@ -4916,7 +5732,9 @@
       "lower_2": 1512.2183,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.5660527282109107,
+      "intercept": 661.5538443113771
     },
     {
       "date": "2026-06-24",
@@ -4928,7 +5746,9 @@
       "lower_2": 1517.5117,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.580964659858638,
+      "intercept": 660.9373173652692
     },
     {
       "date": "2026-06-25",
@@ -4940,7 +5760,9 @@
       "lower_2": 1522.7089,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.5953187812751217,
+      "intercept": 660.4939640718566
     },
     {
       "date": "2026-06-26",
@@ -4952,7 +5774,9 @@
       "lower_2": 1528.0822,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 2.6089258757035014,
+      "intercept": 660.0869940119753
     },
     {
       "date": "2026-06-29",
@@ -4964,7 +5788,9 @@
       "lower_2": 1533.4416,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.6229397717590848,
+      "intercept": 659.6525269461077
     },
     {
       "date": "2026-06-30",
@@ -4976,7 +5802,9 @@
       "lower_2": 1538.9442,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.6381254965019836,
+      "intercept": 658.9756886227543
     },
     {
       "date": "2026-07-01",
@@ -4988,7 +5816,9 @@
       "lower_2": 1544.7248,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.656399217596868,
+      "intercept": 657.6383952095807
     },
     {
       "date": "2026-07-02",
@@ -5000,7 +5830,9 @@
       "lower_2": 1550.472,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.673199476797906,
+      "intercept": 656.6187305389218
     },
     {
       "date": "2026-07-03",
@@ -5012,7 +5844,9 @@
       "lower_2": 1556.2928,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.6894646298585188,
+      "intercept": 655.684574850299
     },
     {
       "date": "2026-07-06",
@@ -5024,7 +5858,9 @@
       "lower_2": 1562.359,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.7065643622574465,
+      "intercept": 654.5201916167667
     },
     {
       "date": "2026-07-07",
@@ -5036,7 +5872,9 @@
       "lower_2": 1568.5431,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 2.7232766371065456,
+      "intercept": 653.3924790419163
     },
     {
       "date": "2026-07-08",
@@ -5048,7 +5886,9 @@
       "lower_2": 1574.785,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.7405138420553663,
+      "intercept": 652.1777964071854
     },
     {
       "date": "2026-07-09",
@@ -5060,7 +5900,9 @@
       "lower_2": 1581.0205,
       "buy_signal": false,
       "sell_signal": true,
-      "signal": "sell"
+      "signal": "sell",
+      "slope": 2.7563812655250595,
+      "intercept": 651.2068742514972
     },
     {
       "date": "2026-07-13",
@@ -5072,7 +5914,9 @@
       "lower_2": 1587.4974,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.7732331249324975,
+      "intercept": 649.9963353293415
     },
     {
       "date": "2026-07-14",
@@ -5084,7 +5928,9 @@
       "lower_2": 1594.3448,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.7903760575042287,
+      "intercept": 648.5971736526944
     },
     {
       "date": "2026-07-15",
@@ -5096,7 +5942,9 @@
       "lower_2": 1601.2374,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8078598874395473,
+      "intercept": 647.1529580838321
     },
     {
       "date": "2026-07-16",
@@ -5108,7 +5956,9 @@
       "lower_2": 1608.0704,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8256576866307457,
+      "intercept": 645.7124071856285
     },
     {
       "date": "2026-07-17",
@@ -5120,7 +5970,9 @@
       "lower_2": 1614.2295,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8382786651146583,
+      "intercept": 645.263473053892
     },
     {
       "date": "2026-07-20",
@@ -5132,7 +5984,9 @@
       "lower_2": 1620.5412,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8516088464353837,
+      "intercept": 644.6875928143713
     },
     {
       "date": "2026-07-21",
@@ -5144,7 +5998,9 @@
       "lower_2": 1627.2433,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8673234372937473,
+      "intercept": 643.6668023952096
     },
     {
       "date": "2026-07-22",
@@ -5156,7 +6012,9 @@
       "lower_2": 1633.9353,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.882659306637225,
+      "intercept": 642.7205029940117
     },
     {
       "date": "2026-07-23",
@@ -5168,7 +6026,9 @@
       "lower_2": 1640.7067,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.8981209844839357,
+      "intercept": 641.7408143712577
     },
     {
       "date": "2026-07-24",
@@ -5180,7 +6040,9 @@
       "lower_2": 1647.347,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9121752487009944,
+      "intercept": 640.9982754491014
     },
     {
       "date": "2026-07-27",
@@ -5192,7 +6054,9 @@
       "lower_2": 1653.9086,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9259044556178204,
+      "intercept": 640.352838323353
     },
     {
       "date": "2026-07-28",
@@ -5204,7 +6068,9 @@
       "lower_2": 1660.3616,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9382804891219547,
+      "intercept": 639.8670179640717
     },
     {
       "date": "2026-07-29",
@@ -5216,7 +6082,9 @@
       "lower_2": 1666.6224,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9492407089628343,
+      "intercept": 639.522443113772
     },
     {
       "date": "2026-07-30",
@@ -5228,7 +6096,9 @@
       "lower_2": 1672.8998,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.960205968823872,
+      "intercept": 639.1866107784432
     },
     {
       "date": "2026-07-31",
@@ -5240,7 +6110,9 @@
       "lower_2": 1680.479,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9770469321877266,
+      "intercept": 637.7647904191615
     },
     {
       "date": "2026-08-03",
@@ -5252,7 +6124,9 @@
       "lower_2": 1687.9579,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 2.9925573302293182,
+      "intercept": 636.5549461077843
     },
     {
       "date": "2026-08-04",
@@ -5264,7 +6138,9 @@
       "lower_2": 1695.292,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.006862683450731,
+      "intercept": 635.535760479042
     },
     {
       "date": "2026-08-05",
@@ -5276,7 +6152,9 @@
       "lower_2": 1703.3791,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.0239232476929896,
+      "intercept": 633.9291497005986
     },
     {
       "date": "2026-08-06",
@@ -5288,7 +6166,9 @@
       "lower_2": 1710.8621,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.038936603746412,
+      "intercept": 632.8333173652694
     },
     {
       "date": "2026-08-07",
@@ -5300,7 +6180,9 @@
       "lower_2": 1718.3697,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.0539425197700774,
+      "intercept": 631.749341317365
     },
     {
       "date": "2026-08-10",
@@ -5312,7 +6194,9 @@
       "lower_2": 1726.0976,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.0694209976839897,
+      "intercept": 630.537461077844
     },
     {
       "date": "2026-08-11",
@@ -5324,7 +6208,9 @@
       "lower_2": 1733.6004,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.0845303541214144,
+      "intercept": 629.497676646706
     },
     {
       "date": "2026-08-12",
@@ -5336,7 +6222,9 @@
       "lower_2": 1740.9015,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.0993865095460373,
+      "intercept": 628.6110658682629
     },
     {
       "date": "2026-08-13",
@@ -5348,7 +6236,9 @@
       "lower_2": 1747.9006,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1137446629786503,
+      "intercept": 627.9587065868261
     },
     {
       "date": "2026-08-14",
@@ -5360,7 +6250,9 @@
       "lower_2": 1754.4351,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1262586010344022,
+      "intercept": 627.7484790419164
     },
     {
       "date": "2026-08-17",
@@ -5372,7 +6264,9 @@
       "lower_2": 1761.388,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1397144468577856,
+      "intercept": 627.2332455089821
     },
     {
       "date": "2026-08-18",
@@ -5384,7 +6278,9 @@
       "lower_2": 1767.692,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.151232188928754,
+      "intercept": 627.2715688622757
     },
     {
       "date": "2026-08-19",
@@ -5396,7 +6292,9 @@
       "lower_2": 1774.0251,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1623725534902123,
+      "intercept": 627.3040479041915
     },
     {
       "date": "2026-08-20",
@@ -5408,7 +6306,9 @@
       "lower_2": 1780.4297,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1738805515222035,
+      "intercept": 627.3028023952095
     },
     {
       "date": "2026-08-21",
@@ -5420,7 +6320,9 @@
       "lower_2": 1786.9242,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1859448237792947,
+      "intercept": 627.2447664670653
     },
     {
       "date": "2026-08-24",
@@ -5432,7 +6334,9 @@
       "lower_2": 1793.4973,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.1976543266173065,
+      "intercept": 627.1532455089816
     },
     {
       "date": "2026-08-25",
@@ -5444,7 +6348,9 @@
       "lower_2": 1799.6249,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.208456049824197,
+      "intercept": 627.452215568862
     },
     {
       "date": "2026-08-26",
@@ -5456,7 +6362,9 @@
       "lower_2": 1805.068,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.217357109428435,
+      "intercept": 628.4314011976045
     },
     {
       "date": "2026-08-27",
@@ -5468,7 +6376,9 @@
       "lower_2": 1810.9925,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.2275479341917337,
+      "intercept": 628.9487904191615
     },
     {
       "date": "2026-08-28",
@@ -5480,7 +6390,9 @@
       "lower_2": 1817.3084,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.2387933231732915,
+      "intercept": 629.1430658682632
     },
     {
       "date": "2026-08-31",
@@ -5492,7 +6404,9 @@
       "lower_2": 1823.3099,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.248958275833103,
+      "intercept": 629.6249101796401
     },
     {
       "date": "2026-09-01",
@@ -5504,7 +6418,9 @@
       "lower_2": 1829.8166,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.2607305149220576,
+      "intercept": 629.6997365269461
     },
     {
       "date": "2026-09-02",
@@ -5516,7 +6432,9 @@
       "lower_2": 1836.0828,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.2711851007404014,
+      "intercept": 629.9813173652694
     },
     {
       "date": "2026-09-03",
@@ -5528,7 +6446,9 @@
       "lower_2": 1842.3651,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.281644774579096,
+      "intercept": 630.2696287425149
     },
     {
       "date": "2026-09-04",
@@ -5540,7 +6460,9 @@
       "lower_2": 1848.8064,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.292612722450887,
+      "intercept": 630.4571257485028
     },
     {
       "date": "2026-09-07",
@@ -5552,7 +6474,9 @@
       "lower_2": 1855.4292,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.3045176820707263,
+      "intercept": 630.5208383233531
     },
     {
       "date": "2026-09-08",
@@ -5564,7 +6488,9 @@
       "lower_2": 1862.3478,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.3171417805671197,
+      "intercept": 630.373125748503
     },
     {
       "date": "2026-09-09",
@@ -5576,7 +6502,9 @@
       "lower_2": 1869.2728,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.329598214392856,
+      "intercept": 630.2492455089817
     },
     {
       "date": "2026-09-10",
@@ -5588,7 +6516,9 @@
       "lower_2": 1876.11,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.3415521342085355,
+      "intercept": 630.22074251497
     },
     {
       "date": "2026-09-11",
@@ -5600,7 +6530,9 @@
       "lower_2": 1882.5516,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.352045456181822,
+      "intercept": 630.5066586826343
     },
     {
       "date": "2026-09-14",
@@ -5612,7 +6544,9 @@
       "lower_2": 1888.7082,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.3615124860499423,
+      "intercept": 631.0026347305387
     },
     {
       "date": "2026-09-15",
@@ -5624,7 +6558,9 @@
       "lower_2": 1894.8495,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.370913995655981,
+      "intercept": 631.528958083832
     },
     {
       "date": "2026-09-16",
@@ -5636,7 +6572,9 @@
       "lower_2": 1900.9384,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.380081936327745,
+      "intercept": 632.1015568862274
     },
     {
       "date": "2026-09-17",
@@ -5648,7 +6586,9 @@
       "lower_2": 1907.208,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.3899980559922223,
+      "intercept": 632.5934850299398
     },
     {
       "date": "2026-09-18",
@@ -5660,7 +6600,9 @@
       "lower_2": 1913.8792,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.401139188556754,
+      "intercept": 632.8057724550895
     },
     {
       "date": "2026-09-21",
@@ -5672,7 +6614,9 @@
       "lower_2": 1920.4222,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4121107364429433,
+      "intercept": 633.1423712574851
     },
     {
       "date": "2026-09-22",
@@ -5684,7 +6628,9 @@
       "lower_2": 1926.8435,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4224797379189495,
+      "intercept": 633.5873053892217
     },
     {
       "date": "2026-09-23",
@@ -5696,7 +6642,9 @@
       "lower_2": 1933.4968,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4337574790299144,
+      "intercept": 633.8775089820356
     },
     {
       "date": "2026-09-24",
@@ -5708,7 +6656,9 @@
       "lower_2": 1939.9147,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.444095040380158,
+      "intercept": 634.3682874251497
     },
     {
       "date": "2026-09-29",
@@ -5720,7 +6670,9 @@
       "lower_2": 1945.8236,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.453058788235151,
+      "intercept": 635.303832335329
     },
     {
       "date": "2026-09-30",
@@ -5732,7 +6684,9 @@
       "lower_2": 1951.8496,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.46230266521066,
+      "intercept": 636.15348502994
     },
     {
       "date": "2026-10-01",
@@ -5744,7 +6698,9 @@
       "lower_2": 1958.1623,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4724983859935414,
+      "intercept": 636.793652694611
     },
     {
       "date": "2026-10-02",
@@ -5756,7 +6712,9 @@
       "lower_2": 1964.2175,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4818448393793533,
+      "intercept": 637.6637125748506
     },
     {
       "date": "2026-10-05",
@@ -5768,7 +6726,9 @@
       "lower_2": 1970.6591,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.4929542438169734,
+      "intercept": 638.2339161676645
     },
     {
       "date": "2026-10-06",
@@ -5780,7 +6740,9 @@
       "lower_2": 1977.0952,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5040706082824316,
+      "intercept": 638.8283832335329
     },
     {
       "date": "2026-10-07",
@@ -5792,7 +6754,9 @@
       "lower_2": 1983.8842,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.515963183852734,
+      "intercept": 639.1511856287424
     },
     {
       "date": "2026-10-08",
@@ -5804,7 +6768,9 @@
       "lower_2": 1990.5615,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5270278521114062,
+      "intercept": 639.5965508982034
     },
     {
       "date": "2026-10-12",
@@ -5816,7 +6782,9 @@
       "lower_2": 1997.1637,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5376991107964417,
+      "intercept": 640.1200718562869
     },
     {
       "date": "2026-10-13",
@@ -5828,7 +6796,9 @@
       "lower_2": 2003.3842,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5468755475021876,
+      "intercept": 640.9285508982038
     },
     {
       "date": "2026-10-14",
@@ -5840,7 +6810,9 @@
       "lower_2": 2009.7654,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5563601934407716,
+      "intercept": 641.6221317365266
     },
     {
       "date": "2026-10-15",
@@ -5852,7 +6824,9 @@
       "lower_2": 2015.8957,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5648129792519154,
+      "intercept": 642.4471616766466
     },
     {
       "date": "2026-10-16",
@@ -5864,7 +6838,9 @@
       "lower_2": 2021.8744,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5727420829683307,
+      "intercept": 643.3548502994007
     },
     {
       "date": "2026-10-19",
@@ -5876,7 +6852,9 @@
       "lower_2": 2027.9225,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.580773139092555,
+      "intercept": 644.217101796407
     },
     {
       "date": "2026-10-20",
@@ -5888,7 +6866,9 @@
       "lower_2": 2034.0048,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5887402109608413,
+      "intercept": 645.0293173652694
     },
     {
       "date": "2026-10-21",
@@ -5900,7 +6880,9 @@
       "lower_2": 2040.2903,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.5971726446905774,
+      "intercept": 645.7354251497005
     },
     {
       "date": "2026-10-22",
@@ -5912,7 +6894,9 @@
       "lower_2": 2046.0605,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6042711530846088,
+      "intercept": 646.7343473053891
     },
     {
       "date": "2026-10-27",
@@ -5924,7 +6908,9 @@
       "lower_2": 2051.4645,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.610561914247654,
+      "intercept": 648.0508023952095
     },
     {
       "date": "2026-10-28",
@@ -5936,7 +6922,9 @@
       "lower_2": 2057.2,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6176736706946806,
+      "intercept": 649.1824191616765
     },
     {
       "date": "2026-10-29",
@@ -5948,7 +6936,9 @@
       "lower_2": 2062.8586,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6245266581066304,
+      "intercept": 650.3485988023951
     },
     {
       "date": "2026-10-30",
@@ -5960,7 +6950,9 @@
       "lower_2": 2068.3565,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6308370993483954,
+      "intercept": 651.5041437125748
     },
     {
       "date": "2026-11-02",
@@ -5972,7 +6964,9 @@
       "lower_2": 2073.4506,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6361786567146246,
+      "intercept": 652.8114251497005
     },
     {
       "date": "2026-11-03",
@@ -5984,7 +6978,9 @@
       "lower_2": 2078.2174,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.640795651182604,
+      "intercept": 654.2094850299394
     },
     {
       "date": "2026-11-04",
@@ -5996,7 +6992,9 @@
       "lower_2": 2082.8069,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6450531242124957,
+      "intercept": 655.5772455089817
     },
     {
       "date": "2026-11-05",
@@ -6008,7 +7006,9 @@
       "lower_2": 2087.091,
       "buy_signal": false,
       "sell_signal": false,
-      "signal": "none"
+      "signal": "none",
+      "slope": 3.6487149148596583,
+      "intercept": 657.0536287425147
     }
   ]
 }

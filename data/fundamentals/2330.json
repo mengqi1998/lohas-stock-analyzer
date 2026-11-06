@@ -1,0 +1,19 @@
+{
+  "stock_id": "2330",
+  "asset_type": "stock",
+  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockMonthRevenue",
+  "status": "success",
+  "message": null,
+  "data": {
+    "date": "2026-11-05",
+    "PER": 25.96,
+    "PBR": 9.03,
+    "dividend_yield": 0.98,
+    "latest_quarter_EPS": 27.25,
+    "EPS_date": "2026-06-30",
+    "TTM_EPS": 86.28,
+    "revenue": 511857399000,
+    "revenue_date": "2026-10-01",
+    "revenue_yoy": 54.64861207105231
+  }
+}
