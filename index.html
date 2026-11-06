@@ -33,7 +33,12 @@ h1 { margin-bottom: 8px; }
 
 .search-row {
   display: flex;
+  align-items: center;
   gap: 10px;
+}
+.button-row { flex: 0 0 auto; }
+.search-row .button-row button {
+  width: auto; padding: 8px 12px; font-size: 13px; white-space: nowrap;
 }
 
 input {
@@ -229,6 +234,13 @@ th {
 #result .fundamental-item,#result .holding-stat { padding:12px; }
 #result .value { overflow-wrap:anywhere; }
 .info-tip::after { pointer-events:none; }
+/* Tooltip placement is calculated from the icon's screen position. */
+.info-tip::after {
+  position:fixed; left:var(--tip-left, 16px); top:var(--tip-top, 80px);
+  right:auto; bottom:auto; transform:none;
+  width:min(260px, calc(100vw - 32px)); max-width:calc(100vw - 32px);
+  max-height:calc(100vh - var(--tip-top, 80px) - 16px); overflow:auto;
+}
 #result > .card:first-child,#result > .card:nth-child(5) { grid-column:1 / -1; }
 #result > .card:first-child .summary { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
@@ -296,7 +308,10 @@ input, button { max-width:100%; }
   .holding-form { grid-template-columns:minmax(0,1fr); }
   .holding-form button { width:100%; }
   .guide-grid { grid-template-columns:minmax(0,1fr); }
-  .search-row { flex-direction:column; }
+  .search-row { flex-direction:row; align-items:stretch; gap:7px; }
+  .search-row input { min-width:0; width:100%; padding:9px 10px; }
+  .search-row .button-row { flex:0 0 auto; flex-direction:column; gap:6px; }
+  .search-row .button-row button { width:auto; min-width:66px; padding:7px 9px; font-size:12px; }
   .button-row { flex-direction:row; }
   .button-row button { flex:1 1 0; width:auto; padding:11px 8px; }
   .chart-container { height:320px; }
@@ -316,7 +331,9 @@ input, button { max-width:100%; }
   h1 { font-size:25px; }
   h2 { font-size:20px; }
   h3 { font-size:17px; }
-  .button-row { flex-direction:column; }
+  .search-row .button-row { flex-direction:column; }
+  .search-row .button-row button { width:auto; min-width:62px; padding:7px 8px; font-size:11px; }
+  .button-row:not(.search-row .button-row) { flex-direction:column; }
   .button-row button { width:100%; }
   .chart-container { height:280px; }
 }
@@ -682,9 +699,10 @@ async function searchStock(forceRefresh = false) {
 
     result.classList.remove("hidden");
 
+    const latestDate = data.data[data.data.length - 1]?.date || "未知";
     status.textContent = fromCache
-      ? "查詢成功！使用今日快取資料。"
-      : "查詢成功！已從網站下載最新資料。";
+      ? `查詢成功！使用本機快取；資料截至 ${latestDate}。`
+      : `查詢成功！已下載網站資料；資料截至 ${latestDate}。`;
 
     status.className = "status";
 
@@ -1396,5 +1414,23 @@ searchStock(false);
 </section>
 
   
+<script>
+/* Keep help bubbles within the visible viewport on desktop and mobile. */
+function placeInfoTip(tip) {
+  if (!tip || !tip.classList.contains("info-tip")) return;
+  const rect = tip.getBoundingClientRect();
+  const width = Math.min(260, window.innerWidth - 32);
+  const left = Math.max(16, Math.min(rect.left + rect.width / 2 - width / 2, window.innerWidth - width - 16));
+  const top = Math.max(12, Math.min(rect.bottom + 8, window.innerHeight - 150));
+  tip.style.setProperty("--tip-left", left + "px");
+  tip.style.setProperty("--tip-top", top + "px");
+}
+document.addEventListener("pointerover", event => placeInfoTip(event.target.closest?.(".info-tip")));
+document.addEventListener("focusin", event => placeInfoTip(event.target.closest?.(".info-tip")));
+window.addEventListener("resize", () => {
+  const active = document.querySelector(".info-tip:hover, .info-tip:focus");
+  if (active) placeInfoTip(active);
+});
+</script>
 </body>
 </html>
