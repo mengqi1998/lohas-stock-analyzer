@@ -5,13 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>樂活五線譜｜股票分析站</title>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -21,22 +18,10 @@ body {
   color: #263445;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-header {
-  margin-bottom: 25px;
-}
-
-h1 {
-  margin-bottom: 8px;
-}
-
-.subtitle {
-  color: #718096;
-}
+.container { max-width: 1100px; margin: auto; }
+header { margin-bottom: 25px; }
+h1 { margin-bottom: 8px; }
+.subtitle { color: #718096; }
 
 .card {
   background: white;
@@ -61,33 +46,35 @@ input {
 }
 
 button {
-  padding: 12px 24px;
+  padding: 12px 20px;
   border: none;
   border-radius: 8px;
   background: #315b82;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-button:disabled {
-  opacity: .6;
-  cursor: wait;
+button:disabled { opacity: .6; cursor: wait; }
+
+.secondary-btn {
+  background: #e8edf3;
+  color: #315b82;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
 }
 
 .status {
   margin-top: 12px;
   color: #718096;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-.error {
-  color: #c0392b;
-}
-
-.hidden {
-  display: none !important;
-}
+.error { color: #c0392b; }
+.hidden { display: none !important; }
 
 .summary {
   display: grid;
@@ -130,24 +117,21 @@ button:disabled {
   padding: 15px;
 }
 
-.line-name {
-  color: #718096;
-  font-size: 14px;
+.line-name { color: #718096; font-size: 14px; }
+.line-value { font-weight: bold; font-size: 18px; }
+
+.signal-panel {
+  border-radius: 10px;
+  padding: 20px;
+  background: #f7f9fc;
+  margin-top: 15px;
 }
 
-.line-value {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.chart-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
+.signal-title { color: #718096; font-size: 13px; }
+.signal-value { font-size: 25px; font-weight: bold; margin-top: 8px; }
+.signal-buy { color: #21865b; }
+.signal-sell { color: #c34c4c; }
+.signal-none { color: #718096; }
 
 .chart-container {
   position: relative;
@@ -162,6 +146,30 @@ button:disabled {
   line-height: 1.7;
 }
 
+.table-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 420px;
+}
+
+th, td {
+  text-align: left;
+  padding: 13px 10px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+th {
+  color: #718096;
+  font-weight: normal;
+  background: #fafbfd;
+}
+
+.buy-text { color: #21865b; font-weight: bold; }
+.sell-text { color: #c34c4c; font-weight: bold; }
+
 .disclaimer {
   color: #8793a1;
   font-size: 12px;
@@ -170,29 +178,12 @@ button:disabled {
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 20px 12px;
-  }
-
-  .summary {
-    grid-template-columns: 1fr;
-  }
-
-  .line-list {
-    grid-template-columns: 1fr;
-  }
-
-  .search-row {
-    flex-direction: column;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .chart-container {
-    height: 350px;
-  }
+  body { padding: 20px 12px; }
+  .summary, .line-list { grid-template-columns: 1fr; }
+  .search-row { flex-direction: column; }
+  .button-row { flex-direction: column; }
+  button { width: 100%; }
+  .chart-container { height: 350px; }
 }
 </style>
 </head>
@@ -210,18 +201,16 @@ button:disabled {
   <h3>股票查詢</h3>
 
   <div class="search-row">
-    <input
-      id="stockId"
-      type="text"
-      value="2330"
-      placeholder="請輸入股票代號，例如 2330"
-    >
-    <button id="searchBtn" onclick="searchStock()">查詢</button>
+    <input id="stockId" type="text" value="2330"
+      placeholder="請輸入股票代號，例如 2330">
+    <div class="button-row">
+      <button id="searchBtn" onclick="searchStock(false)">查詢</button>
+      <button class="secondary-btn" id="refreshBtn"
+        onclick="searchStock(true)">強制更新</button>
+    </div>
   </div>
 
-  <div id="status" class="status">
-    請輸入股票代號開始查詢。
-  </div>
+  <div id="status" class="status">請輸入股票代號開始查詢。</div>
 </section>
 
 <section id="result" class="hidden">
@@ -234,12 +223,10 @@ button:disabled {
         <div class="label">最新資料日期</div>
         <div class="value" id="latestDate">-</div>
       </div>
-
       <div class="summary-item">
         <div class="label">最新收盤價</div>
         <div class="value" id="latestClose">-</div>
       </div>
-
       <div class="summary-item">
         <div class="label">分析交易日數</div>
         <div class="value" id="actualDays">-</div>
@@ -248,6 +235,16 @@ button:disabled {
   </div>
 
   <div class="card">
+    <h3>最新訊號</h3>
+
+    <div class="signal-panel">
+      <div class="signal-title">目前最新交易日訊號</div>
+      <div id="latestSignal" class="signal-value signal-none">
+        目前無訊號
+      </div>
+      <div id="signalDate" class="status"></div>
+    </div>
+
     <h3>樂活五線譜數值</h3>
 
     <div class="line-list">
@@ -255,22 +252,18 @@ button:disabled {
         <span class="line-name">上上線（+2σ）</span>
         <span class="line-value" id="upper2">-</span>
       </div>
-
       <div class="line-item">
         <span class="line-name">上線（+1σ）</span>
         <span class="line-value" id="upper1">-</span>
       </div>
-
       <div class="line-item">
         <span class="line-name">中線（趨勢線）</span>
         <span class="line-value" id="trend">-</span>
       </div>
-
       <div class="line-item">
         <span class="line-name">下線（-1σ）</span>
         <span class="line-value" id="lower1">-</span>
       </div>
-
       <div class="line-item">
         <span class="line-name">下下線（-2σ）</span>
         <span class="line-value" id="lower2">-</span>
@@ -279,17 +272,35 @@ button:disabled {
   </div>
 
   <div class="card">
-    <div class="chart-header">
-      <h3>歷史股價與五線譜</h3>
-      <span id="chartPeriod" class="subtitle">最近 500 個交易日</span>
-    </div>
+    <h3>歷史股價與五線譜</h3>
+    <div id="chartPeriod" class="subtitle">最近 500 個交易日</div>
 
     <div class="chart-container">
       <canvas id="fiveLineChart"></canvas>
     </div>
 
     <div class="chart-note">
-      將滑鼠移至圖表上的任一日期，可查看當日收盤價及五條線的數值。
+      綠色三角形：買進觀察訊號。
+      紅色倒三角形：賣出觀察訊號。
+      滑鼠移至圖表可查看每日數值。
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>歷史訊號紀錄</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>訊號</th>
+            <th>當日收盤價</th>
+          </tr>
+        </thead>
+        <tbody id="signalHistory">
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -299,27 +310,95 @@ button:disabled {
   資料來源：FinMind。五線譜為統計分析工具，僅供研究參考，
   不代表未來股價走勢，也不構成投資建議。
   目前測試版本使用一般收盤價，尚未完成除權息還原。
+  訊號為觀察用途，不代表買賣建議。
 </div>
 
 </div>
 
 <script>
+
 let fiveLineChart = null;
 
+const CACHE_PREFIX = "lohas_stock_";
+
 
 // =========================
-// 股票查詢
+// 日期工具
 // =========================
 
-async function searchStock() {
+function getLocalDate() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
 
-  const stockId = document
-    .getElementById("stockId")
-    .value.trim();
+  return `${year}-${month}-${day}`;
+}
 
+
+// =========================
+// 取得快取
+// =========================
+
+function getCache(stockId) {
+
+  try {
+    const raw = localStorage.getItem(CACHE_PREFIX + stockId);
+
+    if (!raw) return null;
+
+    const cache = JSON.parse(raw);
+
+    // 只使用當天的快取
+    if (cache.cacheDate !== getLocalDate()) {
+      localStorage.removeItem(CACHE_PREFIX + stockId);
+      return null;
+    }
+
+    return cache.data;
+
+  } catch (error) {
+    console.warn("讀取快取失敗：", error);
+    return null;
+  }
+
+}
+
+
+// =========================
+// 儲存快取
+// =========================
+
+function saveCache(stockId, data) {
+
+  try {
+
+    localStorage.setItem(
+      CACHE_PREFIX + stockId,
+      JSON.stringify({
+        cacheDate: getLocalDate(),
+        data: data
+      })
+    );
+
+  } catch (error) {
+    console.warn("儲存快取失敗：", error);
+  }
+
+}
+
+
+// =========================
+// 查詢股票
+// =========================
+
+async function searchStock(forceRefresh = false) {
+
+  const stockId = document.getElementById("stockId").value.trim();
   const status = document.getElementById("status");
   const result = document.getElementById("result");
   const button = document.getElementById("searchBtn");
+  const refreshButton = document.getElementById("refreshBtn");
 
   if (!/^[0-9A-Za-z]{4,6}$/.test(stockId)) {
     status.textContent = "請輸入正確的股票或 ETF 代號。";
@@ -329,23 +408,48 @@ async function searchStock() {
   }
 
   button.disabled = true;
+  refreshButton.disabled = true;
+
   status.textContent = "正在讀取分析資料...";
   status.className = "status";
   result.classList.add("hidden");
 
   try {
 
-    const response = await fetch(
-      `data/five_lines/${encodeURIComponent(stockId)}.json?t=${Date.now()}`
-    );
+    let data = null;
+    let fromCache = false;
 
-    if (!response.ok) {
-      throw new Error(
-        "找不到此標的的分析資料，請確認代號或等待資料更新。"
-      );
+    // 優先讀取當日快取
+    if (!forceRefresh) {
+
+      data = getCache(stockId);
+
+      if (data) {
+        fromCache = true;
+      }
+
     }
 
-    const data = await response.json();
+    // 沒有快取或使用者要求強制更新
+    if (!data) {
+
+      const response = await fetch(
+        `data/five_lines/${encodeURIComponent(stockId)}.json?t=${Date.now()}`
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          "找不到此標的的分析資料，請確認代號或等待資料更新。"
+        );
+      }
+
+      data = await response.json();
+
+      if (data.status === "success") {
+        saveCache(stockId, data);
+      }
+
+    }
 
     if (data.status !== "success") {
       throw new Error(
@@ -357,46 +461,14 @@ async function searchStock() {
       throw new Error("分析資料內容為空。");
     }
 
-    const latest = data.data[data.data.length - 1];
-
-    // 基本資料
-    document.getElementById("stockTitle").textContent =
-      `${data.stock_id} 股票分析`;
-
-    document.getElementById("latestDate").textContent =
-      latest.date;
-
-    document.getElementById("latestClose").textContent =
-      Number(latest.close).toFixed(2);
-
-    document.getElementById("actualDays").textContent =
-      `${data.actual_days} 日`;
-
-    // 五線譜數值
-    document.getElementById("upper2").textContent =
-      Number(latest.upper_2).toFixed(2);
-
-    document.getElementById("upper1").textContent =
-      Number(latest.upper_1).toFixed(2);
-
-    document.getElementById("trend").textContent =
-      Number(latest.trend).toFixed(2);
-
-    document.getElementById("lower1").textContent =
-      Number(latest.lower_1).toFixed(2);
-
-    document.getElementById("lower2").textContent =
-      Number(latest.lower_2).toFixed(2);
-
-    // 繪製圖表
-    renderChart(data.data);
-
-    document.getElementById("chartPeriod").textContent =
-      `最近 ${data.actual_days} 個交易日`;
+    displayStock(data);
 
     result.classList.remove("hidden");
 
-    status.textContent = "查詢成功！";
+    status.textContent = fromCache
+      ? "查詢成功！使用今日快取資料。"
+      : "查詢成功！已從網站下載最新資料。";
+
     status.className = "status";
 
   } catch (error) {
@@ -407,78 +479,230 @@ async function searchStock() {
   } finally {
 
     button.disabled = false;
+    refreshButton.disabled = false;
 
   }
+
 }
 
 
 // =========================
-// 繪製五線譜圖表
+// 顯示股票資料
+// =========================
+
+function displayStock(data) {
+
+  const rows = data.data;
+  const latest = rows[rows.length - 1];
+
+  document.getElementById("stockTitle").textContent =
+    `${data.stock_id} 股票分析`;
+
+  document.getElementById("latestDate").textContent =
+    latest.date;
+
+  document.getElementById("latestClose").textContent =
+    Number(latest.close).toFixed(2);
+
+  document.getElementById("actualDays").textContent =
+    `${data.actual_days} 日`;
+
+  document.getElementById("upper2").textContent =
+    Number(latest.upper_2).toFixed(2);
+
+  document.getElementById("upper1").textContent =
+    Number(latest.upper_1).toFixed(2);
+
+  document.getElementById("trend").textContent =
+    Number(latest.trend).toFixed(2);
+
+  document.getElementById("lower1").textContent =
+    Number(latest.lower_1).toFixed(2);
+
+  document.getElementById("lower2").textContent =
+    Number(latest.lower_2).toFixed(2);
+
+  displayLatestSignal(latest);
+
+  displaySignalHistory(rows);
+
+  renderChart(rows);
+
+  document.getElementById("chartPeriod").textContent =
+    `最近 ${data.actual_days} 個交易日`;
+
+}
+
+
+// =========================
+// 最新訊號
+// =========================
+
+function displayLatestSignal(latest) {
+
+  const signalElement = document.getElementById("latestSignal");
+  const dateElement = document.getElementById("signalDate");
+
+  signalElement.className = "signal-value";
+
+  if (latest.signal === "buy") {
+
+    signalElement.textContent = "買進觀察";
+    signalElement.classList.add("signal-buy");
+
+  } else if (latest.signal === "sell") {
+
+    signalElement.textContent = "賣出觀察";
+    signalElement.classList.add("signal-sell");
+
+  } else {
+
+    signalElement.textContent = "目前無訊號";
+    signalElement.classList.add("signal-none");
+
+  }
+
+  dateElement.textContent =
+    `最新資料日期：${latest.date}`;
+
+}
+
+
+// =========================
+// 歷史訊號紀錄
+// =========================
+
+function displaySignalHistory(rows) {
+
+  const tbody = document.getElementById("signalHistory");
+
+  tbody.innerHTML = "";
+
+  const signals = rows
+    .filter(item =>
+      item.signal === "buy" || item.signal === "sell"
+    )
+    .reverse()
+    .slice(0, 10);
+
+  if (signals.length === 0) {
+
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="3">目前沒有歷史訊號。</td>
+      </tr>
+    `;
+
+    return;
+
+  }
+
+  signals.forEach(item => {
+
+    const tr = document.createElement("tr");
+
+    const dateCell = document.createElement("td");
+    dateCell.textContent = item.date;
+
+    const signalCell = document.createElement("td");
+
+    if (item.signal === "buy") {
+      signalCell.textContent = "買進觀察";
+      signalCell.className = "buy-text";
+    } else {
+      signalCell.textContent = "賣出觀察";
+      signalCell.className = "sell-text";
+    }
+
+    const priceCell = document.createElement("td");
+    priceCell.textContent = Number(item.close).toFixed(2);
+
+    tr.append(dateCell, signalCell, priceCell);
+    tbody.appendChild(tr);
+
+  });
+
+}
+
+
+// =========================
+// 圖表資料集
+// =========================
+
+function makeDataset(label, rows, field, color, width, dash = []) {
+
+  return {
+
+    label: label,
+
+    data: rows.map(item => Number(item[field])),
+
+    borderColor: color,
+    borderWidth: width,
+    borderDash: dash,
+
+    pointRadius: 0,
+    pointHoverRadius: 4,
+
+    tension: 0,
+    fill: false
+
+  };
+
+}
+
+
+// =========================
+// 繪製圖表
 // =========================
 
 function renderChart(rows) {
 
   const labels = rows.map(item => item.date);
 
-  const makeDataset = (label, field, color, width, dash = []) => ({
-    label: label,
-    data: rows.map(item => Number(item[field])),
-    borderColor: color,
-    borderWidth: width,
-    borderDash: dash,
-    pointRadius: 0,
-    pointHoverRadius: 4,
-    tension: 0,
-    fill: false
-  });
-
   const datasets = [
 
-    makeDataset(
-      "收盤價",
-      "close",
-      "#263f8c",
-      2.5
-    ),
+    makeDataset("收盤價", rows, "close", "#263f8c", 2.5),
 
-    makeDataset(
-      "上上線 +2σ",
-      "upper_2",
-      "#c65d5d",
-      1.5,
-      [6, 4]
-    ),
+    makeDataset("上上線 +2σ", rows, "upper_2", "#c65d5d", 1.5, [6, 4]),
 
-    makeDataset(
-      "上線 +1σ",
-      "upper_1",
-      "#df9c54",
-      1.5,
-      [4, 3]
-    ),
+    makeDataset("上線 +1σ", rows, "upper_1", "#df9c54", 1.5, [4, 3]),
 
-    makeDataset(
-      "中線",
-      "trend",
-      "#319b83",
-      2
-    ),
+    makeDataset("中線", rows, "trend", "#319b83", 2),
 
-    makeDataset(
-      "下線 -1σ",
-      "lower_1",
-      "#df9c54",
-      1.5,
-      [4, 3]
-    ),
+    makeDataset("下線 -1σ", rows, "lower_1", "#df9c54", 1.5, [4, 3]),
 
-    makeDataset(
-      "下下線 -2σ",
-      "lower_2",
-      "#c65d5d",
-      1.5,
-      [6, 4]
-    )
+    makeDataset("下下線 -2σ", rows, "lower_2", "#c65d5d", 1.5, [6, 4]),
+
+    // 買進訊號標記
+    {
+      label: "買進觀察",
+      data: rows.map(item =>
+        item.buy_signal ? Number(item.close) : null
+      ),
+      showLine: false,
+      pointRadius: 7,
+      pointHoverRadius: 10,
+      pointStyle: "triangle",
+      pointRotation: 0,
+      backgroundColor: "#21865b",
+      borderColor: "#21865b"
+    },
+
+    // 賣出訊號標記
+    {
+      label: "賣出觀察",
+      data: rows.map(item =>
+        item.sell_signal ? Number(item.close) : null
+      ),
+      showLine: false,
+      pointRadius: 7,
+      pointHoverRadius: 10,
+      pointStyle: "triangle",
+      pointRotation: 180,
+      backgroundColor: "#c34c4c",
+      borderColor: "#c34c4c"
+    }
 
   ];
 
@@ -486,7 +710,6 @@ function renderChart(rows) {
     .getElementById("fiveLineChart")
     .getContext("2d");
 
-  // 如果之前已經有圖表，先銷毀再重新建立
   if (fiveLineChart) {
     fiveLineChart.destroy();
   }
@@ -517,21 +740,26 @@ function renderChart(rows) {
           labels: {
             usePointStyle: true,
             boxWidth: 12,
-            padding: 16
+            padding: 15
           }
         },
 
         tooltip: {
-          enabled: true,
+
           callbacks: {
-            title: function(items) {
-              return items[0].label;
-            },
 
             label: function(context) {
+
+              if (context.raw === null) {
+                return null;
+              }
+
               return `${context.dataset.label}：${Number(context.raw).toFixed(2)}`;
+
             }
+
           }
+
         }
 
       },
@@ -543,7 +771,6 @@ function renderChart(rows) {
             maxTicksLimit: 10,
             maxRotation: 0
           },
-
           grid: {
             display: false
           }
@@ -553,12 +780,6 @@ function renderChart(rows) {
           title: {
             display: true,
             text: "價格"
-          },
-
-          ticks: {
-            callback: function(value) {
-              return Number(value).toFixed(0);
-            }
           }
         }
 
@@ -575,19 +796,18 @@ function renderChart(rows) {
 // Enter 鍵查詢
 // =========================
 
-document
-  .getElementById("stockId")
+document.getElementById("stockId")
   .addEventListener("keydown", event => {
 
     if (event.key === "Enter") {
-      searchStock();
+      searchStock(false);
     }
 
   });
 
 
-// 預設載入台積電
-searchStock();
+// 預設查詢台積電
+searchStock(false);
 
 </script>
 
