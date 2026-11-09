@@ -1,35 +1,11 @@
 {
   "stock_id": "2330",
   "dataset": "TaiwanStockPrice",
-  "start_date": "2021-12-02",
-  "end_date": "2026-11-06",
-  "latest_date": "2026-11-06",
-  "record_count": 1194,
+  "start_date": "2021-12-05",
+  "end_date": "2026-11-09",
+  "latest_date": "2026-11-09",
+  "record_count": 1193,
   "data": [
-    {
-      "date": "2021-12-02",
-      "stock_id": "2330",
-      "Trading_Volume": 48720976,
-      "Trading_money": 29780012954,
-      "open": 605.0,
-      "max": 615.0,
-      "min": 602.0,
-      "close": 615.0,
-      "spread": 15.0,
-      "Trading_turnover": 40629
-    },
-    {
-      "date": "2021-12-03",
-      "stock_id": "2330",
-      "Trading_Volume": 27571974,
-      "Trading_money": 16798271782,
-      "open": 614.0,
-      "max": 614.0,
-      "min": 606.0,
-      "close": 608.0,
-      "spread": -7.0,
-      "Trading_turnover": 16197
-    },
     {
       "date": "2021-12-06",
       "stock_id": "2330",
@@ -14333,6 +14309,18 @@
       "close": 2135.0,
       "spread": -105.0,
       "Trading_turnover": 675265
+    },
+    {
+      "date": "2026-11-09",
+      "stock_id": "2330",
+      "Trading_Volume": 45883218,
+      "Trading_money": 102581042177,
+      "open": 2210.0,
+      "max": 2290.0,
+      "min": 2190.0,
+      "close": 2235.0,
+      "spread": 100.0,
+      "Trading_turnover": 197811
     }
   ]
 }
