@@ -7,26 +7,11 @@
   "message": null,
   "calculation_method": "rolling_linear_regression",
   "price_adjustment": "0050 split-adjusted (pre-2025-06-18 prices divided by 4); dividends not adjusted",
-  "sigma": 194.1022,
-  "slope": 3.65784124,
-  "intercept": 661.78661078,
+  "sigma": 193.2185,
+  "slope": 3.66572633,
+  "intercept": 662.43928144,
   "latest_signal": "none",
   "data": [
-    {
-      "date": "2024-10-18",
-      "close": 1085.0,
-      "trend": 933.4168,
-      "upper_1": 1007.5002,
-      "lower_1": 859.3335,
-      "upper_2": 1081.5835,
-      "lower_2": 785.2501,
-      "buy_signal": false,
-      "sell_signal": false,
-      "signal": "none",
-      "slope": 1.1581956,
-      "intercept": 355.4771976,
-      "sigma": 74.0834
-    },
     {
       "date": "2024-10-21",
       "close": 1085.0,
@@ -7511,6 +7496,21 @@
       "slope": 3.65784124,
       "intercept": 661.78661078,
       "sigma": 194.1022
+    },
+    {
+      "date": "2026-11-11",
+      "close": 2395.0,
+      "trend": 2491.6367,
+      "upper_1": 2684.8553,
+      "lower_1": 2298.4182,
+      "upper_2": 2878.0738,
+      "lower_2": 2105.1996,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none",
+      "slope": 3.66572633,
+      "intercept": 662.43928144,
+      "sigma": 193.2185
     }
   ]
 }
