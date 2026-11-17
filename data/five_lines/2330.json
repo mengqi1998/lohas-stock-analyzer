@@ -7,41 +7,11 @@
   "message": null,
   "calculation_method": "rolling_linear_regression",
   "price_adjustment": "0050 split-adjusted (pre-2025-06-18 prices divided by 4); dividends not adjusted",
-  "sigma": 191.6402,
-  "slope": 3.67848881,
-  "intercept": 664.31504192,
+  "sigma": 191.0266,
+  "slope": 3.68250782,
+  "intercept": 667.8422994,
   "latest_signal": "none",
   "data": [
-    {
-      "date": "2024-10-23",
-      "close": 1060.0,
-      "trend": 941.2987,
-      "upper_1": 1015.7611,
-      "lower_1": 866.8362,
-      "upper_2": 1090.2235,
-      "lower_2": 792.3738,
-      "buy_signal": false,
-      "sell_signal": false,
-      "signal": "none",
-      "slope": 1.17479222,
-      "intercept": 355.07734132,
-      "sigma": 74.4624
-    },
-    {
-      "date": "2024-10-24",
-      "close": 1060.0,
-      "trend": 943.7425,
-      "upper_1": 1018.2948,
-      "lower_1": 869.1903,
-      "upper_2": 1092.8471,
-      "lower_2": 794.638,
-      "buy_signal": false,
-      "sell_signal": false,
-      "signal": "none",
-      "slope": 1.17960136,
-      "intercept": 355.12146108,
-      "sigma": 74.5523
-    },
     {
       "date": "2024-10-25",
       "close": 1065.0,
@@ -7511,6 +7481,36 @@
       "slope": 3.67848881,
       "intercept": 664.31504192,
       "sigma": 191.6402
+    },
+    {
+      "date": "2026-11-16",
+      "close": 2215.0,
+      "trend": 2502.8406,
+      "upper_1": 2694.0927,
+      "lower_1": 2311.5886,
+      "upper_2": 2885.3448,
+      "lower_2": 2120.3365,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none",
+      "slope": 3.68109268,
+      "intercept": 665.97537725,
+      "sigma": 191.2521
+    },
+    {
+      "date": "2026-11-17",
+      "close": 2170.0,
+      "trend": 2505.4137,
+      "upper_1": 2696.4403,
+      "lower_1": 2314.3871,
+      "upper_2": 2887.4669,
+      "lower_2": 2123.3605,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none",
+      "slope": 3.68250782,
+      "intercept": 667.8422994,
+      "sigma": 191.0266
     }
   ]
 }
