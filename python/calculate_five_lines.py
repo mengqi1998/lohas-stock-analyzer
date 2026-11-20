@@ -4,7 +4,7 @@ import os
 import numpy as np
 import pandas as pd
 
-STOCK_IDS = ["2330", "0050"]
+STOCK_IDS = ["2330", "0050", "5530", "3661", "3443", "1449", "2313", "3491"]
 WINDOW = 500
 OUTPUT_DAYS = 500
 
