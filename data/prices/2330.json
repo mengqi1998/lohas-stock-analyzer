@@ -14325,14 +14325,14 @@
     {
       "date": "2026-11-20",
       "stock_id": "2330",
-      "Trading_Volume": 87546393,
-      "Trading_money": 176013606855,
+      "Trading_Volume": 88179393,
+      "Trading_money": 177284650683,
       "open": 2035.0,
       "max": 2060.0,
       "min": 1970.0,
       "close": 2000.0,
       "spread": -100.0,
-      "Trading_turnover": 823086
+      "Trading_turnover": 823096
     }
   ]
 }
