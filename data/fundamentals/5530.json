@@ -1,0 +1,41 @@
+{
+  "stock_id": "5530",
+  "stock_name": "龍巖",
+  "asset_type": "stock",
+  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockBalanceSheet / TaiwanStockCashFlowsStatement / TaiwanStockMonthRevenue",
+  "status": "success",
+  "message": null,
+  "data": {
+    "date": "2026-11-19",
+    "PER": 13.65,
+    "PBR": 0.57,
+    "dividend_yield": 0.0,
+    "latest_quarter_EPS": 0.71,
+    "EPS_date": "2026-09-30",
+    "TTM_EPS": null,
+    "TTM_EPS_note": "未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "TTM_net_income": 1338745000.0,
+    "TTM_net_income_date": "2026-09-30",
+    "revenue": 347526000,
+    "revenue_date": "2026-11-01",
+    "revenue_yoy": 4.147299715002382,
+    "gross_margin": 59.0049477856831,
+    "operating_margin": 22.635288591288084,
+    "net_margin": 33.21253764017433,
+    "financial_statement_date": "2026-09-30",
+    "debt_ratio": null,
+    "current_ratio": 1.0609014497646096,
+    "balance_sheet_date": "2026-09-30",
+    "operating_cash_flow": -1133666000.0,
+    "cash_flow_date": "2026-09-30",
+    "latest_cash_distribution": null,
+    "cash_distribution_date": null,
+    "nav": null,
+    "premium_discount": null,
+    "nav_date": null
+  },
+  "notes": [
+    "各項財務指標採用最近可取得的已公告財報，並非即時資料。",
+    "TTM EPS 不直接加總各季 EPS；本網站改顯示近四季本期淨利合計。"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "stock_id": "2313",
+  "stock_name": "華通",
+  "asset_type": "stock",
+  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockBalanceSheet / TaiwanStockCashFlowsStatement / TaiwanStockMonthRevenue",
+  "status": "success",
+  "message": null,
+  "data": {
+    "date": "2026-11-19",
+    "PER": 27.98,
+    "PBR": 3.49,
+    "dividend_yield": 1.66,
+    "latest_quarter_EPS": 1.8,
+    "EPS_date": "2026-09-30",
+    "TTM_EPS": null,
+    "TTM_EPS_note": "未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "TTM_net_income": 7449432000.0,
+    "TTM_net_income_date": "2026-09-30",
+    "revenue": 8782936000,
+    "revenue_date": "2026-11-01",
+    "revenue_yoy": 24.738637062458256,
+    "gross_margin": 21.33116696229558,
+    "operating_margin": 12.398809455284171,
+    "net_margin": 9.740469399086635,
+    "financial_statement_date": "2026-09-30",
+    "debt_ratio": null,
+    "current_ratio": 1.731009919893491,
+    "balance_sheet_date": "2026-09-30",
+    "operating_cash_flow": -2329128000.0,
+    "cash_flow_date": "2026-09-30",
+    "latest_cash_distribution": null,
+    "cash_distribution_date": null,
+    "nav": null,
+    "premium_discount": null,
+    "nav_date": null
+  },
+  "notes": [
+    "各項財務指標採用最近可取得的已公告財報，並非即時資料。",
+    "TTM EPS 不直接加總各季 EPS；本網站改顯示近四季本期淨利合計。"
+  ]
+}

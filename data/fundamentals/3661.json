@@ -1,0 +1,41 @@
+{
+  "stock_id": "3661",
+  "stock_name": "世芯-KY",
+  "asset_type": "stock",
+  "source": "FinMind TaiwanStockPER / TaiwanStockFinancialStatements / TaiwanStockBalanceSheet / TaiwanStockCashFlowsStatement / TaiwanStockMonthRevenue",
+  "status": "success",
+  "message": null,
+  "data": {
+    "date": "2026-11-19",
+    "PER": 39.85,
+    "PBR": 4.88,
+    "dividend_yield": 0.9,
+    "latest_quarter_EPS": 37.68,
+    "EPS_date": "2026-09-30",
+    "TTM_EPS": null,
+    "TTM_EPS_note": "未直接加總各季 EPS，避免配股或分割造成股數基準不一致。",
+    "TTM_net_income": 7801619000.0,
+    "TTM_net_income_date": "2026-09-30",
+    "revenue": 10260317000,
+    "revenue_date": "2026-11-01",
+    "revenue_yoy": 515.8077034803464,
+    "gross_margin": 18.03873487866465,
+    "operating_margin": 13.931597094001214,
+    "net_margin": 12.474674618267134,
+    "financial_statement_date": "2026-09-30",
+    "debt_ratio": null,
+    "current_ratio": 2.9197063581542486,
+    "balance_sheet_date": "2026-09-30",
+    "operating_cash_flow": -16529067000.0,
+    "cash_flow_date": "2026-09-30",
+    "latest_cash_distribution": null,
+    "cash_distribution_date": null,
+    "nav": null,
+    "premium_discount": null,
+    "nav_date": null
+  },
+  "notes": [
+    "各項財務指標採用最近可取得的已公告財報，並非即時資料。",
+    "TTM EPS 不直接加總各季 EPS；本網站改顯示近四季本期淨利合計。"
+  ]
+}
