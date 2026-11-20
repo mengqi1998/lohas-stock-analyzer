@@ -1029,16 +1029,16 @@ async function searchStock(forceRefresh = false) {
     if (!data) {
 
       const response = await fetch(
-        `data/five_lines/${encodeURIComponent(stockId)}.json?t=${Date.now()}`
+        `https://lohas-stock-api.f109130102.workers.dev/api/stock/${encodeURIComponent(stockId)}?t=${Date.now()}`
       );
+
+      data = await response.json();
 
       if (!response.ok) {
         throw new Error(
-          "找不到此標的的分析資料，請確認代號或等待資料更新。"
+          data.message || "目前無法取得此標的資料，請稍後再試。"
         );
       }
-
-      data = await response.json();
 
       if (data.status === "success") {
         saveCache(stockId, data);
