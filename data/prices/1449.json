@@ -1,35 +1,11 @@
 {
   "stock_id": "1449",
   "dataset": "TaiwanStockPrice",
-  "start_date": "2021-12-16",
-  "end_date": "2026-11-20",
-  "latest_date": "2026-11-20",
-  "record_count": 1187,
+  "start_date": "2021-12-19",
+  "end_date": "2026-11-23",
+  "latest_date": "2026-11-23",
+  "record_count": 1186,
   "data": [
-    {
-      "date": "2021-12-16",
-      "stock_id": "1449",
-      "Trading_Volume": 73195,
-      "Trading_money": 1096969,
-      "open": 15.1,
-      "max": 15.1,
-      "min": 14.9,
-      "close": 14.95,
-      "spread": -0.15,
-      "Trading_turnover": 60
-    },
-    {
-      "date": "2021-12-17",
-      "stock_id": "1449",
-      "Trading_Volume": 45288,
-      "Trading_money": 675298,
-      "open": 14.85,
-      "max": 15.1,
-      "min": 14.8,
-      "close": 14.9,
-      "spread": -0.05,
-      "Trading_turnover": 41
-    },
     {
       "date": "2021-12-20",
       "stock_id": "1449",
@@ -14249,6 +14225,18 @@
       "close": 9.49,
       "spread": -0.51,
       "Trading_turnover": 459
+    },
+    {
+      "date": "2026-11-23",
+      "stock_id": "1449",
+      "Trading_Volume": 556011,
+      "Trading_money": 5287927,
+      "open": 9.49,
+      "max": 9.8,
+      "min": 9.31,
+      "close": 9.6,
+      "spread": 0.11,
+      "Trading_turnover": 392
     }
   ]
 }
