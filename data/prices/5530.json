@@ -1,10 +1,10 @@
 {
   "stock_id": "5530",
   "dataset": "TaiwanStockPrice",
-  "start_date": "2021-12-19",
-  "end_date": "2026-11-23",
-  "latest_date": "2026-11-23",
-  "record_count": 1193,
+  "start_date": "2021-12-20",
+  "end_date": "2026-11-24",
+  "latest_date": "2026-11-24",
+  "record_count": 1194,
   "data": [
     {
       "date": "2021-12-20",
@@ -14321,6 +14321,18 @@
       "close": 41.85,
       "spread": 0.35,
       "Trading_turnover": 239
+    },
+    {
+      "date": "2026-11-24",
+      "stock_id": "5530",
+      "Trading_Volume": 273089,
+      "Trading_money": 12027445,
+      "open": 44.05,
+      "max": 44.6,
+      "min": 43.6,
+      "close": 44.05,
+      "spread": 2.2,
+      "Trading_turnover": 231
     }
   ]
 }

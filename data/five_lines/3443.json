@@ -2,31 +2,16 @@
   "stock_id": "3443",
   "window": 500,
   "actual_days": 500,
-  "raw_days": 1193,
+  "raw_days": 1194,
   "status": "success",
   "message": null,
   "calculation_method": "rolling_linear_regression",
   "price_adjustment": "0050 split-adjusted (pre-2025-06-18 prices divided by 4); dividends not adjusted",
-  "sigma": 1043.3728,
-  "slope": 12.2682089,
-  "intercept": -288.89611976,
+  "sigma": 1041.3327,
+  "slope": 12.29837836,
+  "intercept": -287.5234012,
   "latest_signal": "none",
   "data": [
-    {
-      "date": "2024-11-01",
-      "close": 1180.0,
-      "trend": 1570.5117,
-      "upper_1": 1879.0285,
-      "lower_1": 1261.995,
-      "upper_2": 2187.5453,
-      "lower_2": 953.4782,
-      "buy_signal": false,
-      "sell_signal": false,
-      "signal": "none",
-      "slope": 1.19459213,
-      "intercept": 974.41026347,
-      "sigma": 308.5168
-    },
     {
       "date": "2024-11-04",
       "close": 1235.0,
@@ -7511,6 +7496,21 @@
       "slope": 12.2682089,
       "intercept": -288.89611976,
       "sigma": 1043.3728
+    },
+    {
+      "date": "2026-11-24",
+      "close": 5630.0,
+      "trend": 5849.3674,
+      "upper_1": 6890.7001,
+      "lower_1": 4808.0347,
+      "upper_2": 7932.0327,
+      "lower_2": 3766.7021,
+      "buy_signal": false,
+      "sell_signal": false,
+      "signal": "none",
+      "slope": 12.29837836,
+      "intercept": -287.5234012,
+      "sigma": 1041.3327
     }
   ]
 }
