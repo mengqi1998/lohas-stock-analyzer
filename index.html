@@ -190,6 +190,30 @@ th {
   button { width: 100%; }
   .chart-container { height: 350px; }
 }
+
+/* 股票代號／名稱模糊搜尋 */
+.stock-search-wrap { position:relative; min-width:0; }
+.stock-suggestions {
+  position:absolute; z-index:80; top:calc(100% + 5px); left:0;
+  width:min(100%, 520px); max-height:320px; overflow:auto;
+  background:#fff; border:1px solid #d7e0e8; border-radius:10px;
+  box-shadow:0 8px 24px rgba(35,55,75,.16);
+}
+.stock-suggestion {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  width:100%; padding:11px 13px; border:0; border-radius:0;
+  background:#fff; color:#263445; text-align:left; cursor:pointer;
+}
+.stock-suggestion + .stock-suggestion { border-top:1px solid #edf0f4; }
+.stock-suggestion:hover,.stock-suggestion:focus { background:#f0f3f1; outline:none; }
+.stock-suggestion-name { font-weight:650; }
+.stock-suggestion-meta { color:#718096; font-size:12px; white-space:nowrap; }
+.stock-suggestion-empty { padding:12px 13px; color:#718096; font-size:13px; }
+.search-hint { margin-top:7px; color:#8793a1; font-size:12px; line-height:1.5; }
+@media(max-width:760px) {
+  .stock-suggestions { width:100%; max-height: min(280px, 50vh); }
+  .search-hint { font-size:11px; }
+}
 </style>
 <style>
 /* 持有分析與白話指標 */
@@ -739,17 +763,22 @@ input, button { max-width:100%; }
   <section class="card">
   <h3>股票查詢</h3>
 
-  <div class="search-row">
-    <input id="stockId" type="text" value="2330"
-      placeholder="請輸入股票代號，例如 2330">
-    <div class="button-row">
-      <button id="searchBtn" onclick="searchStock(false)">查詢</button>
-      <button class="secondary-btn" id="refreshBtn"
-        onclick="searchStock(true)">強制更新</button>
+  <div class="stock-search-wrap">
+    <div class="search-row">
+      <input id="stockId" type="text" value="2330" autocomplete="off"
+        placeholder="輸入代號或名稱，例如 2330、台積電" aria-label="搜尋股票代號或名稱"
+        aria-autocomplete="list" aria-controls="stockSuggestions">
+      <div class="button-row">
+        <button id="searchBtn" onclick="searchStock(false)">查詢</button>
+        <button class="secondary-btn" id="refreshBtn"
+          onclick="searchStock(true)">強制更新</button>
+      </div>
     </div>
+    <div id="stockSuggestions" class="stock-suggestions hidden" role="listbox"></div>
+    <div class="search-hint">可輸入股票代號、公司名稱或名稱的一部分，例如「台積」、「台達」、「華邦」。</div>
   </div>
 
-  <div id="status" class="status">請輸入股票代號開始查詢。</div>
+  <div id="status" class="status">請輸入股票代號或名稱開始查詢。</div>
 </section>
   <div class="card hidden" id="summaryCard">
     <h2 id="stockTitle">股票分析</h2>
@@ -1587,17 +1616,116 @@ function updateHoldingAssessment() {
 
 
 // =========================
-// Enter 鍵查詢
+// 股票名稱／代號模糊搜尋
 // =========================
 
-document.getElementById("stockId")
-  .addEventListener("keydown", event => {
+let stockCatalog = [];
+let filteredStockResults = [];
 
-    if (event.key === "Enter") {
-      searchStock(false);
+async function loadStockCatalog() {
+  const input = document.getElementById("stockId");
+  try {
+    const response = await fetch("data/stock_catalog.json?t=" + Date.now());
+    if (!response.ok) throw new Error("股票清單尚未建立");
+    const result = await response.json();
+    stockCatalog = Array.isArray(result.stocks) ? result.stocks : [];
+  } catch (error) {
+    console.warn("讀取股票名稱清單失敗：", error);
+    stockCatalog = [];
+  }
+  // 清單載入後，若使用者已輸入內容，立即重新比對。
+  if (input.value.trim()) renderStockSuggestions(input.value);
+}
+
+function normalizeStockSearch(value) {
+  return String(value || "").trim().toLocaleLowerCase();
+}
+
+function renderStockSuggestions(keyword) {
+  const panel = document.getElementById("stockSuggestions");
+  const query = normalizeStockSearch(keyword);
+  panel.innerHTML = "";
+  filteredStockResults = [];
+
+  if (!query) {
+    panel.classList.add("hidden");
+    return;
+  }
+
+  filteredStockResults = stockCatalog.filter(item => {
+    const id = normalizeStockSearch(item.stock_id);
+    const name = normalizeStockSearch(item.stock_name);
+    return id.includes(query) || name.includes(query);
+  }).slice(0, 12);
+
+  if (!filteredStockResults.length) {
+    // 代號仍可直接查詢，即使清單中沒有對應名稱。
+    if (/^[0-9a-z]{4,6}$/i.test(query)) {
+      panel.classList.add("hidden");
+      return;
     }
+    const empty = document.createElement("div");
+    empty.className = "stock-suggestion-empty";
+    empty.textContent = "找不到符合的股票或 ETF，請確認名稱或代號。";
+    panel.appendChild(empty);
+    panel.classList.remove("hidden");
+    return;
+  }
 
+  filteredStockResults.forEach(item => {
+    const option = document.createElement("button");
+    option.type = "button";
+    option.className = "stock-suggestion";
+    option.setAttribute("role", "option");
+
+    const name = document.createElement("span");
+    name.className = "stock-suggestion-name";
+    name.textContent = item.stock_name || item.stock_id;
+
+    const meta = document.createElement("span");
+    meta.className = "stock-suggestion-meta";
+    meta.textContent = item.stock_id + (item.industry_category ? " · " + item.industry_category : "");
+
+    option.append(name, meta);
+    option.addEventListener("pointerdown", event => {
+      event.preventDefault();
+      document.getElementById("stockId").value = item.stock_id;
+      panel.classList.add("hidden");
+      searchStock(false);
+    });
+    panel.appendChild(option);
   });
+  panel.classList.remove("hidden");
+}
+
+const stockSearchInput = document.getElementById("stockId");
+stockSearchInput.addEventListener("input", event => {
+  renderStockSuggestions(event.target.value);
+});
+stockSearchInput.addEventListener("focus", event => {
+  if (event.target.value.trim()) renderStockSuggestions(event.target.value);
+});
+stockSearchInput.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    document.getElementById("stockSuggestions").classList.add("hidden");
+    return;
+  }
+  if (event.key === "Enter") {
+    event.preventDefault();
+    if (filteredStockResults.length && !/^[0-9a-z]{4,6}$/i.test(event.target.value.trim())) {
+      event.target.value = filteredStockResults[0].stock_id;
+    }
+    document.getElementById("stockSuggestions").classList.add("hidden");
+    searchStock(false);
+  }
+});
+document.addEventListener("click", event => {
+  if (!event.target.closest(".stock-search-wrap")) {
+    document.getElementById("stockSuggestions").classList.add("hidden");
+  }
+});
+
+loadStockCatalog();
 
 
 // 預設查詢台積電
