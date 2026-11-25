@@ -3,8 +3,8 @@
   "dataset": "TaiwanStockPrice",
   "start_date": "2021-12-21",
   "end_date": "2026-11-25",
-  "latest_date": "2026-11-24",
-  "record_count": 1188,
+  "latest_date": "2026-11-25",
+  "record_count": 1189,
   "data": [
     {
       "date": "2021-12-21",
@@ -14261,6 +14261,18 @@
       "close": 95.7,
       "spread": 8.7,
       "Trading_turnover": 44349
+    },
+    {
+      "date": "2026-11-25",
+      "stock_id": "0050",
+      "Trading_Volume": 464126099,
+      "Trading_money": 41445394719,
+      "open": 91.7,
+      "max": 91.85,
+      "min": 86.2,
+      "close": 90.3,
+      "spread": -5.4,
+      "Trading_turnover": 490847
     }
   ]
 }

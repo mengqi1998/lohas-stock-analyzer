@@ -3900,12 +3900,12 @@
     {
       "stock_id": "1598",
       "stock_name": "岱宇",
-      "industry_category": "生技醫療業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "1598",
       "stock_name": "岱宇",
-      "industry_category": "化學生技醫療"
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "1598",
@@ -5270,12 +5270,12 @@
     {
       "stock_id": "2341",
       "stock_name": "英群",
-      "industry_category": "電腦及週邊設備業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2341",
       "stock_name": "英群",
-      "industry_category": "電子工業"
+      "industry_category": "電腦及週邊設備業"
     },
     {
       "stock_id": "2342",
@@ -5340,12 +5340,12 @@
     {
       "stock_id": "2350",
       "stock_name": "環電",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "2350",
       "stock_name": "環電",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2351",
@@ -5445,12 +5445,12 @@
     {
       "stock_id": "2361",
       "stock_name": "鴻友",
-      "industry_category": "電子工業"
+      "industry_category": "電腦及週邊設備業"
     },
     {
       "stock_id": "2361",
       "stock_name": "鴻友",
-      "industry_category": "電腦及週邊設備業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2362",
@@ -5600,12 +5600,12 @@
     {
       "stock_id": "2381",
       "stock_name": "華宇",
-      "industry_category": "電腦及週邊設備業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2381",
       "stock_name": "華宇",
-      "industry_category": "電子工業"
+      "industry_category": "電腦及週邊設備業"
     },
     {
       "stock_id": "2382",
@@ -5630,12 +5630,12 @@
     {
       "stock_id": "2384",
       "stock_name": "勝華",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "2384",
       "stock_name": "勝華",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2385",
@@ -5720,12 +5720,12 @@
     {
       "stock_id": "2396",
       "stock_name": "精碟",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "2396",
       "stock_name": "精碟",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2397",
@@ -5770,12 +5770,12 @@
     {
       "stock_id": "2403",
       "stock_name": "友尚",
-      "industry_category": "電子通路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2403",
       "stock_name": "友尚",
-      "industry_category": "電子工業"
+      "industry_category": "電子通路業"
     },
     {
       "stock_id": "2404",
@@ -5830,12 +5830,12 @@
     {
       "stock_id": "2411",
       "stock_name": "飛瑞",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "2411",
       "stock_name": "飛瑞",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "2412",
@@ -7865,12 +7865,12 @@
     {
       "stock_id": "3009",
       "stock_name": "奇美電",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "3009",
       "stock_name": "奇美電",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3010",
@@ -8285,12 +8285,12 @@
     {
       "stock_id": "3053",
       "stock_name": "鼎營",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3053",
       "stock_name": "鼎營",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "3054",
@@ -8370,12 +8370,12 @@
     {
       "stock_id": "3061",
       "stock_name": "璨圓",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3061",
       "stock_name": "璨圓",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "3062",
@@ -8390,12 +8390,12 @@
     {
       "stock_id": "3063",
       "stock_name": "飛信",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3063",
       "stock_name": "飛信",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3064",
@@ -9485,12 +9485,12 @@
     {
       "stock_id": "3474",
       "stock_name": "華亞科",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3474",
       "stock_name": "華亞科",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3479",
@@ -9745,12 +9745,12 @@
     {
       "stock_id": "3534",
       "stock_name": "雷凌",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3534",
       "stock_name": "雷凌",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3535",
@@ -9970,12 +9970,12 @@
     {
       "stock_id": "3584",
       "stock_name": "介面",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3584",
       "stock_name": "介面",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "3585",
@@ -10055,12 +10055,12 @@
     {
       "stock_id": "3598",
       "stock_name": "奕力",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3598",
       "stock_name": "奕力",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3599",
@@ -10110,12 +10110,12 @@
     {
       "stock_id": "3614",
       "stock_name": "誠致",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3614",
       "stock_name": "誠致",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3615",
@@ -10435,12 +10435,12 @@
     {
       "stock_id": "3697",
       "stock_name": "F-晨星",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "3697",
       "stock_name": "F-晨星",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "3698",
@@ -10525,12 +10525,12 @@
     {
       "stock_id": "3708",
       "stock_name": "上緯投控",
-      "industry_category": "化學生技醫療"
+      "industry_category": "化學工業"
     },
     {
       "stock_id": "3708",
       "stock_name": "上緯投控",
-      "industry_category": "化學工業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "3708",
@@ -12315,12 +12315,12 @@
     {
       "stock_id": "4999",
       "stock_name": "鑫禾",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "4999",
       "stock_name": "鑫禾",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5007",
@@ -12375,12 +12375,12 @@
     {
       "stock_id": "5203",
       "stock_name": "訊連",
-      "industry_category": "資訊服務業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5203",
       "stock_name": "訊連",
-      "industry_category": "電子工業"
+      "industry_category": "資訊服務業"
     },
     {
       "stock_id": "5205",
@@ -12445,12 +12445,12 @@
     {
       "stock_id": "5222",
       "stock_name": "全訊",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5222",
       "stock_name": "全訊",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "5223",
@@ -12460,12 +12460,12 @@
     {
       "stock_id": "5225",
       "stock_name": "東科-KY",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5225",
       "stock_name": "東科-KY",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "5227",
@@ -12490,12 +12490,12 @@
     {
       "stock_id": "5234",
       "stock_name": "達興材料",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5234",
       "stock_name": "達興材料",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "5235",
@@ -12510,12 +12510,12 @@
     {
       "stock_id": "5236",
       "stock_name": "凌陽創新",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5236",
       "stock_name": "凌陽創新",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "5240",
@@ -12525,12 +12525,12 @@
     {
       "stock_id": "5243",
       "stock_name": "乙盛-KY",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5243",
       "stock_name": "乙盛-KY",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "5244",
@@ -12615,12 +12615,12 @@
     {
       "stock_id": "5269",
       "stock_name": "祥碩",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5269",
       "stock_name": "祥碩",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "5271",
@@ -12925,12 +12925,12 @@
     {
       "stock_id": "5388",
       "stock_name": "中磊",
-      "industry_category": "電子工業"
+      "industry_category": "通信網路業"
     },
     {
       "stock_id": "5388",
       "stock_name": "中磊",
-      "industry_category": "通信網路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5392",
@@ -12975,12 +12975,12 @@
     {
       "stock_id": "5434",
       "stock_name": "崇越",
-      "industry_category": "電子工業"
+      "industry_category": "電子通路業"
     },
     {
       "stock_id": "5434",
       "stock_name": "崇越",
-      "industry_category": "電子通路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5438",
@@ -13050,12 +13050,12 @@
     {
       "stock_id": "5469",
       "stock_name": "瀚宇博",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "5469",
       "stock_name": "瀚宇博",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5471",
@@ -13100,12 +13100,12 @@
     {
       "stock_id": "5484",
       "stock_name": "慧友",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "5484",
       "stock_name": "慧友",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "5487",
@@ -13520,12 +13520,12 @@
     {
       "stock_id": "6108",
       "stock_name": "競國",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6108",
       "stock_name": "競國",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6109",
@@ -13540,12 +13540,12 @@
     {
       "stock_id": "6112",
       "stock_name": "邁達特",
-      "industry_category": "資訊服務業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6112",
       "stock_name": "邁達特",
-      "industry_category": "電子工業"
+      "industry_category": "資訊服務業"
     },
     {
       "stock_id": "6113",
@@ -13565,12 +13565,17 @@
     {
       "stock_id": "6115",
       "stock_name": "鎰勝",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6115",
       "stock_name": "鎰勝",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
+    },
+    {
+      "stock_id": "6116",
+      "stock_name": "彩晶",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6116",
@@ -13578,19 +13583,14 @@
       "industry_category": "光電業"
     },
     {
-      "stock_id": "6116",
-      "stock_name": "彩晶",
-      "industry_category": "電子工業"
-    },
-    {
-      "stock_id": "6117",
-      "stock_name": "迎廣",
-      "industry_category": "電子工業"
-    },
-    {
       "stock_id": "6117",
       "stock_name": "迎廣",
       "industry_category": "電腦及週邊設備業"
+    },
+    {
+      "stock_id": "6117",
+      "stock_name": "迎廣",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6118",
@@ -13615,12 +13615,12 @@
     {
       "stock_id": "6120",
       "stock_name": "達運",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6120",
       "stock_name": "達運",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6121",
@@ -13670,12 +13670,12 @@
     {
       "stock_id": "6128",
       "stock_name": "上福",
-      "industry_category": "電子工業"
+      "industry_category": "電腦及週邊設備業"
     },
     {
       "stock_id": "6128",
       "stock_name": "上福",
-      "industry_category": "電腦及週邊設備業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6129",
@@ -13700,12 +13700,12 @@
     {
       "stock_id": "6133",
       "stock_name": "金橋",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6133",
       "stock_name": "金橋",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6134",
@@ -13730,12 +13730,12 @@
     {
       "stock_id": "6139",
       "stock_name": "亞翔",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6139",
       "stock_name": "亞翔",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "6140",
@@ -13745,22 +13745,22 @@
     {
       "stock_id": "6141",
       "stock_name": "柏承",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6141",
       "stock_name": "柏承",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
+    },
+    {
+      "stock_id": "6142",
+      "stock_name": "友勁",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6142",
       "stock_name": "友勁",
       "industry_category": "通信網路業"
-    },
-    {
-      "stock_id": "6142",
-      "stock_name": "友勁",
-      "industry_category": "電子工業"
     },
     {
       "stock_id": "6143",
@@ -13810,12 +13810,12 @@
     {
       "stock_id": "6152",
       "stock_name": "百一",
-      "industry_category": "通信網路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6152",
       "stock_name": "百一",
-      "industry_category": "電子工業"
+      "industry_category": "通信網路業"
     },
     {
       "stock_id": "6153",
@@ -13840,12 +13840,12 @@
     {
       "stock_id": "6155",
       "stock_name": "鈞寶",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6155",
       "stock_name": "鈞寶",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6156",
@@ -13880,12 +13880,12 @@
     {
       "stock_id": "6164",
       "stock_name": "華興",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6164",
       "stock_name": "華興",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6165",
@@ -13910,12 +13910,12 @@
     {
       "stock_id": "6166",
       "stock_name": "凌華",
-      "industry_category": "電子工業"
+      "industry_category": "電腦及週邊設備業"
     },
     {
       "stock_id": "6166",
       "stock_name": "凌華",
-      "industry_category": "電腦及週邊設備業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6167",
@@ -13925,12 +13925,12 @@
     {
       "stock_id": "6168",
       "stock_name": "宏齊",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6168",
       "stock_name": "宏齊",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6169",
@@ -13975,12 +13975,12 @@
     {
       "stock_id": "6176",
       "stock_name": "瑞儀",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6176",
       "stock_name": "瑞儀",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6177",
@@ -14005,12 +14005,12 @@
     {
       "stock_id": "6183",
       "stock_name": "關貿",
-      "industry_category": "資訊服務業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6183",
       "stock_name": "關貿",
-      "industry_category": "電子工業"
+      "industry_category": "資訊服務業"
     },
     {
       "stock_id": "6184",
@@ -14060,22 +14060,22 @@
     {
       "stock_id": "6191",
       "stock_name": "精成科",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6191",
       "stock_name": "精成科",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
+    },
+    {
+      "stock_id": "6192",
+      "stock_name": "巨路",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6192",
       "stock_name": "巨路",
       "industry_category": "其他電子業"
-    },
-    {
-      "stock_id": "6192",
-      "stock_name": "巨路",
-      "industry_category": "電子工業"
     },
     {
       "stock_id": "6194",
@@ -14160,22 +14160,22 @@
     {
       "stock_id": "6205",
       "stock_name": "詮欣",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6205",
       "stock_name": "詮欣",
+      "industry_category": "電子零組件業"
+    },
+    {
+      "stock_id": "6206",
+      "stock_name": "飛捷",
       "industry_category": "電子工業"
     },
     {
       "stock_id": "6206",
       "stock_name": "飛捷",
       "industry_category": "電腦及週邊設備業"
-    },
-    {
-      "stock_id": "6206",
-      "stock_name": "飛捷",
-      "industry_category": "電子工業"
     },
     {
       "stock_id": "6207",
@@ -14215,12 +14215,12 @@
     {
       "stock_id": "6213",
       "stock_name": "聯茂",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6213",
       "stock_name": "聯茂",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6214",
@@ -14290,17 +14290,12 @@
     {
       "stock_id": "6224",
       "stock_name": "聚鼎",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6224",
       "stock_name": "聚鼎",
-      "industry_category": "電子工業"
-    },
-    {
-      "stock_id": "6225",
-      "stock_name": "天瀚",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6225",
@@ -14308,14 +14303,19 @@
       "industry_category": "光電業"
     },
     {
-      "stock_id": "6226",
-      "stock_name": "光鼎",
+      "stock_id": "6225",
+      "stock_name": "天瀚",
       "industry_category": "電子工業"
     },
     {
       "stock_id": "6226",
       "stock_name": "光鼎",
       "industry_category": "光電業"
+    },
+    {
+      "stock_id": "6226",
+      "stock_name": "光鼎",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6227",
@@ -14470,12 +14470,12 @@
     {
       "stock_id": "6255",
       "stock_name": "奈普",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6255",
       "stock_name": "奈普",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6257",
@@ -14545,12 +14545,12 @@
     {
       "stock_id": "6271",
       "stock_name": "同欣電",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6271",
       "stock_name": "同欣電",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "6272",
@@ -14630,12 +14630,12 @@
     {
       "stock_id": "6282",
       "stock_name": "康舒",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6282",
       "stock_name": "康舒",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6283",
@@ -14665,12 +14665,12 @@
     {
       "stock_id": "6286",
       "stock_name": "立錡",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "6286",
       "stock_name": "立錡",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6287",
@@ -14740,12 +14740,12 @@
     {
       "stock_id": "6409",
       "stock_name": "旭隼",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6409",
       "stock_name": "旭隼",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "6411",
@@ -14755,12 +14755,12 @@
     {
       "stock_id": "6412",
       "stock_name": "群電",
-      "industry_category": "電子工業"
+      "industry_category": "電子零組件業"
     },
     {
       "stock_id": "6412",
       "stock_name": "群電",
-      "industry_category": "電子零組件業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6414",
@@ -14785,12 +14785,12 @@
     {
       "stock_id": "6416",
       "stock_name": "瑞祺電通",
-      "industry_category": "電子工業"
+      "industry_category": "通信網路業"
     },
     {
       "stock_id": "6416",
       "stock_name": "瑞祺電通",
-      "industry_category": "通信網路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6417",
@@ -14875,22 +14875,22 @@
     {
       "stock_id": "6431",
       "stock_name": "光麗-KY",
-      "industry_category": "光電業"
-    },
-    {
-      "stock_id": "6431",
-      "stock_name": "光麗-KY",
       "industry_category": "電子工業"
     },
     {
       "stock_id": "6431",
       "stock_name": "光麗-KY",
-      "industry_category": "生技醫療業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6431",
       "stock_name": "光麗-KY",
       "industry_category": "化學生技醫療"
+    },
+    {
+      "stock_id": "6431",
+      "stock_name": "光麗-KY",
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6432",
@@ -14915,12 +14915,12 @@
     {
       "stock_id": "6438",
       "stock_name": "迅得",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "6438",
       "stock_name": "迅得",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6441",
@@ -14940,12 +14940,17 @@
     {
       "stock_id": "6443",
       "stock_name": "元晶",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6443",
       "stock_name": "元晶",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
+    },
+    {
+      "stock_id": "6446",
+      "stock_name": "藥華藥",
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6446",
@@ -14956,11 +14961,6 @@
       "stock_id": "6446",
       "stock_name": "藥華藥",
       "industry_category": "化學生技醫療"
-    },
-    {
-      "stock_id": "6446",
-      "stock_name": "藥華藥",
-      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6449",
@@ -15035,12 +15035,12 @@
     {
       "stock_id": "6467",
       "stock_name": "泰合",
-      "industry_category": "化學生技醫療"
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6467",
       "stock_name": "泰合",
-      "industry_category": "生技醫療業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "6469",
@@ -15060,12 +15060,12 @@
     {
       "stock_id": "6472",
       "stock_name": "保瑞",
-      "industry_category": "化學生技醫療"
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6472",
       "stock_name": "保瑞",
-      "industry_category": "生技醫療業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "6473",
@@ -15090,12 +15090,12 @@
     {
       "stock_id": "6477",
       "stock_name": "安集",
-      "industry_category": "電子工業"
+      "industry_category": "光電業"
     },
     {
       "stock_id": "6477",
       "stock_name": "安集",
-      "industry_category": "光電業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6482",
@@ -15255,12 +15255,12 @@
     {
       "stock_id": "6525",
       "stock_name": "捷敏-KY",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6525",
       "stock_name": "捷敏-KY",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "6526",
@@ -15300,22 +15300,17 @@
     {
       "stock_id": "6533",
       "stock_name": "晶心科",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6533",
       "stock_name": "晶心科",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "6534",
       "stock_name": "正瀚-創",
       "industry_category": "創新版股票"
-    },
-    {
-      "stock_id": "6534",
-      "stock_name": "正瀚-創",
-      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6534",
@@ -15326,6 +15321,11 @@
       "stock_id": "6534",
       "stock_name": "正瀚-創",
       "industry_category": "化學生技醫療"
+    },
+    {
+      "stock_id": "6534",
+      "stock_name": "正瀚-創",
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6535",
@@ -15390,22 +15390,22 @@
     {
       "stock_id": "6550",
       "stock_name": "北極星藥業-KY",
-      "industry_category": "生技醫療業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "6550",
       "stock_name": "北極星藥業-KY",
-      "industry_category": "化學生技醫療"
-    },
-    {
-      "stock_id": "6552",
-      "stock_name": "易華電",
-      "industry_category": "電子工業"
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6552",
       "stock_name": "易華電",
       "industry_category": "半導體業"
+    },
+    {
+      "stock_id": "6552",
+      "stock_name": "易華電",
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6555",
@@ -15485,12 +15485,12 @@
     {
       "stock_id": "6573",
       "stock_name": "虹揚-KY",
-      "industry_category": "電子工業"
+      "industry_category": "半導體業"
     },
     {
       "stock_id": "6573",
       "stock_name": "虹揚-KY",
-      "industry_category": "半導體業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6574",
@@ -15575,12 +15575,12 @@
     {
       "stock_id": "6589",
       "stock_name": "台康生技",
-      "industry_category": "化學生技醫療"
+      "industry_category": "生技醫療業"
     },
     {
       "stock_id": "6589",
       "stock_name": "台康生技",
-      "industry_category": "生技醫療業"
+      "industry_category": "化學生技醫療"
     },
     {
       "stock_id": "6590",
@@ -16070,12 +16070,12 @@
     {
       "stock_id": "6689",
       "stock_name": "伊雲谷",
-      "industry_category": "電子工業"
+      "industry_category": "其他電子業"
     },
     {
       "stock_id": "6689",
       "stock_name": "伊雲谷",
-      "industry_category": "其他電子業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "6689",
@@ -19953,6 +19953,11 @@
       "industry_category": "光電業"
     },
     {
+      "stock_id": "7972",
+      "stock_name": "三福生醫",
+      "industry_category": "生技醫療業"
+    },
+    {
       "stock_id": "7973",
       "stock_name": "數位至匯",
       "industry_category": "數位雲端"
@@ -20230,12 +20235,12 @@
     {
       "stock_id": "8078",
       "stock_name": "華寶",
-      "industry_category": "電子工業"
+      "industry_category": "通信網路業"
     },
     {
       "stock_id": "8078",
       "stock_name": "華寶",
-      "industry_category": "通信網路業"
+      "industry_category": "電子工業"
     },
     {
       "stock_id": "8080",
