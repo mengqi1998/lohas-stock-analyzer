@@ -834,7 +834,7 @@ input, button { max-width:100%; }
   </details>
     </aside>
     <div class="analysis-main">
-  <div class="card">
+  <div class="card hidden" id="stockFundamentalCard">
     <h3>公司狀況與價格位置 <span class="info-tip" tabindex="0" data-tip="個股看獲利、營收與財務狀況；ETF 看淨值、折溢價與配息。">i</span></h3>
     <p class="subtitle">個股看公司賺錢能力、營收和財務狀況；ETF 看淨值、折溢價和配息。沒有可靠資料時會直接標示暫無資料。</p>
     <div class="fundamental-grid">
@@ -1483,6 +1483,10 @@ function addHolding() {
 }
 
 async function loadFundamentals(stockId) {
+  const fundamentalCard = document.getElementById("stockFundamentalCard");
+  // 預設收合，只有取得可用的基本面數值時才展開。
+  if (fundamentalCard) fundamentalCard.classList.add("hidden");
+
   const ids = [
     "fundPER","fundPBR","fundYield","fundEPS","fundTTMNetIncome",
     "fundRevenue","fundRevenueYoY","fundGrossMargin","fundOperatingMargin",
@@ -1504,6 +1508,28 @@ async function loadFundamentals(stockId) {
     currentFundamentalData = d;
     currentAssetType = result.asset_type || "stock";
     const isETF = currentAssetType === "etf";
+
+    // 只要有實際取得至少一項基本面數值就顯示區塊；
+    // 「尚未串接」等說明文字不視為有效資料。
+    const availableFields = isETF
+      ? ["latest_cash_distribution", "nav", "premium_discount"]
+      : [
+          "PER", "PBR", "dividend_yield", "latest_quarter_EPS",
+          "TTM_net_income", "revenue", "revenue_yoy", "gross_margin",
+          "operating_margin", "net_margin", "debt_ratio",
+          "current_ratio", "operating_cash_flow"
+        ];
+    const hasFundamentalData = availableFields.some(
+      key => d[key] !== null && d[key] !== undefined && d[key] !== ""
+        && Number.isFinite(Number(d[key]))
+    );
+    if (!hasFundamentalData) {
+      currentFundamentalData = null;
+      if (fundamentalCard) fundamentalCard.classList.add("hidden");
+      updateHoldingAssessment();
+      return;
+    }
+    if (fundamentalCard) fundamentalCard.classList.remove("hidden");
 
     document.getElementById("stockTitle").textContent =
       (result.stock_name || stockId) + (isETF ? " ETF 分析" : " 股票分析");
@@ -1560,6 +1586,7 @@ async function loadFundamentals(stockId) {
     updateHoldingAssessment();
   } catch (e) {
     currentFundamentalData = null;
+    if (fundamentalCard) fundamentalCard.classList.add("hidden");
     ids.forEach(id => {
       const el = document.getElementById(id);
       if (el) el.textContent = "暫無資料";
