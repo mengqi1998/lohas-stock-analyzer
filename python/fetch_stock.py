@@ -66,10 +66,36 @@ def safe_ratio(numerator, denominator, multiplier=1):
 def get_stock_catalog():
     rows = finmind_request("TaiwanStockInfo")
     catalog = {}
+    searchable = []
     for row in rows:
         stock_id = str(row.get("stock_id", "")).strip()
         if stock_id:
             catalog[stock_id] = row
+            stock_name = str(row.get("stock_name", "")).strip()
+            if stock_name and 4 <= len(stock_id) <= 6:
+                searchable.append({
+                    "stock_id": stock_id,
+                    "stock_name": stock_name,
+                    "industry_category": str(
+                        row.get("industry_category", "")
+                    ).strip(),
+                })
+
+    # 每日由既有 FinMind 股票基本資料同步產生搜尋索引，
+    # 前端直接下載靜態 JSON，比對名稱時不額外呼叫行情 API。
+    searchable.sort(key=lambda item: item["stock_id"])
+    output_dir = Path("data")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_file = output_dir / "stock_catalog.json"
+    output_file.write_text(
+        json.dumps({
+            "source": "FinMind TaiwanStockInfo",
+            "updated_at": END_DATE.isoformat(),
+            "stocks": searchable,
+        }, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"股票搜尋清單：{len(searchable)} 檔，已寫入 {output_file}")
     return catalog
 
 
