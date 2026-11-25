@@ -2,7 +2,7 @@
   "stock_id": "3491",
   "window": 500,
   "actual_days": 500,
-  "raw_days": 1192,
+  "raw_days": 1191,
   "status": "success",
   "message": null,
   "calculation_method": "rolling_linear_regression",

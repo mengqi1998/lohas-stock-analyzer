@@ -1,23 +1,11 @@
 {
   "stock_id": "2308",
   "dataset": "TaiwanStockPrice",
-  "start_date": "2021-12-20",
-  "end_date": "2026-11-24",
+  "start_date": "2021-12-21",
+  "end_date": "2026-11-25",
   "latest_date": "2026-11-24",
-  "record_count": 1194,
+  "record_count": 1193,
   "data": [
-    {
-      "date": "2021-12-20",
-      "stock_id": "2308",
-      "Trading_Volume": 3285042,
-      "Trading_money": 872849293,
-      "open": 269.0,
-      "max": 270.0,
-      "min": 263.5,
-      "close": 264.0,
-      "spread": -5.0,
-      "Trading_turnover": 7314
-    },
     {
       "date": "2021-12-21",
       "stock_id": "2308",

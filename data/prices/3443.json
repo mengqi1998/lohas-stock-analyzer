@@ -1,23 +1,11 @@
 {
   "stock_id": "3443",
   "dataset": "TaiwanStockPrice",
-  "start_date": "2021-12-20",
-  "end_date": "2026-11-24",
+  "start_date": "2021-12-21",
+  "end_date": "2026-11-25",
   "latest_date": "2026-11-24",
-  "record_count": 1194,
+  "record_count": 1193,
   "data": [
-    {
-      "date": "2021-12-20",
-      "stock_id": "3443",
-      "Trading_Volume": 1284006,
-      "Trading_money": 778840980,
-      "open": 607.0,
-      "max": 615.0,
-      "min": 599.0,
-      "close": 601.0,
-      "spread": -3.0,
-      "Trading_turnover": 1300
-    },
     {
       "date": "2021-12-21",
       "stock_id": "3443",
